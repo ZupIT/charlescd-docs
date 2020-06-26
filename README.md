@@ -6,7 +6,7 @@ description: >-
 
 # Overview
 
-## What is Charles?
+## What is Charles-docs?
 
 CharlesCD is an open source tool that makes deployments more agile, continuous and safe, which allows development teams to perform hypothesis validations with a specific group of users, simultaneously.
 
