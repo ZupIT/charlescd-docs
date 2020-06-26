@@ -31,4 +31,3 @@
 * [Sobre o Charles](faq/sobre-charles.md)
 * [Deploy em círculos x Outros deploys](faq/deploy-em-circulos-e-outros-deploys.md)
 * [Comunidade](faq/comunidade.md)
-
