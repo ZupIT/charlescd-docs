@@ -6,6 +6,10 @@ A configuração de métricas no Charles é realiza em duas partes, a primeira d
 
 As métricas relacionadas às requisições de cada círculo podem ser quantificadas e expostas pelo Istio.
 
+{% hint style="danger" %}
+Todas as configurações neste tópico foram testadas e validadas com versões do Istio entre 1.2 e 1.5. Qualquer outra versão não é garantido de funcionar.
+{% endhint %}
+
 {% hint style="info" %}
 Antes, caso queira entender mais sobre telemetria no Istio, recomendamos que consulte a [**doc oficial**](https://istio.io/docs/tasks/observability/metrics/).
 {% endhint %}
@@ -17,7 +21,7 @@ Para começar, é necessário primeiro garantir que você já tem o seu **Istio 
 Caso você já tenha feito essa habilitação, pode seguir direto para segunda parte. Se este não for o seu caso, siga os seguintes passos:
 
 {% hint style="warning" %}
-Antes, vale reforçar que as configurações abaixo se referem à versões superiores à 1.5 do Istio.
+Antes, vale reforçar que a configuração abaixo se referem à versão 1.5 do Istio.
 {% endhint %}
 
 **Passo 1:** Crie um arquivo chamado **telemetry.yaml** com o conteúdo abaixo.
