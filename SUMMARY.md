@@ -8,7 +8,7 @@
 * [Instalando o Charles](primeiros-passos/instalando-charles.md)
 * [Definindo um Workspace](primeiros-passos/definindo-workspace/README.md)
   * [Docker Registry](primeiros-passos/definindo-workspace/docker-registry.md)
-  * [Configurando seu Cluster](primeiros-passos/definindo-workspace/configurando-cluster.md)
+  * [Configurando ambiente de deploy](primeiros-passos/definindo-workspace/configurando-cluster.md)
   * [Credenciais do Git](primeiros-passos/definindo-workspace/github.md)
 * [Criando seu primeiro módulo](primeiros-passos/criando-modulos.md)
 * [Primeiro Deploy](primeiros-passos/primeiro-deploy.md)
