@@ -13,6 +13,8 @@ Each workspace has the following configuration:
 * Customize the [**Circle Matcher**](../../reference/circle-matcher.md);
 * Register your applications [**metrics provider**](../../reference/metrics/register-metrics-provider.md). 
 
+![Workspace configuration](../../.gitbook/assets/settings_-_workspace_-_11.4_-_add_group_permissions2x%20%282%29.png)
+
 {% hint style="warning" %}
 The **root** user gives you the permission to create a workspace. However, users with **mantainer** profile are able to configure with the necessary information as well.
 {% endhint %}
