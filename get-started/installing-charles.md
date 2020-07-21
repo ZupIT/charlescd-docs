@@ -1,7 +1,7 @@
 # Installing Charles
 
 {% hint style="info" %}
-The installing process was created considering some use cases, and each of them have its own specific tutorial. If you need to install CharlesCD with more customization, we suggest to check the [**customized installation section**.](installing-charles.md#case-2-customized-installation)
+The installing process was created considering some use cases, and each of them have its own specific tutorial. If you need to install CharlesCD with more customization, we suggest to check the[ **installation with helms charts section**.](https://docs.charlescd.io/get-started/installing-charles#case-2-installation-with-helm-charts)
 {% endhint %}
 
 ## Introduction
@@ -38,7 +38,7 @@ This installation is recommended for those who never used Charles before and jus
 
 In this case, you will have to:
 
-* Use an **yaml** file with all the [**components**](installing-charles.md#components);
+* Use an **yaml** file with all the [**components**](https://docs.charlescd.io/get-started/installing-charles#components);
 * Use a **Load Balancer** previously configured.
 
 To create this structure, you have to execute the files in a configured cluster, such as minikube, GKE, EKS, etc. The steps to be executed are:
