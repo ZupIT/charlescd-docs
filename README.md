@@ -33,7 +33,9 @@ The methodology implemented by Charles brings a lot of advantages such as:
 * Easy version management, allowing multiple parallel releases of the same application in the production environment; 
 * Monitoring the impact of each version through predefined metrics during the implementation creation.
 
-  **System architecture**
+  \*\*\*\*
+
+## **System architecture**
 
 The platform was built using a microservice approach, and it has the following modules:
 

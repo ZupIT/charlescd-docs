@@ -13,20 +13,20 @@ The CharlesCD installation considers these components:
 1. Seven specific modules of **Charles' architecture;** 
 2. **Keycloak**, used for product authentication and authorization;
 3. A **PostgreSQL database** for back-end modules \( `charles-application`, `charles-circle-matcher`, `deploy` and `villager`\) and Keycloak;
-4. A **Redis**, to be used by [**Circle Matcher**. ](../reference/circle-matcher.md)
+4. A **Redis**, to be used by `charlescd-villager`
 
 ### Continuous Delivery Platform
 
 At this moment, Charles can support two Continuous Delivery \(CD\) platforms:
 
-* **Spinnaker:** if you have your spinnaker already configured, you can proceed with our installation.  
+* **Spinnaker:** if you have your spinnaker already configured, it can be reused.
 * **Octopipe:** a native platform created by our team to make installation easier, without previous configurations. 
 
 {% hint style="info" %}
-If you want more information about how to configure Spinnaker or Octopipe, check the **CD Configuration** section.
+If you want more information about how to configure Spinnaker or Octopipe, check the [**CD Configuration**](https://docs.charlescd.io/reference/cd-configuration) section.
 {% endhint %}
 
-## Main install cases
+## Main installation cases
 
 {% hint style="info" %}
 **At the first access, regardless of the installation method, the default admin user is charlesadmin@zup.com.br and the password is 123mudar.**
@@ -49,9 +49,11 @@ kubectl create namespace charles
 kubectl apply -n charles -f https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml
 ```
 
-At the end of the process, you will have inside of namespace `charles` all the modules of the product, as well your dependencies installed in a simpler way.  
+At the end of the process, you will have inside of namespace `charles` all the modules of the project and its dependencies installed in a simpler way. Here you will find the[ **files in our repository**](https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml).   
   
-**How to access the application:**
+
+
+### **How to access the application:**
 
 **Minikube:**
 
@@ -65,7 +67,7 @@ kubectl get svc -n charles
 ```
 
 Now that you have the **external ip,** **replace the ip-external-charles** and add this line on your host file:  
-[How to change the host file.](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)
+[**How to change the host file.**](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)\*\*\*\*
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
@@ -75,14 +77,14 @@ Now that you have the **external ip,** **replace the ip-external-charles** and a
 
 **Cloud Provider \(AWS, GCP, AZURE\)**
 
-If you install on a managed kubernetes, the external ip for the nginx load balancer is created automatically, so when all the components are ready just take the external IP with the command below and add it to your hosts file.
+If you install on a managed kubernetes, **the external ip for the nginx load balancer is created automatically**, so when all the components are ready just take the external IP with the command below and add it to your hosts file.
 
 ```text
 kubectl get svc -n charles
 // get external IP value
 ```
 
-Line to add in host file. \([How to change the host file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/).\)
+Line to add in you OS host file. \([How to change the host file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/).\), in cases where you want to access the browser in your device. 
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
@@ -100,11 +102,11 @@ After doing this, clone the single-file.yaml and change all occurrences from htt
 The purpose of this installation is only for tests. Using this for production environment is not recommended due to lack o backup, high availability, etc.
 {% endhint %}
 
-### Case \#2: Customized installation
+### Case \#2: installation with helm charts
 
 This installation is recommended for those who already has an infrastructure to deal with a more complex environment or who has some limitations of security/scalability, which demands a **more complete install customization** of CharlesCD.  
 
-### Prerequisites 
+### Requisites 
 
 To run the process, you must have the following programs:
 
