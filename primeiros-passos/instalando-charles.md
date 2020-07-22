@@ -30,7 +30,7 @@ Você pode saber mais sobre a **configuração do Spinnaker e do Octopipe** na s
 ## Principais casos de instalação 
 
 {% hint style="info" %}
-**No primeiro acesso, independente do método de instalação, o usuário padrão de administrador é `charlesadmin@admin` e a senha `charlesadmin`.**
+**No primeiro acesso, independente do método de instalação, o usuário padrão de administrador é charlesadmin@admin e a senha charlesadmin.**
 {% endhint %}
 
 ### Caso 1: Instalação rápida 
