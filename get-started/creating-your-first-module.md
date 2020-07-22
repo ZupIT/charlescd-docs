@@ -3,12 +3,12 @@
 After creating and configuring your workspace, it is necessary to add the modules.
 
 {% hint style="info" %}
-A **module** is your application stored in a [**Git repository previously registered**](defining-a-workspace/github.md).
+A **module** is your application stored in a [**Git repository previously registered**](https://docs.charlescd.io/get-started/defining-a-workspace).
 {% endhint %}
 
 To add it, access the **Modules** menu on your workspace and set the following properties:
 
-* **Name**: the module name must be exactly your repository name; 
+* **Name**: this field should be the junction of the organization and the module names, as it is in your git. For example: `ZupIt/charlescd`.
 * **Git URL**: your repository's URL. For example: [https://github.com/ZupIT/charlescd](https://github.com/ZupIT/charlescd).
 
 If you have a lot of applications on your repository, register them with the components and add the following:

@@ -1,6 +1,8 @@
 # First Deploy
 
+{% hint style="info" %}
 After you have created your first [**module**](creating-your-first-module.md) and registered your [**cluster crendentials**,](defining-a-workspace/configuracoes-de-deploy.md) you have finished all the steps needed to make your first deploy. Now, it is necessary to create a [**release** ](../reference/release.md)and provide it on the configured cluster.
+{% endhint %}
 
 Charles offers two alternatives to create a release: use the [**hypothesis** ](../reference/hyphotesis.md)flow chart or create it with docker images already available on your configured [**registry**.](defining-a-workspace/docker-registry.md)
 

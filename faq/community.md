@@ -8,7 +8,7 @@ description: >-
 
 ## **Which Charles' repository?**
 
-We work with monorepo concept on Charles. That means that you can find all of our projects in this [**public repository**](https://github.com/ZupIT/charlescd).
+We work with monorepo concept on CharlesCD. That means that you can find all of our projects in this [**public repository**](https://github.com/ZupIT/charlescd).
 
 ## **Do you want to report an issue or suggest a doc change?** 
 

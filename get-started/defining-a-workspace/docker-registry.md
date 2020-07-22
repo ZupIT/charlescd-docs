@@ -4,7 +4,7 @@ To configure your workspace, you have to register on the docker registry where y
 
 There are two configuration registry categories that can be done in your workspace. You choose one and add the following information:
 
-## AWS
+### AWS
 
 * **Name**: this name will be used for your Charles configuration;
 * **Your registry's URL**: according to the convention, the URL pattern for your registry is: https://**aws\_account\_id**.dkr.ecr.**region**.amazonaws.com;
@@ -14,7 +14,7 @@ There are two configuration registry categories that can be done in your workspa
 
 If you have any doubts on how to proceed or find the information above, you can visit the [**documentation of Amazon ECR**](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html).
 
-## AZURE
+### AZURE
 
 * **Name**: this name will be used for your Charles configuration;
 * **Your registry's URL**: the URL pattern for your registry is

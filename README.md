@@ -11,7 +11,7 @@ description: >-
 CharlesCD is an open source tool that makes deployments more agile, continuous and safe, which allows development teams to perform hypothesis validations with a specific group of users, simultaneously.
 
 {% hint style="warning" %}
-The product brings a new concept to the community: **deployment in circles of users on Kubernetes clusters**.
+The product brings a new concept to the community: **the** **deployment in circles of users on Kubernetes clusters**.
 {% endhint %}
 
 This kind of deploy makes it possible to create a segment with your clients' specific characteristics and, at the same time, submit several versions of the same application to test this circle of users.
@@ -33,7 +33,9 @@ The methodology implemented by Charles brings a lot of advantages such as:
 * Easy version management, allowing multiple parallel releases of the same application in the production environment; 
 * Monitoring the impact of each version through predefined metrics during the implementation creation.
 
-  **System architecture**
+  \*\*\*\*
+
+## **System architecture**
 
 The platform was built using a microservice approach, and it has the following modules:
 

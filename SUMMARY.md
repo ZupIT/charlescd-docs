@@ -8,7 +8,7 @@
 * [Installing Charles](get-started/installing-charles.md)
 * [Defining a Workspace](get-started/defining-a-workspace/README.md)
   * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
-  * [Setting up a Cluster](get-started/defining-a-workspace/configuracoes-de-deploy.md)
+  * [Deploy environment](get-started/defining-a-workspace/configuracoes-de-deploy.md)
   * [Git credentials](get-started/defining-a-workspace/github.md)
 * [Creating your first module](get-started/creating-your-first-module.md)
 * [First Deploy](get-started/first-deploy.md)
