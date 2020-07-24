@@ -19,7 +19,7 @@ Por exemplo, é possível [**criar um círculo**](referencia/circulos.md#como-cr
 
 ## **Componentes**
 
-Fazem parte dos [**módulos**](primeiros-passos/criando-modulos.md) que são criados dentro do Charles. Os componentes funcionam como abstrações das aplicações, o que significa dizer que eles possuem suas próprias configurações e que cada parte deles corresponde a uma aplicação do módulo em que você estiver trabalhando. Caso você trabalhe com um monorepo, cada uma das suas aplicações serão cadastradas como componentes dentro de um único módulo.
+Fazem parte dos [**módulos**](primeiros-passos/criando-modulos/) que são criados dentro do Charles. Os componentes funcionam como abstrações das aplicações, o que significa dizer que eles possuem suas próprias configurações e que cada parte deles corresponde a uma aplicação do módulo em que você estiver trabalhando. Caso você trabalhe com um monorepo, cada uma das suas aplicações serão cadastradas como componentes dentro de um único módulo.
 
 ## **Hipóteses**
 

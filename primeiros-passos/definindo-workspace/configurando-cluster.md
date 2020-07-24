@@ -16,7 +16,7 @@ Após esses passos, preencha os campos a seguir:
 1. **Name:** nome da configuração que será criada.
 2. **Namespace:** defina o namespace que será utilizado nos deploys no cluster _Kubernetes._
 3. **Git provider**: defina o provedor de git a ser utilizado \(**GitHub ou GitLab**\).
-4. **Git token:** insira o token de autenticação para o seu repositório git. Este será utilizado para a obtenção dos templates Helm que são definidos ao cadastrar os seus [**módulos**](../criando-modulos.md).
+4. **Git token:** insira o token de autenticação para o seu repositório git. Este será utilizado para a obtenção dos templates Helm que são definidos ao cadastrar os seus [**módulos**](../criando-modulos/).
 5. Selecione a opção **Default**.
 
 Depois de finalizar sua configuração, você pode futuramente associá-la a um módulo. Para mais informações, acesse [**Configurações de CD**.](../../referencia/configuracao-cd.md)
