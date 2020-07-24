@@ -4,19 +4,33 @@ description: This section describes how you may configure our Circle Matcher ins
 
 # Circle Matcher
 
-## Why do I have to configure Circle Matcher?
+## Why do you have to configure?
 
-Since Circle Matcher is one of our modules, you might ask why do I have to configure it inside Charles? Well, Circle Matcher was designed to be a standalone application that would receive the most part of requests in Charles environment \(because it is the application that identifies the user based on the rules that you configured while managing a circle\) you may want to install this specific module of Charles' stack anywhere that you might feel more comfortable with \(in a public cluster, for example\).
+When [**creating a workspace**](./), you have to inform Charles to which Circle Matcher that current workspace will point to. It is possible that there is a Circle Matcher for each environment, since Charles can handle, at the same time, different environments in multiple workspaces.
 
-## What do I have to configure?
+Circle Matcher is a independent module, despite that, it is possible to install it in any area you want inside its architecture, for example, a public cluster.
 
-While defining a workspace, you may want to configure a Circle Matcher to perform operations inside Charles like creating a circle and editing segments in a circle. When Circle Matcher is configured and you already created your circles, you can then start deploying in circles with Charles.
+This configuration is necessary, so you are able to perform operations in Charles, like creating and editing segments in a circle.
 
-When creating a workspace, you can tell Charles for which Circle Matcher that current workspace will point to. Since Charles can handle multiple environments in multiple workspaces, you can have one Circle Matcher for each environment. 
+{% hint style="info" %}
+It is important to remember, on Charle's context, the Circle Matcher module receives most of the environment's request, because it is the application that identifies the user based on the rules that you have configured while managing a circle.
+{% endhint %}
 
-Basically, you configure the public DNS that points to your desired Circle Matcher, for example **http://charles.info.example/charlescd-circle-matcher**.
+## How must be configured 
 
-If you want to use Circle Matcher in the same namespace that Charles is installed, you can use DNS referring too but in terms of performance, is better if you use Kubernetes service name, like **http://charlescd-circle-matcher:8080**.
+#### Option 1: Configure Circle Matcher em uma arquitetura à parte
+
+You have to configure the public DNS that points to your desired Circle Matcher.
+
+> Example: **http://charles.info.example/charlescd-circle-matcher**.
 
 
+
+#### Option 2: Configurar o Circle Matcher no mesmo namespace do Charles 
+
+If you want to use Circle Matcher in the same namespace that Charles is installed, you can use the same DNS reference.
+
+The difference is in terms of performance, it is recommended to use Kubernetes service name.
+
+> Example: **http://charlescd-circle-matcher:8080**.
 
