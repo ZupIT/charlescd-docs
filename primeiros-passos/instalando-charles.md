@@ -1,3 +1,7 @@
+---
+description: Esta seção descreve como você deve instalar o Charles no seu projeto.
+---
+
 # Instalando o Charles
 
 {% hint style="info" %}

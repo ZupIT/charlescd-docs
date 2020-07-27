@@ -1,3 +1,7 @@
+---
+description: Esta seção descreve como você pode criar seu primeiro módulo no Charles.
+---
+
 # Criando seu primeiro módulo
 
 Depois de criar e configurar o seu workspace, agora é necessário adicionar os módulos. 

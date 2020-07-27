@@ -1,3 +1,7 @@
+---
+description: Esta seção descreve como funciona o ambiente de deploy no Charles.
+---
+
 # Ambiente de deploy
 
 Ao configurar seu workspace é preciso cadastrar as credenciais de acesso ao cluster [**Kubernetes**](https://kubernetes.io/). Essas configurações são específicas para cada uma das ferramentas de _Continuous Deployment_ \(CD\) que são integradas ao CharlesCD. No momento, damos suporte ao  [**Spinnaker**](https://www.spinnaker.io/) e _Octopipe_. 
