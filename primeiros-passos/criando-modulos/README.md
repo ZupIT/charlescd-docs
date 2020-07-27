@@ -19,7 +19,7 @@ Se seu repositório tem várias aplicações, cadastre-as como componentes e inf
 ![Tela de cria&#xE7;&#xE3;o de m&#xF3;dulo](../../.gitbook/assets/criac-a-o-de-modulo%20%281%29.png)
 
 {% hint style="warning" %}
-Para mais informações sobre a configuração do repositório do helm, [**acesse aqui.** ](configurando-o-chart-template.md)\*\*\*\*
+Para mais informações sobre a configuração do repositório do helm, [**acesse aqui.**](configurando-o-chart-template.md)\*\*\*\*
 {% endhint %}
 
 ## Componentes 
