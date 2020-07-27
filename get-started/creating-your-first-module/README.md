@@ -20,6 +20,10 @@ In both cases, you need to inform the minimum risk value you'd like to be alerte
 
 ![Creating a module screen](../../.gitbook/assets/criac-a-o-de-modulo%20%282%29%20%281%29.png)
 
+{% hint style="warning" %}
+For more information about Helm Repository, [**access here**](how-to-configure-chart-template.md). 
+{% endhint %}
+
 ## Components
 
 {% hint style="info" %}
