@@ -14,5 +14,7 @@ There are two register categories: GitHub and GitLab. To configure it, add the f
 
 * **Name**: this name will be used by your Charles configuration.
 * **URL**: if you have a custom domain, add it here. If you don't, add a pattern value here [https://gitlab.com](https://gitlab.com/) \(without the trailing "/\"\). 
-* **Token**: check out the documentation[ **on how to create a token**](https://docs.gitlab.com/ee/api/#personalproject-access-tokens). 
+* **Token**: check out GitLab's documentation[ **on how to create a token**](https://docs.gitlab.com/ee/api/#personalproject-access-tokens)**.** It's important to highlight that the token needs to have the following accesses: "**api", "read\_repository", "write\_repository"**.
+
+
 
