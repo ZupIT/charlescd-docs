@@ -14,7 +14,7 @@ It is important to remember, on Charle's context, the Circle Matcher module rece
 
 ## How must be configured 
 
-#### Option 1: Configure Circle Matcher em uma arquitetura à parte
+#### Option 1: Configure Circle Matcher in a separate architecture
 
 You have to configure the public DNS that points to your desired Circle Matcher.
 
@@ -22,7 +22,7 @@ You have to configure the public DNS that points to your desired Circle Matcher.
 
 
 
-#### Option 2: Configurar o Circle Matcher no mesmo namespace do Charles 
+#### Option 2: Configure Circle Matcher in the same Charles' namespace  
 
 If you want to use Circle Matcher in the same namespace that Charles is installed, you can use the same DNS reference.
 
