@@ -4,11 +4,21 @@ description: Esta seção descreve como você deve instalar o Charles no seu pro
 
 # Instalando o Charles
 
-{% hint style="info" %}
-O processo de instalação foi criado considerando alguns casos de uso. Logo, para cada um deles, você encontrará um tutorial específico. Se for necessário instalar o CharlesCD com algumas customizações, sugerimos conferir a seção de [**instalação com helm charts**. ](instalando-charles.md#caso-2-instalacao-com-helm-charts)
-{% endhint %}
+## Requisitos
+
+Antes de instalar o Charles, é importante que você confirme se os seguintes programas  estão instalados na sua máquina. Para a ferramenta funcionar, é necessário:
+
+* \*\*\*\*[**Istio**](https://istio.io/latest/docs/setup/getting-started/)\*\*\*\*
+* \*\*\*\*[**Kubernetes**](https://kubernetes.io/docs/setup/)\*\*\*\*
+* \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** se você deseja configurar as [**métricas**](../referencia/metricas/)**.**
 
 ## Introdução
+
+O processo de instalação foi criado considerando alguns casos de uso. Logo, para cada um deles, você encontrará um tutorial específico. 
+
+{% hint style="info" %}
+Se for necessário instalar o CharlesCD com algumas customizações, sugerimos conferir a seção de [**instalação com helm charts**. ](instalando-charles.md#caso-2-instalacao-com-helm-charts)
+{% endhint %}
 
 ### Componentes
 
@@ -56,9 +66,7 @@ kubectl apply -n charles -f https://raw.githubusercontent.com/ZupIT/charlescd/ma
 
 Ao final do processo, você terá dentro do namespace `charles` todos os módulos do projeto e suas dependências instaladas da forma mais simples possível. No link, você encontra os [**arquivos no nosso repositório**](https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml).
 
-
-
- **Como acessar a aplicação:**
+###  **Como acessar a aplicação:**
 
 **Minikube:**
 
@@ -81,9 +89,7 @@ Agora que você tem um ip externo, troque o valor &lt;ip-external-charles&gt; pe
 
 No seu navegador digite http://charles.info.example e a aplicação estará disponível.
 
-
-
-**Cloud Provider \(AWS, GCP, AZURE\)**
+### **Cloud Provider \(AWS, GCP, AZURE\)**
 
 Se você instalar em um cluster de kubernetes gerenciado, **o ip externo para o load balancer nginx é criado automaticamente**, então quando todos os componentes estiverem prontos consiga o IP externo com o comando:
 
@@ -110,13 +116,11 @@ Depois de apontar seu DNS para o IP externo, faça o clone do single-file.yam e 
 Como essa instalação serve **apenas para o uso em ambiente de testes**, não recomendamos esse caso de instalação para ambientes produtivos porque ele não inclui cuidados como: backups do banco de dados, alta disponibilidade, entre outros.
 {% endhint %}
 
-### 
-
 ### Caso 2: Instalação com helm charts
 
 Esta é a instalação indicada para quem possui uma infraestrutura já montada devido a um ambiente mais complexo ou possua algumas limitações de segurança e/ou escalabilidade, exigindo uma **customização mais completa da instalação** do CharlesCD.
 
-### Pré-requisitos 
+### Requisitos 
 
 Para realizar o processo, é necessário ter os seguintes programas: 
 
