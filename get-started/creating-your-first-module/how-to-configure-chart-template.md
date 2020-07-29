@@ -6,6 +6,10 @@ Helm Charts  is package manager that allows you to define, install and update Ku
 
 On Charles context,  [**Chart Template**](https://helm.sh/docs/chart_template_guide/getting_started/) ****is used like a file collection related to the Kubernetes configuration. 
 
+{% hint style="info" %}
+If you haven't configured your module yet, [**access here**](./)**.** It is important to remember, you have to register the URL in this module. 
+{% endhint %}
+
 ## How to configure the chart template?
 
 ### **Step 1: create a chart template directory**
