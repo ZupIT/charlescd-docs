@@ -16,7 +16,7 @@ Se você não tiver configurado o **seu módulo,** [**acesse aqui**](./). É imp
 
 ## Como configurar o chart template? 
 
-Siga os próximos passos para configurar nosso app de exemplo.
+Siga os próximos passos para configurar o app de exemplo.
 
 ### **Passo 1: Crie um diretório do chart template**
 
