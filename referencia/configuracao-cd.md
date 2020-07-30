@@ -22,8 +22,8 @@ O Charles utiliza uma arquitetura apropriada para ferramentas de Continuous Depl
 
 Para configurar, você precisa escolher entre Octopipe ou Spinnaker. Feito isso, é preciso preencher alguns campos com as autenticações que serão feitas no cluster escolhido.
 
-* [**Spinnaker**](https://www.spinnaker.io/)**,** ferramenta criada pela Netflix e que hoje é mantida por diversas empresas e a comunidade.  
-* **Octopipe**, que é uma ferramenta leve e de baixo custo e foi criada sob medida para integração com o Charles.
+* [**Spinnaker**](https://www.spinnaker.io/): ****ferramenta criada pela Netflix e que hoje é mantida por diversas empresas e a comunidade.  
+* **Octopipe**: que é uma ferramenta leve e de baixo custo e foi criada sob medida para integração com o Charles.
 
 Para cadastrar qualquer uma delas, siga os seguintes passos:
 
