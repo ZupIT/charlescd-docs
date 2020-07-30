@@ -16,6 +16,8 @@ Se você não tiver configurado o **seu módulo,** [**acesse aqui**](./). É imp
 
 ## Como configurar o chart template? 
 
+Siga os próximos passos para configurar nosso app de exemplo.
+
 ### **Passo 1: Crie um diretório do chart template**
 
 Para começar, você precisa salvar os seus templates em uma ferramenta de versionamento da sua preferência. Assim que criar um novo chart template, você precisa dar ao diretório o mesmo nome do componente ao qual ele se refere**.** 
@@ -43,6 +45,6 @@ Essas são as informações que o Charles precisa ter no templates. Vale ressalt
 {% hint style="info" %}
 Com o seu diretório configurado de acordo com a estrutura acima, vá até a pasta "circles-sample" e execute o comando  **"`helm package .`"**.  
 
-Ao final desse comando, você terá uma arquivo **tgz** com o nome de circles-samples-darwin.
+Ao final desse comando, você terá uma arquivo **tgz** com o nome de circles-samples-darwin. Nossa ferramenta de CD procura esse **tgz** para executar o template
 {% endhint %}
 
