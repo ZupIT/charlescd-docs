@@ -4,13 +4,13 @@ description: Esta seção descreve como você deve instalar o Charles no seu pro
 
 # Instalando o Charles
 
-## Requisitos
+## Pré-requisitos
 
-Antes de instalar o Charles, é importante que você confirme se os seguintes programas  estão instalados na sua máquina. Para a ferramenta funcionar, é necessário:
+Para instalar o Charles, será necessário um ambiente com os seguintes requisitos:
 
-* \*\*\*\*[**Istio**](https://istio.io/latest/docs/setup/getting-started/)\*\*\*\*
-* \*\*\*\*[**Kubernetes**](https://kubernetes.io/docs/setup/)\*\*\*\*
-* \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** se você deseja configurar as [**métricas**](../referencia/metricas/)**.**
+* [**Kubernetes**](https://kubernetes.io/docs/setup/).
+* \*\*\*\*[**Istio**](https://istio.io/latest/docs/setup/getting-started/) ****\(versão &lt;= 1.4\).
+* \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** caso ****queira utilizar [**métricas**](../referencia/metricas/)**.**
 
 ## Introdução
 
