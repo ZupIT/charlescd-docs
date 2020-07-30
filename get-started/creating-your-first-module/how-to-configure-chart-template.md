@@ -4,7 +4,7 @@
 
 Helm Charts  is package manager that allows you to define, install and update Kubernetes applications, regardless the complexity.
 
-On Charles context,  [**Chart Template**](https://helm.sh/docs/chart_template_guide/getting_started/) ****is used like a file collection related to the Kubernetes configuration. 
+On Charles context,  [**Chart Template**](https://helm.sh/docs/chart_template_guide/getting_started/) ****is used like a file collection related to the Kubernetes configuration.
 
 {% hint style="info" %}
 If you haven't configured your module yet, [**access here**](./)**.** It is important to remember, you have to register the URL in this module. 
@@ -12,9 +12,11 @@ If you haven't configured your module yet, [**access here**](./)**.** It is impo
 
 ## How to configure the chart template?
 
+Follow the next steps to try out our sample app.
+
 ### **Step 1: create a chart template directory**
 
-To start, you need to save your templates in any versioning tool you want. When you create a new chart template, you must give the directory the same name as the component as it refers to. 
+To start, you need to save your templates in any git repository you want. When you create a new chart template, you must give the directory the same name as the component as it refers to. 
 
 The structure below has the necessary templates to deploy a module that contains a component called "circles-sample", it is available here. 
 
@@ -37,8 +39,10 @@ After you have created the directory, now you have to configure it. See below wh
 This is the information Charles needs to have on the templates. It is important to remember that you can customize these templates the way you want it. 
 
 {% hint style="info" %}
-After you have configured your directory according to the structure abpve, go to the "circles-samples" folder and run the command **"`helm package .`"**. I
+After you have configured your directory according to the structure abpve, go to the "circles-samples" folder and run the command **"`helm package .`"**. 
 
-n the end of this command, you will have a **tgz** file with the circles-samples-darwin name.
+In the end of this command, you will have a **tgz** file with the circles-samples-darwin name. Our CD tool looks for this **tgz** to run the template.
 {% endhint %}
+
+
 
