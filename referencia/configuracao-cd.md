@@ -38,21 +38,21 @@ Para cadastrar qualquer uma delas, siga os seguintes passos:
 
 Preencha os seguintes campos:
 
-1. **Name:** Nome da configuração que será criada;
-2. **Namespace:** Defina o namespace que será utilizado nos deploys no cluster Kubernetes;
-3. **URL**: Insira a URL de acesso ao Spinnaker;
-4. **Git account:** Insira o nome da configuração de git criada na instalação do Spinnaker;
-5. **Kubernetes account:** Insira o nome da configuração de acesso ao cluster Kubernetes criado na instalação do Spinnaker;
+1. **Name:** nome da configuração que será criada;
+2. **Namespace:** defina o namespace que será utilizado nos deploys no cluster Kubernetes;
+3. **URL**: insira a URL de acesso ao Spinnaker;
+4. **Git account:** insira o nome da configuração de git criada na instalação do Spinnaker;
+5. **Kubernetes account:** insira o nome da configuração de acesso ao cluster Kubernetes criado na instalação do Spinnaker.
 
 ## Utilizando Octopipe
 
 Preencha os seguintes campos:
 
-1. **Name:** Nome da configuração que será criada;
-2. **Namespace:** Defina o namespace que será utilizado nos deploys no cluster Kubernetes;
-3. **Git provider**: Defina o provedor de git a ser utilizado \(**GitHub ou GitLab**\);
-4. **Git token:** Insira o token de autenticação para o seu repositório git. Este será utilizado para a obtenção dos templates Helm;
-5. Por fim, selecione um **manager** para associar à CD Configuration. As opções são: **Default**, **EKS**, **Others.**
+1. **Name:** nome da configuração que será criada;
+2. **Namespace:** defina o namespace que será utilizado nos deploys no cluster Kubernetes;
+3. **Git provider**: defina o provedor de git a ser utilizado \(**GitHub ou GitLab**\);
+4. **Git token:** insira o token de autenticação para o seu repositório git. Este será utilizado para a obtenção dos templates Helm;
+5. Selecione um **manager** para associar à CD Configuration. As opções são: **Default**, **EKS**, **Others.**
 
 ### Default
 
