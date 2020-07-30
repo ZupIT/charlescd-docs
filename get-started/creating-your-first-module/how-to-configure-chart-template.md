@@ -36,13 +36,11 @@ After you have created the directory, now you have to configure it. See below wh
 * The **Chart.yaml** file contains the descriptions as version, name, description. It is necessary to define the version as "darwin".
 * The **value.yaml** file has the values that it will be used in the templates. 
 
-This is the information Charles needs to have on the templates. It is important to remember that you can customize these templates the way you want it. 
+This information Charles needs to have on the templates. It is important to remember that you can customize these templates the way you want it. 
 
 {% hint style="info" %}
 After you have configured your directory according to the structure abpve, go to the "circles-samples" folder and run the command **"`helm package .`"**. 
 
 In the end of this command, you will have a **tgz** file with the circles-samples-darwin name. Our CD tool looks for this **tgz** to run the template.
 {% endhint %}
-
-
 
