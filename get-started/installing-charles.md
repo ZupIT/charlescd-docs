@@ -22,7 +22,7 @@ The CharlesCD installation considers these components:
 
 1. **Charles' architecture** specific modules; 
 2. **Keycloak**, used for product authentication and authorization;
-3. A **PostgreSQL database** for back-end modules \( `charles-application`, `charles-circle-matcher`, `deploy` and `villager`\) and Keycloak;
+3. A **PostgreSQL database** for backend modules \( `charles-application`, `charles-circle-matcher`, `deploy` and `villager`\) and Keycloak;
 4. A **Redis**, to be used by `charlescd-villager`
 
 ### Continuous Delivery Platform
@@ -38,9 +38,9 @@ If you want more information about how to configure Spinnaker or Octopipe, check
 
 ## Main installation cases
 
-At the first access, **regardless of the installation method**, the default admin user is **charlesadmin@admin a**nd the password is **charlesadmin.**
+At the first access, **regardless of the installation method**, the default admin user is **charlesadmin@admin** and the password is **charlesadmin.**
 
-### Case \#1: Quick Installation
+### Case \#1: Quick installation
 
 This installation is recommended for those who never used Charles before and just want a **first contact in a testing environment**, without looking for scalability or security.
 
@@ -62,11 +62,11 @@ At the end of the process, you will have inside of the namespace `charles` all t
 
 ### **How to access the application?**
 
-### **Minikube:**
+### **Minikube**
 
 On the minikube, the **load balancer** does not automatically create an **external IP,** to make this possible, follow the steps: 
 
-**Step 1**: just run the command below:
+**Step 1**: Just run the command below:
 
 ```text
 minikube tunnel
@@ -91,21 +91,21 @@ For more information on **how to change the host file,** [**access here.** ](htt
 
 If you install on a managed kubernetes, **the external ip for the nginx load balancer is created automatically**, so when all the components are ready follow the steps:
 
-Step 1: just take the external IP with the command below and add it to your hosts file.
+**Step 1:** Just take the external IP with the command below and add it to your hosts file.
 
 ```text
 kubectl get svc -n charles
 // get external IP value
 ```
 
-Step 2:  add the line below in you [OS host file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), if you want to access the browser in your device. 
+**Step 2:**  Add the line below in you [OS host file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), if you want to access the browser in your device. 
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
 ```
 
 {% hint style="info" %}
-if you want to use this installation in a productive or development environment you will probably expose the application using a DNS.
+If you want to use this installation in a productive or development environment you will probably expose the application using a DNS.
 
 After doing this, clone the single-file.yaml and change all occurrences from http://charles.info.example to &lt;your-dns&gt;, then execute the install command again.
 
@@ -116,7 +116,7 @@ After doing this, clone the single-file.yaml and change all occurrences from htt
 The purpose of this installation is only for tests. Using this for production environment is not recommended due to lack o backup, high availability, etc.
 {% endhint %}
 
-### Case \#2: installation with helm charts
+### Case \#2: Installation with helm charts
 
 This installation is recommended for those who already has an infrastructure to deal with a more complex environment or who has some limitations of security/scalability, which demands a **more complete install customization** of CharlesCD.  
 
