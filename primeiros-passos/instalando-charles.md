@@ -72,7 +72,7 @@ Há duas formas de acessar a aplicação, por meio do **Minikube** ou **Cloud pr
 
 No minikube, o **load balancer nginx não cria automaticamente um IP externo**, para tornar isso possível, siga os passos: 
 
-**Passo 1:** execute o comando abaixo: 
+**Passo 1:** Execute o comando abaixo: 
 
 ```text
 minikube tunnel
@@ -81,7 +81,7 @@ kubectl get svc -n charles
 // agora o IP externo está disponível
 ```
 
-**Passo 2:** agora que você tem um ip externo, troque o valor &lt;ip-external-charles&gt; pelo IP externo e adicione essa linha no seu arquivo de host do OS: 
+**Passo 2:** Agora que você tem um ip externo, troque o valor &lt;ip-external-charles&gt; pelo IP externo e adicione essa linha no seu arquivo de host do OS: 
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
@@ -97,14 +97,14 @@ Para mais informações de como mudar o host do seu sistema, [**acesse aqui**](h
 
 Se você instalar em um cluster de kubernetes gerenciado, **o ip externo para o load balancer nginx é criado automaticamente,** siga os passos quando todos os componentes estiverem prontos.
 
-**Passo 1:**  obtenha o IP externo com o comando:
+**Passo 1:**  Obtenha o IP externo com o comando:
 
 ```text
 kubectl get svc -n charles
 // get external IP value
 ```
 
-**Passo 2:** adicione a linha abaixo no seu arquivo de host do OS \([veja aqui como mudar o host](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)\) caso você queira acessar do browser da sua máquina:
+**Passo 2:** Adicione a linha abaixo no seu arquivo de host do OS \([veja aqui como mudar o host](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)\) caso você queira acessar do browser da sua máquina:
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
