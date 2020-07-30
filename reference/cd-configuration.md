@@ -1,23 +1,27 @@
+---
+description: 'In this section, you''ll find how to make the CD configuration'
+---
+
 # CD Configuration
 
 ## Why do you have to configure the CD? 
 
-This configuration it is necessary to point to Charles which CD tool you use to make deploys in your cluster. It is also importanto to mention, you have to provide your git repository token that contains the helm templates. 
+This configuration is necessary to point to Charles which CD tool you use to make deploys in your cluster. It is also important to mention that you have to provide your git repository token that contains the [**helm templates.** ](../get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm)\*\*\*\*
 
 At this moment, Charles is able to use Spinnaker or Octopipe. 
 
 {% hint style="info" %}
-CharlesCD is always evolving, so there's a roadmap that está em constante evolução e, por isso, está previsto no roadmap do projeto a integração com mais ferramentas de CD. 
+CharlesCD is always evolving, so there's a roadmap that is constant update, which means that we're looking for more CD tools integrations.
 {% endhint %}
 
 ## How to configure?
 
 Charles uses a proper architecture to Continuous Deployment \(CD\) and that makes it fits in the environment chosen by you. These tools are used to run the Kubernetes manifestos on a configured cluster and to make an authentication with a variety of cloud providers \(AWS, GCP, Azure\). 
 
-To configure, you have to choose between Octopipe or Spinnaker. After that, it is necessary to fill some fields with the authentication that it will be made in the chosen cluster.
+To make this configuration, you have to choose between Octopipe or Spinnaker. After that, it is necessary to fill some fields with the authentication that it will be made in the chosen cluster.
 
-* [**Spinnaker**](https://www.spinnaker.io/)**,** tool created by Netflix and it used by companies and the community.  
-* **Octopipe**, it is a light and low-cost tool that it was created just to integrate with Charles.
+* [**Spinnaker**](https://www.spinnaker.io/): ****tool created by Netflix and it used by companies and the community.  
+* **Octopipe**: it is a light and low-cost tool that it was created just to integrate with Charles.
 
 To register any of them, follow the next steps: 
 
