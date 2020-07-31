@@ -10,7 +10,9 @@ description: >-
 Após criar o seu primeiro [**módulo** ](criando-modulos/)e cadastrar as [**credenciais do seu cluster**,](definindo-workspace/configurando-cluster.md) você completou todos os passos de configuração necessários para a realização do seu primeiro deploy. Agora, é necessário criar uma [**release**](../referencia/release.md) ****e disponibilizá-la no cluster configurado.
 {% endhint %}
 
-No CharlesCD, oferecemos duas alternativas para a criação de uma release: utilizar o fluxo de um quadro de [**hipótese**](../referencia/hipotese.md) ****ou criá-la a partir de imagens docker já disponíveis no [**registry** ](definindo-workspace/docker-registry.md)configurado. 
+### Como fazer o primeiro deploy?
+
+No CharlesCD, há duas alternativas para a criação de uma release: utilizar o fluxo de um quadro de [**hipótese**](../referencia/hipotese.md) ****ou criá-la a partir de imagens docker já disponíveis no [**registry** ](definindo-workspace/docker-registry.md)configurado. 
 
 Nesta seção de passos iremos focar a primeira abordagem:
 
@@ -27,6 +29,8 @@ Nesta seção de passos iremos focar a primeira abordagem:
 Depois que você realizou o processo acima, sua release está pronta para o deploy. No exemplo abaixo, é a release em destaque: 
 
 ![](../.gitbook/assets/chrome-capture-4-.gif)
+
+### Deploy em mar aberto
 
 Agora siga os seguintes passos para o deploy em[ **mar aberto:**](../principais-conceitos.md#mar-aberto-default)\*\*\*\*
 

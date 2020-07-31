@@ -2,6 +2,8 @@
 
 Durante a configuração do seu workspace, é necessário cadastrar o Git, onde estão armazenados seus repositórios. Esse acesso é importante porque por meio dele, o Charles é capaz de **criar, excluir e mesclar ramificações** durante a utilização do board das hipóteses, e com ele também é possível **visualizar e criar releases**.
 
+### Como configurar? 
+
 Existem duas categorias de cadastros que podem ser feitas pelo workspace; GitHub e Gitlab. Para a configuração, adicione as seguintes informações:
 
 ### GitHub

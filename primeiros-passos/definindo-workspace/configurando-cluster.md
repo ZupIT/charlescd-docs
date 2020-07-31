@@ -10,7 +10,9 @@ Ao configurar seu workspace é preciso cadastrar as credenciais de acesso ao clu
 O **Octopipe** foi desenvolvido pela equipe do Charles. É mais leve, de baixo custo e consegue fazer deploys em clusters Kubernetes.
 {% endhint %}
 
-Segue abaixo o exemplo de como realizar seu deploy utilizando o _Octopipe_ no mesmo cluster de instalação:
+### Como realizar seu deploy?
+
+Veja abaixo o exemplo de como realizar seu deploy utilizando o _Octopipe_ no mesmo cluster de instalação:
 
 1. Clique em **Add CD Configuration**;
 2. Selecione a opção **Octopipe.**

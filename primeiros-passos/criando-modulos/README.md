@@ -10,7 +10,9 @@ Depois de criar e configurar o seu workspace, agora é necessário adicionar os 
 Um **módulo** é a sua aplicação que está armazenada em um repositório do ****[**Git cadastrado anteriormente**.](../definindo-workspace/github.md)
 {% endhint %}
 
-Para adicioná-los, acesse o menu **Modules** __no **workspace** desejado, e __siga os seguintes passos:
+### Como adicionar os módulos? 
+
+Para adicionar os módulos, acesse o menu **Modules** __no **workspace** desejado, e __siga os seguintes passos:
 
 * **Nome**: o nome deverá ser a junção da organização e a do módulo, como está no git. Por exemplo: `ZupIt/charlescd`.
 * **Git URL**: informe a URL do seu repositório. Por exemplo: [https://github.com](https://github.com/ZupIT/charlescd).
@@ -26,11 +28,9 @@ Se seu repositório tem várias aplicações, cadastre-as como componentes e inf
 Para mais informações sobre a configuração do repositório do helm, [**acesse aqui.**](configurando-o-chart-template.md)\*\*\*\*
 {% endhint %}
 
-## Componentes 
+## O que são componentes?
 
-{% hint style="info" %}
 Componentes são abstrações das aplicações. Se dentro do seu repositório há múltiplas aplicações, cada componente corresponderá a uma delas.
-{% endhint %}
 
 ### Métricas de saúde
 
