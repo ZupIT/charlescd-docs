@@ -6,6 +6,8 @@ The workspace allows you to segment CharlesCD's use in your team, defining **per
 You need only one installation, and the teams will be able to use Charles with different configurations, or you may create a workspace to represent different development environments, such as staging, production, etc.
 {% endhint %}
 
+### Workspace configuration
+
 Each workspace has the following configuration:
 
 * Access control and **user groups permissions**;

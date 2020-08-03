@@ -8,6 +8,8 @@ It is necessary to register cluster [**Kubernetes**](https://kubernetes.io) cred
 
 See below the example on how to perform your deploy using Octopipe in the same installation cluster:
 
+### How to make your deploy?
+
 Segue abaixo o exemplo de como realizar seu deploy utilizando o _Octopipe_ no mesmo cluster de instalação:
 
 1. Click on **Add CD Configuration**;

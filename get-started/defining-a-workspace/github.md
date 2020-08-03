@@ -2,6 +2,8 @@
 
 While you are configuring your workspace, you need to register on Git, to grant access to your repositories. This access is important because Charles will be able to create, delete and merge branches during the hypothesis board use, and it is also possible to view and create releases.
 
+### How to configure? 
+
 There are two register categories: GitHub and GitLab. To configure it, add the following information:
 
 ### **GitHub**

@@ -1,6 +1,6 @@
 # Installing Charles
 
-## Requisites 
+## Requirements
 
 To install Charles it will be necessary an environment with the following requisites: 
 
