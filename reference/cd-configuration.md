@@ -44,6 +44,8 @@ Fill the following fields:
 
 ## Using Octopipe
 
+Fill the following fields:
+
 1. **Name:** configuration name that it will be created; 
 2. **Namespace:** defines the namespace that will be used on Kubernetes cluster deploys; 
 3. **Git provider**: defines the git provider to be used \(**GitHub** or **GitLab**\);
