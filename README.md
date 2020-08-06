@@ -6,42 +6,75 @@ description: >-
 
 # Overview
 
-## O que é o Charles?
+## Por que configurar o CD? 
 
-O Charles é uma ferramenta open source que realiza deploys de forma ágil, contínua e segura, permitindo que as equipes de desenvolvimento realizem simultaneamente validações de hipóteses com grupos específicos de usuários. 
+Essa configuração é necessária para você indicar ao Charles qual é a ferramenta de CD que você utiliza para fazer os deploys no seu cluster. Outro ponto importante é que você deve fornecer o token do seu repositório git que contém os templates do helm. 
 
-{% hint style="warning" %}
-O produto traz um conceito pioneiro no mercado e na comunidade: **deploys em círculos de usuários em clusters de Kubernetes.** 
+Atualmente, o Charles está habilitado para usar **Spinnaker** ou **Octopipe**.
+
+{% hint style="info" %}
+O CharlesCD está em constante evolução e, por isso, está previsto no roadmap do projeto a integração com mais ferramentas de CD. 
 {% endhint %}
 
-Neste modelo de deploy, é possível **segmentar seus clientes através de características específicas** e, ao mesmo tempo, submeter diversas versões de uma mesma aplicação para teste com os usuários dos círculos. 
+## Como configurar?
 
-## Como nasceu o produto?
+O Charles utiliza uma arquitetura apropriada para ferramentas de Continuous Deployment \(CD\) e isso possibilita que ele se encaixe no ecossistema escolhido por você. Estas ferramentas são utilizadas para realizar a execução dos manifestos Kubernetes no cluster configurado e para fazer a autenticação com diversos provedores de cloud \(AWS, GCP, Azure\).
 
-O Charles surgiu da necessidade de oferecer para a comunidade uma solução mais eficaz no trabalho de fazer deploys e testar hipóteses simultaneamente, permitindo mais rapidez na identificação de erros e execução de possíveis soluções para resolver os bugs. 
+Para configurar, você precisa escolher entre Octopipe ou Spinnaker. Feito isso, é preciso preencher alguns campos com as autenticações que serão feitas no cluster escolhido.
 
-O conceito por trás da ferramenta remete à teoria proposta pelo biólogo _Charles Darwin_ \(1809-1882\), ou seja, a de que a evolução se dá pela adaptação a um novo ambiente. No caso do desenvolvimento, essa evolução se dá através de constantes melhorias nas aplicações ao construir e testar hipóteses de maneira a implantar as releases mais precisas e eficazes. 
+* [**Spinnaker**](https://www.spinnaker.io/): ****ferramenta criada pela Netflix e que hoje é mantida por diversas empresas e a comunidade.  
+* **Octopipe**: que é uma ferramenta leve e de baixo custo e foi criada sob medida para integração com o Charles.
 
-Por esse motivo, consideramos que o Charles é a aplicação do _darwinismo_ dentro do universo de desenvolvimento e programação.
+Para cadastrar qualquer uma delas, siga os seguintes passos:
 
-## O que o Charles faz?
+1. Na tela inicial do Charles, selecione **Settings** no canto esquerdo inferior;
+2. Clique em **Credentials**;
+3. Clique em **Add CD Configuration**;
+4. Selecione as opções **Octopipe** ou **Spinnaker**, dependendo da sua preferência.
 
-A metodologia implementada pelo Charles traz várias vantagens, como:
+![Processo inicial de cadastro de configura&#xE7;&#xF5;es de CD](.gitbook/assets/cd-configuration-2-1%20%281%29.gif)
 
-* simples segmentação de usuários com base em seu perfil ou até mesmo dados demográficos;
-* criação de estratégias de implantação de maneira mais fácil e sofisticada utilizando os círculos;
-* fácil gerenciamento de versões em caso de múltiplas releases em paralelo no ambiente produtivo;
-* monitoramento dos impactos de cada versão através de métricas definidas durante a criação da implantação.
+## Utilizando Spinnaker
 
-## Arquitetura do sistema
+Preencha os seguintes campos:
 
-A plataforma foi construída utilizando a abordagem de microsserviços e possui os seguintes módulos:
+1. **Name:** nome da configuração que será criada;
+2. **Namespace:** defina o namespace que será utilizado nos deploys no cluster Kubernetes;
+3. **URL**: insira a URL de acesso ao Spinnaker;
+4. **Git account:** insira o nome da configuração de git criada na ****[**instalação do Spinnaker**](https://spinnaker.io/setup/artifacts/github/); Nesse caso, de acordo com a documentação é a propriedade `ARTIFACT_ACCOUNT_NAME`.
+5. **Kubernetes account:** insira o nome da configuração de acesso ao cluster Kubernetes criado na instalação do Spinnaker.
 
-![](.gitbook/assets/arquitetura-charles-nova.png)
+## Utilizando Octopipe
 
-* `charlescd-ui:` responsável por prover uma interface de fácil usabilidade para todas as features fornecida pelo CharlesCD, no intuito de simplificar testes de hipóteses e _circle deployment_.
+Preencha os seguintes campos:
 
-* `charlescd-moove:` é um serviço backend que orquestra os testes de hipóteses de seus produtos e o pipeline de entrega até atingir seus círculos, facilitando a ponte entre **Butler**, **Villager** e **Circle Matcher**.  
-* `charlescd-butler:` responsável por orquestrar e gerenciar as releases e deploys realizados. 
-* `charlescd-circle-matcher:`gerencia todos os círculos criados, além de indicar a qual círculo um usuário pertence, com base em um conjunto de características.
+1. **Name:** nome da configuração que será criada;
+2. **Namespace:** defina o namespace que será utilizado nos deploys no cluster Kubernetes;
+3. **Git provider**: defina o provedor de git a ser utilizado \(**GitHub ou GitLab**\);
+4. **Git token:** insira o token de autenticação para o seu repositório git onde está armazenado seus templates Helm. Caso o seu Git Provider seja **GitHub**, é necessário a permissão "_repo_". Caso contrário, configure no GitLab os acessos: "_api_" e "_read\_repository_".
+5. Selecione um **manager** para associar à CD Configuration. As opções são: **Default**, **EKS**, **Others.**
+
+### Default
+
+Esta opção deve ser utilizada quando o cluster de destino das aplicações é o mesmo em que o Octopipe está instalado. Desta forma, não é necessário criar nenhum mecanismo extra de autenticação.
+
+### EKS
+
+Para clusters gerenciados pelo EKS \(Elastic Kubernetes Service\), basta selecionar a opção e inserir os seguintes campos:
+
+1. **AWS SID**: Statement ID;
+2. **AWS Secret**: Chave de acesso ao cluster EKS;
+3. **AWS Region**: Região onde o cluster EKS está instalado;
+4. **AWS Cluster Name**: Nome do cluster EKS.
+
+### Others
+
+Para outros provedores de cloud, utilizamos uma abordagem mais simples em que apenas alguns campos do _kubeconfig_ devem ser utilizados. São eles:
+
+1. **Host**: Url de acesso ao cluster;
+2. **Client Certificate**: Campo "client-certificate-data" do _kubeconfig_;
+3. **Client Key**: Campo "client-key-data" do _kubeconfig_;
+4. **CA Data**: Campo "certificate-authority-data" do _kubeconfig._
+
+Todas as informações providenciadas acima são criptografadas pelo Charles. Uma vez que este processo foi feito, é possível associar as configurações em módulos e, em seguida, realizar o deploy de versões deles.
 
