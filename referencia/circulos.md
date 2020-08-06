@@ -38,7 +38,7 @@ As segmentações possuem os seguintes campos:
 * **Condição**: é a implicação lógica que condicionará sua chave e seu valor.
 * **Valor**: são os valores existentes na sua base que poderão ser utilizados para compor a lógica de segmentação.
 
-Os campos **chave** e **valor** são estabelecidos com base nas informações que serão enviadas na requisição que [**identifica os círculos**](circle-matcher.md#identificando-circulos-atraves-do-charlescd) ****que o seu usuário pertence. Por exemplo, vamos considerar que o seguinte payload represente as informações que você possui do seu cliente:
+Os campos **chave** e **valor** são estabelecidos com base nas informações que serão enviadas na requisição que [**identifica os círculos**](circle-matcher.md#identificando-circulos-atraves-do-charlescd) ****que o seu usuário pertence. Por exemplo, considere que o seguinte payload represente as informações que você possui do seu cliente:
 
 ```text
 {
@@ -51,15 +51,15 @@ Os campos **chave** e **valor** são estabelecidos com base nas informações qu
 }
 ```
 
-Temos as seguintes chaves que poderiam ser utilizadas na construção de uma lógica na segmentação: **id**, **name**, **state**, **city**, **age** e **groupId**. 
+As seguintes chaves poderiam ser utilizadas na construção de uma lógica na segmentação: **id**, **name**, **state**, **city**, **age** e **groupId**. 
 
 {% hint style="info" %}
-É importante lembrar do seu payload, uma vez que as chaves devem ser exatamente iguais.
+É importante lembrar que o seu payload e as chaves devem ser exatamente iguais.
 {% endhint %}
 
-Veja abaixo um exemplo de como criar o círculo: 
+Veja abaixo um exemplo de como criar um círculo: 
 
-![](../.gitbook/assets/chrome-capture-7-.gif)
+![Como criar um c&#xED;rculo](../.gitbook/assets/chrome-capture-7-.gif)
 
 {% hint style="info" %}
 Uma **grande vantagem de utilizar as segmentações** é a possibilidade fazer combinações lógicas entre vários atributos para criar diferentes categorias de públicos e, dessa forma, utilizá-los nos testes das hipóteses.   
@@ -81,19 +81,19 @@ Essas características podem ser definidas com base nas lógicas de:
 * Higher or equal to
 * Starts With
 
-Vamos a alguns exemplos:
+Veja alguns exemplos:
 
-![](../.gitbook/assets/image%20%285%29.png)
+![Exemplo de segmenta&#xE7;&#xE3;o manual](../.gitbook/assets/image%20%285%29.png)
 
 ### **Segmentação por importação de CSV**
 
 Nessa modalidade, é utilizada apenas a primeira coluna do CSV para criar as regras. Sendo assim, a primeira linha da primeira coluna deve conter o nome da chave e a mesma deve ser informada no campo _key._
 
-![](../.gitbook/assets/chrome-capture-5-.jpg)
+![Exemplo de importa&#xE7;&#xE3;o por CSV ](../.gitbook/assets/chrome-capture-5-.jpg)
 
 Depois de ter feito o upload do arquivo e salvado as configurações, aparecerá um overview demonstrando como está sua segmentação:
 
-![](../.gitbook/assets/image%20%284%29.png)
+![Overview](../.gitbook/assets/image%20%284%29.png)
 
 Essa segmentação permite, por exemplo, extrair de uma base externa de IDs dos clientes um perfil específico e importá-los direto na plataforma do Charles.
 
