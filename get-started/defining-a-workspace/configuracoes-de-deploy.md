@@ -18,7 +18,7 @@ After these steps, fill out the next fields:
 1. **Name:** configuration name that will be created; 
 2. **Namespace:** Define the namespace that will be used on Kubernetes cluster deploys; 
 3. **Git provider**: Define the git provider \(**GitHub** or **GitLab**\);
-4. **Git token:**  Insert the authentication token for your git repository. This will be used to get **Helm** templates.  
+4. **Git token:**  insert an authentication token that has access to the git repository where your Helm templates are stored \(they will be used during the deployment of your [**application**](../creating-your-first-module.md)\). If your Git Provider is **GitHub**, "_repo_" permission is required. Otherwise, configure the accesses in **GitLab**: "_api_" and "_read\_repository_".
 5. Select the **Default** option.
 
 After finish your configuration, you can associate it with a module later. For more information, check the [**CD Configuration**](https://docs.charlescd.io/reference/cd-configuration) page. 
