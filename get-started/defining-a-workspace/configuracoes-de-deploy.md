@@ -6,11 +6,9 @@ It is necessary to register cluster [**Kubernetes**](https://kubernetes.io) cred
 **Octopipe** was developed by Charles' team. It is light, low cost and it is able to make cluster Kubernetes deploys.
 {% endhint %}
 
-See below the example on how to perform your deploy using Octopipe in the same installation cluster:
-
 ### How to make your deploy?
 
-Segue abaixo o exemplo de como realizar seu deploy utilizando o _Octopipe_ no mesmo cluster de instalação:
+See below the example on how to perform your deploy using Octopipe in the same installation cluster:
 
 1. Click on **Add CD Configuration**;
 2. Select the option **Octopipe.**

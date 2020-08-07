@@ -10,7 +10,7 @@ One good practice is to always make this identification when a user logs in the 
 
 Once you start using the interface, it's possible to notice that there are two ways to perform the circle identification. For that, access the **Circles** menu inside a **workspace** and select the icon indicated below:
 
-![Identifica&#xE7;&#xE3;o do &#xED;cone do Circle Matcher](../.gitbook/assets/chrome-capture%20%282%29.jpg)
+![Circle Matcher identification icon ](../.gitbook/assets/chrome-capture%20%282%29.jpg)
 
 The two ways to make this validation are:
 
