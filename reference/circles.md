@@ -88,7 +88,7 @@ After you have finished the file upload and saved the configuration, an overview
 
 ![Overview of CVS importation](../.gitbook/assets/image%20%284%29.png)
 
-This way allows you to extract from an external client’s IDs base, a specific profile and import them directly on Charles.
+This way allows you to extract from an external client’s IDs base, a specific profile and import them directly on Charles. When a .csv file is imported and if it contains some empty lines, it will occur an importation error, because empty segments are not allowed.
 
 {% hint style="warning" %}
 OR is the only logic operator supported on this segmentation.
