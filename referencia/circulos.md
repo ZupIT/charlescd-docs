@@ -51,7 +51,7 @@ Os campos **chave** e **valor** são estabelecidos com base nas informações qu
 }
 ```
 
-As seguintes chaves poderiam ser utilizadas na construção de uma lógica na segmentação: **id**, **name**, **state**, **city**, **age** e **groupId**. 
+As chaves utilizadas podem ser qualquer uma enviada no payload da sua aplicação ao circle-matcher do Charles, como: **id**, **name**, **state**, **city**, **age** e **groupId**. 
 
 {% hint style="info" %}
 É importante lembrar que o seu payload e as chaves devem ser exatamente iguais.
