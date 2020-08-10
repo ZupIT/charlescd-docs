@@ -45,7 +45,7 @@ The key and value fields are established based on the information that will be s
 }
 ```
 
-The keys that could be used in the logic definition of the segmentation are:  **id**, **name**, **state**, **city**, **age** e **groupId**. 
+The keys used could be any of the ones sent in your application payload to the Charles' circle-matcher, such as: **id**, **name**, **state**, **city**, **age** e **groupId**. 
 
 {% hint style="info" %}
 It is important to remember that your payload and your keys must be the same. 
