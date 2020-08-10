@@ -37,7 +37,7 @@ To register any of them, follow the next steps:
 Fill the following fields:
 
 1. **Name:** configuration **name** that will be created;
-2. **Namespace:** define the namespace that it will be used on Kubernetes cluster deploys;
+2. **Namespace:** define the namespace that it will be used on Kubernetes cluster deploys. You have to create your namespace, once Charles does not do it;
 3. **URL:** insert the access URL to the Spinnaker;
 4. **Git account:** Insert a git configuration name created on [**Spinnaker's installation**](https://spinnaker.io/setup/artifacts/github/). In this case, it's the property `ARTIFACT_ACCOUNT_NAME` configured according to the **Spinnaker** documentation. 
 5. **Kubernetes account:** insert the access configuration name to Kubernetes' cluster, created on the Spinnaker installation. 
@@ -47,7 +47,7 @@ Fill the following fields:
 Fill the following fields:
 
 1. **Name:** configuration name that it will be created; 
-2. **Namespace:** defines the namespace that will be used on Kubernetes cluster deploys; 
+2. **Namespace:** defines the namespace that will be used on Kubernetes cluster deploys. You have to create your namespace, once Charles does not do it;
 3. **Git provider**: defines the git provider to be used \(**GitHub** or **GitLab**\);
 4. **Git token:** insert an authentication token that has access to the git repository where your [**Helm templates**](../get-started/creating-your-first-module/how-to-configure-chart-template.md) are stored \(they will be used during the deployment of your [**application**](../get-started/creating-your-first-module/)\). If your Git Provider is **GitHub**, "_repo_" permission is required. Otherwise, configure the accesses in **GitLab**: "_api_" and "_read\_repository_".
 5. Select a **manager** to associate with the CD configuration. The options are **Default**, **EKS** and **Others.**
