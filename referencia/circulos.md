@@ -87,7 +87,7 @@ Veja alguns exemplos:
 
 ### **Segmentação por importação de CSV**
 
-Nessa modalidade, é utilizada apenas a primeira coluna do CSV para criar as regras. Sendo assim, a primeira linha da primeira coluna deve conter o nome da chave e a mesma deve ser informada no campo _key._
+Nessa modalidade, é utilizada apenas a primeira coluna do CSV para criar as regras. Sendo assim, a primeira linha da primeira coluna deve conter o nome da chave e a mesma deve ser informada no campo _key:_
 
 ![Exemplo de importa&#xE7;&#xE3;o por CSV ](../.gitbook/assets/chrome-capture-5-.jpg)
 
@@ -95,7 +95,7 @@ Depois de ter feito o upload do arquivo e salvado as configurações, aparecerá
 
 ![Overview](../.gitbook/assets/image%20%284%29.png)
 
-Essa segmentação permite, por exemplo, extrair de uma base externa de IDs dos clientes um perfil específico e importá-los direto na plataforma do Charles.
+Essa segmentação permite, por exemplo, extrair de uma base externa de IDs dos clientes um perfil específico e importá-los direto na plataforma do Charles. Quando um arquivo .csv é importado e se ele conter alguma linha em branco, ocorrerá um erro da importação, pois não é permitido a criação de segmentos dessa forma.
 
 {% hint style="warning" %}
 O único operador lógico suportado nesta segmentação é o OR \(Ou\).
