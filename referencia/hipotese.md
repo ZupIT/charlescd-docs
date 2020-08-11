@@ -16,8 +16,8 @@ Ao cadastrar uma hipótese dentro do Charles, a sua requisição será encaminha
 
 Esses cartões podem ser de dois tipos:
 
-1. **Action:** são os cartões que envolvem codificação, como a implementação de novas funcionalidades \(features\) ou ajustes em partes do projeto. 
-2. **Feature:** são os cartões que indicam uma ação a ser feita, como por exemplo, realizar um teste de campo com os usuários. 
+1. **Feature:** são os cartões que envolvem codificação, como a implementação de novas funcionalidades \(features\) ou ajustes em partes do projeto. 
+2. **Action:** são os cartões que indicam uma ação a ser feita, como por exemplo, realizar um teste de campo com os usuários. 
 
 ![](../.gitbook/assets/ref-hipoteses2%20%281%29.png)
 
