@@ -16,8 +16,8 @@ When you register a hypothesis on Charles, your request will be forwarded to `ch
 
 There are two types of cards:
 
-1. **Action:** cards that involve coding like the new features implementation or fixes on the project. 
-2. **Feature:** cards that indicate an action to be done, for example, perform a field test with the users. 
+1. **Feature:** cards that involve coding like the new features implementation or fixes on the project. 
+2. **Action:** cards that indicate an action to be done, for example, perform a field test with the users. 
 
 ![](../.gitbook/assets/ref-hipoteses2%20%282%29.png)
 
