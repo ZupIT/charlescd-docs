@@ -28,6 +28,10 @@
   * [Setting up your metrics](reference/metrics/setting-your-metrics.md)
   * [Registering a metrics provider](reference/metrics/register-metrics-provider.md)
 
+## Guides
+
+* [Use Cases](guides/use-cases.md)
+
 ## FAQ
 
 * [About Charles](faq/about-charles.md)
