@@ -22,7 +22,7 @@ The structure below has the necessary templates to deploy a module that contains
 
 The image below shows how you directory must look like: 
 
-![ Chart template directory of circle-sample](../../.gitbook/assets/screen-shot-2020-07-24-at-16.17.05.png)
+![ Chart template directory of circle-sample](../../.gitbook/assets/screen-shot-2020-08-13-at-09.16.04.png)
 
 ### Step 2: configure the directory items 
 
@@ -34,7 +34,7 @@ After you have created the directory, now you have to configure it. See below wh
   * **service.yaml:** describes the [**service**](https://kubernetes.io/docs/concepts/services-networking/service/) ****structure. ****
 
 * The **Chart.yaml** file contains the descriptions as version, name, description. It is necessary to define the version as "darwin".
-* The **value.yaml** file has the values that it will be used in the templates. 
+* The **circles-sample.yaml** file has the values that it will be used in the templates. 
 
 This information Charles needs to have on the templates. It is important to remember that you can customize these templates the way you want it. 
 
