@@ -26,7 +26,7 @@ Para começar, você precisa salvar os seus templates em uma ferramenta de versi
 
 A imagem demonstra como seu diretório deve ficar:  
 
-![ Diret&#xF3;rio de chart template do circle-sample](../../.gitbook/assets/screen-shot-2020-07-24-at-16.17.05.png)
+![ Diret&#xF3;rio de chart template do circle-sample](../../.gitbook/assets/screen-shot-2020-08-13-at-09.16.04.png)
 
 ### Passo 2: Configure os itens do diretório 
 
@@ -38,7 +38,7 @@ Depois de criado o diretório, você deve configurá-lo. Veja quais arquivos sã
   * **service.yaml:** descreve a estrutura do [**service**](https://kubernetes.io/docs/concepts/services-networking/service/). 
 
 * O arquivo **Chart.yaml** contém uma descrições como version, name, description. É necessário definir a version como "darwin". 
-* O arquivo **value.yaml** possui os valores que serão utilizados nos nossos templates. 
+* O arquivo **circles-sample.yaml** possui os valores que serão utilizados nos nossos templates. 
 
 Essas são as informações que o Charles precisa ter no templates. Vale ressaltar que você pode incrementar esses templates da forma como você preferir.
 

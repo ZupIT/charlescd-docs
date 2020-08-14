@@ -28,6 +28,10 @@
   * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
   * [Cadastrando o provedor de métricas](referencia/metricas/provedor-metrica.md)
 
+## GUIDES
+
+* [Caso de Uso](guides/use-case.md)
+
 ## FAQ
 
 * [Sobre o Charles](faq/sobre-charles.md)
