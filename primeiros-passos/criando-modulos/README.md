@@ -16,6 +16,11 @@ Para adicionar os módulos, acesse o menu **Modules** __no **workspace** desejad
 
 * **Nome**: o nome deverá ser a junção da organização e a do módulo, como está no git. Por exemplo: `ZupIt/charlescd`.
 * **Git URL**: informe a URL do seu repositório. Por exemplo: [https://github.com](https://github.com/ZupIT/charlescd).
+* **Helm repository URL:** informe o repositório onde o está o template do helm da sua aplicação.
+
+{% hint style="info" %}
+Para mais informações sobre a configuração do repositório do helm, [**acesse aqui.**](configurando-o-chart-template.md)\*\*\*\*
+{% endhint %}
 
 Se seu repositório tem várias aplicações, cadastre-as como componentes e informe: 
 
@@ -23,10 +28,6 @@ Se seu repositório tem várias aplicações, cadastre-as como componentes e inf
 * **Métricas**: latência \(ms\) e erro HTTP \(%\). Em ambos os casos, deve-se informar um valor de risco que você gostaria de ser alertado caso seu componente alcançasse ou ultrapassasse.
 
 ![Tela de cria&#xE7;&#xE3;o de m&#xF3;dulo](../../.gitbook/assets/criac-a-o-de-modulo%20%281%29.png)
-
-{% hint style="warning" %}
-Para mais informações sobre a configuração do repositório do helm, [**acesse aqui.**](configurando-o-chart-template.md)\*\*\*\*
-{% endhint %}
 
 ## O que são componentes?
 

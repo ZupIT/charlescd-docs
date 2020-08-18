@@ -28,10 +28,21 @@ Por esse motivo, consideramos que o Charles é a aplicação do _darwinismo_ den
 
 A metodologia implementada pelo Charles traz várias vantagens, como:
 
-* simples segmentação de usuários com base em seu perfil ou até mesmo dados demográficos;
-* criação de estratégias de implantação de maneira mais fácil e sofisticada utilizando os círculos;
-* fácil gerenciamento de versões em caso de múltiplas releases em paralelo no ambiente produtivo;
-* monitoramento dos impactos de cada versão através de métricas definidas durante a criação da implantação.
+* Simples segmentação de usuários com base em seu perfil ou até mesmo dados demográficos;
+* Criação de estratégias de implantação de maneira mais fácil e sofisticada utilizando os círculos;
+* Fácil gerenciamento de versões em caso de múltiplas releases em paralelo no ambiente produtivo;
+* Monitoramento dos impactos de cada versão através de métricas definidas durante a criação da implantação.
+
+## Requisitos
+
+Antes de instalar ou usar o Charles, é preciso cumprir alguns pré-requisitos:
+
+1. **Instalação:** veja o que é necessário [**aqui**](primeiros-passos/instalando-charles.md#pre-requisitos).
+2. **Uso:** para o funcionamento da ferramenta é necessário ter os programas abaixo:
+
+* \*\*\*\*[**Registry**](primeiros-passos/definindo-workspace/docker-registry.md) \(AWS ou Azure\).
+* **Fluxo de CI** definido. Por meio dele, o build da aplicação é feito e a imagem é enviada para o registry.
+* \*\*\*\*[**Helm template**](primeiros-passos/criando-modulos/configurando-o-chart-template.md#o-que-e-o-helm).
 
 ## Arquitetura do sistema
 

@@ -12,6 +12,10 @@ Para instalar o Charles, será necessário um ambiente com os seguintes requisit
 * \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(versão &lt;= 1.4 e [_**sidecar injector habilitado**_](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) no namespace de deploy das suas aplicações\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** caso ****queira utilizar [**métricas**](../referencia/metricas/)**.**
 
+### Recursos mínimos
+
+* O Charles utiliza 2GB de RAM com o **Microk8s.**
+
 ## Introdução
 
 O processo de instalação foi criado considerando alguns casos de uso. Logo, para cada um deles, você encontrará um tutorial específico.  Mas, antes veja abaixo quais componentes e as plataformas que o Charles suporta. 
@@ -29,6 +33,8 @@ A instalação do CharlesCD consiste nos seguintes **componentes**:
 
 3. Um **banco PostgreSQL** que servirá os módulos de back-end \(`charlescd-moove`, `charlescd-butler` e `charlescd-villager`\) e o Keycloak. 
 4. Um **Redis** para uso do `charlescd-villager`.
+
+    5. **Octopipe** já é a plataforma padrão do Charles para CD e precisa do **mongoDB**. Se você      desejar, pode ser desabilitado. 
 
 ### Plataforma de Continuous Delivery 
 
