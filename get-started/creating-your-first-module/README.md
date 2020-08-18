@@ -10,7 +10,7 @@ To add it, access the **Modules** menu on your workspace and set the following p
 
 * **Name**: this field should be the junction of the organization and the module names, as it is in your git. For example: `ZupIt/charlescd`.
 * **Git URL**: your repository's URL. For example: [https://github.com/ZupIT/charlescd](https://github.com/ZupIT/charlescd).
-* **Helm repository URL:** informe o repositório onde o está o template do helm da sua aplicação.
+* **Helm repository URL:**  your repository where the helm template of your application it is in. 
 
 {% hint style="info" %}
 For more information about Helm Repository, [**access here**](how-to-configure-chart-template.md). 
