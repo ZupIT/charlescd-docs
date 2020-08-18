@@ -40,11 +40,11 @@ The methodology implemented by Charles brings a lot of advantages such as:
 Before you install or use Charles, it is necessary to fulfill some requirements: 
 
 1. **Installation:** see what you need ****[**here**](get-started/installing-charles.md#requirements).
-2. **Use:** to make the tool work you will need: ****
+2. To make the tool work properly, you will need: ****
 
-* \*\*\*\*[**Registry**](get-started/defining-a-workspace/docker-registry.md) \(AWS ou Azure\).
-* A defined **CI flow.**  Through it, the application build it is done and the image is sent to the registry. 
-* \*\*\*\*[**Helm template**.](get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm)
+* You need to have a [**Registry**](get-started/defining-a-workspace/docker-registry.md)  where the images of your application are stored.
+* Define a CI flow. It is expected that this flow is active through a trigger, for example, a branch name that has a  defined prefix. Besides that, the pipeline must make the image construction of the application and sent it to the registry mentioned before. 
+* Prepare the [**Helm template**](get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm) ****of your applications. This is important, a configured CD through Charles will need this information to make the deploy of your application. 
 
 ## **System architecture**
 
