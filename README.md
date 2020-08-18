@@ -35,6 +35,17 @@ The methodology implemented by Charles brings a lot of advantages such as:
 
   \*\*\*\*
 
+## Requirements
+
+Before you install or use Charles, it is necessary to fulfill some requirements: 
+
+1. **Installation:** see what you need ****[**here**](get-started/installing-charles.md#requirements).
+2. **Use:** to make the tool work you will need: ****
+
+* \*\*\*\*[**Registry**](get-started/defining-a-workspace/docker-registry.md) \(AWS ou Azure\).
+* A defined **CI flow.**  Through it, the application build it is done and the image is sent to the registry. 
+* \*\*\*\*[**Helm template**.](get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm)
+
 ## **System architecture**
 
 The platform was built using a microservice approach, and it has the following modules:

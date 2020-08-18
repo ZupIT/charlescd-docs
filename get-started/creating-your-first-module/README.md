@@ -10,6 +10,11 @@ To add it, access the **Modules** menu on your workspace and set the following p
 
 * **Name**: this field should be the junction of the organization and the module names, as it is in your git. For example: `ZupIt/charlescd`.
 * **Git URL**: your repository's URL. For example: [https://github.com/ZupIT/charlescd](https://github.com/ZupIT/charlescd).
+* **Helm repository URL:** informe o repositório onde o está o template do helm da sua aplicação.
+
+{% hint style="info" %}
+For more information about Helm Repository, [**access here**](how-to-configure-chart-template.md). 
+{% endhint %}
 
 If you have a lot of applications on your repository, register them with the components and add the following:
 
@@ -19,10 +24,6 @@ If you have a lot of applications on your repository, register them with the com
 In both cases, you need to inform the minimum risk value you'd like to be alerted.
 
 ![Creating a module screen](../../.gitbook/assets/criac-a-o-de-modulo%20%282%29%20%281%29.png)
-
-{% hint style="warning" %}
-For more information about Helm Repository, [**access here**](how-to-configure-chart-template.md). 
-{% endhint %}
 
 ## Components
 
