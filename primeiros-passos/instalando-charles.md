@@ -20,11 +20,11 @@ Se for necessário instalar o CharlesCD com algumas customizações, sugerimos c
 
 A instalação do CharlesCD consiste nos seguintes **componentes**:
 
-1. Módulos específicos da[ **arquitetura do Charles.**](../#arquitetura-do-sistema) 
+1. Módulos específicos da[ **arquitetura do Charles**](../#arquitetura-do-sistema)**.**
 2. **Keycloak**, usado para autenticação e autorização no projeto.
-
-3. Um **banco PostgreSQL** que servirá os módulos de back-end \(`charlescd-moove`, `charlescd-butler` e `charlescd-villager`\) e o Keycloak. 
-4. Um **Redis** para uso do `charlescd-villager`.
+3. Um **banco PostgreSQL** que servirá os módulos de backend \(`moove`, `butler` e `villager`\) e o Keycloak.
+4. Um **Redis** para uso do `villager`.
+5. **Octopipe** está na instalação padrão do Charles como uma opção de CD, além de acompanhar um **mongoDB** para ****uso do mesmo. Entretanto, essa ferramenta é opcional, é possível desabilitá-la. 
 
 ### Plataforma de Continuous Delivery 
 
