@@ -8,6 +8,14 @@ To install Charles it will be necessary an environment with the following requis
 * \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version&lt;= 1.4\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** in case you want to use ****[**metrics**](../reference/metrics/)**.** 
 
+### Resources 
+
+The minimum resources considering only the installation of Charles are: 
+
+* **Microk8s**: 2GB of RAM; 
+* **Minikube**: 4GB of RAM. 
+* **Cluster**: 2GB of RAM.
+
 ## Introduction
 
 The installing process was created considering some use cases, and each of them have its own specific tutorial.  But, before this, check out below which components and platforms Charles supports.
