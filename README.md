@@ -6,8 +6,6 @@ description: >-
 
 # Overview
 
-## 
-
 ## O que é o Charles?
 
 O Charles é uma ferramenta open source que realiza deploys de forma ágil, contínua e segura, permitindo que as equipes de desenvolvimento realizem simultaneamente validações de hipóteses com grupos específicos de usuários. 
