@@ -14,7 +14,11 @@ Para instalar o Charles, será necessário um ambiente com os seguintes requisit
 
 ### Recursos mínimos
 
-* O Charles utiliza 2GB de RAM com o **Microk8s.**
+Os recursos mínimos considerando apenas a instalação do Charles são:
+
+* **Microk8s**: 2GB de RAM; 
+* **Minikube**: 4GB de RAM;
+* **Cluster**: 2GB de RAM.
 
 ## Introdução
 
