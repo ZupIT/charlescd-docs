@@ -6,6 +6,8 @@ description: >-
 
 # Overview
 
+## 
+
 ## What is Charles?
 
 CharlesCD is an open source tool that makes deployments more agile, continuous and safe, which allows development teams to perform hypothesis validations with a specific group of users, simultaneously.
@@ -35,11 +37,22 @@ The methodology implemented by Charles brings a lot of advantages such as:
 
   \*\*\*\*
 
+## Requirements
+
+In order to user Charles, it is necessary to fulfill some requirements: 
+
+1. **Installation:** see what you need ****[**here**](get-started/installing-charles.md#requirements).
+2. To make the tool work properly, you will need: ****
+
+* A [**Registry**](get-started/defining-a-workspace/docker-registry.md) where the images of your application are stored.
+* Define a **CI flow.** It is expected that this flow is active through a trigger, for example, a branch name that has a defined prefix. Besides that, the pipeline must build the application's image and upload it to the registry mentioned before. 
+* Prepare the [**Helm template**]() ****of your applications. This is important, a configured CD through Charles will need this information to make the deployments of your application. 
+
 ## **System architecture**
 
 The platform was built using a microservice approach, and it has the following modules:
 
-![Charles architecture](.gitbook/assets/arquitetura-charles-nova%20%283%29%20%281%29%20%281%29%20%281%29.png)
+![Charles&apos; architecture](.gitbook/assets/arquitetura-charles-nova%20%283%29%20%281%29%20%281%29%20%281%29.png)
 
 * `charlescd-ui:`  mirrors on front-end the workspace configuration, users, modules, hypothesis and boards. It is the platform graphical interface.  
 * `charles-moove:` manages workspaces, users, modules, hypothesis and boards. It is the whole platform structure.   
