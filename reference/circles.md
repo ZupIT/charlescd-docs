@@ -56,7 +56,9 @@ See the example on how to create a circle below:
 ![How to create a circle](../.gitbook/assets/chrome-capture-7-.gif)
 
 {% hint style="info" %}
-**The best advantage to use segmentation** is the possibility to combine logic with several attributes to create different audience categories and, in this way, use them on hypothesis tests. For example, using the characteristics ‘profession’ and ‘region’, you are able to create a circle with engineers from the brazilian north region, another one with engineers from the southeast and a third one with all brazilian engineers.
+**The best advantage to use segmentation** is the possibility to combine logic with several attributes to create different audience categories and, in this way, use them on hypothesis tests. 
+
+For example, using the characteristics ‘profession’ and ‘region’, you are able to create a circle with engineers from the brazilian north region, another one with engineers from the southeast and a third one with all brazilians engineers.
 {% endhint %}
 
 ### **Manual segmentation**
@@ -74,7 +76,7 @@ This characteristics can be defined based on the following logics:
 * Between
 * Starts With
 
-See some examples:
+See some examples below:
 
 ![Example of manual segmentation](../.gitbook/assets/image%20%285%29.png)
 

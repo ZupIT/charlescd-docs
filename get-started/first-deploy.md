@@ -9,7 +9,7 @@ Charles offers two alternatives to create a release: use the [**hypothesis** ](.
 Here, we will focus on the first approach with the following steps:
 
 1. Click on **Hypothesis** in the homepage left side bar; 
-2. Fill the name with the new hypothesis, on the **Create new hypothesis** field \(at the bottom of the hypothesis list\) and press Enter.
+2. Fill the name with the new hypothesis, on the **Create new hypothesis** field \(at the bottom of the hypothesis list\) and press enter.
 3. At the new created hypothesis board, click on **+Card** at the bottom of the **To do** list column;
 4. Type the name of your new card and press Enter; 
 5. Click on the card and associate it to a Module previously created. After this, a **branch with the name of the card will be created in the configured repository**; 

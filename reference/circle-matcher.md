@@ -14,7 +14,7 @@ Once you start using the interface, it's possible to notice that there are two w
 
 The two ways to make this validation are:
 
-* **Default:** in this option, you add manually keys and values to define the characteristics of a user test. And, based on that, once you execute the **Try**,  **you will receive all the circles related to these user.**  
+* **Default:** in this option, you add manually keys and values to define the characteristics of a user test. Based on that, once you run the **Try**,  **you will receive all the circles related to these user.**  
 
 ![Circle identification with Default option.](../.gitbook/assets/circle-matcher-default%20%282%29.gif)
 
@@ -49,7 +49,7 @@ Method used to identify circles based on the user's characteristics
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="requestData" type="object" required=false %}
-{ "state": "NY", "profession": "Lawyer", "age": 46, "city": "Stony Brook"
+{ "state": "NY", "profession": "Lawyer", "age": 46, "city": "Stony Brook"}
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="workspaceId" type="string" required=false %}
@@ -83,9 +83,9 @@ UUID
 {% endapi-method-spec %}
 {% endapi-method %}
 
-As the example above shows, there are correspondents circles with the given informations of the user, which means that **`charlescd-circle-matcher`** will return a list with all the circles. Here, there are two circles that fit with this description: NY Lawyers e Stony Brook’s Citizens.
+As the example above shows, there are circles with the given information of the user, which means that **`charlescd-circle-matcher`** will return a list with all the circles. Here, there are two circles that fit with this description: NY Lawyers e Stony Brook’s Citizens.
 
-In this request, only the parameter **`X-Workspace-Id`** is mandatory. The requisition body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. Let's see the case below:
+In this request, only the parameter **`X-Workspace-Id`** is mandatory. The requisition body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. See the case below:
 
 ![](https://lh3.googleusercontent.com/FdPVIHDFeYJCkC_6Y1P3ZOBSqmNlGkl9q2_XyIayNKQo2Mp9IXBY7PzvpzW0Mej1P9Ox8AG12QiA1H0w5uozWP1UYWafcfwXLKBOf3G-ObIVoPHtYGOlWd5Ju01uLuScqtCn8qQ1)
 

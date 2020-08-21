@@ -28,7 +28,7 @@ In both cases, you need to inform the minimum risk value you'd like to be alerte
 ## Components
 
 {% hint style="info" %}
-Components are abstractions of the applications. If in your repository there are many applications, every component will match each one of them.
+Components are abstractions of the applications. If in your repository there are many applications, every component will match one of them.
 {% endhint %}
 
 ### Health metrics

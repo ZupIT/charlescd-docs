@@ -2,7 +2,7 @@
 
 ## What is Helm? 
 
-Helm Charts  is package manager that allows you to define, install and update Kubernetes applications, regardless the complexity.
+Helm Charts is a package manager that allows you to define, install and update Kubernetes applications, regardless the complexity.
 
 On Charles context,  [**Chart Template**](https://helm.sh/docs/chart_template_guide/getting_started/) ****is used like a file collection related to the Kubernetes configuration.
 
@@ -20,7 +20,7 @@ To start, you need to save your templates in any git repository you want. When y
 
 The structure below has the necessary templates to deploy a module that contains a component called "circles-sample", it is available here. 
 
-The image below shows how you directory must look like: 
+The image below shows how your directory must look like: 
 
 ![ Chart template directory of circle-sample](../../.gitbook/assets/screen-shot-2020-08-13-at-09.16.04.png)
 
@@ -39,7 +39,7 @@ After you have created the directory, now you have to configure it. See below wh
 This information Charles needs to have on the templates. It is important to remember that you can customize these templates the way you want it. 
 
 {% hint style="info" %}
-After you have configured your directory according to the structure abpve, go to the "circles-samples" folder and run the command **"`helm package .`"**. 
+After you have configured your directory according to the structure above, go to the "circles-samples" folder and run the command **"`helm package .`"**. 
 
 In the end of this command, you will have a **tgz** file with the circles-samples-darwin name. Our CD tool looks for this **tgz** to run the template.
 {% endhint %}
