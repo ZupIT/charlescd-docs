@@ -74,13 +74,13 @@ Ao final do processo, você terá dentro do namespace `charles` todos os módulo
 
 ###  **Como acessar a aplicação?**
 
-Há duas formas de acessar a aplicação, por meio do **Minikube,** **Microk8s** ou **Cloud provider**, veja abaixo: 
+Há **três formas de acessar a aplicação:** por meio do **Minikube,** **Microk8s** ou **Cloud provider.** Veja abaixo como funciona a configuração para cada uma delas: 
 
-### **Minikube**
+### **1. Minikube**
 
-No minikube, o **load balancer nginx não cria automaticamente um IP externo**, para tornar isso possível, siga os passos: 
+No minikube, o **load balancer nginx não cria automaticamente um IP externo.** Para tornar isso possível, siga os passos: 
 
-**Passo 1:** Execute o comando abaixo: 
+**Passo 1:** Execute o comando abaixo
 
 ```text
 minikube tunnel
@@ -89,7 +89,7 @@ kubectl get svc -n charles
 // agora o IP externo está disponível
 ```
 
-**Passo 2:** Agora que você tem um ip externo, troque o valor &lt;ip-external-charles&gt; pelo IP externo e adicione essa linha no seu arquivo de host do OS: 
+**Passo 2:** Agora que você tem um IP externo, troque o valor &lt;ip-external-charles&gt; pelo IP externo e adicione essa linha no seu arquivo de host do OS: 
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
@@ -99,25 +99,25 @@ kubectl get svc -n charles
 Para mais informações de como mudar o host do seu sistema, [**acesse aqui**](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/). 
 {% endhint %}
 
-**Passo 3:** No seu navegador digite http://charles.info.example e a aplicação estará disponível.
+**Passo 3:** Por fim, digite no seu navegador **http://charles.info.example** e a aplicação estará disponível.
 
-### Microk8s
+### 2. Microk8s
 
 O Microk8s está disponível para as Plataformas do Microsoft Windows, Apple MacOS e para Linux. 
 
 {% hint style="info" %}
-Para mais informações sobre como instalar o **Microk8s**, visite o site do projeto [**aqui**](https://microk8s.io). 
+Para mais informações sobre como instalar o **Microk8s**, [**visite o site do projeto**](https://microk8s.io). 
 {% endhint %}
 
-Uma vez instalado o Microk8s, você deve habilitar os seguintes addons:
+Uma vez instalado o Microk8s, você deve habilitar os seguintes add-ons:
 
-* **DNS**: descobrimento dos serviços dentro do cluster;
-* **Storage:** criação de volumes e persistências das PODs;
-* **MetalLB:** acesso aos serviços expostos pelo Kubernetes. Para este addon, você terá que escolher um range de IPs onde o Load Balancer irá atribuir para a exposição dos seus serviços.
+* **DNS**: Descobrimento dos serviços dentro do cluster;
+* **Storage:** Criação de volumes e persistências das PODs;
+* **MetalLB:** Acesso aos serviços expostos pelo Kubernetes. Para este add-on, você terá que escolher um range de IPs onde o Load Balancer irá atribuir para a exposição dos seus serviços.
 
 Siga os passos abaixo para habilitar o Microk8s no Charles: 
 
-**Passo 1:** prepare o Microk8s para receber o CharlesCD:
+**Passo 1:** Prepare o Microk8s para receber o CharlesCD.
 
 ```text
 microk8s enable dns storage metallb
@@ -170,7 +170,7 @@ microk8s.kubectl get svc -n charles
 
 ```
 
-**Passo 2:** agora que você tem um ip externo, troque o valor **&lt;ip-external-charles&gt;** pelo IP externo e adicione a linha no seu arquivo de host do OS: 
+**Passo 2:** Agora que você tem um IP externo, troque o valor **&lt;ip-external-charles&gt;** pelo IP externo e adicione a linha no seu arquivo de host do OS: 
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
@@ -180,27 +180,29 @@ microk8s.kubectl get svc -n charles
 Para mais informações sobre como mudar o **host file**, [**acesse aqui**](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/). 
 {% endhint %}
 
-**Passo 3:** no seu navegador digite **http://charles.info.example** e a aplicação estará disponível.
+**Passo 3:** Digite no seu navegador **http://charles.info.example** e a aplicação estará disponível.
 
-### **Cloud Provider \(AWS, GCP, AZURE\)**
+### **3. Cloud Provider \(AWS, GCP, AZURE\)**
 
-Se você instalar em um cluster de kubernetes gerenciado, **o ip externo para o load balancer nginx é criado automaticamente,** siga os passos quando todos os componentes estiverem prontos.
+No caso do Cloud Provider, você pode criar automaticamente o **IP externo para o load balancer nginx**  ao fazer sua instalação em um cluster de kubernetes gerenciado. 
 
-**Passo 1:**  Obtenha o IP externo com o comando:
+Siga os passos quando todos os componentes estiverem prontos.
+
+**Passo 1:**  Obtenha o IP externo com o comando.
 
 ```text
 kubectl get svc -n charles
 // get external IP value
 ```
 
-**Passo 2:** Adicione a linha abaixo no seu arquivo de host do OS \([veja aqui como mudar o host](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)\) caso você queira acessar do browser da sua máquina:
+**Passo 2:** Adicione a linha abaixo no seu arquivo de host do OS \([**veja aqui como mudar o host**](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)\) caso você queira acessar do browser da sua máquina:
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
 ```
 
 {% hint style="info" %}
-Se você quiser usar essa instalação em ambientes de produção ou desenvolvimento deverá expor a aplicação usando um DNS.
+Se você quiser usar essa instalação em ambientes de produção ou desenvolvimento, deverá expor a aplicação usando um DNS.
 
 Depois de apontar seu DNS para o IP externo, faça o clone do single-file.yam e troque todas as ocorrências de http://charles.info.example para o seu novo DNS, depois rode o comando de instalação novamente.
 
