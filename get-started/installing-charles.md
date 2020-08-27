@@ -71,6 +71,8 @@ At the end of the process, you will have inside of the namespace `charles` all t
 
 ### **How to access the application?**
 
+There are three ways to access the application: through **Minikube,** **Microk8s** or **Cloud provider.**  See below how the configuration works on each one of them:
+
 ### **Minikube**
 
 On the minikube, the **load balancer** does not automatically create an **external IP,** to make this possible, follow the steps: 
@@ -101,10 +103,10 @@ For more information on **how to change the host file,** [**access here.** ](htt
 Microk8s is available for Microsoft Windows, Apple MacOS and Linux platforms. 
 
 {% hint style="info" %}
-For more information on how to install Microk8s visit the project's website[ **here**](%20https://microk8s.io)**.**
+For more information on how to install Microk8s visit the [**project's website**](https://microk8s.io/)**.**
 {% endhint %}
 
-Once Microk8s is installed, you must enable the following addons:
+Once Microk8s is installed, you have to enable the following add-ons:
 
 * **DNS:** discovery of services within the cluster; 
 * **Storage:** creating volumes and persistence of PODs; 
@@ -165,7 +167,7 @@ microk8s.kubectl get svc -n charles
 
 ```
 
-**Passo 2:** now that you have the **external ip,** **replace the ip-external-charles,** add this line on your host file:
+**Passo 2:** now that you have the **external ip,** **replace the ip-external-charles,** add this line on your OS host file:
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
@@ -175,11 +177,13 @@ microk8s.kubectl get svc -n charles
 For more information on **how to change the host file,** [**access here.** ](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)\*\*\*\*
 {% endhint %}
 
-**Step 3:** In your browser type **http://charles.info.example** and the entire application is available.
+**Step 3:** type in your browser **http://charles.info.example** and the entire application will be  available.
 
 ### **Cloud Provider \(AWS, GCP, AZURE\)**
 
-If you install on a managed kubernetes, **the external ip for the nginx load balancer is created automatically**, so when all the components are ready follow the steps:
+On Cloud Provider, if you install on a managed kubernetes, **the external ip for the nginx load balancer is created automatically**, 
+
+When all the components are ready follow the next steps:
 
 **Step 1:** Just take the external IP with the command below and add it to your hosts file.
 
