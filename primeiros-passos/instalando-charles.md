@@ -5,10 +5,10 @@
 Para instalar o Charles, será necessário um ambiente com os seguintes requisitos:
 
 * [**Kubernetes**](https://kubernetes.io/docs/setup/).
-* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(versão &lt;= 1.4\).
+* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(versão &lt;= 1.4 e [_**sidecar injector habilitado**_](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) no namespace de deploy das suas aplicações\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** caso ****queira utilizar [**métricas**](../referencia/metricas/)**.**
 
-### Recursos Mínimos 
+### Recursos mínimos
 
 Os recursos mínimos considerando apenas a instalação do Charles são:
 
@@ -96,6 +96,8 @@ Para mais informações de como mudar o host do seu sistema, [**acesse aqui**](h
 {% endhint %}
 
 **Passo 3:** No seu navegador digite http://charles.info.example e a aplicação estará disponível.
+
+### **Cloud Provider \(AWS, GCP, AZURE\)**
 
 ### Microk8s
 
@@ -235,5 +237,37 @@ helm install charlescd <repo-folder> -n <namespace>
 Por isso, não deixe de customizar os campos caso queira algo gerenciável. 
 {% endhint %}
 
+## Autenticação do cluster com o seu registry
 
+### Por que autenticar?
+
+A autenticação é necessária para os casos em que você utiliza um registry privado. Com isso, é possível o cluster se comunicar com o seu [**registry**](definindo-workspace/docker-registry.md) quando for preciso fazer o pull das imagens. 
+
+### Como autenticar?
+
+O cluster Kubernetes utiliza o tipo **secret** do **docker-registy** para autenticar o registry container. 
+
+{% hint style="info" %}
+ Para mais informações de como gerar esse **secret** para ser ****aplicado no seu cluster, [**acesse a documentação do Kubernetes**](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/). 
+{% endhint %}
+
+Uma vez gerado o secret, ele ter uma formatação parecida com o exemplo abaixo:
+
+```text
+apiVersion: v1
+data:
+  .dockerconfigjson: <<your value>>
+kind: Secret
+metadata:
+  name: <<registry-name>>
+type: kubernetes.io/dockerconfigjson
+```
+
+Com o secret em mãos, você precisará aplicar essa informação no namespace onde suas aplicações serão implantados pelo Charles:
+
+```text
+kubectl -n your-namespace apply secret-registry.yaml
+```
+
+Finalizando desses passos, seu cluster consiguirá manter a comunicação com o registry.
 
