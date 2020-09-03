@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about how Circle Matcher works
+  on Charles.
+---
+
 # Circle Matcher
 
 Circle Matcher is a resource that allows you to validate if your [**circles**](circles.md) are in coherent segmentations. You can also use it in your applications to determine in which circle your users fit better.

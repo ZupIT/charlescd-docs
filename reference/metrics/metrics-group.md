@@ -1,6 +1,14 @@
+---
+description: >-
+  In this section, you will find more information about how to use metrics group
+  on Charles.
+---
+
 # Metrics group
 
 The metrics group is a functionality that allows you to register and organize any kind of metrics in a group inside your application. These metrics are related to the [**provider you previously registred.** ](register-metrics-provider.md)\*\*\*\*
+
+### **How to create?**
 
 To create your metrics group, follow the next steps: 
 
@@ -20,7 +28,9 @@ See the example below:
 
 ![](../../.gitbook/assets/metric+filter%20%281%29.gif)
 
-5.  After that, define a **Threshold.**  You can define a limit to your metric, for example, if you want to know if your application hits 50 errors, just customize the **threshold** and you will be notify when you hit this metric. 
+5.  After that, define a **Threshold** to establish a limit to your metric. 
+
+For example, if you want to know if your application hits 50 errors, just customize the **threshold** and you will be notify when you hit this metric. 
 
 ![](../../.gitbook/assets/threshold%20%281%29.gif)
 
@@ -34,7 +44,7 @@ Now, you can follow up the result with graphics and the available information, a
 
 ### **Metrics group: Advanced**
 
-There is an **advanced** function inside the metrics group, you can customize your own metric, like for example, a database query. You can specify according to what you need.
+There is an **advanced** function inside the metrics group, you can customize your own metric, like for example, a database query, or specifically according to what you need.
 
 See the example below: 
 

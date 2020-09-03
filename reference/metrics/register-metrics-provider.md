@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about how to register your
+  metrics provider on Charles.
+---
+
 # Registering a metrics provider
 
 The metrics provider register is an important step to use Charles with its full pontential, once that it allows you to quantify your applications performance and follow up their status.

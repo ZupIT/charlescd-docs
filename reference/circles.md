@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about how to use circles on
+  Charles.
+---
+
 # Circles
 
 Circles are the main approach related to the [**new deploy concept**](../faq/about-charles.md#what-is-circle-deploy) brought by Charles. It enables user groups creation with several characteristics and promotes simultaneous application tests for a great number of possible users.

@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about how to set up your
+  metrics using Charles.
+---
+
 # Setting up your metrics
 
 ### Istio Configuration

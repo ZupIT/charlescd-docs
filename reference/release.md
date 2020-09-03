@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find more information about releases on Charles.'
+---
+
 # Releases
 
 Releases are application versions. It is different from other ways of deploy that releases generally go through lots of environments until they reach production, with CharlesCD it is possible that the same release will be published for different[ **circles**](circles.md).

@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about hypothesis in Charles'
+  context.
+---
+
 # Hypothesis
 
 Hypothesis are **registered alternatives** on the platform to solve some issues or to validate changes of applications that you have integrated on CharlesCD.
