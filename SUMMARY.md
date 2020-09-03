@@ -27,6 +27,7 @@
 * [Métricas](referencia/metricas/README.md)
   * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
   * [Cadastrando o provedor de métricas](referencia/metricas/provedor-metrica.md)
+  * [Grupo de métricas](referencia/metricas/grupo-de-metricas.md)
 
 ## GUIDES
 
