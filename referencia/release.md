@@ -1,3 +1,9 @@
+---
+description: >-
+  Nesta seção, você encontra detalhes sobre como funcionam as releases no
+  Charles.
+---
+
 # Release
 
 Releases são as versões de uma aplicação. Diferente de outras formas de deploy, em que as releases geralmente passam por diversos ambientes até chegar ao de produção, no CharlesCD é possível que uma mesma release seja publicada para diferentes [**círculos**](circulos.md)**.**

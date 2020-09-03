@@ -1,3 +1,7 @@
+---
+description: 'Nesta seção, você encontra detalhes sobre como funciona o Circle Matcher.'
+---
+
 # Circle Matcher
 
 O Circle Matcher é um recurso que permite você validar se os seus [**círculos**](circulos.md) estão com segmentações coerentes. Você também pode utilizá-lo em suas aplicações para determinar em qual círculo os seus usuários se encaixam.

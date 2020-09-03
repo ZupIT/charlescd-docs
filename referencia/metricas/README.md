@@ -1,3 +1,9 @@
+---
+description: >-
+  Nesta seção, você encontra detalhes sobre como funciona a mensuração de
+  métricas de suas aplicações usando o Charles.
+---
+
 # Métricas
 
 As métricas são os indicadores que permitem você quantificar o **desempenho e o status de suas aplicações** a partir da análise de dados expostos pelas próprias aplicações e pelas ferramentas de infraestrutura.

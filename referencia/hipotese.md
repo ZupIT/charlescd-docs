@@ -1,3 +1,9 @@
+---
+description: >-
+  Nesta seção, você encontra detalhes sobre como funciona teste de hipóteses no
+  Charles.
+---
+
 # Hipótese
 
 As hipóteses são as alternativas cadastradas na plataforma para resolver algum problema ou validar mudanças nas aplicações que você integrou ao Charles. 

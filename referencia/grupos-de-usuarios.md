@@ -1,3 +1,9 @@
+---
+description: >-
+  Nesta seção, você encontra detalhes sobre como funcionam os Grupos de Usuários
+  no Charles.
+---
+
 # Grupo de Usuários
 
 Um grupo de usuários pode representar um time ou até mesmo um subconjunto de pessoas baseado em suas habilidades. 
