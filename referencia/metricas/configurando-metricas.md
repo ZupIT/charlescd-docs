@@ -70,7 +70,7 @@ $ kubectl apply -f your-metrics-config.yaml
 O arquivo your-metrics-config.yaml que está sendo usado deve ser referente à ferramenta que você utiliza.
 {% endhint %}
 
-Atualmente, o Charles oferece suporte apenas o Prometheus como ferramenta de métricas. Você encontra abaixo o arquivo para sua configuração.
+Você encontra abaixo o arquivo para sua configuração.
 
 {% tabs %}
 {% tab title="Prometheus" %}
