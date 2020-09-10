@@ -28,6 +28,7 @@
   * [Setting up your metrics](reference/metrics/setting-your-metrics.md)
   * [Registering a metrics provider](reference/metrics/register-metrics-provider.md)
   * [Metrics group](reference/metrics/metrics-group.md)
+  * [Charles' metrics](reference/metrics/charles-metrics.md)
 
 ## Guides
 
