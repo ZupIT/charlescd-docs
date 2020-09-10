@@ -32,7 +32,7 @@ The circle metrics allows you to have an overview about your circles' history wi
 * Releases for every component/module/version; 
 * Circle average life time;
 * Circle's creation date;
-*  Deploy/undeploy of the circle.
+* Deploy/undeploy of the circle.
 
 See below: 
 
