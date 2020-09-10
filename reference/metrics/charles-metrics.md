@@ -31,7 +31,8 @@ The circle metrics allows you to have an overview about your circles' history wi
 * \*\*\*\*[**Active and inactive**](../circles.md#active-and-inactive-circles) circles;
 * Releases for every component/module/version; 
 * Circle average life time;
-* Creation date and deploy/undeploy of the circle.
+* Circle's creation date;
+*  Deploy/undeploy of the circle.
 
 See below: 
 
