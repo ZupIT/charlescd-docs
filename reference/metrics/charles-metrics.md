@@ -26,15 +26,13 @@ See the example below:
 
 It is a management feature that helps you view and follow the technical information about your circles.
 
-The circle metrics allows you to have an overview about your circles' history with:  
+The circle metrics allows you to have an overview about your circles on Charles, like:  
 
 * \*\*\*\*[**Active and inactive**](../circles.md#active-and-inactive-circles) circles;
-* Releases for every component/module/version; 
 * Circle average life time;
-* Circle's creation date;
-* Deploy/undeploy of the circle.
+* Last update date.
 
 See below: 
 
-![](../../.gitbook/assets/metrica-de-circle.gif)
+![](../../.gitbook/assets/erro.gif)
 
