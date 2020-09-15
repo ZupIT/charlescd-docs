@@ -34,5 +34,5 @@ Com as métricas de círculo você pode ter uma visão geral sobre o seus círcu
 
 Veja abaixo:
 
-![](../../.gitbook/assets/erro.gif)
+![](../../.gitbook/assets/erro%20%281%29.gif)
 
