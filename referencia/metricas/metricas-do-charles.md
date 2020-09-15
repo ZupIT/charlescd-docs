@@ -26,14 +26,13 @@ Veja o exemplo abaixo:
 
 É um gerenciador que facilita a visualização e o acompanhamento de informações técnicas sobre seus círculos.
 
-Com as métricas de círculo você pode ter uma visão geral sobre o seus círculos no Charles, a partir de um histórico com:  
+Com as métricas de círculo você pode ter uma visão geral sobre o seus círculos no Charles, como:
 
 * Os círculos [**ativos e inativos**](../circulos.md#circulos-ativos-e-inativos);
-* Releases de cada [**componente**](https://docs.charlescd.io/v/v0.3.x-pt/principais-conceitos#componentes)/[**módulo**](https://docs.charlescd.io/v/v0.3.x-pt/primeiros-passos/criando-modulos#como-adicionar-os-modulos)/versão;
 * Tempo de vida do círculo;
-* A data da criação e do deploy/undeploy do círculo;
+* A data da última atualização;
 
 Veja abaixo:
 
-![](../../.gitbook/assets/metrica-de-circle.gif)
+![](../../.gitbook/assets/erro.gif)
 
