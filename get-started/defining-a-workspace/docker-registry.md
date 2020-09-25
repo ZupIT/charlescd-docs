@@ -24,5 +24,14 @@ If you have any doubts on how to proceed or find the information above, you can 
 * **Username**: this is the service's entity ID that will be used by Kubernetes to access the registry;
 * **Password**: Service's entity password.
 
-If you have any doubts on how to proceed or find those information above, you can visit [**Azure Container Registry**](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-concepts) **** documentation.
+If you have any doubts on how to proceed or find the information above, you can visit [**Azure Container Registry**](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-concepts) **** documentation.
+
+### Google Cloud Platform - GCP
+
+* **Name**: this name will be used for your Charles configuration;
+* **Yout registry's URL**:  your GCR's URL like[ ](%20https://gcr.io)\*\*\*\*[**https://gcr.io**](%20https://gcr.io);
+* **Project ID:**  access Google Cloud Platform, select your project and copy the id;
+* **JSON key:** add the generated JSON key. For more information on [**how to generate your JSON key**](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key). 
+
+If you have any doubts on how to proceed or find the information above, you can visit [**Google Container Registry**](https://cloud.google.com/container-registry) **documentation.** 
 
