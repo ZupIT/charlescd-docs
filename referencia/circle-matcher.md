@@ -52,11 +52,11 @@ Método utilizado para identificar círculos, baseado em características de um 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="requestData" type="object" required=false %}
+{% api-method-parameter name="requestData" type="object" required=true %}
 { "state": "NY", "profession": "Lawyer", "age": 46, "city": "Stony Brook"
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="workspaceId" type="string" required=false %}
+{% api-method-parameter name="workspaceId" type="string" required=true %}
 UUID
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -107,11 +107,11 @@ Método utilizado para identificar círculos, baseado em características de um 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="requestData" type="object" required=false %}
+{% api-method-parameter name="requestData" type="object" required=true %}
 { "aGEee": 46, "city": "Stony Brook" }
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="workspaceId" type="string" required=false %}
+{% api-method-parameter name="workspaceId" type="string" required=true %}
 UUID
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
