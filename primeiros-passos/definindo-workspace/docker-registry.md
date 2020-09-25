@@ -7,7 +7,7 @@ Existem duas categorias de cadastros de configuração que podem ser feitas pelo
 ### AWS
 
 * **Nome**: esse nome representará sua configuração no Charles;
-* **URL do seu registry**: segundo a convenção, a URL para o seu registry padrão é  https://**aws\_account\_id**.dkr.ecr.**region**.amazonaws.com;
+* **URL do seu registry**: segundo a convenção, a URL para o seu registry padrão é  [https://**aws\_account\_id**.dkr.ecr.region.amazonaws.com](https://aws_account_id.dkr.ecr.region.amazonaws.com);
 * **Access Key**: informação de segurança gerada pela AWS ECR;
 * **Secret Key**: informação de segurança gerada pela AWS ECR;
 * **Region**: a região de onde você está operando. 
@@ -17,7 +17,7 @@ Em caso de dúvidas para encontrar essas informações, sugerimos a documentaç�
 ### AZURE
 
 * **Nome**: esse nome representará sua configuração no Charles;
-* **URL do seu registry**: a URL para o seu registry padrão é [https://**aws\_account\_id**.dkr.ecr.region.amazonaws.com](https://aws_account_id.dkr.ecr.region.amazonaws.com).
+* **URL do seu registry**: a URL para o seu registry padrão é  **https://{registry name}.**[**azurecr.io**](http://azurecr.io/)\*\*\*\*
 * **Username**: ID da entidade de serviço que será usada pelo Kubernetes para acessar o registro;
 * **Password**: Senha da entidade de serviço.
 
