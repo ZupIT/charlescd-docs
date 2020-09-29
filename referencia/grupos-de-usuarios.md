@@ -37,7 +37,7 @@ Os seguintes perfis são suportados:
 
 Segue abaixo as permissões vinculadas a cada perfil:
 
-| Módulos | Action | Root | Maintainer | Developer | Analyst  | Reader |
+| Módulos | Ação | Root | Maintainer | Developer | Analyst  | Reader |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Usuários** | Criar  | ✔  |   |   |   |   |
 |   | Editar | ✔  |   |   |   |   |
