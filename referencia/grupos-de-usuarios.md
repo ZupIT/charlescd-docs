@@ -24,7 +24,7 @@ Porém, se todos do time tiverem a mesma permissão, podemos criar apenas um gru
 
 As permissões do Charles são dadas aos grupos de usuários quando você os associa a um workspace.
 
-Os seguintes perfis são suportados:
+Os seguintes perfis são suportados: 
 
 * **Mantenedor**: pode acessar e editar todas as configurações do workspace. Ele pode realizar implantações, e também tem a permissão para criar, editar e deletar círculos, módulos e hipóteses.
 * **Desenvolvedor**: possui acesso para realizar implantações e também pode criar, editar, deletar círculos, módulos e hipóteses. 
@@ -32,4 +32,30 @@ Os seguintes perfis são suportados:
 * **Leitor**: pode visualizar círculos, hipóteses e módulos.
 
 ![Escolha de permiss&#xE3;o ao associar um grupo de usu&#xE1;rios a um workspace.](../.gitbook/assets/chrome-capture-3-.gif)
+
+### Mapa de Permissões
+
+Segue abaixo as permissões vinculadas a cada perfil:
+
+| Módulos | Action | Root | Maintainer | Developer | Analyst  | Reader |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Usuários** | Criar  | ✔  |   |   |   |   |
+|   | Editar | ✔  |   |   |   |   |
+|   | Deletar | ✔  |   |   |   |   |
+|   | Visualizar  | ✔  |   |   |   |   |
+| **Grupo de usuários** | Criar | ✔  |   |   |   |   |
+|   | Editar  | ✔  |   |   |   |   |
+|   | Deletar | ✔  |   |   |   |   |
+|   | Visualizar  | ✔  |   |   |   |   |
+| **Workspace** | Criar | ✔  |   |   |   |   |
+|   | Configurar | ✔ | ✔ |   |   |   |
+|   | Deletar | ✔  |   |   |   |   |
+|   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Circle** | Criar/Editar/Deletar | ✔  | ✔  | ✔  | ✔  |   |
+|   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Hypothesis** | Criar/Editar/Deletar | ✔  | ✔  | ✔  | ✔  |   |
+|   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Modules**  | Criar/Editar/Deletar | ✔  | ✔  | ✔  |   |   |
+|   | Visualizar  | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Deploy**  | Fazer deployments | ✔  | ✔  | ✔  |   |   |
 
