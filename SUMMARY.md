@@ -6,6 +6,7 @@
 ## GET STARTED
 
 * [Installing Charles](get-started/installing-charles.md)
+* [Defining the Identity Manager](get-started/defining-the-identity-manager.md)
 * [Defining a Workspace](get-started/defining-a-workspace/README.md)
   * [Git credentials](get-started/defining-a-workspace/github.md)
   * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
