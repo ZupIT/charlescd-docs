@@ -37,7 +37,7 @@ A metodologia implementada pelo Charles traz várias vantagens, como:
 
 Para utilizar o Charles, é preciso cumprir alguns pré-requisitos:
 
-1. **Instalação:** veja o que é necessário [**aqui**](primeiros-passos/instalando-charles.md#pre-requisitos).
+1. **Instalação:** veja o que é necessário [**aqui**](primeiros-passos/instalando-charles/#pre-requisitos).
 2. Para o funcionamento completo da ferramenta é preciso:
 
 * Possuir um [**Registry**](primeiros-passos/definindo-workspace/docker-registry.md) onde as imagens das suas aplicações são armazenadas.

@@ -10,7 +10,7 @@ Para instalar o Charles, será necessário um ambiente com os seguintes requisit
 
 * [**Kubernetes**](https://kubernetes.io/docs/setup/).
 * \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(versão &lt;= 1.4 e [_**sidecar injector habilitado**_](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) no namespace de deploy das suas aplicações\).
-* \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** caso ****queira utilizar [**métricas**](../referencia/metricas/)**.**
+* \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** caso ****queira utilizar [**métricas**](../../referencia/metricas/)**.**
 
 ### Recursos mínimos
 
@@ -25,14 +25,14 @@ Os recursos mínimos considerando apenas a instalação do Charles são:
 O processo de instalação foi criado considerando alguns casos de uso. Logo, para cada um deles, você encontrará um tutorial específico.  Mas, antes veja abaixo quais componentes e as plataformas que o Charles suporta. 
 
 {% hint style="info" %}
-Se for necessário instalar o CharlesCD com algumas customizações, sugerimos conferir a seção de [**instalação com helm charts**. ](instalando-charles.md#caso-2-instalacao-com-helm-charts)
+Se for necessário instalar o CharlesCD com algumas customizações, sugerimos conferir a seção de [**instalação com helm charts**. ](./#caso-2-instalacao-com-helm-charts)
 {% endhint %}
 
 ### Componentes
 
 A instalação do CharlesCD consiste nos seguintes **componentes**:
 
-1. Módulos específicos da[ **arquitetura do Charles**](../#arquitetura-do-sistema)**.**
+1. Módulos específicos da[ **arquitetura do Charles**](../../#arquitetura-do-sistema)**.**
 2. **Keycloak**, usado para autenticação e autorização no projeto.
 3. Um **banco PostgreSQL** que servirá os módulos de backend \(`moove`, `butler` e `villager`\) e o Keycloak.
 4. Um **Redis** para uso do `charlescd-circle-matcher`
@@ -46,7 +46,7 @@ Atualmente, o Charles tem suporte para duas plataformas de Continuous Delivery \
 * **Octopipe:** plataforma nativa, criada pela equipe do CharlesCD para possibilitar uma instalação sem configuração prévia.
 
 {% hint style="info" %}
-Você pode saber mais sobre a **configuração do Spinnaker e do Octopipe** na seção [**Configuração de CD**.](../referencia/configuracao-cd.md)
+Você pode saber mais sobre a **configuração do Spinnaker e do Octopipe** na seção [**Configuração de CD**.](../../referencia/configuracao-cd.md)
 {% endhint %}
 
 ## Principais casos de instalação 
@@ -59,7 +59,7 @@ Esta é a instalação mais recomendada para quem nunca usou o CharlesCD  e já 
 
 Neste caso, você irá utilizar: 
 
-* um arquivo **yaml** com todos os [**componentes**](instalando-charles.md#componentes);
+* um arquivo **yaml** com todos os [**componentes**](./#componentes);
 * um **Load Balancer** pré-configurado. 
 
 Para criar esta estrutura, basta executar os arquivos em algum cluster pré-configurado, como minikube, GKE, EKS, etc. Os passos a serem executados são estes:
@@ -245,7 +245,7 @@ Por isso, não deixe de customizar os campos caso queira algo gerenciável.
 
 ### Por que autenticar?
 
-A autenticação é necessária para os casos em que você utiliza um registry privado. Com isso, é possível o cluster se comunicar com o seu [**registry**](definindo-workspace/docker-registry.md) quando for preciso fazer o pull das imagens. 
+A autenticação é necessária para os casos em que você utiliza um registry privado. Com isso, é possível o cluster se comunicar com o seu [**registry**](../definindo-workspace/docker-registry.md) quando for preciso fazer o pull das imagens. 
 
 ### Como autenticar?
 

@@ -5,7 +5,8 @@
 
 ## Primeiros Passos
 
-* [Instalando o Charles](primeiros-passos/instalando-charles.md)
+* [Instalando o Charles](primeiros-passos/instalando-charles/README.md)
+  * [Definindo o Identity Manager](primeiros-passos/instalando-charles/definindo-o-identity-manager.md)
 * [Definindo um Workspace](primeiros-passos/definindo-workspace/README.md)
   * [Credenciais do Git](primeiros-passos/definindo-workspace/github.md)
   * [Docker Registry](primeiros-passos/definindo-workspace/docker-registry.md)
@@ -23,6 +24,7 @@
 * [Configuração de CD](referencia/configuracao-cd.md)
 * [Grupo de Usuários](referencia/grupos-de-usuarios.md)
 * [Hipótese](referencia/hipotese.md)
+* [Identity Manager](referencia/identity-manager.md)
 * [Release](referencia/release.md)
 * [Métricas](referencia/metricas/README.md)
   * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
