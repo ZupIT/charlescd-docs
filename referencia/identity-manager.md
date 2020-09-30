@@ -1,7 +1,5 @@
 ---
-description: >-
-  Nesta seção, você encontra detalhes de como funciona o IDM ou Identity
-  Manager.
+description: 'Nesta seção, você encontra detalhes de como funciona o Identity Manager (IDM).'
 ---
 
 # Identity Manager
