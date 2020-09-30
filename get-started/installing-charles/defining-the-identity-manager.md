@@ -28,5 +28,5 @@ On Charles default installation, it already has Keycloak that it is used to mana
 
 #### Customized IDM 
 
-In case you already have your own identity manager, it is necessary change some installation variables. For that, follow the instruction on the **section references**. 
+In case you already have your own identity manager, it is necessary change some installation variables. For that, follow the instruction on [**reference section.**](../../reference/identity-manager.md)\*\*\*\*
 
