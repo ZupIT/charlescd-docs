@@ -5,7 +5,8 @@
 
 ## GET STARTED
 
-* [Installing Charles](get-started/installing-charles.md)
+* [Installing Charles](get-started/installing-charles/README.md)
+  * [Defining the Identity Manager](get-started/installing-charles/defining-the-identity-manager.md)
 * [Defining a Workspace](get-started/defining-a-workspace/README.md)
   * [Git credentials](get-started/defining-a-workspace/github.md)
   * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
@@ -23,6 +24,7 @@
 * [CD Configuration](reference/cd-configuration.md)
 * [Users Groups](reference/users-group.md)
 * [Hypothesis](reference/hyphotesis.md)
+* [Identity Manager](reference/identity-manager.md)
 * [Releases](reference/release.md)
 * [Metrics](reference/metrics/README.md)
   * [Setting up your metrics](reference/metrics/setting-your-metrics.md)

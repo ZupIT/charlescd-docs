@@ -39,7 +39,7 @@ The methodology implemented by Charles brings a lot of advantages such as:
 
 In order to user Charles, it is necessary to fulfill some requirements: 
 
-1. **Installation:** see what you need ****[**here**](get-started/installing-charles.md#requirements).
+1. **Installation:** see what you need ****[**here**](get-started/installing-charles/#requirements).
 2. To make the tool work properly, you will need: ****
 
 * A [**Registry**](get-started/defining-a-workspace/docker-registry.md) where the images of your application are stored.
