@@ -38,7 +38,7 @@ CharlesCD's installation considers these components:
 2. **Keycloak**, used for authentication and authorization;
 3. A **PostgreSQL database** for backend modules \(`moove`, `circle-matcher`, `butler` and `villager`\) and Keycloak;
 4. A **Redis**, to be used by `charlescd-villager`
-5. **Octopipe** is in the standard Charles installation as a CD option. In addition, a **MongoDB** is installed for its use. However, the usage of Octopipe is optional, it is possible to disable it at installation.
+5. **Octopipe** is in the standard Charles installation as a CD option. In addition, however, the usage of Octopipe is optional, it is possible to disable it at installation.
 
 ### Continuous Delivery Platform
 
