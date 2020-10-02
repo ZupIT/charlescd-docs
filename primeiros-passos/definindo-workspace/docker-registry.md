@@ -26,10 +26,26 @@ Em caso de dúvidas para encontrar essas informações, sugerimos a documentaç�
 ### Google Cloud Platform - GCP
 
 * **Nome**: esse nome representará sua configuração no Charles;
-* **URL do seu registry**:  a URL do seu GCR, como[ ](%20https://gcr.io)\*\*\*\*[**https://gcr.io**](%20https://gcr.io);
-* **Project ID:**  acesse o Google Cloud Platform, selecione seu projeto e copie o id;
+* **URL do seu registry**: a URL do seu GCR, como[ ](%20https://gcr.io)\*\*\*\*[**https://gcr.io**](%20https://gcr.io);
+* **Project ID:** acesse o _Google Cloud Platform_, selecione seu projeto e ****[**copie o id**;](https://support.google.com/googleapi/answer/7014113?hl=en)
 * **JSON key:** adicione o JSON key gerado. ****Para mais informações de [**como gerar seu json key, veja aqui**](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key)**.**
 
 Em caso de dúvidas para encontrar essas informações, sugerimos a documentação da [**Google Container Registry**](https://cloud.google.com/container-registry).  
+
+
+### Docker Hub 
+
+* **Nome**: esse nome representará sua configuração no Charles;
+* **URL do seu registry**: a URL do seu DockerHub [**https://registry.hub.docker.com**](https://registry.hub.docker.com/)**;** 
+* **Username:**  adicione o seu **dockerid**;
+* **Password:** a senha do seu dockerhub ou o **token de acesso**. Veja a baixo como gerar: 
+
+1. Acesse sua conta docker;
+2. Vá em configurações \(**Account settings**\);
+3. Selecione a opção **Security**;
+4. Clique em **new access token**  e copie o token gerado. 
+
+
+
 
 
