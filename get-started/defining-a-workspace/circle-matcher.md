@@ -12,6 +12,8 @@ This configuration is necessary, so you are able to perform operations in Charle
 It is important to remember, on Charle's context, the Circle Matcher module receives most of the environment's request, because it is the application that identifies the user based on the rules that you have configured while managing a circle.
 {% endhint %}
 
+ If you want to know more about **Circle Matcher**, see the [**References section**](../../reference/circle-matcher.md). 
+
 ## How must be configured 
 
 #### Option 1: Configure Circle Matcher in a separate architecture
