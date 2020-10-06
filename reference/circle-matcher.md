@@ -91,7 +91,7 @@ UUID
 {% endapi-method-spec %}
 {% endapi-method %}
 
-As the example above shows, there are circles with the given information of the user, which means that **`charlescd-circle-matcher`** will return a list with all the circles. Here, there are two circles that fit with this description: NY Lawyers e Stony Brook’s Citizens.The order of the circles returned will be by the date of creation, so the newest circle created will be the first of the list.
+As the example above shows, there are circles with the given information of the user, which means that **`charlescd-circle-matcher`** will return a list with all the circles. Here, there are two circles that fit with this description: NY Lawyers e Stony Brook’s Citizens. The order of the circles returned will be by the date of creation, so the newest circle created will be the first of the list.
 
 The requisition body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. See the case below:
 
