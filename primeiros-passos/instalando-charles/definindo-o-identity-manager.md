@@ -26,7 +26,16 @@ Para garantir a segurança dos acessos ao Charles, é necessário ter um gerenci
 
 Na instalação padrão do Charles, já existe o **Keycloak** que é utilizado para fazer a gestão dos usuários. Portanto, se você não tem um IDM personalizado que queira utilizar, a instalação padrão te oferece esse suporte.
 
-#### IDM Personalizado
+#### IDM Externa
 
 Caso você tenha seu próprio gerenciador de identidade, é necessário alterar algumas variáveis na instalação. Para isso, siga nossas instruções na [**referência sobre IDM**](../../referencia/identity-manager.md).
+
+{% hint style="info" %}
+Há alguns fluxos bloqueados quando o IDM é externo, veja abaixo: 
+
+* Criação de usuário;
+* Mudar senha;
+* Reset de senha; 
+* Deleção de usuário. 
+{% endhint %}
 
