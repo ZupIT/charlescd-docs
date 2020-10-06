@@ -18,13 +18,11 @@ On the example below, you can see a flow where there is a verification of what c
 
 ### Why configure an IDM? 
 
-It is necessary to have an identity manager to make sure Charle's accesses are safe.
-
-Para garantir a segurança dos acessos ao Charles, é necessário ter um gerenciador de identidade. Para isso, o Charles oferece duas opções:
+It is necessary to have an identity manager to make sure Charle's accesses are safe. For this, Charles offers two options:
 
 #### Default IDM
 
-On Charles default installation, it already has Keycloak that it is used to manage the users. However, if you don't have a customized IDM and if you want to use it, the default installation offers you one. 
+On Charles default installation, it already has Keycloak that it is used to manage the users. If you don't have a customized IDM, you can use this one.
 
 #### Customized IDM 
 
