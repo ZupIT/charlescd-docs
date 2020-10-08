@@ -43,3 +43,7 @@
 * [Community](faq/community.md)
 * [ZupIT/charlescd](faq/changelog.md)
 
+---
+
+* [Release Notes](https://github.com/ZupIT/charlescd/releases)
+
