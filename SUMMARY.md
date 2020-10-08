@@ -41,8 +41,5 @@
 * [About Charles](faq/about-charles.md)
 * [Circle deploy vs Other deploys](faq/circle-deploy-and-other-deploys.md)
 * [Community](faq/community.md)
-
----
-
-* [Changelog](untitled.md)
+* [ZupIT/charlescd](faq/changelog.md)
 
