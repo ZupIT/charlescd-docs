@@ -42,3 +42,7 @@
 * [Deploy em círculos x Outros deploys](faq/deploy-em-circulos-e-outros-deploys.md)
 * [Comunidade](faq/comunidade.md)
 
+---
+
+* [Release Notes](https://github.com/ZupIT/charlescd/releases)
+
