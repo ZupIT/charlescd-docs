@@ -31,7 +31,7 @@ Na instalação padrão do Charles, já existe o **Keycloak** que é utilizado p
 Caso você tenha seu próprio gerenciador de identidade, é necessário alterar algumas variáveis na instalação. Para isso, siga nossas instruções na [**referência sobre IDM**](../../referencia/identity-manager.md).
 
 {% hint style="info" %}
-Há alguns fluxos bloqueados quando o IDM é externo, veja abaixo: 
+Há alguns fluxos bloqueados quando um IDM externo é utilizado, veja abaixo: 
 
 * Criação de usuário;
 * Mudar senha;
