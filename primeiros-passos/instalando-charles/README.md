@@ -36,17 +36,17 @@ A instalação do CharlesCD consiste nos seguintes **componentes**:
 2. **Keycloak**, usado para autenticação e autorização no projeto.
 3. Um **banco PostgreSQL** que servirá os módulos de backend \(`moove`, `butler` ,`villager` e `charlescd-compass`\) e o Keycloak.
 4. Um **Redis** para uso do `charlescd-circle-matcher`
-5. **Octopipe** está na instalação padrão do Charles como uma opção de CD, entretanto, essa ferramenta é opcional, é possível desabilitá-la. 
+5. Um módulo chamado **`octopipe`** está na instalação padrão do Charles. É uma plataforma nativa criada pelo time para que a instalação seja mais fácil e sem configurações prévias. Entretanto, é opcional e você pode desabilitá-la.
 
 ### Plataforma de Continuous Delivery 
 
 Atualmente, o Charles tem suporte para duas plataformas de Continuous Delivery \(CD\):
 
 * **Spinnaker:** caso você já tenha o seu próprio Spinnaker configurado, ele poderá ser reutilizado.
-* **Octopipe:** plataforma nativa, criada pela equipe do CharlesCD para possibilitar uma instalação sem configuração prévia.
+* **CharlesCD:** plataforma nativa, criada pela equipe do Charles para possibilitar uma instalação sem configuração prévia.
 
 {% hint style="info" %}
-Você pode saber mais sobre a **configuração do Spinnaker e do Octopipe** na seção [**Configuração de CD**.](../../referencia/configuracao-cd.md)
+Você pode saber mais sobre a **configuração do Spinnaker e do CharlesCD** na seção [**Configuração de CD**.](../../referencia/configuracao-cd.md)
 {% endhint %}
 
 ## Principais casos de instalação 

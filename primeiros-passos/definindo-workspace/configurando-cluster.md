@@ -4,18 +4,18 @@ description: Esta seção descreve como funciona o ambiente de deploy no Charles
 
 # Ambiente de deploy
 
-Ao configurar seu workspace é preciso cadastrar as credenciais de acesso ao cluster [**Kubernetes**](https://kubernetes.io/). Essas configurações são específicas para cada uma das ferramentas de _Continuous Deployment_ \(CD\) que são integradas ao CharlesCD. No momento, damos suporte ao  [**Spinnaker**](https://www.spinnaker.io/) e _Octopipe_. 
+Ao configurar seu workspace é preciso cadastrar as credenciais de acesso ao cluster [**Kubernetes**](https://kubernetes.io/). Essas configurações são específicas para cada uma das ferramentas de _Continuous Deployment_ \(CD\) que são integradas ao CharlesCD. No momento, damos suporte ao  [**Spinnaker**](https://www.spinnaker.io/) e **CharlesCD** \(Octopipe\). 
 
 {% hint style="info" %}
-O **Octopipe** foi desenvolvido pela equipe do Charles. É mais leve, de baixo custo e consegue fazer deploys em clusters Kubernetes.
+O **Charles** possui um módulo chamado Octopipe que é uma forma leve e de baixo custo de fazer deploy em clusters Kubernetes.
 {% endhint %}
 
 ### Como realizar seu deploy?
 
-Veja abaixo o exemplo de como realizar seu deploy utilizando o _Octopipe_ no mesmo cluster de instalação:
+Veja abaixo o exemplo de como realizar seu deploy utilizando o CharlesCD no mesmo cluster de instalação:
 
 1. Clique em **Add CD Configuration**;
-2. Selecione a opção **Octopipe.**
+2. Selecione a opção **CharlesCD.**
 
 Após esses passos, preencha os campos a seguir:
 
