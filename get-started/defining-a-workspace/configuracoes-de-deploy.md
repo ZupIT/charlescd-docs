@@ -1,17 +1,17 @@
 # Deploy environment
 
-It is necessary to register cluster [**Kubernetes**](https://kubernetes.io) credentials to configure your workspace. These are specific configuration to each Continuous Deployment \(CD\) tool that are integrated with Charles, at the moment it is [**Spinnaker**](https://www.spinnaker.io/) and Octopipe.
+It is necessary to register cluster [**Kubernetes**](https://kubernetes.io) credentials to configure your workspace. These are specific configurations to each Continuous Deployment \(CD\) tool that is integrated with Charles. At the moment, the tools available are **CharlesCD** \(Octopipe\) and [**Spinnaker**](https://www.spinnaker.io/).
 
 {% hint style="info" %}
-**Octopipe** was developed by Charles' team. It is light, low cost and it is able to make cluster Kubernetes deploys.
+Charles has a module called **Octopipe** that is light and low cost way to make cluster Kubernetes deploys.
 {% endhint %}
 
 ### How to make your deploy?
 
-See below the example on how to perform your deploy using Octopipe in the same installation cluster:
+See below the example on how to perform your deploy using **CharlesCD** in the same installation cluster:
 
 1. Click on **Add CD Configuration**;
-2. Select the option **Octopipe.**
+2. Select the option **CharlesCD.**
 
 After these steps, fill out the next fields:
 

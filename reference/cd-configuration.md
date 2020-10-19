@@ -8,7 +8,7 @@ description: 'In this section, you''ll find how to make the CD configuration'
 
 This configuration is necessary to point to Charles which CD tool you use to make deploys in your cluster. It is also important to mention that you have to provide your git repository token that contains the [**helm templates.** ](../get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm)\*\*\*\*
 
-At this moment, Charles is able to use Spinnaker or Octopipe. 
+At this moment, Charles is able to use Spinnaker or CharlesCD \(Octopipe\). 
 
 {% hint style="info" %}
 CharlesCD is always evolving, so there's a roadmap that is in constant update, which means that we're looking for more CD tools integrations.
@@ -18,19 +18,17 @@ CharlesCD is always evolving, so there's a roadmap that is in constant update, w
 
 Charles uses a proper architecture to Continuous Deployment \(CD\) and that makes it fits in the environment chosen by you. These tools are used to run the Kubernetes manifestos on a configured cluster and to authenticate with a variety of cloud providers \(AWS, GCP, Azure\). 
 
-To make this configuration, you have to choose between Octopipe or Spinnaker. After that, it is necessary to fill some fields with the authentication that it will be made in the chosen cluster.
+To make this configuration, you have to choose between CharlesCD or Spinnaker. After that, it is necessary to fill some fields with the authentication that it will be made in the chosen cluster.
 
 * [**Spinnaker**](https://www.spinnaker.io/): ****tool created by Netflix, and used by companies and community.  
-* **Octopipe**: it is a light and low-cost tool that it was created just to integrate with Charles.
+* **CharlesCD**: behind the scenes, there is a light and low-cost tool developed by Charles Team that does the deployment.
 
 To register any of them, follow the next steps: 
 
-1. On Charles' homepage, select **Settings** on the lower left corner;
+1. On Charles' homepage, select **Settings** in the lower-left corner;
 2. Click on **Credentials;**
 3. Click on **Add CD Configuration;**
-4. Select the option **Octopipe** or **Spinnaker**, which will depend on which system you use. 
-
-![Initial register process to configure CD](../.gitbook/assets/cd-configuration-2-1%20%281%29.gif)
+4. Select the option **CharlesCD** or **Spinnaker**, which will depend on which system you use. 
 
 ## Using Spinnaker
 
@@ -42,7 +40,7 @@ Fill the following fields:
 4. **Git account:** Insert a git configuration name created on [**Spinnaker's installation**](https://spinnaker.io/setup/artifacts/github/). In this case, it's the property `ARTIFACT_ACCOUNT_NAME` configured according to the **Spinnaker** documentation. 
 5. **Kubernetes account:** insert the access configuration name to Kubernetes' cluster, created on the Spinnaker installation. 
 
-## Using Octopipe
+## Using CharlesCD
 
 Fill the following fields:
 
@@ -54,7 +52,7 @@ Fill the following fields:
 
 ### **Default**
 
-This option must be used when the application’s cluster is the same where Octopipe is installed. This way it is not necessary to create an extra authentication mechanism. ****
+This option must be used when the application’s cluster is the same where CharlesCD is installed. This way it is not necessary to create an extra authentication mechanism. ****
 
 ### **EKS**
 

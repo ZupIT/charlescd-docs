@@ -32,17 +32,17 @@ CharlesCD's installation considers these components:
 2. **Keycloak**, used for authentication and authorization;
 3. A **PostgreSQL database** for backend modules \(`moove`, `circle-matcher`, `butler,` `villager` and `charlescd-compass`\) and Keycloak;
 4. A **Redis**, to be used by `charlescd-circle-matcher`
-5. **Octopipe** is in the standard Charles installation as a CD option, however, the usage of Octopipe is optional, it is possible to disable it at installation.
+5. By default, a module called `octopipe` is added to the installation. This is a native platform created by our team to make installation easier, without previous configurations. However, you can disable it in the installation files.
 
 ### Continuous Delivery Platform
 
-At this moment, Charles can support two Continuous Delivery \(CD\) platforms:
+At this moment, Charles can support two kinds of Continuous Deployment \(CD\) tools:
 
+* **CharlesCD:** powered by `octopipe` module, this is a native platform created by our team to make installation easier, without previous configurations. 
 * **Spinnaker:** if you have your spinnaker already configured, it can be reused.
-* **Octopipe:** a native platform created by our team to make installation easier, without previous configurations. 
 
 {% hint style="info" %}
-If you want more information about how to configure Spinnaker or Octopipe, check the [**CD Configuration**](https://docs.charlescd.io/reference/cd-configuration) section.
+If you want more information about how to configure **Spinnaker** or **CharlesCD**, check the [**CD Configuration**](https://docs.charlescd.io/reference/cd-configuration) section.
 {% endhint %}
 
 ## Main installation cases
@@ -233,7 +233,7 @@ helm install charlescd <repo-folder> -n <namespace>
 ```
 
 {% hint style="warning" %}
-It's important to remember that, in case of no customization at all, the final result is the same as in case \#1 in which, for standard, we install the PostgreSQL, Redis, Keycloak and Octopipe. 
+It's important to remember that, in case of no customization at all, the final result is the same as in case \#1 in which, for standard, we install the PostgreSQL, Redis, Keycloak and CharlesCD. 
 
 So, you must not forget to customize the fields in case you want something manageable. 
 {% endhint %}
