@@ -14,6 +14,7 @@
   * [Circle Matcher](primeiros-passos/definindo-workspace/circle-matcher.md)
 * [Criando seu primeiro módulo](primeiros-passos/criando-modulos/README.md)
   * [Configurando o chart template](primeiros-passos/criando-modulos/configurando-o-chart-template.md)
+  * [Configurando o seu módulo](primeiros-passos/criando-modulos/configurando-o-seu-modulo.md)
 * [Primeiro Deploy](primeiros-passos/primeiro-deploy.md)
 * [Usando Círculos](primeiros-passos/usando-circulos.md)
 

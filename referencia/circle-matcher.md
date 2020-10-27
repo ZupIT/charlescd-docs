@@ -34,7 +34,7 @@ Se você passar informações que estejam fora das condições lógicas configur
 
 ## Identificação de círculos através da API
 
-Você pode integrar nas suas aplicações o recurso **Identify** do módulo [`charle-circle-matcher`](https://github.com/ZupIT/charlescd/tree/master/circle-matcher) para detectar os círculos que o seu usuário pertence.
+Você pode integrar nas suas aplicações o recurso **Identify** do módulo [`circle-matcher`](https://github.com/ZupIT/charlescd/tree/master/circle-matcher) para detectar os círculos que o seu usuário pertence.
 
 Por exemplo, dada a utilização dos seguintes parâmetros ao segmentar:
 
