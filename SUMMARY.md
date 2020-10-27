@@ -14,6 +14,7 @@
   * [Circle Matcher](get-started/defining-a-workspace/circle-matcher.md)
 * [Creating your first module](get-started/creating-your-first-module/README.md)
   * [How to configure Chart template](get-started/creating-your-first-module/how-to-configure-chart-template.md)
+  * [Configuring your module](get-started/creating-your-first-module/configuring-your-module.md)
 * [First Deploy](get-started/first-deploy.md)
 * [Using Circles](get-started/using-circles.md)
 
