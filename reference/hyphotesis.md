@@ -33,7 +33,7 @@ When a feature card is added, Charles creates a new git branch for the client th
 
 The board is organized and structured based on Agile methodology, so you are able to create a backlog with tasks and prioritize what is going to be done \(to do\) and indicate which ones are in progress \(doing\).
 
-As the hypothesis development evolves, the tasks are moved on the moove column. The status for each activity are:
+As the hypothesis development evolves, the tasks are moved to the next column. The status for each activity are:
 
 * **To Do:** tasks that are prioritized and need to be done;
 * **Doing:** tasks in progress;
