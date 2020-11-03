@@ -27,7 +27,7 @@ Quando um cartão de feature é adicionado, o Charles cria uma nova branch no gi
 
 Organizado com base em conceitos da metodologia ágil, o Board é estruturado para que, a partir de tarefas do backlog, você possa priorizar o que será feito \(to do\) e indicar o que está em andamento \(doing\).
 
-A medida que o desenvolvimento da hipótese evolui, as tarefas avançam nas colunas do moove. Os possíveis status de cada atividade são:
+A medida que o desenvolvimento da hipótese evolui, as tarefas são movidas para a próxima coluna. Os status de cada atividade são:
 
 * **To Do:** as tarefas foram priorizadas e precisam ser feitas.
 * **Doing:** as tarefas estão em andamento.
