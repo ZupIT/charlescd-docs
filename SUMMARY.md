@@ -29,8 +29,9 @@
 * [Release](referencia/release.md)
 * [Métricas](referencia/metricas/README.md)
   * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
-  * [Cadastrando o provedor de métricas](referencia/metricas/provedor-metrica.md)
+  * [Adicionando o DataSource](referencia/metricas/provedor-metrica.md)
   * [Grupo de métricas](referencia/metricas/grupo-de-metricas.md)
+  * [Ações de métricas](referencia/metricas/acoes-de-metricas.md)
   * [Métricas do Charles](referencia/metricas/metricas-do-charles.md)
 
 ## GUIDES

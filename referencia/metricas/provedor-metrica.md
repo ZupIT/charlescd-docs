@@ -1,24 +1,25 @@
 ---
-description: >-
-  Nesta seção, você encontra detalhes de como cadastrar seu provedor de métricas
-  no Charles.
+description: 'Nesta seção, você encontra detalhes de como adicionar o datasource no Charles.'
 ---
 
-# Cadastrando o provedor de métricas
+# Adicionando o DataSource
 
-O cadastro do provedor de métricas é uma etapa fundamental para você usar o Charles em todo seu potencial, já que ele possibilita que você quantifique a performance de suas aplicações e acompanhe o status delas.
+Para quantificar a performance de suas aplicações e acompanhar o status delas, o Charles oferece dois tipos de DataSource: Prometheus e Google Analytics. 
 
 {% hint style="warning" %}
-Antes de cadastrar o seu provedor, é necessário ter finalizado a [**configuração de métricas**](configurando-metricas.md).
+Antes de adicionar o Datasource, é necessário ter finalizado a [**configuração de métricas**](configurando-metricas.md).
 {% endhint %}
+
+### Como configurar? 
 
 Para realizar a configuração de cadastro, basta seguir os seguintes passos:
 
 1. Clique no seu nome, no canto inferior esquerdo e, em seguida, selecione **Settings**.
-2. Clique em **Credentials**.
-3. Clique em **Add Metric Provider**.
-4. Selecione a **opção de ferramenta** que você utiliza.
-5. Faça a configuração baseada na ferramenta selecionada.
+2. Clique em **Credentials;**
+3. Clique em **Add DataSource;**
+4. Selecione a **opção de ferramenta** que você utiliza, **Prometheus** ou **Google Analytics**;
+5. **Data source health:** essa opção é para saber mais detalhes sobre a saúde do seu círculo.
+6. Faça a configuração baseada na ferramenta selecionada.
 
-![](../../.gitbook/assets/metrics-provider%20%281%29.gif)
+![](../../.gitbook/assets/datasource-1-.gif)
 

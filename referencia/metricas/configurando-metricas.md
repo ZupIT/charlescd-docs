@@ -230,5 +230,9 @@ scrape_configs:
     action: keep
 ```
 {% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
 {% endtabs %}
 
