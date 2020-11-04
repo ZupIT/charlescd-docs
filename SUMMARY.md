@@ -29,7 +29,7 @@
 * [Releases](reference/release.md)
 * [Metrics](reference/metrics/README.md)
   * [Setting up your metrics](reference/metrics/setting-your-metrics.md)
-  * [Registering a metrics provider](reference/metrics/register-metrics-provider.md)
+  * [Adding the Datasource](reference/metrics/register-metrics-provider.md)
   * [Metrics group](reference/metrics/metrics-group.md)
   * [Metrics actions](reference/metrics/metrics-actions.md)
   * [Charles' metrics](reference/metrics/charles-metrics.md)
