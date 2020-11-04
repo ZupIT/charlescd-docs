@@ -1,6 +1,6 @@
 ---
 description: >-
-  This section describes through an example how to make an implementation of an
+  This section describes through an example how to make a deploy of an
   application via Charles.
 ---
 
