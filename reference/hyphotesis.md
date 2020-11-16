@@ -29,6 +29,18 @@ There are two types of cards:
 
 When a feature card is added, Charles creates a new git branch for the client that is directly stored in the used SCM, Git or Bitbucket, for example.
 
+## Protected branches 
+
+When you delete or alter a card from the **feature** type to the **action** one, the associated branch can be deleted.
+
+To avoid wrong deletions, Charles allows the **protected branches** configuration. These branches cannot be deleted by Charles.
+
+If you delete a card or alter a feature card to a an action one and if the associated branch is on the protected branches list, the deletion branch will be ignored. 
+
+### Configuration
+
+You have to configure through environment property `charlescd.protected.branches` on `moove` module. The default value is **master**, **main** and **trunk**. 
+
 ## Board management
 
 The board is organized and structured based on Agile methodology, so you are able to create a backlog with tasks and prioritize what is going to be done \(to do\) and indicate which ones are in progress \(doing\).
