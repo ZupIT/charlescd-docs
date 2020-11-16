@@ -23,7 +23,7 @@ O Charles utiliza uma arquitetura apropriada para ferramentas de Continuous Depl
 Para configurar, você precisa escolher entre CharlesCD ou Spinnaker. Feito isso, é preciso preencher alguns campos com as autenticações que serão feitas no cluster escolhido.
 
 * [**Spinnaker**](https://www.spinnaker.io/): ****ferramenta criada pela Netflix e que hoje é mantida por diversas empresas e a comunidade.  
-* **CharlesCD**: é uma ferramenta leve e de baixo custo, criada pelo time do Charles para fazer deploys.\(obs: Nossa ferramenta possui um limitador de requisições para em casos de ataque ou no caso de um número de requisições que extrapole o poder de processamento da ferramenta, o valor padrão  de limite são dez requisições por segundo e pode ser alterado nas variáveis de ambiente\)
+* **CharlesCD**: é uma ferramenta leve e de baixo custo, criada pelo time do Charles para fazer deploys.
 
 
 
