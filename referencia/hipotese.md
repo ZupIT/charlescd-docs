@@ -29,6 +29,18 @@ Esses cartões podem ser de dois tipos:
 
 Quando um cartão de feature é adicionado, o Charles cria uma nova branch no git do cliente que, por sua vez, é armazenada diretamente no SCM utilizado, seja ele Git ou Bitbucket.
 
+## Branches Protegidas
+
+Quando você excluir ou alterar um cartão do tipo **feature** para o tipo **action,** a branch associada pode ser excluída. 
+
+Para evitar exclusões indevidas de branches, o Charles permite a configuração de **branches protegidas**. Essas branches não podem ser excluídas pelo Charles. 
+
+Se você excluir um cartão ou alterar um cartão de feature para o de action e  a branch associada se encontrar na lista de branches protegidas; a exclusão da branch será ignorada.
+
+### Configuração <a id="configuracao"></a>
+
+A configuração é realizada por meio da propriedade de ambiente `charlescd.protected.branches`no módulo `moove`. O valor padrão dela é **master**, **main** e **trunk**.
+
 ## Gestão do Board
 
 Organizado com base em conceitos da metodologia ágil, o Board é estruturado para que, a partir de tarefas do backlog, você possa priorizar o que será feito \(to do\) e indicar o que está em andamento \(doing\).
