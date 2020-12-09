@@ -7,6 +7,13 @@ To install Charles it will be necessary an environment with the following requis
 * [**Kubernetes**](https://kubernetes.io/docs/setup/).
 * \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version&lt;= 1.4  and [**enabled sidecar injection**](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) ****on the deploy namespace of your application\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** in case you want to use ****[**metrics**](../../reference/metrics/)**.** 
+* \*\*\*\*[**Ingress**](https://github.com/kubernetes/ingress-nginx)\*\*\*\*
+
+{% hint style="warning" %}
+**What is Ingress?** It is an engine that exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. You can find out more about it [**here**](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress). 
+
+When you install Charles it comes with a default ingress, however if you want to use your own, follow [**the steps to enable it**. ](./#ingress)
+{% endhint %}
 
 ### Resources 
 
@@ -271,4 +278,18 @@ kubectl -n your-namespace apply secret-registry.yaml
 ```
 
 After completing these steps, your cluster will be able to maintain communication with the registry.
+
+## Configuring your ingress
+
+On`charlescd/install/helm-chart/values.yaml`, change the enable value to false, see below: 
+
+### **ingress**
+
+```text
+host: charles.info.example
+  class: nginx
+  controller:
+  nginx:
+  enabled: false
+```
 
