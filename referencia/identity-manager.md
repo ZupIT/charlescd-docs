@@ -38,8 +38,12 @@ idmRedirectHost: http://charles.info.example
 
 ```text
 idm:
-    endpoint: http://charlescd-keycloak-http/keycloak/auth/realms/charlescd/.well-known/openid-configuration
+  endpoint: http://charlescd-keycloak-http/
+	port: 443
+	path: keycloak/auth/realms/charlescd/.well-known/openid-configuration
 ```
 
 * `idm.endpoint`: o nginx que vem na instalação do Charles fará a validação do token informado durante as requisições, para isso, é necessário informar este endpoint.
+* `idm.port:` este campo representa a porta do IDM que você está usando com o Charles.
+* `idm.path:` este campo representa o path que será usado pelo envoy para validar o seu token. Para essa validação de token, o Charles utiliza o openid/userinfo endpoint. 
 
