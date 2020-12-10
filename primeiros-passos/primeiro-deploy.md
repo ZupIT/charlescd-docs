@@ -7,7 +7,7 @@ description: >-
 # Primeiro Deploy
 
 {% hint style="info" %}
-Após criar o seu primeiro [**módulo** ](criando-modulos/)e cadastrar as [**credenciais do seu cluster**,](definindo-workspace/configurando-cluster.md) você completou todos os passos de configuração necessários para a realização do seu primeiro deploy. Agora, é necessário criar uma [**release**](../referencia/release.md) ****e disponibilizá-la no cluster configurado.
+Após criar o seu primeiro [**módulo** ](criando-seu-primeiro-modulo/)e cadastrar as [**credenciais do seu cluster**,](definindo-workspace/ambiente-de-deploy.md) você completou todos os passos de configuração necessários para a realização do seu primeiro deploy. Agora, é necessário criar uma [**release**](../referencia/release.md) ****e disponibilizá-la no cluster configurado.
 {% endhint %}
 
 ### Como fazer o primeiro deploy?

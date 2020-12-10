@@ -51,7 +51,7 @@ Preencha os seguintes campos:
 1. **Name:** nome da configuração que será criada;
 2. **Namespace:** defina o namespace que será utilizado nos deploys no cluster Kubernetes. Você deve criar o seu namespace, uma vez que o Charles não faz isso;
 3. **Git provider**: defina o provedor de git a ser utilizado \(**GitHub ou GitLab**\);
-4. **Git token:** insira um token de autenticação que tenha acesso repositório git onde está armazenado seus [**templates Helm**](../primeiros-passos/criando-modulos/configurando-o-chart-template.md) que serão utilizados durante o deployment da sua [**aplicação**](../primeiros-passos/criando-modulos/). Caso o seu Git Provider seja **GitHub**, é necessário a permissão "_repo_". Se não, configure no **GitLab** os acessos: "_api_ " e "_read\_repository_".
+4. **Git token:** insira um token de autenticação que tenha acesso repositório git onde está armazenado seus [**templates Helm**](../primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md) que serão utilizados durante o deployment da sua [**aplicação**](../primeiros-passos/criando-seu-primeiro-modulo/). Caso o seu Git Provider seja **GitHub**, é necessário a permissão "_repo_". Se não, configure no **GitLab** os acessos: "_api_ " e "_read\_repository_".
 5. Selecione um **manager** para associar à CD Configuration. As opções são: **Default**, **EKS**, **Others.**
 
 ### Default

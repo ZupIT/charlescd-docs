@@ -8,22 +8,22 @@
 * [Instalando o Charles](primeiros-passos/instalando-charles/README.md)
   * [Definindo o Identity Manager](primeiros-passos/instalando-charles/definindo-o-identity-manager.md)
 * [Definindo um Workspace](primeiros-passos/definindo-workspace/README.md)
-  * [Credenciais do Git](primeiros-passos/definindo-workspace/github.md)
+  * [Credenciais do Git](primeiros-passos/definindo-workspace/credenciais-do-git.md)
   * [Docker Registry](primeiros-passos/definindo-workspace/docker-registry.md)
-  * [Ambiente de deploy](primeiros-passos/definindo-workspace/configurando-cluster.md)
+  * [Ambiente de deploy](primeiros-passos/definindo-workspace/ambiente-de-deploy.md)
   * [Circle Matcher](primeiros-passos/definindo-workspace/circle-matcher.md)
   * [Configurando as métricas](primeiros-passos/definindo-workspace/configurando-metricas.md)
   * [Adicionando o DataSource](primeiros-passos/definindo-workspace/adicionando-o-datasource.md)
   * [Ações de métricas](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
-* [Criando seu primeiro módulo](primeiros-passos/criando-modulos/README.md)
-  * [Configurando o chart template](primeiros-passos/criando-modulos/configurando-o-chart-template.md)
-  * [Configurando o seu módulo](primeiros-passos/criando-modulos/configurando-o-seu-modulo.md)
+* [Criando seu primeiro módulo](primeiros-passos/criando-seu-primeiro-modulo/README.md)
+  * [Configurando o chart template](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md)
+  * [Configurando o seu módulo](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-seu-modulo.md)
 * [Primeiro Deploy](primeiros-passos/primeiro-deploy.md)
 * [Usando Círculos](primeiros-passos/usando-circulos.md)
 
 ## Referência
 
-* [Círculo](referencia/circulos.md)
+* [Círculo](referencia/circulo.md)
 * [Circle Matcher](referencia/circle-matcher.md)
 * [Configuração de CD](referencia/configuracao-cd.md)
 * [Grupo de Usuários](referencia/grupos-de-usuarios.md)
@@ -41,7 +41,7 @@
 
 ## GUIDES
 
-* [Caso de Uso](guides/use-case.md)
+* [Caso de Uso](guides/caso-de-uso.md)
 
 ## FAQ
 

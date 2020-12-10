@@ -42,7 +42,7 @@ Para utilizar o Charles, é preciso cumprir alguns pré-requisitos:
 
 * Possuir um [**Registry**](primeiros-passos/definindo-workspace/docker-registry.md) onde as imagens das suas aplicações são armazenadas.
 * Definir um **fluxo de CI**. É esperado que esse fluxo seja ativado por meio de algum gatilho, por exemplo, um nome de branch que tenha um prefixo definido. Além disso, o pipeline deve realizar a construção da imagem da aplicação e o envio da mesma para o registry citado anteriormente.
-* Elaborar o [**Helm template**](primeiros-passos/criando-modulos/configurando-o-chart-template.md#o-que-e-o-helm) ****das suas aplicações. Isso é importante, porque o CD configurado por meio do Charles necessitará dessa informação para realizar o deploy da sua aplicação.
+* Elaborar o [**Helm template**](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md#o-que-e-o-helm) ****das suas aplicações. Isso é importante, porque o CD configurado por meio do Charles necessitará dessa informação para realizar o deploy da sua aplicação.
 
 ## Arquitetura do sistema
 

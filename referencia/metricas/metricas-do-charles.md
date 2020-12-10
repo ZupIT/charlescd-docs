@@ -28,7 +28,7 @@ Veja o exemplo abaixo:
 
 Com as métricas de círculo você pode ter uma visão geral sobre o seus círculos no Charles, como:
 
-* Os círculos [**ativos e inativos**](../circulos.md#circulos-ativos-e-inativos);
+* Os círculos [**ativos e inativos**](../circulo.md#circulos-ativos-e-inativos);
 * Tempo de vida do círculo;
 * A data da última atualização;
 

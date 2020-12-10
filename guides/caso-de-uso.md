@@ -31,7 +31,7 @@ O projeto está disponibilizado no [**repositório**](http://github.com/zupit/ch
 
 ![](../.gitbook/assets/screen-shot-2020-08-12-at-17.34.57.png)
 
-Para acessar o chart template do Circles Sample,[ **clique aqui**](https://api.github.com/repos/zupit/charlescd/contents/samples/circles). Caso tenha dúvida sobre essa configuração, veja a [**referência com um passo-a-passo**](../primeiros-passos/criando-modulos/configurando-o-chart-template.md).
+Para acessar o chart template do Circles Sample,[ **clique aqui**](https://api.github.com/repos/zupit/charlescd/contents/samples/circles). Caso tenha dúvida sobre essa configuração, veja a [**referência com um passo-a-passo**](../primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md).
 
 ### Implantando uma versão no círculo Default
 

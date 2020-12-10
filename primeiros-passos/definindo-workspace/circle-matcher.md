@@ -15,7 +15,7 @@ Apesar do Circle Matcher ser um módulo independente no Charles, é possível in
 Essa configuração é necessária para que você possa executar operações dentro do Charles, como criar ou editar segmentos de um círculo. 
 
 {% hint style="info" %}
-Vale lembrar que, no contexto do Charles, o módulo do Circle Matcher é o que mais recebe solicitações no ambiente por identificar os usuários com base nas regras que você configurou ao [**gerenciar um círculo**](../../referencia/circulos.md#como-criar-circulos). 
+Vale lembrar que, no contexto do Charles, o módulo do Circle Matcher é o que mais recebe solicitações no ambiente por identificar os usuários com base nas regras que você configurou ao [**gerenciar um círculo**](../../referencia/circulo.md#como-criar-circulos). 
 {% endhint %}
 
 Se você deseja saber mais sobre o que é um Circle Matcher, [**veja a seção Referência**](../../referencia/circle-matcher.md). 

@@ -6,7 +6,7 @@ description: Essa seção descreve como utilizar a lib de propagar o header "X-C
 
 ## Por que configurar? 
 
-A configuração do módulo é necessária porque, ao trabalhar em cenários com vários microsserviços, você precisa garantir que ocorra a propagação de header `X-Circle-Id` requirida para garantir o [**roteamento das versões corretas**](../../referencia/circulos.md#como-integrar-circulos-com-servicos). Dessa forma, você torna possível que o usuário da sua base chegue na mesma versão de todos os microsserviços que fazem parte do seu teste de hipótese.
+A configuração do módulo é necessária porque, ao trabalhar em cenários com vários microsserviços, você precisa garantir que ocorra a propagação de header `X-Circle-Id` requirida para garantir o [**roteamento das versões corretas**](../../referencia/circulo.md#como-integrar-circulos-com-servicos). Dessa forma, você torna possível que o usuário da sua base chegue na mesma versão de todos os microsserviços que fazem parte do seu teste de hipótese.
 
 Por exemplo, quando você testa uma feature entre microsserviços que tenham integrações em um fluxo de abertura de conta, é necessário garantir que o usuário irá bater em todas as versões corretas que estão no teste de hipótese criado para esse fluxo.
 
