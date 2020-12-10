@@ -9,7 +9,7 @@ description: >-
 In order to quatify your application's performances and follow up its status, Charles offers two types of Datasource: Prometheus and Google Analytics. 
 
 {% hint style="warning" %}
-Before you add the Datasource, it is necessary to finish your [**metrics configuration**](setting-your-metrics.md).
+Before you add the Datasource, it is necessary to finish your [**metrics configuration**](setting-up-your-metrics.md).
 {% endhint %}
 
 ### How to configure? 
