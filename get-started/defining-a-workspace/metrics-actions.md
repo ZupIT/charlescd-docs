@@ -13,7 +13,7 @@ In workspace configuration, click on the section **Add Metric Action** and follo
 **3. Type a description:** describe the action;  
 **4. Select a plugin:** select a plugin to run the action. 
 
-![](../../.gitbook/assets/gifdaconfiguracaoaddmetric.gif)
+![](../../.gitbook/assets/usandoactions-metricas%20%282%29.gif)
 
 {% hint style="info" %}
 The only available plugin so far is **circle deployment**. Charles allows you to make your own plugin, the way you want and to fulfill your application's purpose, for example, an action that sends an email to warn your circle status.
@@ -28,6 +28,8 @@ After you have configured your action, you have to register in your metrics grou
    1. **Type a nickname for action:**  Select the name of your action; 
    2. **Select action type:** Select the action you have configured before; 
    3. **Action configuration:** Configuration to run the chosen plugin. 
+
+![](../../.gitbook/assets/adicionando-a-action-correto%20%281%29.gif)
 
 ### How does it work? 
 
