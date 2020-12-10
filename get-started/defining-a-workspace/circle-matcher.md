@@ -32,3 +32,9 @@ The difference is in terms of performance, it is recommended to use Kubernetes s
 
 > Example: **http://charlescd-circle-matcher:8080**.
 
+## Next steps
+
+On this section, you saw how to create your Circle Matcher. To continue your workspace configuration, Charles offers metrics that need to be configured. 
+
+👉 Go to [**Setting up your metrics** ](setting-your-metrics.md)and find out how Charles uses metrics. 
+
