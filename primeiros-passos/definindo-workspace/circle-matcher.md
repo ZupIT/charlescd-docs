@@ -38,3 +38,9 @@ A diferença é que, em termos de desempenho, o mais recomendado é usar o nome 
 
 > Exemplo: **http://charlescd-circle-matcher:8080**.
 
+## Próximos passos 
+
+Nesta seção, você viu como criar seu Circle Matcher. Para continuar sua configuração de um workspace, o Charles oferece métricas que precisam ser configuradas.
+
+👉 Vá para página [**Configurando as métricas**](configurando-metricas.md) ****e descubra como Charles utiliza as métricas.
+

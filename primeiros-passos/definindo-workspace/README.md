@@ -17,7 +17,7 @@ Cada workspace possui as seguintes configurações:
 * Definição dos acessos e [**permissões dos grupos de usuários**.](../../referencia/grupos-de-usuarios.md#permissoes-para-o-grupo-de-usuarios-no-workspace)
 * Cadastros de credenciais do [**Git**](github.md)**,** [**Docker Registry**](docker-registry.md) ****e de ****[**Continuous Deployment \(CD\)**](../../referencia/configuracao-cd.md).
 * Personalização do [**Circle Matcher**](../../referencia/circle-matcher.md).
-* Registro do [**Provedor de Métricas**](../../referencia/metricas/provedor-metrica.md) das suas aplicações.
+* Registro do [**Provedor de Métricas**](adicionando-o-datasource.md) das suas aplicações.
 
 ![Configura&#xE7;&#xF5;es do workspace](../../.gitbook/assets/settings_-_workspace_-_11.4_-_add_group_permissions2x.png)
 

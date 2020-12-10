@@ -12,6 +12,9 @@
   * [Docker Registry](primeiros-passos/definindo-workspace/docker-registry.md)
   * [Ambiente de deploy](primeiros-passos/definindo-workspace/configurando-cluster.md)
   * [Circle Matcher](primeiros-passos/definindo-workspace/circle-matcher.md)
+  * [Configurando as métricas](primeiros-passos/definindo-workspace/configurando-metricas.md)
+  * [Adicionando o DataSource](primeiros-passos/definindo-workspace/adicionando-o-datasource.md)
+  * [Ações de métricas](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
 * [Criando seu primeiro módulo](primeiros-passos/criando-modulos/README.md)
   * [Configurando o chart template](primeiros-passos/criando-modulos/configurando-o-chart-template.md)
   * [Configurando o seu módulo](primeiros-passos/criando-modulos/configurando-o-seu-modulo.md)
@@ -33,10 +36,7 @@
   * [GCR](referencia/registry/gcr.md)
 * [Release](referencia/release.md)
 * [Métricas](referencia/metricas/README.md)
-  * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
-  * [Adicionando o DataSource](referencia/metricas/provedor-metrica.md)
   * [Grupo de métricas](referencia/metricas/grupo-de-metricas.md)
-  * [Ações de métricas](referencia/metricas/acoes-de-metricas.md)
   * [Métricas do Charles](referencia/metricas/metricas-do-charles.md)
 
 ## GUIDES

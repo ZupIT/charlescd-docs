@@ -6,14 +6,14 @@ description: >-
 
 # Configurando as métricas
 
-A configuração de métricas no Charles é realiza em duas partes, a primeira delas é feita no **Istio** e a segunda no seu **próprio provedor**. Vamos detalhar cada uma delas abaixo.
+A configuração de métricas no Charles é realizada em duas partes: a primeira delas é feita no **Istio** e a segunda no seu **próprio provedor**. Vamos detalhar cada uma delas abaixo.
 
 ## Configurando Istio
 
 As métricas relacionadas às requisições de cada círculo podem ser quantificadas e expostas pelo Istio.
 
 {% hint style="danger" %}
-Todas as configurações neste tópico foram testadas e validadas com versões do Istio entre 1.2 e 1.5. Qualquer outra versão não é garantido de funcionar.
+Todas as configurações neste tópico foram testadas e validadas com versões do Istio entre 1.2 e 1.5. Qualquer outra versão não é garantido que vá funcionar.
 {% endhint %}
 
 {% hint style="info" %}
@@ -229,10 +229,6 @@ scrape_configs:
     replacement: $1
     action: keep
 ```
-{% endtab %}
-
-{% tab title="" %}
-
 {% endtab %}
 {% endtabs %}
 

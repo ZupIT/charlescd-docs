@@ -6,7 +6,7 @@ description: >-
 
 # Grupo de métricas
 
-O grupo de métricas é uma funcionalidade que permite você cadastrar e organizar em grupos qualquer tipo de métrica dentro da sua aplicação. Essas métricas são relacionadas com o [**provedor que você cadastrou anteriormente**](provedor-metrica.md). 
+O grupo de métricas é uma funcionalidade que permite você cadastrar e organizar em grupos qualquer tipo de métrica dentro da sua aplicação. Essas métricas são relacionadas com o [**provedor que você cadastrou anteriormente**](../../primeiros-passos/definindo-workspace/adicionando-o-datasource.md). 
 
 ### Como criar um grupo?
 
