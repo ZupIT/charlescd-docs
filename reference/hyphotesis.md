@@ -29,13 +29,43 @@ There are two types of cards:
 
 When a feature card is added, Charles creates a new git branch for the client that is directly stored in the used SCM, Git or Bitbucket, for example.
 
+The name of the branch is chosen by the user through **Branch name** field, see below:
+
+## Protected branches 
+
+![](../.gitbook/assets/branch_name.png)
+
+When you delete or alter a card from the **feature** type to the **action** one, the associated branch can be deleted.
+
+If the branch already exists, it is only associated to a card. 
+
+To avoid wrong deletions, Charles allows the **protected branches** configuration. These branches cannot be deleted by Charles.
+
+### Deleting a card
+
+If you delete a card or alter a feature card to a an action one and if the associated branch is on the protected branches list, the deletion branch will be ignored. 
+
+There are three delete card options: 
+
+### Configuration
+
+1. **Archive:**  Only disable the card;
+2. **Delete card:** Delete only the card; 
+3. **Delete card and branch:** Delete the card and the associated branch. 
+
+You have to configure through environment property `charlescd.protected.branches` on `moove` module. The default value is **master**, **main** and **trunk**. 
+
 ## Protected branches 
 
 When you delete or alter a card from the **feature** type to the **action** one, the associated branch can be deleted.
 
 To avoid wrong deletions, Charles allows the **protected branches** configuration. These branches cannot be deleted by Charles.
 
-If you delete a card or alter a feature card to a an action one and if the associated branch is on the protected branches list, the deletion branch will be ignored. 
+If you alter a feature card to a an action one and if the associated branch is on the protected branches list, the deletion will be ignored. 
+
+In case you delete a card where the associated branch is configured as protected, when you go to the delete card option, you will see the branch will be disabled. See the image below: 
+
+![](../.gitbook/assets/clipboard-2020-05-10-at-4.10.26-pm.png)
 
 ### Configuration
 
