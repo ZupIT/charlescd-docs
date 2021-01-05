@@ -10,6 +10,6 @@ Enter the data below to grant Charles access to your Google Cloud Registry:
 Em caso de dúvidas para encontrar essas informações, sugerimos a documentação da [**Google Container Registry**](https://cloud.google.com/container-registry).
 
 {% hint style="info" %}
-**Connection Test feature makes sure that the credentials informed are valid.**
+**A funcionalidade de Connection Test garante que as credenciais informadas são válidas.**
 {% endhint %}
 
