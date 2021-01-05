@@ -7,7 +7,7 @@ description: 'Nesta seção, você encontra detalhes de como adicionar o datasou
 Para quantificar a performance de suas aplicações e acompanhar o status delas, o Charles oferece dois tipos de DataSource: Prometheus e Google Analytics. 
 
 {% hint style="warning" %}
-Antes de adicionar o Datasource, é necessário ter finalizado a [**configuração de métricas**](configurando-metricas.md).
+Antes de adicionar o Datasource, é necessário ter finalizado a [**configuração de métricas**](../../referencia/metricas/configurando-metricas.md).
 {% endhint %}
 
 ### Como configurar? 
@@ -21,5 +21,5 @@ Para realizar a configuração de cadastro, basta seguir os seguintes passos:
 5. **Data source health:** essa opção é para saber mais detalhes sobre a saúde do seu círculo.
 6. Faça a configuração baseada na ferramenta selecionada.
 
-![](../../.gitbook/assets/datasource-1-.gif)
+![](../../.gitbook/assets/datasource%20%281%29.gif)
 

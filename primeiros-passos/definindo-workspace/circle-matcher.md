@@ -42,5 +42,5 @@ A diferença é que, em termos de desempenho, o mais recomendado é usar o nome 
 
 Nesta seção, você viu como criar seu Circle Matcher. Para continuar sua configuração de um workspace, o Charles oferece métricas que precisam ser configuradas.
 
-👉 Vá para página [**Configurando as métricas**](configurando-metricas.md) ****e descubra como Charles utiliza as métricas.
+👉 Vá para página [**Configurando as métricas**](../../referencia/metricas/configurando-metricas.md) ****e descubra como Charles utiliza as métricas.
 
