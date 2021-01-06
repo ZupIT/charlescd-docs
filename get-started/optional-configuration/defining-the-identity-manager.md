@@ -20,11 +20,11 @@ On the example below, you can see a flow where there is a verification of what c
 
 It is necessary to have an identity manager to make sure Charle's accesses are safe. For this, Charles offers two options:
 
-#### Default IDM
+### Default IDM
 
 On Charles default installation, it already has Keycloak that it is used to manage the users. If you don't have a customized IDM, you can use this one.
 
-#### External IDM 
+### External IDM 
 
 In case you already have your own identity manager, it is necessary change some installation variables. For that, follow the instruction on [**reference section.**](../../reference/identity-manager.md)\*\*\*\*
 

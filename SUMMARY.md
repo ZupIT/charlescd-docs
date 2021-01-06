@@ -6,7 +6,13 @@
 ## GET STARTED
 
 * [Installing Charles](get-started/installing-charles/README.md)
-  * [Defining the Identity Manager](get-started/installing-charles/defining-the-identity-manager.md)
+  * [Installing via Single File](get-started/installing-charles/installing-via-single-file.md)
+  * [Installing via Helm](get-started/installing-charles/installing-via-helm.md)
+  * [Your first Charles' access](get-started/installing-charles/your-first-charles-access.md)
+* [Optional configuration](get-started/optional-configuration/README.md)
+  * [Authentication with private registry](get-started/optional-configuration/authentication-with-private-registry.md)
+  * [Configuring your ingress](get-started/optional-configuration/configuring-your-ingress.md)
+  * [Defining the Identity Manager](get-started/optional-configuration/defining-the-identity-manager.md)
 * [Defining a Workspace](get-started/defining-a-workspace/README.md)
   * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
   * [Deploy environment](get-started/defining-a-workspace/deploy-environment.md)
