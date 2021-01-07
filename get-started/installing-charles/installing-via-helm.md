@@ -1,5 +1,9 @@
 # Installing via Helm
 
+{% hint style="info" %}
+Before proceeding, make sure that all the [**requirements**](./#requirements) are properly installed.
+{% endhint %}
+
 This installation is recommended for those who already has an infrastructure to deal with a more complex environment or who has some limitations of security/scalability, which demands a **more complete install customization** of CharlesCD.  
 
 ### Requisites 

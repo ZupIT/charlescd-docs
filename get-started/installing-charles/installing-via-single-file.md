@@ -1,6 +1,10 @@
 # Installing via Single File
 
-This installation is recommended for those who never used Charles before and just want a **first contact in a testing environment**, without looking for scalability or security.
+{% hint style="info" %}
+Before proceeding, make sure that all the [**requirements**](./#requirements) are properly installed.
+{% endhint %}
+
+This installation is recommended for those who never used Charles before and just want the **first contact in a testing environment**, without looking for scalability or security.
 
 In this case, you will have to:
 
