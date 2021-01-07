@@ -1,6 +1,6 @@
 # GCR
 
-Enter the data below to grant Charles access to your Google Cloud Registry:
+Informe os dados abaixo para conceder acesso a Charles ao seu Google Cloud Registry:
 
 * **Nome**: esse nome representará sua configuração no Charles;
 * **URL do seu registry**: a URL do seu GCR, como[ ](%20https://gcr.io)\*\*\*\*[**https://gcr.io**](%20https://gcr.io);
@@ -10,6 +10,6 @@ Enter the data below to grant Charles access to your Google Cloud Registry:
 Em caso de dúvidas para encontrar essas informações, sugerimos a documentação da [**Google Container Registry**](https://cloud.google.com/container-registry).
 
 {% hint style="info" %}
-**A funcionalidade de Connection Test garante que as credenciais informadas são válidas.**
+A funcionalidade de Connection Test garante que as credenciais informadas são válidas.
 {% endhint %}
 
