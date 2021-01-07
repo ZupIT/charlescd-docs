@@ -4,6 +4,10 @@ description: 'Nesta seção, você encontra como instalar o Charles via Helm.'
 
 # Instalando via Helm
 
+{% hint style="info" %}
+Antes de prosseguir, tenha certeza de que todos os [**pré-requisitos**](./#pre-requisitos) estão devidamente instalados.
+{% endhint %}
+
 Esta instalação é indicada para quem possui uma infraestrutura já montada, devido um ambiente mais complexo ou há algumas limitações de segurança e/ou escalabilidade, o que exige uma **customização mais completa da instalação** do CharlesCD.
 
 ### Requisitos 

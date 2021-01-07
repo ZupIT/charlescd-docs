@@ -4,6 +4,10 @@ description: 'Nesta seção, você encontra como instalar o Charles via Single F
 
 # Instalando via Single File
 
+{% hint style="info" %}
+Antes de prosseguir, tenha certeza de que todos os [**pré-requisitos**](./#pre-requisitos) estão devidamente instalados.
+{% endhint %}
+
 Esta é a instalação mais recomendada para quem nunca usou o CharlesCD e já quer ter o **primeiro contato em um ambiente de testes,** sem olhar ainda para escalabilidade ou segurança.
 
 Neste caso, você irá utilizar: 
