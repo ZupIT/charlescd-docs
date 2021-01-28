@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find more information about Users Groups on Charles.'
+---
+
 # Users Groups
 
 A user group can represent a team or even a subset of people based on their skills.
@@ -29,4 +33,30 @@ The following profiles are available:
 * **Reader**: is able to view circles, hypothesis and modules.
 
 ![Permission options to associate users&apos; groups on a workspace.](../.gitbook/assets/chrome-capture-3-%20%282%29.gif)
+
+### Permissions map
+
+See below the permission given to each profile:
+
+| Modules | Action | Root | Maintainer | Developer | Analyst  | Reader |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Users** | Create | ✔  |   |   |   |   |
+|   | Edit | ✔  |   |   |   |   |
+|   | Delete | ✔  |   |   |   |   |
+|   | View | ✔  |   |   |   |   |
+| **User Groups** | Create | ✔  |   |   |   |   |
+|   | Edit | ✔  |   |   |   |   |
+|   | Delete | ✔  |   |   |   |   |
+|   | View | ✔  |   |   |   |   |
+| **Workspace** | Create | ✔  |   |   |   |   |
+|   | Configure | ✔ | ✔ |   |   |   |
+|   | Delete | ✔  |   |   |   |   |
+|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Circle** | Create/Edit/Delete | ✔  | ✔  | ✔  | ✔  |   |
+|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Hypothesis** | Create/Edit/Delete | ✔  | ✔  | ✔  | ✔  |   |
+|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Modules**  | Create/Edit/Delete | ✔  | ✔  | ✔  |   |   |
+|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
+| **Deploy**  | Make deployments | ✔  | ✔  | ✔  |   |   |
 

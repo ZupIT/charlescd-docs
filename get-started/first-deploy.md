@@ -1,13 +1,15 @@
 # First Deploy
 
-After you have created your first [**module**](creating-your-first-module.md) and registered your [**cluster crendentials**,](defining-a-workspace/configuracoes-de-deploy.md) you have finished all the steps needed to make your first deploy. Now, it is necessary to create a [**release** ](../reference/release.md)and provide it on the configured cluster.
+{% hint style="info" %}
+After you have created your first [**module**](creating-your-first-module/) and registered your [**cluster crendentials**,](defining-a-workspace/deploy-environment.md) you have finished all the steps needed to make your first deploy. Now, it is necessary to create a [**release** ](../reference/releases.md)and provide it on the configured cluster.
+{% endhint %}
 
 Charles offers two alternatives to create a release: use the [**hypothesis** ](../reference/hyphotesis.md)flow chart or create it with docker images already available on your configured [**registry**.](defining-a-workspace/docker-registry.md)
 
 Here, we will focus on the first approach with the following steps:
 
 1. Click on **Hypothesis** in the homepage left side bar; 
-2. Fill the name with the new hypothesis, on the **Create new hypothesis** field \(at the bottom of the hypothesis list\) and press Enter.
+2. Fill the name with the new hypothesis, on the **Create new hypothesis** field \(at the bottom of the hypothesis list\) and press enter.
 3. At the new created hypothesis board, click on **+Card** at the bottom of the **To do** list column;
 4. Type the name of your new card and press Enter; 
 5. Click on the card and associate it to a Module previously created. After this, a **branch with the name of the card will be created in the configured repository**; 

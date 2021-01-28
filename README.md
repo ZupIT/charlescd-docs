@@ -11,7 +11,7 @@ description: >-
 CharlesCD is an open source tool that makes deployments more agile, continuous and safe, which allows development teams to perform hypothesis validations with a specific group of users, simultaneously.
 
 {% hint style="warning" %}
-The product brings a new concept to the community: **deployment in circles of users on Kubernetes clusters**.
+The product brings a new concept to the community: **the** **deployment in circles of users on Kubernetes clusters**.
 {% endhint %}
 
 This kind of deploy makes it possible to create a segment with your clients' specific characteristics and, at the same time, submit several versions of the same application to test this circle of users.
@@ -33,14 +33,28 @@ The methodology implemented by Charles brings a lot of advantages such as:
 * Easy version management, allowing multiple parallel releases of the same application in the production environment; 
 * Monitoring the impact of each version through predefined metrics during the implementation creation.
 
-  **System architecture**
+  \*\*\*\*
+
+## Requirements
+
+In order to user Charles, it is necessary to fulfill some requirements: 
+
+1. **Installation:** see what you need ****[**here**](get-started/installing-charles/#requirements).
+2. To make the tool work properly, you will need: ****
+
+* A [**Registry**](get-started/defining-a-workspace/docker-registry.md) where the images of your application are stored.
+* Define a **CI flow.** It is expected that this flow is active through a trigger, for example, a branch name that has a defined prefix. Besides that, the pipeline must build the application's image and upload it to the registry mentioned before. 
+* Prepare the [**Helm template**](get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm) ****of your applications. This is important, a configured CD through Charles will need this information to make the deployments of your application. 
+
+## **System architecture**
 
 The platform was built using a microservice approach, and it has the following modules:
 
-![Charles architecture](.gitbook/assets/arquitetura-charles-nova%20%283%29%20%281%29%20%281%29%20%281%29.png)
+![](.gitbook/assets/charlescd-arch-overview-1-.png)
 
 * `charlescd-ui:`  mirrors on front-end the workspace configuration, users, modules, hypothesis and boards. It is the platform graphical interface.  
 * `charles-moove:` manages workspaces, users, modules, hypothesis and boards. It is the whole platform structure.   
 * `charles-butler:` orchestrates and manages releases and deploys. 
 * `charles-circle-matcher:`manages all created circles, and points out which circle each user belongs, based on their characteristics. 
+* `charlescd-compass`: data providers integration, make metrics analysis and execute configurable actions.
 

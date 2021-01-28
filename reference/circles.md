@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about how to use circles on
+  Charles.
+---
+
 # Circles
 
 Circles are the main approach related to the [**new deploy concept**](../faq/about-charles.md#what-is-circle-deploy) brought by Charles. It enables user groups creation with several characteristics and promotes simultaneous application tests for a great number of possible users.
@@ -8,12 +14,6 @@ Circles indicate clients segmentation and also support the version management cr
 
 Once the right people are chosen to have access to your release associated to a circle, Charles will generate a[ **series of business or performance metrics**](metrics/#charles-available-metrics). This information will give you better hypothesis results or even a better view on a feature in analysis and that will enable more assertive tests.
 
-## Active and inactive circles
-
-The existence of releases defines if a circle is active or not, which is the implemented versions for users segmentation. Therefore, active circles have implemented releases while the inactive circle doesn't have any.
-
-![Active and Inactive circle filter](https://gblobscdn.gitbook.com/assets%2F-LzaqMnnQTjZO7P6hApv%2F-M7rKxDdQhwf1rfMyili%2F-M7rMicKEB9xYtEJ-28B%2Fchrome-capture%20%282%29.gif?alt=media&token=04dfdbc0-4976-489e-aee4-44ec4946640f)
-
 ## How to create circles?
 
 To create a circle, you just have to follow these steps:
@@ -23,21 +23,49 @@ To create a circle, you just have to follow these steps:
 **3.** Define a segmentation.  
 **4.** \[Optional\] Implement a release.
 
-![How to create a circle](../.gitbook/assets/create-circle-3.gif)
+## What is a segmentation? 
 
-The segmentations are a subset of characteristics that you define to put all your users together in a circle. To make this happen, it is possible to segment your users by **filling in information manually** or through a **CVS file importation**.
+Segmentations are a subset of characteristics that you define to put all your users together in a circle. To make this happen, there are two ways to segment your users: 
+
+* **By filling in information manually** 
+* Through a **CVS file importation**.
+
+### How do you define it? 
+
+Segmentations have the following fields that you have to fill: 
+
+* **Key:** it is the same value in the user's identify request payload.
+* **Conditional:** it is the logic implication that will condition your key and value.
+* **Value:** they are the values in your base that can be used to make the segmentation logic.
+
+The key and value fields are established based on the information that will be sent in the request, that [**identifies the circles**](../get-started/defining-a-workspace/circle-matcher.md) where your user belong to. For example, the following payload could represent the information you have about a client: 
+
+```text
+{
+  "id": "7f2926d5-ff08-4d49-96df-d4ba0fc07b52",
+  "name": "Alice",
+  "state": "MG",
+  "city": "Uberlândia",
+  "age": "47",
+  "groupId": "a435bd12-ae82-48c8-b164-066d91ffe3a5"
+}
+```
+
+The keys used could be any of the ones sent in your application payload to the Charles' circle-matcher, such as: **id**, **name**, **state**, **city**, **age** e **groupId**. 
 
 {% hint style="info" %}
-**The best advantage to use segmentation** is the possibility to combine logic with several attributes to create different audience categories and, in this way, use them on hypothesis tests. For example, using the characteristics ‘profession’ and ‘region’, you are able to create a circle with engineers from the brazilian north region, another one with engineers from the southeast and a third one with all brazilian engineers.
+It is important to remember that your payload and your keys must be the same. 
 {% endhint %}
 
-### How to get **my circle's identifier**?  <a id="como-obter-o-identificador-do-meu-workspace"></a>
+See the example on how to create a circle below: 
 
-Once your circle is created, even without the configuration, it already has a single identifier. 
+![How to create a circle](../.gitbook/assets/chrome-capture-7-.gif)
 
-To get this information, select the workspace you want and then on the left menu, click on **Copy ID.**
+{% hint style="info" %}
+**The best advantage to use segmentation** is the possibility to combine logic with several attributes to create different audience categories and, in this way, use them on hypothesis tests. 
 
-![](../.gitbook/assets/circuloid%20%282%29.gif)
+For example, using the characteristics ‘profession’ and ‘region’, you are able to create a circle with engineers from the brazilian north region, another one with engineers from the southeast and a third one with all brazilians engineers.
+{% endhint %}
 
 ### **Manual segmentation**
 
@@ -54,25 +82,39 @@ This characteristics can be defined based on the following logics:
 * Between
 * Starts With
 
-Let’s see more examples:
+See some examples below:
 
-![Example of manual segmentation](https://lh6.googleusercontent.com/5hg_2ZW34hb69J69-MtDNctjLJX5-gwBP9kgN6Bto9_tm2tK9DL-rgmvTleoVihRft37P2QmcA6MzBc3Uj_vguGM9VQVc9fhKEpittLr8LXxvThC3dewpNGsEYSHXp6KfhX8GGx_)
+![Example of manual segmentation](../.gitbook/assets/image%20%285%29.png)
 
 ### **Segmentation by CSV importation**
 
-This segmentation is used only in the first CSV column to create rules. The first line in the first column must contain the key name and the same one must be informed on the key field.
+This segmentation is used only in the first CSV column to create rules. The first line in the first column must contain the key name and the same one must be informed on the key field._._
 
-![Example of CSV importation](https://gblobscdn.gitbook.com/assets%2F-LzaqMnnQTjZO7P6hApv%2F-M7rONJV5n28i7pTtM-C%2F-M7rS51dpK-0mabN_xP4%2Fimage.png?alt=media&token=10e21e5d-48bd-496a-bbac-dac677732fd2)
+![Example of CSV importation](../.gitbook/assets/chrome-capture-5-.jpg)
 
 After you have finished the file upload and saved the configuration, an overview will show up demonstrating how your segmentation is:
 
-![Overview of CSV importation](https://gblobscdn.gitbook.com/assets%2F-LzaqMnnQTjZO7P6hApv%2F-M7rONJV5n28i7pTtM-C%2F-M7rTw1eEWjh8orNB-pS%2Fimage.png?alt=media&token=a9ac51d8-985b-4b67-9f98-5ffa276faee6)
+![Overview of CVS importation](../.gitbook/assets/image%20%284%29.png)
 
-This way allows you to extract from an external client’s IDs base, a specific profile and import them directly on Charles.
+This way allows you to extract from an external client’s IDs base, a specific profile and import them directly on Charles. When a .csv file is imported and if it contains some empty lines, it will occur an importation error, because empty segments are not allowed.
 
 {% hint style="warning" %}
 OR is the only logic operator supported on this segmentation.
 {% endhint %}
+
+### How to get **my circle's identifier**?  <a id="como-obter-o-identificador-do-meu-workspace"></a>
+
+Once your circle is created, even without the configuration, it already has a single identifier. 
+
+To get this information, select the workspace you want and then on the left menu, click on **Copy ID.**
+
+![](../.gitbook/assets/circuloid%20%282%29.gif)
+
+## Active and inactive circles
+
+The existence of releases defines if a circle is active or not, which is the implemented versions for users segmentation. Therefore, active circles have implemented releases while the inactive circle doesn't have any.
+
+![Active and Inactive circle filter](https://gblobscdn.gitbook.com/assets%2F-LzaqMnnQTjZO7P6hApv%2F-M7rKxDdQhwf1rfMyili%2F-M7rMicKEB9xYtEJ-28B%2Fchrome-capture%20%282%29.gif?alt=media&token=04dfdbc0-4976-489e-aee4-44ec4946640f)
 
 ## How to integrate circle with services?
 

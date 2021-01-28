@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about how Circle Matcher works
+  on Charles.
+---
+
 # Circle Matcher
 
 Circle Matcher is a resource that allows you to validate if your [**circles**](circles.md) are in coherent segmentations. You can also use it in your applications to determine in which circle your users fit better.
@@ -6,15 +12,17 @@ Circle Matcher is a resource that allows you to validate if your [**circles**](c
 One good practice is to always make this identification when a user logs in the application. However, this can be changed according to your business needs.
 {% endhint %}
 
+For more information on how to configure your **Circle Matcher in a workspace**, [**see Defining Workspace section**](../get-started/defining-a-workspace/circle-matcher.md)**.** 
+
 ## Identifying circles through CharlesCD
 
 Once you start using the interface, it's possible to notice that there are two ways to perform the circle identification. For that, access the **Circles** menu inside a **workspace** and select the icon indicated below:
 
-![Identifica&#xE7;&#xE3;o do &#xED;cone do Circle Matcher](../.gitbook/assets/chrome-capture%20%282%29.jpg)
+![Circle Matcher identification icon ](../.gitbook/assets/chrome-capture%20%282%29.jpg)
 
 The two ways to make this validation are:
 
-* **Default:** in this option, you add manually keys and values to define the characteristics of a user test. And, based on that, once you execute the **Try**,  **you will receive all the circles related to these user.**  
+* **Default:** in this option, you add manually keys and values to define the characteristics of a user test. Based on that, once you run the **Try**,  **you will receive all the circles related to these user.**  
 
 ![Circle identification with Default option.](../.gitbook/assets/circle-matcher-default%20%282%29.gif)
 
@@ -36,7 +44,7 @@ For example, considering the use of the parameters below to segment:
 
 Once you send the identification request with some information, compatible circles will be returned.
 
-{% api-method method="post" host="https:" path="//api.charles-moove.com/identify" %}
+{% api-method method="post" host="https:// api.charlescd-circle-matcher.com/identify " path="" %}
 {% api-method-summary %}
 Identify
 {% endapi-method-summary %}
@@ -48,11 +56,11 @@ Method used to identify circles based on the user's characteristics
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="requestData" type="object" required=false %}
-{ "state": "NY", "profession": "Lawyer", "age": 46, "city": "Stony Brook"
+{% api-method-parameter name="requestData" type="object" required=true %}
+{ "state": "NY", "profession": "Lawyer", "age": 46, "city": "Stony Brook"}
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="workspaceId" type="string" required=false %}
+{% api-method-parameter name="workspaceId" type="string" required=true %}
 UUID
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -83,31 +91,31 @@ UUID
 {% endapi-method-spec %}
 {% endapi-method %}
 
-As the example above shows, there are correspondents circles with the given informations of the user, which means that **`charlescd-circle-matcher`** will return a list with all the circles. Here, there are two circles that fit with this description: NY Lawyers e Stony Brook’s Citizens.
+As the example above shows, there are circles with the given information of the user, which means that **`charlescd-circle-matcher`** will return a list with all the circles. Here, there are two circles that fit with this description: NY Lawyers e Stony Brook’s Citizens. The order of the circles returned will be by the date of creation, so the newest circle created will be the first of the list.
 
-In this request, only the parameter **`X-Workspace-Id`** is mandatory. The requisition body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. Let's see the case below:
+The requisition body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. See the case below:
 
 ![](https://lh3.googleusercontent.com/FdPVIHDFeYJCkC_6Y1P3ZOBSqmNlGkl9q2_XyIayNKQo2Mp9IXBY7PzvpzW0Mej1P9Ox8AG12QiA1H0w5uozWP1UYWafcfwXLKBOf3G-ObIVoPHtYGOlWd5Ju01uLuScqtCn8qQ1)
 
-The **Stony Brook’s Citizens** circle was created to identify users that contains as one of its characteristics the key **`city`** and the exact value **`Stony Brook`**. That means that this user won't be listed if you send a request to **`Identify`** and inform on the requisition body the information presented on the example below:
+The **Stony Brook’s Citizens** circle was created to identify users that contains as one of its characteristics the key **`city`** and the exact value **`London`**. That means that this user won't be listed if you send a request to **`Identify`** and inform on the requisition body the information presented on the example below:
 
-{% api-method method="post" host="https:// api.charlescd-circle-matcher.com/identify " path="" %}
+{% api-method method="post" host="https://" path="api.charlescd-circle-matcher.com/identify" %}
 {% api-method-summary %}
 Identify
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Method used to identify circles based on user's characteristics 
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="requestData" type="object" required=false %}
-{"aGEee": 46, "city": "Stony Brook"}
+{% api-method-parameter name="requestData" type="object" required=true %}
+{ "age": 46, "city": "London" }
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="workspaceId" type="string" required=false %}
+{% api-method-parameter name="workspaceId" type="string" required=true %}
 UUID
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -116,10 +124,10 @@ UUID
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-List of all circle the users belong to
+List of all circles the user belongs to
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
   "circles": [
     {
