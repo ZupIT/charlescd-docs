@@ -26,10 +26,10 @@ Para criar esta estrutura, basta executar os arquivos em algum cluster pré-conf
 ```text
 kubectl create namespace charles
 
-kubectl apply -n charles -f https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml
+kubectl apply -n charles -f https://raw.githubusercontent.com/ZupIT/charlescd/main/install/helm-chart/single-file.yaml
 ```
 
-Ao final do processo, você terá dentro do namespace `charles` todos os módulos do projeto e suas dependências instaladas da forma mais simples possível. No link, você encontra os [**arquivos no repositório**](https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml).
+Ao final do processo, você terá dentro do namespace `charles` todos os módulos do projeto e suas dependências instaladas. No link, você encontra os [**arquivos no repositório**](https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml).
 
 {% hint style="info" %}
 Se você quiser usar essa instalação em ambientes de produção ou desenvolvimento, deverá expor a aplicação usando um DNS.
