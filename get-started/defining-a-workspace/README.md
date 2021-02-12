@@ -11,7 +11,7 @@ You need only one installation, and the teams will be able to use Charles with d
 Each workspace has the following configurations:
 
 * Access control and **user groups permissions**;
-* [**Git**](git-credentials.md)**,** [**Docker Registry**](https://docs.charlescd.io/get-started/defining-a-workspace/docker-registry) ****and [**Continuous Deployment \(CD\)**;](https://docs.charlescd.io/reference/cd-configuration)
+* [**Git**]()**,** [**Docker Registry**](https://docs.charlescd.io/get-started/defining-a-workspace/docker-registry) ****and [**Continuous Deployment \(CD\)**;](https://docs.charlescd.io/reference/cd-configuration)
 * [**Circle Matcher**](https://docs.charlescd.io/reference/circle-matcher);
 * [**Metrics provider**](https://docs.charlescd.io/reference/metrics). 
 
