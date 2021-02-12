@@ -19,7 +19,7 @@ A primeira delas oferece todo o potencial de uso do produto, pois trabalha com o
 
 ### Release por meio do quadro de hipóteses
 
-Após o cadastro de uma [**hipótese**](hipotese.md) dentro do Charles, você pode utilizar o quadro que é gerado automaticamente para criar e gerenciar cartões que representam o desenvolvimento da sua hipótese.
+Após o cadastro de uma [**hipótese**]() dentro do Charles, você pode utilizar o quadro que é gerado automaticamente para criar e gerenciar cartões que representam o desenvolvimento da sua hipótese.
 
 Neste quadro, temos duas categorias de cartões: o **azul que representa a codificação de uma feature** e o **cinza que caracteriza às ações que não envolvem implementação**.
 
@@ -55,7 +55,7 @@ Após o deploy desta nova release, ela estará disponível para utilização em 
 
 ## Como buscar uma release existente?
 
-Se a release foi gerada através do [**quadro de hipóteses**](hipotese.md#gestao-do-board) no seu workspace, ao realizar o deploy em um círculo, você pode buscá-la através da opção: **"**_Search for existing releases_".
+Se a release foi gerada através do [**quadro de hipóteses**]() no seu workspace, ao realizar o deploy em um círculo, você pode buscá-la através da opção: **"**_Search for existing releases_".
 
 ![Exemplo de pesquisa de release pelo deploy no c&#xED;rculo](../.gitbook/assets/may-29-2020_17-21-33%20%282%29.gif)
 

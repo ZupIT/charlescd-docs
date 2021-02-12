@@ -12,7 +12,7 @@ Após criar o seu primeiro [**módulo** ](criando-seu-primeiro-modulo/)e cadastr
 
 ### Como fazer o primeiro deploy?
 
-No CharlesCD, há duas alternativas para a criação de uma release: utilizar o fluxo de um quadro de [**hipótese**](../referencia/hipotese.md) ****ou criá-la a partir de imagens docker já disponíveis no [**registry** ](definindo-workspace/docker-registry.md)configurado. 
+No CharlesCD, há duas alternativas para a criação de uma release: utilizar o fluxo de um quadro de [**hipótese**]() ****ou criá-la a partir de imagens docker já disponíveis no [**registry** ](definindo-workspace/docker-registry.md)configurado. 
 
 Nesta seção de passos iremos focar a primeira abordagem:
 
