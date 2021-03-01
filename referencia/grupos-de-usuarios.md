@@ -26,10 +26,10 @@ As permissões do Charles são dadas aos grupos de usuários quando você os ass
 
 Os seguintes perfis são suportados: 
 
-* **Mantenedor**: pode acessar e editar todas as configurações do workspace. Ele pode realizar implantações, e também tem a permissão para criar, editar e deletar círculos, módulos e hipóteses.
-* **Desenvolvedor**: possui acesso para realizar implantações e também pode criar, editar, deletar círculos, módulos e hipóteses. 
-* **Analista**: possui permissão para criar, editar e deletar círculos, módulos e hipóteses. E também pode visualizar as configurações dos módulos.
-* **Leitor**: pode visualizar círculos, hipóteses e módulos.
+* **Mantenedor**: pode acessar e editar todas as configurações do workspace. Ele pode realizar implantações, e também tem a permissão para criar, editar e deletar círculos e módulos.
+* **Desenvolvedor**: possui acesso para realizar implantações e também pode criar, editar, deletar círculos e módulos. 
+* **Analista**: possui permissão para criar, editar e deletar círculos e módulos. E também pode visualizar as configurações dos módulos.
+* **Leitor**: pode visualizar círculos e módulos.
 
 ![Escolha de permiss&#xE3;o ao associar um grupo de usu&#xE1;rios a um workspace.](../.gitbook/assets/chrome-capture-3-.gif)
 
