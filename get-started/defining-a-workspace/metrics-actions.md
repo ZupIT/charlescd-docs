@@ -2,7 +2,7 @@
 
 ## What is it? 
 
-After you had [**register your metrics group**](../../reference/metrics/metrics-group.md), Charles follows up and offers actions for each one of them. 
+After you had [**registered your metrics group**](../../reference/metrics/metrics-group.md), Charles follows up and offers actions for each one of them. 
 
 ## How to configure? 
 
@@ -33,7 +33,7 @@ After you have configured your action, you have to register in your metrics grou
 
 ### How does it work? 
 
-Inside your circle you register the [**metrics group**](../../reference/metrics/metrics-group.md), which it is responsible to create metrics that you want to track and you can also add action to this group. When you get to the threshold, the action will be triggered and what it is described in your plugin will happen, like for example, make a deploy of one circle in another circle. 
+Inside your circle, you register the [**metrics group**](../../reference/metrics/metrics-group.md), which is responsible to create metrics that you want to track and you can also add action to this group. When you get to the threshold, the action will be triggered and what is described in your plugin will happen, like for example, make a deployment of one circle in another circle. 
 
 You can track the action's status in the 'Metrics group' board, see below: 
 

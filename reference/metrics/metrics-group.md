@@ -6,7 +6,7 @@ description: >-
 
 # Metrics group
 
-The metrics group is a functionality that allows you to register and organize any kind of metrics in a group inside your application. These metrics are related to the [**provider you previously registred.** ](../../get-started/defining-a-workspace/register-metrics-provider.md)\*\*\*\*
+The metrics group is a functionality that allows you to register and organize any kind of metrics in a group inside your application. These metrics are related to the [**provider you previously registered.** ](../../get-started/defining-a-workspace/register-metrics-provider.md)\*\*\*\*
 
 ### **How to create?**
 
@@ -22,7 +22,7 @@ After you have created your group, now you are able to register your metrics.
 
   3. In **select a data source**, ****select your metrics provider already registered;
 
- 4. **Metric** is the field where your provider will return the metrics, choose one and after that use the **Filter** option to customize with the value and the conditional you need. 
+ 4. **Metric** is the field where your provider will return the metrics, choose one, and after that use the **Filter** option to customize with the value and the conditional you need. 
 
 See the example below: 
 
@@ -30,7 +30,7 @@ See the example below:
 
 5.  After that, define a **Threshold** to establish a limit to your metric. 
 
-For example, if you want to know if your application hits 50 errors, just customize the **threshold** and you will be notify when you hit this metric. 
+For example, if you want to know if your application hits 50 errors, just customize the **threshold** and you will be notified when you hit this metric. 
 
 ![](../../.gitbook/assets/threshold%20%281%29.gif)
 

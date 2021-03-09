@@ -31,7 +31,3 @@ In both cases, you need to inform the minimum risk value you'd like to be alerte
 Components are abstractions of the applications. If in your repository there are many applications, every component will match one of them.
 {% endhint %}
 
-### Health metrics
-
-For every component, it is possible to register metrics for health analysis: **latency** \(ms\) and **HTTP error** \(%\). When the limits are reached, or at least 10%, you will receive an alert that will show your application status on the circle that may have an issue.
-

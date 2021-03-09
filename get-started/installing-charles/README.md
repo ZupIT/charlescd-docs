@@ -15,7 +15,7 @@ CharlesCD's installation considers these **components**:
 To install Charles it will be necessary an environment with the following requisites: 
 
 * [**Kubernetes**](https://kubernetes.io/docs/setup/).
-* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version&lt;= 1.4  and [**enabled sidecar injection**](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) ****on the deploy namespace of your application\).
+* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version =&gt; 1.7 and [**enabled sidecar injection**](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) ****on the deploy namespace of your application\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** in case you want to use ****[**metrics**](../../reference/metrics/)**.** 
 * \*\*\*\*[**Ingress**](https://github.com/kubernetes/ingress-nginx)\*\*\*\*
 
