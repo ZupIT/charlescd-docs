@@ -6,189 +6,21 @@ description: >-
 
 # Configurando as métricas
 
-A configuração de métricas no Charles é realizada em duas partes: a primeira delas é feita no **Istio** e a segunda no seu **próprio provedor**. Vamos detalhar cada uma delas abaixo.
+A configuração de métricas no Charles é realizada no **Istio** e no seu **próprio provedor**. Veja os detalhes abaixo. 
 
 ## Configurando Istio
 
 As métricas relacionadas às requisições de cada círculo podem ser quantificadas e expostas pelo Istio.
 
 {% hint style="danger" %}
-Todas as configurações neste tópico foram testadas e validadas com versões do Istio entre 1.2 e 1.5. Qualquer outra versão não é garantido que vá funcionar.
+A configuração pode ser feita a partir da versão =&gt;1.7 do Istio.
 {% endhint %}
-
-{% hint style="info" %}
-Antes, caso queira entender mais sobre telemetria no Istio, recomendamos que consulte a [**doc oficial**](https://istio.io/docs/tasks/observability/metrics/).
-{% endhint %}
-
-### **Parte** 1: Habilitando o Istio
-
-Para começar, é necessário primeiro garantir que você já tem o seu **Istio habilitado para expor métricas**. Feito isso, você deve configurá-lo para expor as métricas do Charles.
-
-Caso você já tenha feito essa habilitação, pode seguir direto para segunda parte. Se este não for o seu caso, siga os seguintes passos:
-
-{% hint style="warning" %}
-Antes, vale reforçar que a configuração abaixo se referem à versão 1.5 do Istio.
-{% endhint %}
-
-**Passo 1:** Crie um arquivo chamado **telemetry.yaml** com o conteúdo abaixo.
-
-```yaml
-apiVersion: install.istio.io/v1alpha2
-kind: IstioControlPlane
-spec:
-  values:
-    prometheus:
-      enabled: false
-    telemetry:
-      v1:
-        enabled: true
-      v2:
-        enabled: false
-```
-
-**Passo 2:** Execute o comando abaixo.
-
-{% hint style="warning" %}
-É necessário ter configurado o istioctl para executar o comando caso não tenha, clique [**aqui**](https://istio.io/docs/setup/getting-started/#download).
-{% endhint %}
-
-```bash
-$ istioctl manifest apply -f telemetry.yaml
-```
-
-
-
-### **Parte 2: Adicionando as métricas do Charles no Istio**
-
-Uma vez feita a habilitação do Istio, você precisa executar o comando abaixo para configurar a opção de expor as métricas relacionadas ao Charles:
-
-```bash
-$ kubectl apply -f your-metrics-config.yaml
-```
-
-{% hint style="warning" %}
-O arquivo your-metrics-config.yaml que está sendo usado deve ser referente à ferramenta que você utiliza.
-{% endhint %}
-
-Você encontra abaixo o arquivo para sua configuração.
-
-{% tabs %}
-{% tab title="Prometheus" %}
-```yaml
-  # Configuration for request count metric instance
-  apiVersion: config.istio.io/v1alpha2
-  kind: instance
-  metadata:
-    name: charlesrequesttotal
-    namespace: istio-system
-  spec:
-    compiledTemplate: metric
-    params:
-      value: "1"
-      dimensions:
-        source: source.workload.name | "unknown"
-        destination_pod: destination.workload.name | "unknown"
-        destination_host: request.host | "unknown"
-        destination_component: destination.labels["app"] | "unknown"
-        circle_id: request.headers["x-circle-id"] | "unknown"
-        circle_source: request.headers["x-circle-source"] | "unknown"
-        response_status: response.code | 200
-      monitoredResourceType: '"UNSPECIFIED"'
-  ---
-  # Configuration for response duration metric instance
-  apiVersion: config.istio.io/v1alpha2
-  kind: instance
-  metadata: 
-    name: charlesrequestduration
-    namespace: istio-system
-  spec: 
-    compiledTemplate: metric
-    params: 
-      value: response.duration | "0ms"
-      dimensions:
-        source: source.workload.name | "unknown"
-        destination_pod: destination.workload.name | "unknown"
-        destination_host: request.host | "unknown"
-        destination_component: destination.labels["app"] | "unknown"
-        circle_id: request.headers["x-circle-id"] | "unknown"
-        circle_source: request.headers["x-circle-source"] | "unknown"
-        response_status: response.code | 200
-      monitoredResourceType: '"UNSPECIFIED"'
-  ---     
-  # Configuration for a Prometheus handler
-  apiVersion: config.istio.io/v1alpha2
-  kind: handler
-  metadata:
-    name: charleshandler
-    namespace: istio-system
-  spec:
-    compiledAdapter: prometheus
-    params:  
-      metrics:
-      - name: charles_request_total # Prometheus metric name
-        instance_name: charlesrequesttotal.instance.istio-system
-        kind: COUNTER
-        label_names:
-        - source
-        - destination_pod
-        - destination_host
-        - destination_component
-        - circle_id
-        - circle_source
-        - response_status
-      - name: charles_request_duration_seconds # Prometheus metric name
-        instance_name: charlesrequestduration.instance.istio-system
-        kind: DISTRIBUTION
-        label_names:
-        - source
-        - destination_pod
-        - destination_host
-        - destination_component
-        - circle_id
-        - circle_source
-        - response_status
-        buckets:
-          explicit_buckets:
-            bounds:
-            - 0.01
-            - 0.025
-            - 0.05
-            - 0.1
-            - 0.25
-            - 0.5
-            - 0.75
-            - 1
-            - 2.5
-            - 5
-            - 10
-  ---
-  # Rule to send metric instances to a Prometheus handler
-  apiVersion: config.istio.io/v1alpha2
-  kind: rule
-  metadata:
-    name: charlesprom
-    namespace: istio-system
-  spec:
-    actions:
-    - handler: charleshandler
-      instances:
-      - charlesrequesttotal
-      - charlesrequestduration
-```
-{% endtab %}
-{% endtabs %}
 
 ## Configurando sua própria ferramenta de métricas
 
 Depois de habilitar o Istio, você precisa configurar sua ferramenta para que ela possa ler as métricas expostas.
 
-O primeiro passo é selecionar qual das **ferramentas aceitas pelo Charles** que você utiliza.
-
-{% hint style="info" %}
-Caso a ferramenta que você utilize não seja aceita ainda, fique à vontade de [**sugerir para nós**](https://github.com/ZupIT/charlescd/issues), ou faça sua implementação e [**contribua conosco**](https://github.com/ZupIT/charlescd/blob/master/CONTRIBUTING.md). Faça nossa comunidade crescer cada vez mais.
-{% endhint %}
-
-Abaixo, você confere detalhes da ferramenta compatível com Charles.
+Veja abaixo os detalhes da **ferramenta compatível com Charles**.
 
 {% tabs %}
 {% tab title="Prometheus" %}
@@ -208,27 +40,63 @@ Basta adicionar o job abaixo para realizar a configuração.
 
 ```yaml
 global:
-  scrape_interval: 15s
-  scrape_timeout: 10s
-  evaluation_interval: 1m
-scrape_configs:
-- job_name: istio-mesh
-  scrape_interval: 15s
-  scrape_timeout: 10s
-  metrics_path: /metrics
-  scheme: http
-  kubernetes_sd_configs:
-  - role: endpoints
-    namespaces:
-      names:
-      - istio-system #The namespace where your Istio is installed
-  relabel_configs:
-  - source_labels: [__meta_kubernetes_service_name, __meta_kubernetes_endpoint_port_name]
-    separator: ;
-    regex: istio-telemetry;prometheus
-    replacement: $1
-    action: keep
+      scrape_interval:     15s
+      scrape_timeout:      10s
+      evaluation_interval: 15s
+    scrape_configs:
+      - job_name: kubernetes-pods
+      kubernetes_sd_configs:
+      - role: pod
+      relabel_configs:
+      - action: keep
+        regex: true
+        source_labels:
+        - __meta_kubernetes_pod_annotation_prometheus_io_scrape
+      - action: replace
+        regex: (.+)
+        source_labels:
+        - __meta_kubernetes_pod_annotation_prometheus_io_path
+        target_label: __metrics_path__
+      - action: replace
+        regex: ([^:]+)(?::\d+)?;(\d+)
+        replacement: $1:$2
+        source_labels:
+        - __address__
+        - __meta_kubernetes_pod_annotation_prometheus_io_port
+        target_label: __address__      
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_namespace
+        target_label: kubernetes_namespace
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_pod_label_circleId
+        target_label: circle_source
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_pod_label_component
+        target_label: destination_component      
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_pod_name
+        target_label: kubernetes_pod_name
+      - action: drop
+        regex: Pending|Succeeded|Failed
+        source_labels:
+        - __meta_kubernetes_pod_phase
 ```
 {% endtab %}
 {% endtabs %}
+
+## Metainformações
+
+A partir de cada métrica, é possível extrair uma série de metainformações, ou seja, de atributos ou informações complementares a essas métricas e que podem ser obtidas com diversos tipos de filtros e análises.‌
+
+Na tabela abaixo, estão algumas metainformações existentes nas métricas do CharlesCD:
+
+| Metadado | Descrição | Tipo |
+| :--- | :--- | :--- |
+| destination\_component | Valor presente na label "app" da POD que recebeu a requisição ou "unknown" se a informação não estiver presente | Texto |
+| circle\_source | Header "x-circle-source" que é colocado pelo filtro do Envoy na interceptação de cada requisição | Texto |
+| response\_code | O status HTTP da resposta daquela requisição | Número |
 
