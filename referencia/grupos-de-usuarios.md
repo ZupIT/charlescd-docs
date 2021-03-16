@@ -8,13 +8,13 @@ description: >-
 
 Um grupo de usuários pode representar um time ou até mesmo um subconjunto de pessoas baseado em suas habilidades. 
 
-Por exemplo, em um time muito grande, as permissões de acesso ao Charles poderiam se diferenciar de acordo com a posição de seus membros, iríamos ter os seguintes grupos:
+Por exemplo, em um time muito grande, as permissões de acesso ao Charles poderiam se diferenciar de acordo com a posição de seus membros, você teria os seguintes grupos:
 
 * Desenvolvedores do Produto X.
 * QAs do Produto X.
 * Data Analysts do Produto X.
 
-Porém, se todos do time tiverem a mesma permissão, podemos criar apenas um grupo com todos os usuários:
+Porém, se todos do time tiverem a mesma permissão, você pode criar apenas um grupo com todos os usuários:
 
 * Time do Produto X.
 
@@ -53,7 +53,6 @@ Segue abaixo as permissões vinculadas a cada perfil:
 |   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
 | **Circle** | Criar/Editar/Deletar | ✔  | ✔  | ✔  | ✔  |   |
 |   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
-| **Hypothesis** | Criar/Editar/Deletar | ✔  | ✔  | ✔  | ✔  |   |
 |   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
 | **Modules**  | Criar/Editar/Deletar | ✔  | ✔  | ✔  |   |   |
 |   | Visualizar  | ✔  | ✔  | ✔  | ✔  | ✔  |
