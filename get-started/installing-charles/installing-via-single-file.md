@@ -25,7 +25,7 @@ kubectl create namespace charles
 kubectl apply -n charles -f https://raw.githubusercontent.com/ZupIT/charlescd/main/install/helm-chart/single-file.yaml
 ```
 
-At the end of the process, you will have inside of the namespace `charles` all the modules of the project and its dependencies installed in a simpler way. Here you will find the[ **files in the repository**](https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml). 
+At the end of the process, you will have inside of the namespace`charles`all the modules of the project and its dependencies installed in a simpler way. Here you will find the[ **files in the repository**](https://raw.githubusercontent.com/ZupIT/charlescd/master/install/helm-chart/single-file.yaml). 
 
 {% hint style="info" %}
 If you want to use this installation in a productive or development environment you will probably expose the application using a DNS.
@@ -36,6 +36,6 @@ After doing this, clone the single-file.yaml and change all occurrences from htt
 {% endhint %}
 
 {% hint style="danger" %}
-The purpose of this installation is only for tests. Using this for production environment is not recommended due to lack o backup, high availability, etc.
+The purpose of this installation is only for tests. Using this for the production environment is not recommended due to lack o backup, high availability, etc.
 {% endhint %}
 

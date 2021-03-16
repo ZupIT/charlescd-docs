@@ -8,9 +8,9 @@ A **module** is your application stored in a [**Git repository previously regist
 
 To add it, access the **Modules** menu on your workspace and set the following properties:
 
-* **Name**: this field should be the junction of the organization and the module names, as it is in your git. For example: `ZupIt/charlescd`.
-* **Git URL**: your repository's URL. For example: [https://github.com/ZupIT/charlescd](https://github.com/ZupIT/charlescd).
-* **Helm repository URL:**  your repository where the helm template of your application it is in. 
+* **Name**: This field should be the junction of the organization and the module names, as it is in your git. For example: `ZupIt/charlescd`.
+* **Git URL**: Your repository's URL. For example: [https://github.com/ZupIT/charlescd](https://github.com/ZupIT/charlescd).
+* **Helm repository URL:**  your repository where the helm template of your application is in. 
 
 {% hint style="info" %}
 For more information about Helm Repository, [**access here**](how-to-configure-chart-template.md). 
@@ -19,7 +19,7 @@ For more information about Helm Repository, [**access here**](how-to-configure-c
 If you have a lot of applications on your repository, register them with the components and add the following:
 
 * **Name**: application's name, the same on your repository;
-* **Metrics**: latency \(ms\) and HTTP error \(%\). Both cases you must add a risk value that you want to receive an alert if your component reaches the rate. 
+* **Metrics**: latency \(ms\) and HTTP error \(%\). In both cases, you must add a risk value that you want to receive an alert if your component reaches the rate. 
 
 In both cases, you need to inform the minimum risk value you'd like to be alerted.
 
