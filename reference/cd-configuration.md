@@ -18,11 +18,11 @@ CharlesCD is always evolving, so there's a roadmap that is in constant update, w
 
 Charles uses a proper architecture for Continuous Deployment \(CD\) and that makes it fits in the environment chosen by you. These tools are used to run the Kubernetes manifestos on a configured cluster and to authenticate with a variety of cloud providers \(AWS, GCP, Azure\). 
 
-To make this configuration, you have to choose between CharlesCD or Spinnaker. After that, it is necessary to fill some fields with the authentication that it will be made in the chosen cluster.
+To make this configuration, you will use CharlesCD. Now, it is necessary to fill some fields with the authentication for the cluster.
 
 * **CharlesCD**: behind the scenes, there is a light and low-cost tool developed by Charles Team that does the deployment.
 
-To register any of them, follow the next steps: 
+To register, follow the next steps: 
 
 1. On Charles' homepage, select **Settings** in the lower-left corner;
 2. Click on **Credentials;**
