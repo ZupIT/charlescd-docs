@@ -8,7 +8,7 @@ description: 'In this section, you''ll find how to make the CD configuration'
 
 This configuration is necessary to point to Charles which CD tool you use to make deploys in your cluster. It is also important to mention that you have to provide your git repository token that contains the [**helm templates.** ](../get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm)\*\*\*\*
 
-At this moment, Charles is able to use Spinnaker or CharlesCD \(Octopipe\). 
+At this moment, Charles is able to use CharlesCD \(Octopipe\). 
 
 {% hint style="info" %}
 CharlesCD is always evolving, so there's a roadmap that is in constant update, which means that we're looking for more CD tools integrations.
@@ -20,7 +20,6 @@ Charles uses a proper architecture for Continuous Deployment \(CD\) and that mak
 
 To make this configuration, you have to choose between CharlesCD or Spinnaker. After that, it is necessary to fill some fields with the authentication that it will be made in the chosen cluster.
 
-* [**Spinnaker**](https://www.spinnaker.io/): ****tool created by Netflix, and used by companies and community.  
 * **CharlesCD**: behind the scenes, there is a light and low-cost tool developed by Charles Team that does the deployment.
 
 To register any of them, follow the next steps: 
@@ -28,17 +27,7 @@ To register any of them, follow the next steps:
 1. On Charles' homepage, select **Settings** in the lower-left corner;
 2. Click on **Credentials;**
 3. Click on **Add CD Configuration;**
-4. Select the option **CharlesCD** or **Spinnaker**, which will depend on which system you use. 
-
-## Using Spinnaker
-
-Fill the following fields:
-
-1. **Name:** configuration **name** that will be created;
-2. **Namespace:** define the namespace that will be used on Kubernetes cluster deploys. You have to create your namespace, once Charles does not do it;
-3. **URL:** insert the access URL to the Spinnaker;
-4. **Git account:** Insert a git configuration name created on [**Spinnaker's installation**](https://spinnaker.io/setup/artifacts/github/). In this case, it's the property `ARTIFACT_ACCOUNT_NAME` configured according to the **Spinnaker** documentation. 
-5. **Kubernetes account:** insert the access configuration name to Kubernetes' cluster, created on the Spinnaker installation. 
+4. Select the option **CharlesCD**, which will depend on which system you use. 
 
 ## Using CharlesCD
 
