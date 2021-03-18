@@ -41,6 +41,8 @@
 * [Métricas](referencia/metricas/README.md)
   * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
   * [Grupo de métricas](referencia/metricas/grupo-de-metricas.md)
+  * [Ações](referencia/metricas/acoes.md)
+  * [Grupo de métricas para monitorar a saúde](referencia/metricas/grupo-de-metricas-para-monitorar-a-saude.md)
   * [Métricas do Charles](referencia/metricas/metricas-do-charles.md)
 
 ## GUIDES
