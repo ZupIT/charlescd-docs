@@ -6,31 +6,37 @@ description: >-
 
 # Metrics group
 
-The metrics group is a functionality that allows you to register and organize any kind of metrics in a group inside your application. These metrics are related to the [**provider you previously registered.** ](../../get-started/defining-a-workspace/register-metrics-provider.md)\*\*\*\*
+The metrics group is a functionality that allows you to register and organize any kind of metrics in a group inside your application. These metrics are related to the [**data source you previously registered.** ](../../get-started/defining-a-workspace/register-metrics-provider.md)\*\*\*\*
 
-### **How to create?**
+## **How to create?**
 
 To create your metrics group, follow the next steps: 
 
-1. In **add metrics group**, type the name you want for your group and click on **add group**: 
+     **Step 1:**  Go to the **"Circles"** section, on the left menu and choose the circle  you want to create a new metric group;
+
+     **Step 2:** In **'Add metrics group'**, type the name you want for your group and click on **'Add group'**: 
 
 ![](../../.gitbook/assets/criacaogroup%20%281%29.gif)
 
-After you have created your group, now you are able to register your metrics.
+Now you are able to register your metrics**:**
 
-   ****2**.** Click on **Add metric**  and put the metrics name you want; 
+   **Step 3**: ****Click on '**Add metric'**  and put the metrics name you want; 
 
-  3. In **select a data source**, ****select your metrics provider already registered;
+   **Step 4:** Click on **'Select a Datasource':** select your metrics Datasource already registered;
 
- 4. **Metric** is the field where your provider will return the metrics, choose one, and after that use the **Filter** option to customize with the value and the conditional you need. 
+  **Step 5:** Click on **Metric:**  **Choose one** and use the **Filter** option to customize with the value and the conditional you need.  Here is ****where your Datasource will return the metrics. 
 
 See the example below: 
 
 ![](../../.gitbook/assets/metric+filter%20%281%29.gif)
 
-5.  After that, define a **Threshold** to establish a limit to your metric. 
+   **Step 6:** Define a **Threshold** to establish a limit to your metric. 
+
+{% hint style="info" %}
+**Thresholds** are predetermined limits that you can configure in Charles. It informs you when one of them reaches the goal.
 
 For example, if you want to know if your application hits 50 errors, just customize the **threshold** and you will be notified when you hit this metric. 
+{% endhint %}
 
 ![](../../.gitbook/assets/threshold%20%281%29.gif)
 
@@ -42,11 +48,15 @@ Now, you can follow up the result with graphics and the available information, a
 
 ![](../../.gitbook/assets/graficos%20%281%29.gif)
 
-### **Metrics group: Advanced**
+## **Metrics group: Advanced**
 
-There is an **advanced** function inside the metrics group, you can customize your own metric, like for example, a database query, or specifically according to what you need.
+You can customize your own metric with the metrics' group advanced function. This option is for users that already have the knowledge to do queries in the Datasource they are using, it also gives them the power to create any metric possible using that tool.
 
-See the example below: 
+Check out the example below, it shows where to use **PromQL** to build queries in Prometheus, creating a new metric type: 
 
 ![](../../.gitbook/assets/advanced%20%281%29.png)
+
+{% hint style="info" %}
+To see more examples of the advanced mode, check out [**this section**](metric-groups-to-health-monitoring.md)**.**
+{% endhint %}
 

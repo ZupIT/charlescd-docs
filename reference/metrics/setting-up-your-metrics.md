@@ -20,7 +20,7 @@ The configuration in this section can be done starting with Istio =&gt;1.7 versi
 
 After you finish your Istio configuration it is necessary to configure your metrics tool.
 
-See below the details of the tool Charles will be able to read.
+See below the details of the tools Charles will be able to read.
 
 {% tabs %}
 {% tab title="Prometheus" %}
@@ -30,7 +30,7 @@ Prometheus is an open-source system for monitoring and alerting toolkit. It is t
 If you want to know more about Prometheus, check out [**their documentation**](https://prometheus.io/)**.**
 {% endhint %}
 
-In order for Prometheus to be able to read and store metrics data, we must configure it.
+In order for Prometheus to be able to read and store metrics data, you have to configure it.
 
 To do so, it's necessary to add the job below so it will read Istio's generated metrics.
 
@@ -88,18 +88,32 @@ global:
 ```
 
 {% hint style="warning" %}
-Stay tuned about the configuration **namespaces**, the configured value must be the same installed on your Istio.
+If you want to know more about Prometheus and Kubernetes service discovery,  check out [**their documentation**](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config).
 {% endhint %}
-{% endtab %}
-{% endtabs %}
 
 ### Metadata
 
-Each metric has a metadata range that allows a variety of filter and analysis types to be created. These metadata are described in the table below:
+‌Each metric has a metadata range that allows a variety of filter and analysis types to be created. More metadata was added to Istio and you can see them described in the table below:
 
-| Metadata | Description | Type | Metrics that are present |
-| :--- | :--- | :--- | :--- |
-| destination\_component | Value on the label 'app' of the pod that received the request or unknown if there is no information about it. | Text | istio\_charles\_request\_total, istio\_charles\_request\_duration\_seconds |
-| circle\_source | Circle label injected into any kubernetes pods. | Text | istio\_charles\_request\_total, istio\_charles\_request\_duration\_seconds |
-| response\_code | HTTP status of the response. | Numeric | istio\_charles\_request\_total, istio\_charles\_request\_duration\_seconds |
+| Metadata | Description | Type |
+| :--- | :--- | :--- |
+| destination\_component | Value on the label 'app' of the pod that received the request or unknown if there is no information about it. | Text |
+| circle\_source | Circle label injected into any Kubernetes pods. | Text |
+| response\_code | HTTP status of the response. | Numeric |
+{% endtab %}
+
+{% tab title="Google Analytics" %}
+Google Analytics is one of the data sources that Charles can connect to read your metrics. 
+
+To be able to use in your metrics group, you will need
+
+* A Google account and the Analytics configured.
+
+If you want to use Charles to analyze your Google Analytics data, you need to add a new metric with your circle ID \(**renaming it as circle\_source**\) in your metrics label.
+
+{% hint style="info" %}
+For more information about it, check out [**their documentation**](https://developers.google.com/analytics/devguides/reporting/core/v4)**.**
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 

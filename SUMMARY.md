@@ -41,6 +41,8 @@
 * [Metrics](reference/metrics/README.md)
   * [Setting up your metrics](reference/metrics/setting-up-your-metrics.md)
   * [Metrics group](reference/metrics/metrics-group.md)
+  * [Action](reference/metrics/action.md)
+  * [Metric groups to health monitoring](reference/metrics/metric-groups-to-health-monitoring.md)
   * [Charles' metrics](reference/metrics/charles-metrics.md)
 
 ## Guides
