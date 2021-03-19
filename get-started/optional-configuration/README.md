@@ -12,7 +12,7 @@ The following configuration are optional, you can choose if it is necessary to c
 
 {% page-ref page="defining-the-identity-manager.md" %}
 
-{% page-ref page="webhooks.md" %}
+{% page-ref page="../defining-a-workspace/webhooks.md" %}
 
 
 
