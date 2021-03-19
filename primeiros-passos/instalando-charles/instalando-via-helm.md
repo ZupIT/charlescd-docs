@@ -32,6 +32,8 @@ As senhas utilizadas pelo Charles estão armazenadas no arquivo [**values.yaml**
 * postgresql.postgresqlPassword
 * redis.password
 * compass.database.password
+* hermes.database.password
+* rabbitmq.auth.password
 
 Para mais detalhes, acesse o link citado acima, que possui toda a documentação dos campos editáveis.
 {% endhint %}

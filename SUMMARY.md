@@ -13,6 +13,7 @@
   * [Autenticando com registry privado](primeiros-passos/configuracoes-opcionais/autenticando-com-registry-privado.md)
   * [Configurando sua ingress](primeiros-passos/configuracoes-opcionais/configurando-sua-ingress.md)
   * [Definindo o Identity Manager](primeiros-passos/configuracoes-opcionais/definindo-o-identity-manager.md)
+  * [Webhooks](primeiros-passos/configuracoes-opcionais/webhooks.md)
 * [Definindo um Workspace](primeiros-passos/definindo-workspace/README.md)
   * [Docker Registry](primeiros-passos/definindo-workspace/docker-registry.md)
   * [Ambiente de deploy](primeiros-passos/definindo-workspace/ambiente-de-deploy.md)
