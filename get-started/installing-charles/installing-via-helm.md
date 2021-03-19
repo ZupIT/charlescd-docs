@@ -28,6 +28,8 @@ The passwords used by Charles are stored in the [**values.yaml**](https://github
 * postgresql.postgresqlPassword
 * redis.password
 * compass.database.password
+* hermes.database.password
+* rabbitmq.auth.password
 
 For more details, access the link mentioned before about editable fields. 
 {% endhint %}

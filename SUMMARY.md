@@ -13,6 +13,7 @@
   * [Authentication with private registry](get-started/optional-configuration/authentication-with-private-registry.md)
   * [Configuring your ingress](get-started/optional-configuration/configuring-your-ingress.md)
   * [Defining the Identity Manager](get-started/optional-configuration/defining-the-identity-manager.md)
+  * [Webhooks](get-started/optional-configuration/webhooks.md)
 * [Defining a Workspace](get-started/defining-a-workspace/README.md)
   * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
   * [Deploy environment](get-started/defining-a-workspace/deploy-environment.md)

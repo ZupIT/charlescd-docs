@@ -50,11 +50,14 @@ In order to user Charles, it is necessary to fulfill some requirements:
 
 The platform was built using a microservice approach, and it has the following modules:
 
-![](.gitbook/assets/charlescd-arch-overview-1-.png)
+![](.gitbook/assets/arquitetura-do-sistema-2021-03-03.png)
 
 * `charlescd-ui:`  mirrors on front-end the workspace configuration, users, modules, hypothesis and boards. It is the platform graphical interface.  
 * `charles-moove:` manages workspaces, users, modules, hypothesis and boards. It is the whole platform structure.   
 * `charles-butler:` orchestrates and manages releases and deploys. 
-* `charles-circle-matcher:`manages all created circles, and points out which circle each user belongs to, based on their characteristics. 
+* `charles-circle-matcher:`manages all created circles, and points out which circle each user belongs, based on their characteristics. 
 * `charlescd-compass`: data providers integration, make metrics analysis and execute configurable actions.
+* `charlescd-hermes`: notifies external services previously subscribed of deploy and undeploy events. 
+
+
 
