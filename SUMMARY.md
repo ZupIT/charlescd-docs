@@ -17,7 +17,7 @@
   * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
   * [Deploy environment](get-started/defining-a-workspace/deploy-environment.md)
   * [Circle Matcher](get-started/defining-a-workspace/circle-matcher.md)
-  * [Datasource](get-started/defining-a-workspace/register-metrics-provider.md)
+  * [Datasource](get-started/defining-a-workspace/datasource.md)
   * [Metrics actions](get-started/defining-a-workspace/metrics-actions.md)
   * [Webhooks](get-started/defining-a-workspace/webhooks.md)
 * [Creating your first module](get-started/creating-your-first-module/README.md)

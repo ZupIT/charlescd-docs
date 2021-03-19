@@ -1,14 +1,14 @@
 ---
-description: 'In this section, you will find information about healt monitoring.'
+description: 'In this section, you will find information about health monitoring.'
 ---
 
 # Metric groups to health monitoring
 
 ## What is this?
 
-When your application is deployed, it’s a good practice to check its health , confirm if the software is working fine or if it needs special care. 
+When your application is deployed, it’s a good practice to check its health, confirm if the software is working fine or if it needs special care. 
 
-You can do this with Charles, using your ****[**previously configured metrics datasource**](../../get-started/defining-a-workspace/register-metrics-provider.md#how-to-configure) to create **metric groups** that will let you know the status of your deployed image.
+You can do this with Charles, using your ****[**previously configured metrics datasource**](../../get-started/defining-a-workspace/datasource.md) to create **metric groups** that will let you know the status of your deployed image.
 
 See more details below. 
 
