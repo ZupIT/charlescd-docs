@@ -1,60 +1,60 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Key concepts](key-concepts.md)
+* [Principais Conceitos](principais-conceitos.md)
 
-## GET STARTED
+## Primeiros Passos
 
-* [Installing Charles](get-started/installing-charles/README.md)
-  * [Installing via Single File](get-started/installing-charles/installing-via-single-file.md)
-  * [Installing via Helm](get-started/installing-charles/installing-via-helm.md)
-  * [Your first Charles' access](get-started/installing-charles/your-first-charles-access.md)
-* [Optional configuration](get-started/optional-configuration/README.md)
-  * [Authentication with private registry](get-started/optional-configuration/authentication-with-private-registry.md)
-  * [Configuring your ingress](get-started/optional-configuration/configuring-your-ingress.md)
-  * [Defining the Identity Manager](get-started/optional-configuration/defining-the-identity-manager.md)
-* [Defining a Workspace](get-started/defining-a-workspace/README.md)
-  * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
-  * [Deploy environment](get-started/defining-a-workspace/deploy-environment.md)
-  * [Circle Matcher](get-started/defining-a-workspace/circle-matcher.md)
-  * [Git credentials](get-started/defining-a-workspace/git-credentials.md)
-  * [Datasource](get-started/defining-a-workspace/register-metrics-provider.md)
-  * [Metrics actions](get-started/defining-a-workspace/metrics-actions.md)
-* [Creating your first module](get-started/creating-your-first-module/README.md)
-  * [How to configure Chart template](get-started/creating-your-first-module/how-to-configure-chart-template.md)
-  * [Configuring your module](get-started/creating-your-first-module/configuring-your-module.md)
-* [First Deploy](get-started/first-deploy.md)
-* [Using Circles](get-started/using-circles.md)
+* [Instalando o Charles](primeiros-passos/instalando-charles/README.md)
+  * [Instalando via Single File](primeiros-passos/instalando-charles/instalando-via-single-file.md)
+  * [Instalando via Helm](primeiros-passos/instalando-charles/instalando-via-helm.md)
+  * [Seu primeiro acesso ao Charles](primeiros-passos/instalando-charles/acessando-o-charles.md)
+* [Configurações opcionais](primeiros-passos/configuracoes-opcionais/README.md)
+  * [Autenticando com registry privado](primeiros-passos/configuracoes-opcionais/autenticando-com-registry-privado.md)
+  * [Configurando sua ingress](primeiros-passos/configuracoes-opcionais/configurando-sua-ingress.md)
+  * [Definindo o Identity Manager](primeiros-passos/configuracoes-opcionais/definindo-o-identity-manager.md)
+* [Definindo um Workspace](primeiros-passos/definindo-workspace/README.md)
+  * [Docker Registry](primeiros-passos/definindo-workspace/docker-registry.md)
+  * [Ambiente de deploy](primeiros-passos/definindo-workspace/ambiente-de-deploy.md)
+  * [Circle Matcher](primeiros-passos/definindo-workspace/circle-matcher.md)
+  * [Adicionando o DataSource](primeiros-passos/definindo-workspace/adicionando-o-datasource.md)
+  * [Ações](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
+  * [Webhooks](primeiros-passos/definindo-workspace/webhooks.md)
+* [Criando seu primeiro módulo](primeiros-passos/criando-seu-primeiro-modulo/README.md)
+  * [Configurando o chart template](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md)
+  * [Configurando o seu módulo](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-seu-modulo.md)
+* [Primeiro Deploy](primeiros-passos/primeiro-deploy.md)
+* [Usando Círculos](primeiros-passos/usando-circulos.md)
 
-## REFERENCE
+## Referência
 
-* [Circles](reference/circles.md)
-* [Circle Matcher](reference/circle-matcher.md)
-* [CD Configuration](reference/cd-configuration.md)
-* [Users Groups](reference/users-group.md)
-* [Hypothesis](reference/hyphotesis.md)
-* [Identity Manager](reference/identity-manager.md)
-* [Registry](reference/registry/README.md)
-  * [Azure Container Registry](reference/registry/azure-container-registry.md)
-  * [Docker Hub](reference/registry/docker-hub.md)
-  * [ECR](reference/registry/ecr.md)
-  * [GCR](reference/registry/gcr.md)
-* [Releases](reference/releases.md)
-* [Metrics](reference/metrics/README.md)
-  * [Setting up your metrics](reference/metrics/setting-up-your-metrics.md)
-  * [Metrics group](reference/metrics/metrics-group.md)
-  * [Charles' metrics](reference/metrics/charles-metrics.md)
+* [Círculo](referencia/circulo.md)
+* [Circle Matcher](referencia/circle-matcher.md)
+* [Configuração de CD](referencia/configuracao-cd.md)
+* [Grupo de Usuários](referencia/grupos-de-usuarios.md)
+* [Identity Manager](referencia/identity-manager.md)
+* [Registry](referencia/registry/README.md)
+  * [Azure Container Registry](referencia/registry/azure-container-registry.md)
+  * [Docker Hub](referencia/registry/docker-hub.md)
+  * [ECR](referencia/registry/ecr.md)
+  * [GCR](referencia/registry/gcr.md)
+* [Release](referencia/release.md)
+* [Métricas](referencia/metricas/README.md)
+  * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
+  * [Grupo de métricas](referencia/metricas/grupo-de-metricas.md)
+  * [Ações](referencia/metricas/acoes.md)
+  * [Grupo de métricas para monitorar a saúde](referencia/metricas/grupo-de-metricas-para-monitorar-a-saude.md)
+  * [Métricas do Charles](referencia/metricas/metricas-do-charles.md)
 
-## Guides
+## GUIDES
 
-* [Use Cases](guides/use-cases.md)
+* [Caso de Uso](guides/caso-de-uso.md)
 
 ## FAQ
 
-* [About Charles](faq/about-charles.md)
-* [Circle deploy vs Other deploys](faq/circle-deploy-and-other-deploys.md)
-* [Community](faq/community.md)
-* [ZupIT/charlescd](faq/changelog.md)
+* [Sobre o Charles](faq/sobre-charles.md)
+* [Deploy em círculos x Outros deploys](faq/deploy-em-circulos-e-outros-deploys.md)
+* [Comunidade](faq/comunidade.md)
 
 ---
 
