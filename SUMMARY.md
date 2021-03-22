@@ -17,9 +17,9 @@
   * [Docker registry](get-started/defining-a-workspace/docker-registry.md)
   * [Deploy environment](get-started/defining-a-workspace/deploy-environment.md)
   * [Circle Matcher](get-started/defining-a-workspace/circle-matcher.md)
-  * [Git credentials](get-started/defining-a-workspace/git-credentials.md)
-  * [Datasource](get-started/defining-a-workspace/register-metrics-provider.md)
+  * [Datasource](get-started/defining-a-workspace/datasource.md)
   * [Metrics actions](get-started/defining-a-workspace/metrics-actions.md)
+  * [Webhooks](get-started/defining-a-workspace/webhooks.md)
 * [Creating your first module](get-started/creating-your-first-module/README.md)
   * [How to configure Chart template](get-started/creating-your-first-module/how-to-configure-chart-template.md)
   * [Configuring your module](get-started/creating-your-first-module/configuring-your-module.md)
@@ -32,7 +32,6 @@
 * [Circle Matcher](reference/circle-matcher.md)
 * [CD Configuration](reference/cd-configuration.md)
 * [Users Groups](reference/users-group.md)
-* [Hypothesis](reference/hyphotesis.md)
 * [Identity Manager](reference/identity-manager.md)
 * [Registry](reference/registry/README.md)
   * [Azure Container Registry](reference/registry/azure-container-registry.md)
@@ -43,6 +42,8 @@
 * [Metrics](reference/metrics/README.md)
   * [Setting up your metrics](reference/metrics/setting-up-your-metrics.md)
   * [Metrics group](reference/metrics/metrics-group.md)
+  * [Action](reference/metrics/action.md)
+  * [Metric groups to health monitoring](reference/metrics/metric-groups-to-health-monitoring.md)
   * [Charles' metrics](reference/metrics/charles-metrics.md)
 
 ## Guides
