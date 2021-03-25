@@ -38,24 +38,24 @@ The following profiles are available:
 
 See below the permission given to each profile:
 
-| Modules | Action | Root | Maintainer | Developer | Analyst  | Reader |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Users** | Create | ✔  |   |   |   |   |
-|   | Edit | ✔  |   |   |   |   |
-|   | Delete | ✔  |   |   |   |   |
-|   | View | ✔  |   |   |   |   |
-| **User Groups** | Create | ✔  |   |   |   |   |
-|   | Edit | ✔  |   |   |   |   |
-|   | Delete | ✔  |   |   |   |   |
-|   | View | ✔  |   |   |   |   |
-| **Workspace** | Create | ✔  |   |   |   |   |
-|   | Configure | ✔ | ✔ |   |   |   |
-|   | Delete | ✔  |   |   |   |   |
-|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
-| **Circle** | Create/Edit/Delete | ✔  | ✔  | ✔  | ✔  |   |
-|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
-|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
-| **Modules**  | Create/Edit/Delete | ✔  | ✔  | ✔  |   |   |
-|   | View | ✔  | ✔  | ✔  | ✔  | ✔  |
-| **Deploy**  | Make deployments | ✔  | ✔  | ✔  |   |   |
+| Modules | Action | Maintainer | Developer | Analyst  | Reader |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Users** | Create |   |   |   |   |
+|   | Edit |   |   |   |   |
+|   | Delete |   |   |   |   |
+|   | View |   |   |   |   |
+| **User Groups** | Create |   |   |   |   |
+|   | Edit |   |   |   |   |
+|   | Delete |   |   |   |   |
+|   | View |   |   |   |   |
+| **Workspace** | Create |   |   |   |   |
+|   | Configure | ✔ |   |   |   |
+|   | Delete |   |   |   |   |
+|   | View | ✔  | ✔  | ✔  | ✔  |
+| **Circle** | Create/Edit/Delete | ✔  | ✔  | ✔  |   |
+|   | View | ✔  | ✔  | ✔  | ✔  |
+|   | View | ✔  | ✔  | ✔  | ✔  |
+| **Modules**  | Create/Edit/Delete | ✔  | ✔  |   |   |
+|   | View | ✔  | ✔  | ✔  | ✔  |
+| **Deploy**  | Make deployments | ✔  | ✔  |   |   |
 
