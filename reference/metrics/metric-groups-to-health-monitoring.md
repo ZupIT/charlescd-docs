@@ -17,17 +17,18 @@ See more details below.
 To monitor your metrics you need to have:
 
 *  Datasource configured using [**Prometheus**](https://prometheus.io/)
-*  [**Istio**](https://istio.io/latest/)1.7 or newer versions.
+*  [**Istio**](https://istio.io/latest/) ****1.7 or newer versions.
 
-## 1. Create your metric
+## How can you monitor? 
 
-First, you have to create your metrics group, [**check out how here**](metrics-group.md). In the advanced mode, you will execute **PromQL** queries.
+1. You have to create your **metrics group and your own metric,** to do that follow the [**steps here**](metrics-group.md)**;**
+2. In the advanced mode, execute **PromQL queries** to monitor your metrics.
 
 {% hint style="info" %}
-If you want to know more about **PromQL** check out their [**documentation**](https://prometheus.io/docs/prometheus/latest/querying/basics/).
+To know more about **PromQL,** check out their [**documentation**](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 {% endhint %}
 
-## 2. Metrics Examples 
+## Metrics Examples 
 
 After you have created your metric group, you can create your own metrics. Check out below some examples
 

@@ -12,17 +12,18 @@ CharlesCD's installation considers these **components**:
 
 ## Requirements
 
-To install Charles it will be necessary an environment with the following requisites: 
+To install Charles will be necessary an environment with the following requisites: 
 
 * [**Kubernetes**](https://kubernetes.io/docs/setup/).
-* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version&lt;= 1.4  and [**enabled sidecar injection**](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) ****on the deploy namespace of your application\).
+* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version&gt;= 1.7  and [**enabled sidecar injection**](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) ****on the deploy namespace of your application\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** in case you want to use ****[**metrics**](../../reference/metrics/)**.** 
 * \*\*\*\*[**Ingress**](https://github.com/kubernetes/ingress-nginx)\*\*\*\*
+* \*\*\*\*[**RabbitMQ**](https://www.rabbitmq.com/#getstarted), in case you want to use [**webhooks**](../defining-a-workspace/webhooks.md). 
 
 {% hint style="warning" %}
 **What is Ingress?** It is an engine that exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. You can find out more about it [**here**](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress). 
 
-When you install Charles it comes with a default ingress, however if you want to use your own, follow [**the steps to enable it**. ](./#ingress)
+When you install Charles it comes with a default ingress, however, if you want to use your own, follow [**the steps to enable it**. ](./#ingress)
 {% endhint %}
 
 ## Resources 
@@ -35,7 +36,7 @@ The minimum resources considering only the installation of Charles are:
 
 ## Next steps
 
-On this section, you saw components, requirements and resources to install Charles. To continue the installation, see: 
+In this section, you saw components, requirements, and resources to install Charles. To continue the installation, see: 
 
 {% page-ref page="installing-via-single-file.md" %}
 
