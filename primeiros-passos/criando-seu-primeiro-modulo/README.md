@@ -7,7 +7,7 @@ description: Esta seção descreve como você pode criar seu primeiro módulo no
 Depois de criar e configurar o seu workspace, agora é necessário adicionar os módulos. 
 
 {% hint style="info" %}
-Um **módulo** é a sua aplicação que está armazenada em um repositório do ****[**Git cadastrado anteriormente**.]()
+Um **módulo** é a sua aplicação que está armazenada em um repositório do **Git cadastrado anteriormente**.
 {% endhint %}
 
 ### Como adicionar os módulos? 

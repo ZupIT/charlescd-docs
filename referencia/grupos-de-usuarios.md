@@ -37,24 +37,24 @@ Os seguintes perfis são suportados:
 
 Segue abaixo as permissões vinculadas a cada perfil:
 
-| Módulos | Ação | Root | Maintainer | Developer | Analyst  | Reader |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Usuários** | Criar  | ✔  |   |   |   |   |
-|   | Editar | ✔  |   |   |   |   |
-|   | Deletar | ✔  |   |   |   |   |
-|   | Visualizar  | ✔  |   |   |   |   |
-| **Grupo de usuários** | Criar | ✔  |   |   |   |   |
-|   | Editar  | ✔  |   |   |   |   |
-|   | Deletar | ✔  |   |   |   |   |
-|   | Visualizar  | ✔  |   |   |   |   |
-| **Workspace** | Criar | ✔  |   |   |   |   |
-|   | Configurar | ✔ | ✔ |   |   |   |
-|   | Deletar | ✔  |   |   |   |   |
-|   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
-| **Circle** | Criar/Editar/Deletar | ✔  | ✔  | ✔  | ✔  |   |
-|   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
-|   | Visualizar | ✔  | ✔  | ✔  | ✔  | ✔  |
-| **Modules**  | Criar/Editar/Deletar | ✔  | ✔  | ✔  |   |   |
-|   | Visualizar  | ✔  | ✔  | ✔  | ✔  | ✔  |
-| **Deploy**  | Fazer deployments | ✔  | ✔  | ✔  |   |   |
+| Módulos | Ação | Maintainer | Developer | Analyst  | Reader |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Usuários** | Criar  |   |   |   |   |
+|   | Editar |   |   |   |   |
+|   | Deletar |   |   |   |   |
+|   | Visualizar  |   |   |   |   |
+| **Grupo de usuários** | Criar |   |   |   |   |
+|   | Editar  |   |   |   |   |
+|   | Deletar |   |   |   |   |
+|   | Visualizar  |   |   |   |   |
+| **Workspace** | Criar |   |   |   |   |
+|   | Configurar | ✔ |   |   |   |
+|   | Deletar |   |   |   |   |
+|   | Visualizar | ✔  | ✔  | ✔  | ✔  |
+| **Circle** | Criar/Editar/Deletar | ✔  | ✔  | ✔  |   |
+|   | Visualizar | ✔  | ✔  | ✔  | ✔  |
+|   | Visualizar | ✔  | ✔  | ✔  | ✔  |
+| **Modules**  | Criar/Editar/Deletar | ✔  | ✔  |   |   |
+|   | Visualizar  | ✔  | ✔  | ✔  | ✔  |
+| **Deploy**  | Fazer deployments | ✔  | ✔  |   |   |
 
