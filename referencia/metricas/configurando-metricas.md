@@ -30,7 +30,9 @@ O Prometheus é uma ferramenta de código aberto focada em monitoramento e alert
 Se quiser saber mais, sugerimos a [**doc oficial**](https://prometheus.io/).
 {% endhint %}
 
-É preciso configurar o Prometheus para que ele consiga ler e armazenar os dados das métricas que habilitamos, conforme o tutorial que explicamos no início.
+É preciso configurar o Prometheus para que ele consiga ler e armazenar os dados das métricas habilitadas, conforme o tutorial que explicamos no início.
+
+Para fazer isso, é necessário adicionar o job abaixo para que leia a métrica gerada pelo Istio. Para configurar, edite o arquivo **prometheus.yml** no seu **Prometheus configMap**.
 
 {% hint style="warning" %}
 É importante lembrar que, para que essas configurações funcionem, é necessário que seu Prometheus esteja no mesmo cluster de Kubernetes que o Istio e o restante das suas aplicações.

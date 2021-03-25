@@ -14,5 +14,9 @@ Veja abaixo como habilitar e usar as métricas diponíveis no Charles:
 
 {% page-ref page="grupo-de-metricas.md" %}
 
+{% page-ref page="../../primeiros-passos/definindo-workspace/acoes-de-metricas.md" %}
+
+{% page-ref page="grupo-de-metricas-para-monitorar-a-saude.md" %}
+
 {% page-ref page="metricas-do-charles.md" %}
 

@@ -15,15 +15,16 @@ Para monitorar suas métricas, é preciso ter:
 *  Datasource configurado e usando o [**Prometheus**](https://prometheus.io/)
 *  [**Istio**](https://istio.io/latest/) ****1.7 ou versões mais recentes.
 
-## 1. Crie sua métrica
+## Como monitorar?
 
-Antes de iniciar, você precisa criar seu grupo de métrica, [**veja como aqui**](grupo-de-metricas.md). E no modo avançado você irá executar as **PromQL queries**.
+1. Você precisar criar seu **grupo de métricas** e **sua própria métrica**, para fazer isso [**siga os passos aqui**](grupo-de-metricas.md);
+2. No modo avançado, execute o **PromQL queries** para monitorar suas métricas. ****
 
 {% hint style="info" %}
-Se você deseja saber mais do **PromQL**, veja a [**documentação**](https://prometheus.io/docs/prometheus/latest/querying/basics/).
+Para saber mais sobre o **PromQL**, veja a [**documentação**](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 {% endhint %}
 
-## 2. Exemplos de métricas
+## Exemplos de métricas
 
 Depois de ter criado o seu grupo de métricas, você também pode criar suas própria métrica. Veja alguns exemplos abaixo.
 
