@@ -10,10 +10,10 @@ The module configuration is necessary because when you work in a scenario with m
 
 For example, when you test a feature between microservices that have integration in an account opening flow, it is necessary to make sure your user will get in all correct versions that are on your hypothesis test created for this specific flow. 
 
-This process is made by a library to propagate the header `X-Circle-Id`, that makes the circle id to pass all the requests inside the microservice mesh, making sure that you get to the [**correct version of you hypothesis test**](../../reference/circle-matcher.md#identify). 
+This process is made by a library to propagate the header `X-Circle-Id`, which makes the circle id pass all the requests inside the microservice mesh, making sure that you get to the [**correct version of your hypothesis test**](../../reference/circle-matcher.md#identify). 
 
 {% hint style="info" %}
-If there is a microservice inside this flow that doesn't make part of your test, the circle value will be passed, but your request will fall into the open sea, because there isn't any version for that circle. 
+If there is a microservice inside this flow that doesn't make part of your test, the circle value will be passed, but your request will fall into the open sea because there isn't any version for that circle. 
 {% endhint %}
 
 ### **Example**

@@ -1,36 +1,44 @@
 # First Deploy
 
 {% hint style="info" %}
-After you have created your first [**module**](creating-your-first-module/) and registered your [**cluster crendentials**,](defining-a-workspace/deploy-environment.md) you have finished all the steps needed to make your first deploy. Now, it is necessary to create a [**release** ](../reference/releases.md)and provide it on the configured cluster.
+After you have created your first [**module**](creating-your-first-module/) and registered your [**cluster crendentials**,](defining-a-workspace/deploy-environment.md) you have finished all the steps needed to make your first deployment. Now, it is necessary to create a [**release** ](../reference/releases.md)and provide it on the configured cluster.
 {% endhint %}
 
-Charles offers two alternatives to create a release: use the [**hypothesis** ](../reference/hyphotesis.md)flow chart or create it with docker images already available on your configured [**registry**.](defining-a-workspace/docker-registry.md)
+### How to make the first deployment? 
 
-Here, we will focus on the first approach with the following steps:
+On Charles you have to use container images already available in your configured [**registry**](../reference/registry/) to create a release.
 
-1. Click on **Hypothesis** in the homepage left side bar; 
-2. Fill the name with the new hypothesis, on the **Create new hypothesis** field \(at the bottom of the hypothesis list\) and press enter.
-3. At the new created hypothesis board, click on **+Card** at the bottom of the **To do** list column;
-4. Type the name of your new card and press Enter; 
-5. Click on the card and associate it to a Module previously created. After this, a **branch with the name of the card will be created in the configured repository**; 
-6. Perform your work on this branch. After finish, move the card to **Ready to Go**; 
-7. Click on **Generate release candidate** at the bottom of the column **Ready to Go**;
-8. Type the release name you want to create and click on **Generate**. A branch with the prefix **"release-darwin-" will be created on the module repository, after that the configured CI tool will turn off**;
-9. A new card with **Building** status will show up at the **Builds** column. Wait until the status change to **Built**. 
+To make your first deployment, follow the steps below: 
 
-After you have done the whole process above, your release will be ready to deploy.
+1. Go to **Circles** area;
+2. Select a [**circle**](../reference/circles.md). If you haven't created one yet, there is a **default circle** option that makes your first deploy possible; 
+3. Change the active circle filter to **inactive**;
+4. Select the "**Insert a release**" option;
+5. After that, select "**Create a release**" and fill the fields: 
+   * **'Release name':** choose a name for your release;
+   * **'Select a module';**
+   * **Select a component';**
+   * **Version name**': type the name of your tag \(it is necessary to be the same one shown in your Registry\). 
 
-![Example of release created and ready to deploy](../.gitbook/assets/primeiro_deploy-1-%20%282%29%20%282%29.png)
+5 . Click on '**Deploy**' button and wait for a status on the green card. When processing, you will see "**deploying**", but at the end, it will show up as "**deployed**".
 
-Now, just follow the next steps to the [**Open Sea**](https://docs.charlescd.io/key-concepts) deploy:
+{% hint style="success" %}
+After the process above, your release is ready to deploy. 
+{% endhint %}
+
+### Open Sea deploy
+
+The [**open sea**](../key-concepts.md#open-sea) deployment is where you send your application to the registered segmentation on Charles.
+
+Now, follow the next steps to the [**Open Sea**](https://docs.charlescd.io/key-concepts) deploy:
 
 1. On Charles homepage, click on **Circles**; 
 2. Click on the Default circle \(it represents the open sea\) 
 3. Click on **Override release** in upper right corner; 
 4. Click on **Search for ready releases**;
-5. Type the release name created above and click on **Deploy**.
+5. Type the release name created above \(or use it again with a new version\) and click on **Deploy**.
 
-Finally, Charles will provide the created release on cluster in the Open Sea. The deploy status will be shown and updated along the process.
+Finally, Charles will provide the created release on a cluster in the Open Sea. The deploy status will be shown and updated along the process.
 
 ![Example of a deploy in open sea](../.gitbook/assets/primeiro-deploy%20%281%29%20%281%29%20%282%29.gif)
 
