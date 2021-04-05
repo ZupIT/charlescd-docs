@@ -6,7 +6,6 @@
 ## Primeiros Passos
 
 * [Instalando o Charles](primeiros-passos/instalando-charles/README.md)
-  * [Instalando via Single File](primeiros-passos/instalando-charles/instalando-via-single-file.md)
   * [Instalando via Helm](primeiros-passos/instalando-charles/instalando-via-helm.md)
   * [Seu primeiro acesso ao Charles](primeiros-passos/instalando-charles/acessando-o-charles.md)
 * [Configurações opcionais](primeiros-passos/configuracoes-opcionais/README.md)

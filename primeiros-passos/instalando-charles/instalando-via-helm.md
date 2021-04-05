@@ -51,3 +51,18 @@ helm install charlescd <repo-folder> -n <namespace>
 Por isso, não deixe de customizar os campos caso queira algo gerenciável. 
 {% endhint %}
 
+### Troque a senha padrão \(default password\) 
+
+Depois de instalar o CharlesCD, troque algumas **senhas padrão**, veja abaixo: 
+
+**Senha do Keycloak**:   
+**1.** Acesse: **http://&lt;charlescd-url&gt;/keycloak/auth;**  
+**2.** Clique em **Administration Console;**   
+**3.**  Insira a senha do usuário do Keycloak \(admin - firstpassword\) e troque a senha padrão.
+
+**Senha do CharlesCD:**  
+Acesse o CharlesCD e logue com  
+**1. Usuário:** **charlesadmin@admin  
+2. Senha**: **charlesadmin;  
+3.** Vá até **Account &gt; Profile** e depois em **Change Password** e escolha sua nova senha.
+

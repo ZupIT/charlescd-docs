@@ -42,9 +42,5 @@ Os recursos mínimos considerando apenas a instalação do Charles são:
 
 Nesta seção, você viu os componentes, pré-requisitos e recursos mínimos para instalar o Charles. Para continuar a instalação veja: 
 
-{% page-ref page="instalando-via-single-file.md" %}
-
-{% page-ref page="instalando-via-single-file.md" %}
-
 {% page-ref page="acessando-o-charles.md" %}
 
