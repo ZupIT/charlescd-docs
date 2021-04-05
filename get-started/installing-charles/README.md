@@ -38,8 +38,6 @@ The minimum resources considering only the installation of Charles are:
 
 In this section, you saw components, requirements, and resources to install Charles. To continue the installation, see: 
 
-{% page-ref page="installing-via-single-file.md" %}
-
 {% page-ref page="installing-via-helm.md" %}
 
 {% page-ref page="your-first-charles-access.md" %}

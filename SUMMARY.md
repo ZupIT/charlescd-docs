@@ -6,7 +6,6 @@
 ## GET STARTED
 
 * [Installing Charles](get-started/installing-charles/README.md)
-  * [Installing via Single File](get-started/installing-charles/installing-via-single-file.md)
   * [Installing via Helm](get-started/installing-charles/installing-via-helm.md)
   * [Your first Charles' access](get-started/installing-charles/your-first-charles-access.md)
 * [Optional configuration](get-started/optional-configuration/README.md)

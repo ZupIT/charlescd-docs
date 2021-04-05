@@ -47,3 +47,19 @@ It's important to remember that, in case of no customization at all, the final r
 So, you must not forget to customize the fields in case you want something manageable. 
 {% endhint %}
 
+### Change default passwords
+
+After installing CharlesCD, remember to change some **default passwords,** check out below:
+
+**Keycloak password**:   
+**1**. Access: **http://&lt;charlescd-url&gt;/keycloak/auth;**  
+**2**. Click on **Administration Console;**   
+**3.** Enter with Keycloak user and password \(admin - firstpassword\) and change the default password.  
+
+
+**CharlesCD password:**   
+Log in CharlesCD with:  
+**1**. **User:** charlesadmin@admin  
+**2. Password:** charlesadmin;  
+**3.** Go to A**ccount &gt; Profile** and then **Change Password.**
+
