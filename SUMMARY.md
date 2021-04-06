@@ -18,7 +18,6 @@
   * [Circle Matcher](primeiros-passos/definindo-workspace/circle-matcher.md)
   * [Adicionando o DataSource](primeiros-passos/definindo-workspace/adicionando-o-datasource.md)
   * [Ações](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
-  * [Webhooks](primeiros-passos/definindo-workspace/webhooks.md)
 * [Criando seu primeiro módulo](primeiros-passos/criando-seu-primeiro-modulo/README.md)
   * [Configurando o chart template](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md)
   * [Configurando o seu módulo](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-seu-modulo.md)

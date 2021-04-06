@@ -6,34 +6,43 @@ description: Esta seção descreve como você pode criar seu primeiro módulo no
 
 Depois de criar e configurar o seu workspace, agora é necessário adicionar os módulos. 
 
-{% hint style="info" %}
 Um **módulo** é a sua aplicação que está armazenada em um repositório do **Git cadastrado anteriormente**.
-{% endhint %}
 
-### Como adicionar os módulos? 
+## Como adicionar os módulos? 
 
-Para adicionar os módulos, acesse o menu **Modules** __no **workspace** desejado, e __siga os seguintes passos:
+Para adicionar os módulos, acesse o menu **Modules** __no **workspace** desejado e __preencha os campos:
 
-* **Nome**: o nome deverá ser a junção da organização e a do módulo, como está no git. Por exemplo: `ZupIt/charlescd`.
-* **Git URL**: informe a URL do seu repositório. Por exemplo: [https://github.com](https://github.com/ZupIT/charlescd).
-* **Helm repository URL:** informe o repositório onde o está o template do helm da sua aplicação.
+1. **Nome**: o nome deverá ser a junção da organização e a do módulo, como está no git. Por exemplo: `ZupIt/charlescd`.
+2. **URL Git**: informe a URL do seu repositório. Por exemplo: [https://github.com](https://github.com/ZupIT/charlescd).
+3. Se seu repositório tem várias aplicações, cadastre-as como **componentes** e informe: 
+
+* **Name of the component**: o nome da aplicação, conforme está no repositório.
+* **Métricas:** 
+
+  * **Latency Threshold:** latência \(ms\);
+  * **HTTP Error Threshold:**  erro HTTP \(%\). 
+
+  Em ambos os casos, informe um valor de risco que você gostaria de ser alertado caso seu componente alcançasse ou ultrapassasse. 
+
+4. **Add Helm Chart repository:** informe o repositório onde o está o template do helm da sua aplicação e veja o exemplo de como preencher os campos com essa URL:  ****[**https://gitlab.com/charlito/charlescd/moove?ref=master**](https://gitlab.com/charlito/charlescd/moove?ref=master`%20)
+
+* **Insert URL:** [http://gitlab.com](http://gitlab.com);
+* **Insert Organization:** charlito; 
+* **Insert repository:** charlescd;
+* **Insert path:** moove**;** 
+* **Insert branch:** master. 
+
+Veja a imagem de como criar módulos: 
+
+![](../../.gitbook/assets/criar-modulos-charles.png)
 
 {% hint style="info" %}
-Para mais informações sobre a configuração do repositório do helm, [**acesse aqui.**](configurando-o-chart-template.md)\*\*\*\*
+Para saber mais sobre a configuração do repositório do helm, [**acesse a seção Configurando o chart template**](configurando-o-chart-template.md)**.** 
 {% endhint %}
 
-Se seu repositório tem várias aplicações, cadastre-as como componentes e informe: 
+## O que são componentes? 
 
-* **Nome**: o nome da aplicação, conforme está no repositório.
-* **Métricas**: latência \(ms\) e erro HTTP \(%\). Em ambos os casos, deve-se informar um valor de risco que você gostaria de ser alertado caso seu componente alcançasse ou ultrapassasse.
-
-![Tela de cria&#xE7;&#xE3;o de m&#xF3;dulo](../../.gitbook/assets/criac-a-o-de-modulo%20%281%29.png)
-
-## O que são componentes?
-
+{% hint style="info" %}
 Componentes são abstrações das aplicações. Se dentro do seu repositório há múltiplas aplicações, cada componente corresponderá a uma delas.
-
-### Métricas de saúde
-
-Para cada componente é possível cadastrar as seguintes métricas para análise de saúde: **latência** \(ms\) e **erro HTTP** \(%\). Quando os limites forem atingidos, ou estiverem à menos de 10%, você receberá um alerta informando o estado da sua aplicação no círculo que demonstra o problema.
+{% endhint %}
 
