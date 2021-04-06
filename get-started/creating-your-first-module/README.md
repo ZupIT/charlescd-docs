@@ -34,7 +34,7 @@ To add it, access the **Modules** menu on your **workspace** and set the followi
 
 See the image on how to create modules: 
 
-![](../../.gitbook/assets/criar-modulos-charles.png)
+![](../../.gitbook/assets/criar-modulos-charles%20%281%29.png)
 
 {% hint style="info" %}
 For more information about Helm Repository, [**check out How to configure Chart Template section**](how-to-configure-chart-template.md). 

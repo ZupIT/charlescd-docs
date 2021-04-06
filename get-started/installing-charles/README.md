@@ -18,7 +18,7 @@ To install Charles will be necessary an environment with the following requisite
 * \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version&gt;= 1.7  and [**enabled sidecar injection**](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) ****on the deploy namespace of your application\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** in case you want to use ****[**metrics**](../../reference/metrics/)**.** 
 * \*\*\*\*[**Ingress**](https://github.com/kubernetes/ingress-nginx)\*\*\*\*
-* \*\*\*\*[**RabbitMQ**](https://www.rabbitmq.com/#getstarted), in case you want to use [**webhooks**](../defining-a-workspace/webhooks.md). 
+* \*\*\*\*[**RabbitMQ**](https://www.rabbitmq.com/#getstarted), in case you want to use [**webhooks**](). 
 
 {% hint style="warning" %}
 **What is Ingress?** It is an engine that exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. You can find out more about it [**here**](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress). 

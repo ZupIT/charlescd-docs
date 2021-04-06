@@ -18,7 +18,6 @@
   * [Circle Matcher](get-started/defining-a-workspace/circle-matcher.md)
   * [Datasource](get-started/defining-a-workspace/datasource.md)
   * [Metrics actions](get-started/defining-a-workspace/metrics-actions.md)
-  * [Webhooks](get-started/defining-a-workspace/webhooks.md)
 * [Creating your first module](get-started/creating-your-first-module/README.md)
   * [How to configure Chart template](get-started/creating-your-first-module/how-to-configure-chart-template.md)
   * [Configuring your module](get-started/creating-your-first-module/configuring-your-module.md)
