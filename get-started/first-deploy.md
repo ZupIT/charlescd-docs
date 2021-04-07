@@ -40,5 +40,5 @@ Now, follow the next steps to the [**Open Sea**](https://docs.charlescd.io/key-c
 
 Finally, Charles will provide the created release on a cluster in the Open Sea. The deploy status will be shown and updated along the process.
 
-![Example of a deploy in open sea](../.gitbook/assets/primeiro-deploy%20%281%29%20%281%29%20%282%29.gif)
+![](../.gitbook/assets/first-deploy%20%281%29.gif)
 

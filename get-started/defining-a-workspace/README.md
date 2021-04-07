@@ -15,7 +15,7 @@ Each workspace has the following configurations:
 * [**Circle Matcher**](https://docs.charlescd.io/reference/circle-matcher);
 * [**Metrics provider**](https://docs.charlescd.io/reference/metrics). 
 
-![Workspace configuration](../../.gitbook/assets/settings_-_workspace_-_11.4_-_add_group_permissions2x%20%282%29.png)
+![](../../.gitbook/assets/defining-workspace%20%281%29.png)
 
 {% hint style="warning" %}
 The **root** user gives you permission to create a workspace. However, users with **mantainer** profile are able to configure with the necessary information as well.
@@ -27,7 +27,7 @@ Once your workspace is created, even without the configuration ****definitions**
 
 To get this information, select the workspace you want, and then on the left menu, click on **Copy ID.**
 
-![](../../.gitbook/assets/workspaceid%20%282%29.gif)
+![](../../.gitbook/assets/workspace_copyid%20%282%29.gif)
 
   
 

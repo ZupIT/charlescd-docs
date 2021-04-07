@@ -18,7 +18,7 @@ For more information on how to configure your **Circle Matcher in a workspace**,
 
 Once you start using the interface, it's possible to notice that there are two ways to perform the circle identification. For that, access the **Circles** menu inside a **workspace** and select the icon indicated below:
 
-![Circle Matcher identification icon ](../.gitbook/assets/chrome-capture%20%282%29.jpg)
+![](../.gitbook/assets/circle-matcher%20%281%29.png)
 
 The two ways to make this validation are:
 

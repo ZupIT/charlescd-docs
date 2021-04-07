@@ -59,7 +59,7 @@ It is important to remember that your payload and your keys must be the same.
 
 See the example on how to create a circle below: 
 
-![How to create a circle](../.gitbook/assets/chrome-capture-7-.gif)
+![](../.gitbook/assets/circle_create_segmentation%20%281%29.gif)
 
 {% hint style="info" %}
 **The best advantage to use segmentation** is the possibility to combine logic with several attributes to create different audience categories and, in this way, use them on hypothesis tests. 
@@ -84,7 +84,7 @@ These characteristics can be defined based on the following logic:
 
 See some examples below:
 
-![Example of manual segmentation](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/segmentacao-manual.png)
 
 ### **Segmentation by CSV importation**
 
@@ -108,13 +108,13 @@ Once your circle is created, even without the configuration, it already has a si
 
 To get this information, select the workspace you want, and then on the left menu, click on **Copy ID.**
 
-![](../.gitbook/assets/circuloid%20%282%29.gif)
+![](../.gitbook/assets/como-obter-o-identificador-do-meu-circulo%20%281%29.gif)
 
 ## Active and inactive circles
 
-The existence of releases defines if a circle is active or not, which is the implemented versions for users segmentation. Therefore, active circles have implemented releases while the inactive circle doesn't have any.
+The existence of releases defines if a circle is active or not, which are the implemented versions for user segmentation. Therefore, active circles have implemented releases while the inactive circle doesn't have any.
 
-![Active and Inactive circle filter](https://gblobscdn.gitbook.com/assets%2F-LzaqMnnQTjZO7P6hApv%2F-M7rKxDdQhwf1rfMyili%2F-M7rMicKEB9xYtEJ-28B%2Fchrome-capture%20%282%29.gif?alt=media&token=04dfdbc0-4976-489e-aee4-44ec4946640f)
+![](../.gitbook/assets/circulo-ativo-e-inativo.gif)
 
 ## How to integrate circle with services?
 
