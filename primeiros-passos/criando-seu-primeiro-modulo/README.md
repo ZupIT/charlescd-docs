@@ -34,7 +34,7 @@ Para adicionar os módulos, acesse o menu **Modules** __no **workspace** desejad
 
 Veja a imagem de como criar módulos: 
 
-![](../../.gitbook/assets/criar-modulos-charles.png)
+![](../../.gitbook/assets/creating-your-first-module.png)
 
 {% hint style="info" %}
 Para saber mais sobre a configuração do repositório do helm, [**acesse a seção Configurando o chart template**](configurando-o-chart-template.md)**.** 
