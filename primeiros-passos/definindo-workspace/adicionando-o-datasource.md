@@ -21,5 +21,5 @@ Para realizar a configuração de cadastro, basta seguir os seguintes passos:
 5. **Data source health:** essa opção é para saber mais detalhes sobre a saúde do seu círculo.
 6. Faça a configuração baseada na ferramenta selecionada.
 
-![](../../.gitbook/assets/datasource%20%281%29.gif)
+![](../../.gitbook/assets/workspace_datasource%20%281%29.gif)
 
