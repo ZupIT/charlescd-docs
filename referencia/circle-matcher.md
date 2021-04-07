@@ -38,7 +38,7 @@ Você pode integrar nas suas aplicações o recurso **Identify** do módulo [`ci
 
 Por exemplo, dada a utilização dos seguintes parâmetros ao segmentar:
 
-![](https://lh6.googleusercontent.com/q573-961WtpntVK8NfXXvPgzSPrxLwxjx3QXRqM3vBlHFM8nAoDkpn1KD26Zfw3_wJtjnhVldYcwRUUzhbveEvqJz6n16NQFkxi0S3hh8rk6Y7OUmWtnBOl_qJekzoymQ64mFF8k)
+![](../.gitbook/assets/circlematcher-identificacao-de-circulos-atraves-da-api.png)
 
 Ao realizar a requisição de identificação com as seguintes informações, círculos compatíveis serão retornados.
 
@@ -93,7 +93,7 @@ Como nesse exemplo existem círculos correspondentes com as informações sobre 
 
 O corpo da requisição é totalmente flexível, porém vale lembrar que as chaves devem ter a mesma nomenclatura definida nas regras de segmentação do círculo. Veja no caso a seguir:
 
-![](https://lh3.googleusercontent.com/FdPVIHDFeYJCkC_6Y1P3ZOBSqmNlGkl9q2_XyIayNKQo2Mp9IXBY7PzvpzW0Mej1P9Ox8AG12QiA1H0w5uozWP1UYWafcfwXLKBOf3G-ObIVoPHtYGOlWd5Ju01uLuScqtCn8qQ1)
+![](../.gitbook/assets/circle-matcher-stony-brooks-citizens.png)
 
 O círculo **Stony Brook’s Citizens** foi criado para a identificar usuários que tenham como característica a chave **`city`** e o exato valor **`London`**. Sendo assim, ele não estará na listagem ao realizar uma requisição para o **`Identify`** caso seja informado o corpo da requisição como no exemplo abaixo:
 
