@@ -16,12 +16,12 @@ Before you add the Datasource, it is necessary to finish your [**metrics configu
 
 You have to follow the next steps: 
 
-1. Click on your name, on the bottom left corner and then select **Settings**;
+1. Click on your name, on the bottom left corner and then select **Settings**.;
 2. Click on **Credentials;**
 3. Click on **Add Datasource;**
-4. Select your **tool option;** 
+4. Select your **tool option, Prometheus** or **Google Analytics;** 
 5. **Data source health:** this option gives you more details about your circle's health; 
 6. Make the configuration based on the selected tool. 
 
-![](../../.gitbook/assets/datasource.gif)
+![](../../.gitbook/assets/workspace_datasource.gif)
 

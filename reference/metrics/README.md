@@ -16,7 +16,5 @@ See how to set up your metrics and how to use them below:
 
 {% page-ref page="metrics-group.md" %}
 
-{% page-ref page="action.md" %}
-
 {% page-ref page="charles-metrics.md" %}
 

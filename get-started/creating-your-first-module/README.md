@@ -23,7 +23,7 @@ If you have a lot of applications on your repository, register them with the com
 
 In both cases, you need to inform the minimum risk value you'd like to be alerted.
 
-![Creating a module screen](../../.gitbook/assets/criac-a-o-de-modulo%20%282%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 ## Components
 

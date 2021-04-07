@@ -18,17 +18,13 @@ For more information on how to configure your **Circle Matcher in a workspace**,
 
 Once you start using the interface, it's possible to notice that there are two ways to perform the circle identification. For that, access the **Circles** menu inside a **workspace** and select the icon indicated below:
 
-![Circle Matcher identification icon ](../.gitbook/assets/chrome-capture%20%282%29.jpg)
+![](../.gitbook/assets/image%20%2816%29.png)
 
-The two ways to make this validation are:
+You can make the validation as shown bellow:
 
-* **Default:** in this option, you add manually keys and values to define the characteristics of a user test. Based on that, once you run the **Try**,  **you will receive all the circles related to this user.**  
+* In this option, you add manually keys and values to define the characteristics of a user test. Based on that, once you run the **Try**, **you will receive all the circles related to this user.**  
 
-![Circle identification with Default option.](../.gitbook/assets/circle-matcher-default%20%282%29.gif)
-
-* **JSON:** similar to the default option, with the difference that here you can copy and paste in **payload field** a **JSON** of your productive environment instead of adding manually. 
-
-![Circle identification with JSON option. ](../.gitbook/assets/circle-matcher-json%20%282%29.gif)
+![](../.gitbook/assets/circle_matcher.gif)
 
 {% hint style="warning" %}
 If you pass some information that is off the preconfigured logic conditions in the circles, the system will return indicating that the user is on _Default_ circle, on the standard version of your application.
@@ -40,7 +36,7 @@ You can integrate with your applications the **Identify** resource on the [`char
 
 For example, considering the use of the parameters below to segment:
 
-![](https://lh6.googleusercontent.com/q573-961WtpntVK8NfXXvPgzSPrxLwxjx3QXRqM3vBlHFM8nAoDkpn1KD26Zfw3_wJtjnhVldYcwRUUzhbveEvqJz6n16NQFkxi0S3hh8rk6Y7OUmWtnBOl_qJekzoymQ64mFF8k)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 Once you send the identification request with some information, compatible circles will be returned.
 
@@ -95,7 +91,7 @@ As the example above shows, there are circles with the given information of the 
 
 The requisition body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. See the case below:
 
-![](https://lh3.googleusercontent.com/FdPVIHDFeYJCkC_6Y1P3ZOBSqmNlGkl9q2_XyIayNKQo2Mp9IXBY7PzvpzW0Mej1P9Ox8AG12QiA1H0w5uozWP1UYWafcfwXLKBOf3G-ObIVoPHtYGOlWd5Ju01uLuScqtCn8qQ1)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 The **Stony Brook’s Citizens** circle was created to identify users that contain as one of its characteristics the key **`city`** and the exact value **`London`**. That means that this user won't be listed if you send a request to **`Identify`** and inform on the requisition body the information presented on the example below:
 
