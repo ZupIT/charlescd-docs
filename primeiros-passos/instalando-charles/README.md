@@ -19,10 +19,9 @@ A instalação do CharlesCD consiste nos seguintes **componentes**:
 Para instalar o Charles, será necessário um ambiente com os seguintes requisitos:
 
 * [**Kubernetes**](https://kubernetes.io/docs/setup/).
-* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(versão &lt;= 1.7 e [_**sidecar injector habilitado**_](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) no namespace de deploy das suas aplicações\).
+* \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(versão =&gt; 1.7 e [_**sidecar injector habilitado**_](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) no namespace de deploy das suas aplicações\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** caso ****queira utilizar [**métricas**](../../referencia/metricas/)**.**
 * \*\*\*\*[**Ingress**](https://github.com/kubernetes/ingress-nginx)**.**
-* [**RabbitMQ**](https://www.rabbitmq.com/#getstarted), caso queira utilizar [**webhooks**](../definindo-workspace/webhooks.md). 
 
 {% hint style="warning" %}
 **O que é Ingress?** É um mecanismo que expõe as rotas de HTTP e HTTPS de fora do cluster para serviços dentro do cluster. Você pode ver mais sobre isso[ **aqui.**](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress) 

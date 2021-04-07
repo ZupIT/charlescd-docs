@@ -59,7 +59,7 @@ As chaves utilizadas podem ser qualquer uma enviada no payload da sua aplicaçã
 
 Veja abaixo um exemplo de como criar um círculo: 
 
-![Como criar um c&#xED;rculo](../.gitbook/assets/chrome-capture-7-.gif)
+![](../.gitbook/assets/circle_create_segmentation.gif)
 
 {% hint style="info" %}
 Uma **grande vantagem de utilizar as segmentações** é a possibilidade fazer combinações lógicas entre vários atributos para criar diferentes categorias de públicos e, dessa forma, utilizá-los nos testes das hipóteses.   
@@ -83,17 +83,17 @@ Essas características podem ser definidas com base nas lógicas de:
 
 Veja alguns exemplos:
 
-![Exemplo de segmenta&#xE7;&#xE3;o manual](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 ### **Segmentação por importação de CSV**
 
 Nessa modalidade, é utilizada apenas a primeira coluna do CSV para criar as regras. Sendo assim, a primeira linha da primeira coluna deve conter o nome da chave e a mesma deve ser informada no campo _key:_
 
-![Exemplo de importa&#xE7;&#xE3;o por CSV ](../.gitbook/assets/chrome-capture-5-.jpg)
+![](../.gitbook/assets/image%20%2814%29.png)
 
-Depois de ter feito o upload do arquivo e salvado as configurações, aparecerá um overview demonstrando como está sua segmentação:
+Depois de ter feito o upload do arquivo e salvado as configurações, aparecerá um overview demonstrando uma prévia da sua segmentação:
 
-![Overview](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/circle_create_segmentation_csv.gif)
 
 Essa segmentação permite, por exemplo, extrair de uma base externa de IDs dos clientes um perfil específico e importá-los direto na plataforma do Charles. Quando um arquivo .csv é importado e se ele conter alguma linha em branco, ocorrerá um erro da importação, pois não é permitido a criação de segmentos dessa forma.
 
@@ -111,13 +111,13 @@ Para obter essa informação, siga estes passos:
 2. Clique em "default" 
 3. E, no menu à esquerda, clique em **Copy ID**
 
-![](../.gitbook/assets/circuloid.gif)
+![](../.gitbook/assets/circle_copyid.gif)
 
 ## Círculos ativos e inativos
 
 O que define se um círculo é ativo ou não, é a existência de [**releases**](release.md), isto é, de versões implantadas para aquela segmentação de usuários. Por isso, os círculos ativos são os que possuem releases implantadas, enquanto os círculos inativos ainda não possuem nenhuma.
 
-![ Filtro de estado do c&#xED;rculo entre Ativo e Inativo.](../.gitbook/assets/chrome-capture-2-%20%281%29.gif)
+![](../.gitbook/assets/circle_filter.gif)
 
 ## Como integrar círculos com serviços?
 

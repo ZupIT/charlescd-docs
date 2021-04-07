@@ -18,8 +18,7 @@
   * [Ambiente de deploy](primeiros-passos/definindo-workspace/ambiente-de-deploy.md)
   * [Circle Matcher](primeiros-passos/definindo-workspace/circle-matcher.md)
   * [Adicionando o DataSource](primeiros-passos/definindo-workspace/adicionando-o-datasource.md)
-  * [Ações](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
-  * [Webhooks](primeiros-passos/definindo-workspace/webhooks.md)
+  * [Ações de métricas](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
 * [Criando seu primeiro módulo](primeiros-passos/criando-seu-primeiro-modulo/README.md)
   * [Configurando o chart template](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md)
   * [Configurando o seu módulo](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-seu-modulo.md)
@@ -42,8 +41,6 @@
 * [Métricas](referencia/metricas/README.md)
   * [Configurando as métricas](referencia/metricas/configurando-metricas.md)
   * [Grupo de métricas](referencia/metricas/grupo-de-metricas.md)
-  * [Ações](referencia/metricas/acoes.md)
-  * [Grupo de métricas para monitorar a saúde](referencia/metricas/grupo-de-metricas-para-monitorar-a-saude.md)
   * [Métricas do Charles](referencia/metricas/metricas-do-charles.md)
 
 ## GUIDES

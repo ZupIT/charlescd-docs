@@ -1,7 +1,3 @@
----
-description: 'Nesta seção, você encontra mais informações sobre métricas do Charles.'
----
-
 # Métricas do Charles
 
 O Charles oferece métricas para você monitorar os deploys e os círculos. 

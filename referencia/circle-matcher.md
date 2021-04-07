@@ -16,17 +16,11 @@ Para mais informações de como configurar seu Circle Matcher em um workspace,[ 
 
 Ao utilizar a interface é possível perceber que existem duas formas de realizar a identificação dos círculos. Para isto, acesse o menu **Circles** dentro de um **workspace** e selecione o ícone indicado abaixo:
 
-![Identifica&#xE7;&#xE3;o do &#xED;cone do Circle Matcher](../.gitbook/assets/chrome-capture%20%281%29.jpg)
+![](../.gitbook/assets/image%20%2816%29.png)
 
-As duas formas de realizar essa validação são:
+Você pode realizar esta validação adicionando manualmente chaves e valores que definem as características de um usuário de teste. E, com base nisso, ao executar o **Send**, você receberá todos os círculos que ele se encaixa.  
 
-* **Default:** nessa opção, você adiciona manualmente chaves e valores que definem as características de um usuário de teste. E, com base nisso, ao executar o **Try**, você receberá todos os círculos que ele se encaixa.  
-
-![Identifica&#xE7;&#xE3;o dos seus c&#xED;rculos com a op&#xE7;&#xE3;o Default.](../.gitbook/assets/circle-matcher-default%20%281%29.gif)
-
-* **JSON:** é similar à opção anterior, só que aqui você pode copiar e colar no **campo de payload** um **JSON** do seu ambiente produtivo ao invés de adicionar manualmente.
-
-![Identifica&#xE7;&#xE3;o dos seus c&#xED;rculos com a op&#xE7;&#xE3;o JSON.](../.gitbook/assets/circle-matcher-json%20%281%29.gif)
+![](../.gitbook/assets/circle_matcher.gif)
 
 {% hint style="warning" %}
 Se você passar informações que estejam fora das condições lógicas configuradas nos círculos, o sistema irá retornar que aquele usuário está no círculo _Default_, ou seja, na versão padrão da sua aplicação.
@@ -38,7 +32,7 @@ Você pode integrar nas suas aplicações o recurso **Identify** do módulo [`ci
 
 Por exemplo, dada a utilização dos seguintes parâmetros ao segmentar:
 
-![](https://lh6.googleusercontent.com/q573-961WtpntVK8NfXXvPgzSPrxLwxjx3QXRqM3vBlHFM8nAoDkpn1KD26Zfw3_wJtjnhVldYcwRUUzhbveEvqJz6n16NQFkxi0S3hh8rk6Y7OUmWtnBOl_qJekzoymQ64mFF8k)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 Ao realizar a requisição de identificação com as seguintes informações, círculos compatíveis serão retornados.
 
@@ -93,7 +87,7 @@ Como nesse exemplo existem círculos correspondentes com as informações sobre 
 
 O corpo da requisição é totalmente flexível, porém vale lembrar que as chaves devem ter a mesma nomenclatura definida nas regras de segmentação do círculo. Veja no caso a seguir:
 
-![](https://lh3.googleusercontent.com/FdPVIHDFeYJCkC_6Y1P3ZOBSqmNlGkl9q2_XyIayNKQo2Mp9IXBY7PzvpzW0Mej1P9Ox8AG12QiA1H0w5uozWP1UYWafcfwXLKBOf3G-ObIVoPHtYGOlWd5Ju01uLuScqtCn8qQ1)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 O círculo **Stony Brook’s Citizens** foi criado para a identificar usuários que tenham como característica a chave **`city`** e o exato valor **`London`**. Sendo assim, ele não estará na listagem ao realizar uma requisição para o **`Identify`** caso seja informado o corpo da requisição como no exemplo abaixo:
 
