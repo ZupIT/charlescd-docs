@@ -16,7 +16,7 @@ Para mais informações de como configurar seu Circle Matcher em um workspace,[ 
 
 Ao utilizar a interface é possível perceber que existem duas formas de realizar a identificação dos círculos. Para isto, acesse o menu **Circles** dentro de um **workspace** e selecione o ícone indicado abaixo:
 
-![Identifica&#xE7;&#xE3;o do &#xED;cone do Circle Matcher](../.gitbook/assets/chrome-capture%20%281%29.jpg)
+![](../.gitbook/assets/circle-matcher%20%282%29.png)
 
 As duas formas de realizar essa validação são:
 

@@ -19,7 +19,7 @@ Cada workspace possui as seguintes configurações:
 * Personalização do [**Circle Matcher**](../../referencia/circle-matcher.md).
 * Registro do [**Provedor de Métricas**](adicionando-o-datasource.md) das suas aplicações.
 
-![Configura&#xE7;&#xF5;es do workspace](../../.gitbook/assets/settings_-_workspace_-_11.4_-_add_group_permissions2x.png)
+![Configura&#xE7;&#xE3;o de workspace](../../.gitbook/assets/defining-workspace.png)
 
 {% hint style="warning" %}
 A criação do workspace pode ser feita apenas pelo usuário **root**. Entretanto, o preenchimento das configurações podem também ser feitas pelos usuários associados ao workspace com perfil de **mantenedor**.
@@ -31,5 +31,5 @@ Assim que seu workspace é criado, mesmo sem a definição das configurações, 
 
 Para obter essa informação, selecione o workspace desejado e, no menu à esquerda, clique em **Copy ID**:
 
-![](../../.gitbook/assets/workspaceid.gif)
+![](../../.gitbook/assets/workspace_copyid%20%281%29.gif)
 

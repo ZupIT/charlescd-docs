@@ -59,7 +59,7 @@ As chaves utilizadas podem ser qualquer uma enviada no payload da sua aplicaçã
 
 Veja abaixo um exemplo de como criar um círculo: 
 
-![Como criar um c&#xED;rculo](../.gitbook/assets/chrome-capture-7-.gif)
+![Como criar c&#xED;rculos](../.gitbook/assets/circle_create_segmentation.gif)
 
 {% hint style="info" %}
 Uma **grande vantagem de utilizar as segmentações** é a possibilidade fazer combinações lógicas entre vários atributos para criar diferentes categorias de públicos e, dessa forma, utilizá-los nos testes das hipóteses.   
@@ -83,7 +83,7 @@ Essas características podem ser definidas com base nas lógicas de:
 
 Veja alguns exemplos:
 
-![Exemplo de segmenta&#xE7;&#xE3;o manual](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/segmentacao-manual%20%281%29.png)
 
 ### **Segmentação por importação de CSV**
 
@@ -111,13 +111,13 @@ Para obter essa informação, siga estes passos:
 2. Clique em "default" 
 3. E, no menu à esquerda, clique em **Copy ID**
 
-![](../.gitbook/assets/circuloid.gif)
+![](../.gitbook/assets/como-obter-o-identificador-do-meu-circulo.gif)
 
 ## Círculos ativos e inativos
 
 O que define se um círculo é ativo ou não, é a existência de [**releases**](release.md), isto é, de versões implantadas para aquela segmentação de usuários. Por isso, os círculos ativos são os que possuem releases implantadas, enquanto os círculos inativos ainda não possuem nenhuma.
 
-![ Filtro de estado do c&#xED;rculo entre Ativo e Inativo.](../.gitbook/assets/chrome-capture-2-%20%281%29.gif)
+![](../.gitbook/assets/circulo-ativo-e-inativo%20%281%29.gif)
 
 ## Como integrar círculos com serviços?
 

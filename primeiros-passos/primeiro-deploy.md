@@ -46,5 +46,5 @@ Para realizar o deploy neste caso, siga os passos abaixo:[ ](../principais-conce
 
 Depois disso, o Charles se encarregará de disponibilizar a release criada no cluster configurado em mar aberto. O status do deploy será exibido e atualizado conforme o progresso.
 
-![Exemplo de deploy em mar aberto](../.gitbook/assets/primeiro-deploy.gif)
+![](../.gitbook/assets/first-deploy.gif)
 
