@@ -17,7 +17,7 @@ In workspace configuration, click on the section **Add Metric Action** and follo
 3. Type a description;  
 4. Select a plugin to run the action.** 
 
-![](../../.gitbook/assets/usandoactions-metricas%20%282%29.gif)
+![](../../.gitbook/assets/workspace_metricaction%20%281%29.gif)
 
 {% hint style="info" %}
 The only available plugin so far is **circle deployment**. Charles allows you to make your own plugin, the way you want and to fulfill your application's purpose, for example, an action that sends an email to warn your circle status.
