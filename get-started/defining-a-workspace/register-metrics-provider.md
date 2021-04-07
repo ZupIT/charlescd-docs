@@ -23,5 +23,5 @@ You have to follow the next steps:
 5. **Data source health:** this option gives you more details about your circle's health; 
 6. Make the configuration based on the selected tool. 
 
-![](../../.gitbook/assets/workspace_datasource.gif)
+![](../../.gitbook/assets/workspace_datasource%20%282%29.gif)
 
