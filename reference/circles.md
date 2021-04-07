@@ -59,7 +59,7 @@ It is important to remember that your payload and your keys must be the same.
 
 See the example on how to create a circle below: 
 
-![](../.gitbook/assets/circle_create_segmentation.gif)
+![](../.gitbook/assets/circle_create_segmentation%20%282%29.gif)
 
 {% hint style="info" %}
 **The best advantage to use segmentation** is the possibility to combine logic with several attributes to create different audience categories and, in this way, use them on hypothesis tests. 
