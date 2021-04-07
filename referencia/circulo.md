@@ -59,7 +59,7 @@ As chaves utilizadas podem ser qualquer uma enviada no payload da sua aplicaçã
 
 Veja abaixo um exemplo de como criar um círculo: 
 
-![](../.gitbook/assets/circle_create_segmentation.gif)
+![](../.gitbook/assets/circle_create_segmentation%20%282%29.gif)
 
 {% hint style="info" %}
 Uma **grande vantagem de utilizar as segmentações** é a possibilidade fazer combinações lógicas entre vários atributos para criar diferentes categorias de públicos e, dessa forma, utilizá-los nos testes das hipóteses.   
