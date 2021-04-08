@@ -48,7 +48,7 @@ Para utilizar o Charles, é preciso cumprir alguns pré-requisitos:
 
 A plataforma foi construída utilizando a abordagem de microsserviços e possui os seguintes módulos:
 
-![](.gitbook/assets/arquitetura-do-sistema-2021-03-03.png)
+![](.gitbook/assets/arquitetura-antes-do-hermes.png)
 
 * `charlescd-ui:` responsável por prover uma interface de fácil usabilidade para todas as features fornecida pelo CharlesCD, no intuito de simplificar testes de hipóteses e _circle deployment_.
 
@@ -56,7 +56,6 @@ A plataforma foi construída utilizando a abordagem de microsserviços e possui 
 * `charlescd-butler:` responsável por orquestrar e gerenciar as releases e deploys realizados. 
 * `charlescd-circle-matcher:`gerencia todos os círculos criados, além de indicar a qual círculo um usuário pertence, com base em um conjunto de características. 
 * `charlescd-compass`: integração do provedor de dados, faz análise de métricas e executa ações configuráveis.   
-* `charlescd-hermes`: responsável por notificar serviços externos previamente subscritos de eventos de deploy e undeploy.
 
 
 
