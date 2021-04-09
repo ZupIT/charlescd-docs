@@ -47,6 +47,8 @@ It's important to remember that, in case of no customization at all, the final r
 So, you must not forget to customize the fields in case you want something manageable. 
 {% endhint %}
 
+
+
 ### Change default passwords
 
 After installing CharlesCD, remember to change some **default passwords,** check out below:
