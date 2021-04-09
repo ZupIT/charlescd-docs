@@ -48,7 +48,7 @@ Para utilizar o Charles, é preciso cumprir alguns pré-requisitos:
 
 A plataforma foi construída utilizando a abordagem de microsserviços e possui os seguintes módulos:
 
-![](.gitbook/assets/arquitetura-0.6.0.jpg)
+![](.gitbook/assets/arquitetura-charles-0.6.0.jpg)
 
 * `charlescd-ui:` responsável por prover uma interface de fácil usabilidade para todas as features fornecida pelo CharlesCD, no intuito de simplificar testes de hipóteses e _circle deployment_.
 
