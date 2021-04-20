@@ -25,20 +25,23 @@ Para você criar um círculo, siga os seguintes passos:
 
 ## O que é uma segmentação? 
 
-As segmentações são um **conjunto de características** que você define para agrupar seus usuários nos círculos. Existem duas maneiras de segmentar seus usuários: 
+As segmentações são um **conjunto de características ou um valor percentual**  que você define para agrupar seus usuários nos círculos. Existem três maneiras de segmentar seus usuários: 
 
-1. Através do **preenchimento de informações de forma manual.**
+1. Por meio do **preenchimento de regras de forma manual.**
 2. Por meio da **importação de um arquivo CSV**.
+3. Por meio de um **valor de porcentagem em relação ao total de acessos à aplicação** 
 
-### Como definir? 
+### Campos de uma segmentação 
 
-As segmentações possuem os seguintes campos: 
+As segmentações manuais possuem os seguintes campos: 
 
-* **Chave**: é o mesmo valor presente como chave payload da requisição de identificação do usuário.
+* **Chave**: é o mesmo valor presente como chave _payload_ da requisição de identificação do usuário.
 * **Condição**: é a implicação lógica que condicionará sua chave e seu valor.
 * **Valor**: são os valores existentes na sua base que poderão ser utilizados para compor a lógica de segmentação.
 
-Os campos **chave** e **valor** são estabelecidos com base nas informações que serão enviadas na requisição que [**identifica os círculos**](circle-matcher.md#identificando-circulos-atraves-do-charlescd) ****que o seu usuário pertence. Por exemplo, considere que o seguinte payload represente as informações que você possui do seu cliente:
+#### Chave e valor
+
+Os campos **chave** e **valor** são estabelecidos com base nas informações que serão enviadas na requisição que [**identifica os círculos**](circle-matcher.md#identificando-circulos-atraves-do-charlescd) aos quais o seu usuário pertence. Por exemplo, considere que o seguinte payload representa as informações que você possui do seu cliente:
 
 ```text
 {
@@ -53,9 +56,31 @@ Os campos **chave** e **valor** são estabelecidos com base nas informações qu
 
 As chaves utilizadas podem ser qualquer uma enviada no payload da sua aplicação ao circle-matcher do Charles, como: **id**, **name**, **state**, **city**, **age** e **groupId**. 
 
-{% hint style="info" %}
-É importante lembrar que o seu payload e as chaves devem ser exatamente iguais.
+{% hint style="warning" %}
+**O seu payload e as chaves devem ser iguais.**
 {% endhint %}
+
+### Porcentagem
+
+A segmentação por porcentagem possui o seguinte campo: 
+
+* **Porcentagem**: valor que indica o percentual \(%\) das requisições que serão direcionadas para um círculo. Por exemplo, em um cenário que exista um circulo com porcentagem de 10%,  a cada 100 requisições, aproximadamente 10 serão direcionadas para o círculo. 
+
+{% hint style="warning" %}
+A soma dos fatores dos círculos ativos com segmentação por porcentagem nunca deve ultrapassar 100.
+
+Caso seja igual a 100, significa que o círculo **Default** jamais será indicado pelo Circle Matcher.
+{% endhint %}
+
+Esse direcionamento é feito somente para usuários que pertencem ao círculo **Default** ou aos círculos com **segmentação de porcentagem**.  Os usuários que pertencem ao círculos com segmentação por regras, seja manual ou por CSV, nunca serão direcionados para círculos com segmentação por porcentagem.
+
+Se na sua configuração existir círculos com segmentação por regras e círculos com segmentação por porcentagem, veja abaixo a lógica de identificação no Circle Matcher:
+
+1. Verifica se o payload faz _match_ com algum círculo de segmentação por regras. Caso positivo, este\(s\) círculo\(s\) será\(ão\) retornado\(s\) e a busca pelos círculos é finalizada.
+2. Se não encontrar nenhum círculo compatível e existir círculos ativos com segmentação por porcentagem,  um número aleatório entre 1 e 100 é sorteado e se ele for menor ou igual ao fator do círculo, este é retornado.
+3. Caso nenhum dos passos anteriores encontre um círculo compatível, o id do círculo **Default** é retornado.
+
+### Exemplo de criação de círculo
 
 Veja abaixo um exemplo de como criar um círculo: 
 
@@ -87,7 +112,7 @@ Veja alguns exemplos:
 
 ### **Segmentação por importação de CSV**
 
-Nessa modalidade, é utilizada apenas a primeira coluna do CSV para criar as regras. Sendo assim, a primeira linha da primeira coluna deve conter o nome da chave e a mesma deve ser informada no campo _key:_
+Nessa modalidade, é utilizada apenas a primeira coluna do CSV para criar as regras. Sendo assim, a primeira linha da primeira coluna deve conter o nome da chave e a mesma deve ser informada no campo **key**_:_
 
 ![Exemplo de importa&#xE7;&#xE3;o por CSV ](../.gitbook/assets/chrome-capture-5-.jpg)
 
@@ -100,6 +125,43 @@ Essa segmentação permite, por exemplo, extrair de uma base externa de IDs dos 
 {% hint style="warning" %}
 O único operador lógico suportado nesta segmentação é o OR \(Ou\).
 {% endhint %}
+
+### **Segmentação por porcentagem**
+
+É o tipo de segmento que distribui aos círculos a quantidade total de requisições que não foram filtradas em alguma segmentação manual. Essas requisições são entregues, de maneira proporcional, entre o círculos configurados para essa segmentação e o círculo default.
+
+O valor da porcentagem para cada círculo é definido entre 0 e 100, e a soma de todos os círculos ativos não pode ultrapassar 100%.
+
+#### Exemplos de segmentação por porcentagem
+
+Supondo que você criou dois círculos com porcentagem: 
+
+* O círculo **A,** com 15%
+* O círculo **B,** com 26%.
+
+A partir daí, o algoritmo para identificação sorteia um número entre 1 e 100 \(inclusive\), e em seguida, é feita a seguinte análise:
+
+1. Se o número for menor ou igual a 15, é retornado o círculo **A**.
+2. Se o número for maior que 15 e menor ou igual a 41 \(15 + 26\), é retornado o círculo **B**.
+3. Se o número for maior que 41, é retornado o círculo **Default**.
+
+Se não houver nenhum círculo configurado ou ativo, a quantidade disponível será de 100%, como na imagem abaixo:
+
+![](../.gitbook/assets/perc1.png)
+
+Se você, por exemplo, possui três círculos ativos por porcentagem e cada um tem o valor de 30% , a quantidade disponível para seu novo círculo será de 10%. Veja abaixo:  
+
+![](../.gitbook/assets/perc2.png)
+
+Depois que a segmentação é criada, o percentual disponível só será alterado caso uma release seja implantada para aquele círculo e ele se torne ativo.
+
+![](../.gitbook/assets/perc3.png)
+
+Se, por exemplo, **a porcentagem** **atingir os 100% disponíveis,**  é necessário alterar ou remover os círculos ativos e configurados para que haja espaço para você criar um novo círculo.
+
+![](../.gitbook/assets/perc4.png)
+
+
 
 ### Como obter o identificador do meu círculo?
 

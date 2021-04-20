@@ -12,6 +12,12 @@ Uma boa prática é realizar essa identificação sempre que o usuário faz logi
 
 Para mais informações de como configurar seu Circle Matcher em um workspace,[ **veja a seção Definindo um Workspace.**](../primeiros-passos/definindo-workspace/circle-matcher.md)\*\*\*\*
 
+### **Como é realizada a identificação de círculos?**
+
+1. A aplicação realiza uma busca em toda a sua base de dados por círculos que tenham as mesmas regras informadas na requisição. 
+2. Caso não haja um círculo compatível com as regras informadas cadastrado, o Circle Matcher verifica se o usuário irá ser selecionado pelos círculos com segmentação por porcentagem através de seu algoritmo que utiliza probabilidade na seleção.
+3. Para finalizar, se nenhum círculo se encaixar, o Circle Matcher irá retornar o círculo default cadastrado.  
+
 ### Identificando círculos através do CharlesCD
 
 Ao utilizar a interface é possível perceber que existem duas formas de realizar a identificação dos círculos. Para isto, acesse o menu **Circles** dentro de um **workspace** e selecione o ícone indicado abaixo:
@@ -32,7 +38,7 @@ As duas formas de realizar essa validação são:
 Se você passar informações que estejam fora das condições lógicas configuradas nos círculos, o sistema irá retornar que aquele usuário está no círculo _Default_, ou seja, na versão padrão da sua aplicação.
 {% endhint %}
 
-## Identificação de círculos através da API
+## Identificação de círculos **por meio** da API
 
 Você pode integrar nas suas aplicações o recurso **Identify** do módulo [`circle-matcher`](https://github.com/ZupIT/charlescd/tree/master/circle-matcher) para detectar os círculos que o seu usuário pertence.
 
