@@ -12,7 +12,7 @@ Kubernetes cluster uses a type of docker-registry **Secret** to authenticate the
  For more information on how to generate the Secret that will be applied in your cluster, [**access Kubernetes documentation**](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/). 
 {% endhint %}
 
-Once you generate the secret, it will look like:
+Once you generate the secret, it will look like this:
 
 ```text
 apiVersion: v1

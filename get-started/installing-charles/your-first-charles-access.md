@@ -2,6 +2,8 @@
 
 {% hint style="info" %}
 At the first access, **regardless of the installation method**, the default admin user is **charlesadmin@admin** and the password is **charlesadmin.**
+
+It is important that, after your first login, you change this password.
 {% endhint %}
 
 There are three ways to access the application: 
@@ -39,7 +41,7 @@ For more information on **how to change the host file,** [**access here.** ](htt
 
 ## 2. Microk8s
 
-Microk8s is available for Microsoft Windows, Apple MacOS and Linux platforms. 
+Microk8s is available for Microsoft Windows, Apple MacOS, and Linux platforms. 
 
 {% hint style="info" %}
 For more information on how to install Microk8s visit the [**project's website**](https://microk8s.io/)**.**
@@ -49,7 +51,7 @@ Once Microk8s is installed, you have to enable the following add-ons:
 
 * **DNS:** discovery of services within the cluster; 
 * **Storage:** creating volumes and persistence of PODs; 
-* **MetalLB:** access to the services exposed by kubernetes - For this addon, you will have to choose a range of IPs where Load Balancer will assign for the exposure of its services.
+* **MetalLB:** access to the services exposed by Kubernetes - For this addon, you will have to choose a range of IPs where Load Balancer will assign for the exposure of its services.
 
 Follow the next steps to enable Microk8s on Charles: 
 
@@ -116,22 +118,22 @@ microk8s.kubectl get svc -n charles
 For more information on **how to change the host file,** [**access here.** ](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/)\*\*\*\*
 {% endhint %}
 
-**Step 3:** type in your browser **http://charles.info.example** and the entire application will be  available.
+**Step 3:** type in your browser **http://charles.info.example** and the entire application will be available.
 
 ## **3. Cloud Provider \(AWS, GCP, AZURE\)**
 
-On Cloud Provider, if you install on a managed kubernetes, **the external ip for the nginx load balancer is created automatically**, 
+On Cloud Provider, if you install on a managed Kubernetes, **the external ip for the nginx load balancer is created automatically**, 
 
 When all the components are ready follow the next steps:
 
-**Step 1:** Just take the external IP with the command below and add it to your hosts file.
+**Step 1:** Just take the external IP with the command below and add it to your hosts' file.
 
 ```text
 kubectl get svc -n charles
 // get external IP value
 ```
 
-**Step 2:**  Add the line below in you [**OS host file**](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), if you want to access the browser in your device. 
+**Step 2:**  Add the line below in your [**OS host file**](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), if you want to access the browser on your device. 
 
 ```text
 <IP-EXTERNAL-CHARLES>       charles.info.example
@@ -140,10 +142,10 @@ kubectl get svc -n charles
 {% hint style="info" %}
 If you want to use this installation in a productive or development environment you will probably expose the application using a DNS. 
 
-After doing this, clone the configurations \(it can be singlefile or the helm files\) and change all occurrences from http://charles.info.example to your new DNS, then run the install command again.
+After doing this, clone the configurations \(it can be single-file or the helm files\) and change all occurrences from http://charles.info.example to your new DNS, then run the install command again.
 {% endhint %}
 
 {% hint style="danger" %}
-The purpose of this installation is only for tests. Using this for production environment is not recommended due to lack o backup, high availability, etc.
+The purpose of this installation is only for tests. Using this for the production environment is not recommended due to lack o backup, high availability, etc.
 {% endhint %}
 

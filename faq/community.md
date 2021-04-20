@@ -16,7 +16,7 @@ We work with monorepo concept on CharlesCD. That means that you can find all of 
 * Point out which branch do you want to create your pull request \(PR\); 
 
 {% hint style="info" %}
-It is important that, before you create a PR, just confirm if the request refers to the correct branch: for english documentation is `englishdocs`and for the portuguese documentation is `v0.2.1.`
+It is important that, before you create a PR, just confirm if the request refers to the correct branch: for English documentation is `englishdocs`and for the Portuguese documentation is `v0.2.1.`
 {% endhint %}
 
 * While you are writing, include the "Docs" label, so we are able to quickly identify that is a request for our documentation. 
@@ -24,6 +24,4 @@ It is important that, before you create a PR, just confirm if the request refers
 Your pull request will go through two rounds of review before being published. 
 
 For more information on how to contribute with Charles, check out our [**contribution information and policy**](https://github.com/ZupIT/charlescd/blob/master/CONTRIBUTING.md) ****on Github. 
-
-
 
