@@ -2,7 +2,7 @@
 description: 'In this section, you will find information about webhooks.'
 ---
 
-# Web
+# Webhooks
 
 ## What is it?
 
