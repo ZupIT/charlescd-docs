@@ -14,6 +14,12 @@ One good practice is to always make this identification when a user logs in to t
 
 For more information on how to configure your **Circle Matcher in a workspace**, [**see Defining Workspace section**](../get-started/defining-a-workspace/circle-matcher.md)**.** 
 
+### **How the circle identification is made?** 
+
+1. The application searches all its databases __for circles with the same informed rules in the requests.
+2. In case there isn't a compatible circle with the informed rules, Circle Matcher verifies if the user will be selected with the segmentation by percentage through its algorithm that uses selection probability. 
+3. To finish, if any circle fits in, Circle Matcher will return the default circle registered. 
+
 ## Identifying circles through CharlesCD
 
 Once you start using the interface, it's possible to notice that there are two ways to perform the circle identification. For that, access the **Circles** menu inside a **workspace** and select the icon indicated below:
@@ -31,7 +37,7 @@ The two ways to make this validation are:
 ![Circle identification with JSON option. ](../.gitbook/assets/circle-matcher-json%20%282%29.gif)
 
 {% hint style="warning" %}
-If you pass some information that is off the preconfigured logic conditions in the circles, the system will return indicating that the user is on _Default_ circle, on the standard version of your application.
+If you pass some information that is off the preconfigured logic conditions in the circles, the system will return indicating that the user is on the **Default** circle, on the standard version of your application.
 {% endhint %}
 
 ## Circle identification through API
@@ -93,7 +99,7 @@ UUID
 
 As the example above shows, there are circles with the given information of the user, which means that **`charlescd-circle-matcher`**will return a list with all the circles. Here, there are two circles that fit with this description: NY Lawyers e Stony Brook’s Citizens. The order of the circles returned will be by the date of creation, so the newest circle created will be the first of the list.
 
-The requisition body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. See the case below:
+The request body is totally flexible, but it's good to remember that the keys must have the same nomenclature defined by segmentation's rules of the circle. See the case below:
 
 ![](../.gitbook/assets/circle-matcher-stony-brooks-citizens%20%281%29.png)
 

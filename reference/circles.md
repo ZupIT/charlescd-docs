@@ -25,12 +25,13 @@ To create a circle, you just have to follow these steps:
 
 ## What is segmentation? 
 
-Segmentations are a subset of characteristics that you define to put all your users together in a circle. To make this happen, there are two ways to segment your users: 
+Segmentations are a **subset of characteristics or percentage values** that you define to put all your users together in a circle. There are three ways to segment your users: 
 
 * **By filling in information manually** 
 * Through a **CVS file importation**.
+* Through a **percentage value related to the total amount of access to your application**. 
 
-### How do you define it? 
+### Segmentations fields 
 
 Segmentations have the following fields that you have to fill: 
 
@@ -38,7 +39,9 @@ Segmentations have the following fields that you have to fill:
 * **Conditional:** it is the logical implication that will condition your key and value.
 * **Value:** they are the values in your base that can be used to make the segmentation logic.
 
-The key and value fields are established based on the information that will be sent in the request, that [**identifies the circles**](../get-started/defining-a-workspace/circle-matcher.md) where your user belongs to. For example, the following payload could represent the information you have about a client: 
+#### Key and value
+
+The **key** and **value** fields are established based on the information that will be sent in the request, that [**identifies the circles**](../get-started/defining-a-workspace/circle-matcher.md) where your user belongs to. For example, the payload below could represent the information you have about a client:
 
 ```text
 {
@@ -51,20 +54,42 @@ The key and value fields are established based on the information that will be s
 }
 ```
 
-The keys used could be any of the ones sent in your application payload to the Charles' circle-matcher, such as: **id**, **name**, **state**, **city**, **age** e **groupId**. 
+The keys used could be any of the ones sent in your application payload to the Charles' circle-matcher, such as **id**, **name**, **state**, **city**, **age** e **groupId**. 
+
+{% hint style="warning" %}
+**Your payload and your keys must be the same.** 
+{% endhint %}
+
+### Percentage
+
+The segmentation by percentage has the following field: 
+
+* **Percentage**: value that indicates the percentage \(%\) of the requests that will be directed to a circle. For example, in a scenario where there is a circle with a percentage of 10% for every 100 requests, approximately 10 will go to the circle.
 
 {% hint style="info" %}
-It is important to remember that your payload and your keys must be the same. 
+The sum of the active circles' factors with segmentation by percentage should never exceed 100.
+
+If it is equal to 100, it means that the **Default** circle will never be indicated by the Circle Matcher.
 {% endhint %}
+
+This happens only to users that belong to a **Default** circle, meaning the users belonging to circles with manual or CSV segmentation will never be directed to circles with segmentation by percentage. 
+
+If in your configuration there are circles with segmentation by rules and circles with segmentation by percentage, see the Circle Matcher identification logic below: 
+
+1. It verifies if the payload matches some segmentation circle by rules. If it does, these circles will be returned and the circle's search is ended. 
+2. If there isn't any compatible circle and there are active circles with segmentation by percentage, a random number between 1 and 100 is drawn and if it is less than or equal to the circle's factor, this one is returned. 
+3. In case any of the previous steps finds a compatible circle, the **Default's** circle id is returned. 
+
+### Circle creation example 
 
 See the example on how to create a circle below: 
 
-![](../.gitbook/assets/circle_create_segmentation%20%281%29.gif)
+![How to create a circle](../.gitbook/assets/chrome-capture-7-.gif)
 
 {% hint style="info" %}
 **The best advantage to use segmentation** is the possibility to combine logic with several attributes to create different audience categories and, in this way, use them on hypothesis tests. 
 
-For example, using the characteristics ‘profession’ and ‘region’, you are able to create a circle with engineers from the Brazilian north region, another one with engineers from the southeast, the third one with all Brazilians engineers.
+For example, using the characteristics ‘profession’ and ‘region’, you are able to create a circle with engineers from the Brazilian north region, another one with engineers from the southeast, and the third one with all Brazilian engineers.
 {% endhint %}
 
 ### **Manual segmentation**
@@ -102,7 +127,40 @@ This way allows you to extract from an external client’s IDs base, a specific 
 OR is the only logic operator supported on this segmentation.
 {% endhint %}
 
-### How to get **my circle's identifier**?  <a id="como-obter-o-identificador-do-meu-workspace"></a>
+### **Segmentation by percentage**
+
+It is a kind of segmentation that distributes to the circles the number of requests not filtered in a manual segmentation. These requests are delivered, proportionally between configured circles and the default circle. The value of the percentage for each circle is defined between 0 and 100, and the sum of all active circles cannot exceed 100%.
+
+#### Segmentation by percentage example
+
+Suppose you have created two circles with percentage: 
+
+* Circle **A,** with 15%.
+* Circle **B,** with 26%.
+
+Now, the algorithm for identification draws a number between 1 and 100, and after that, it analyzes: 
+
+1. If the number is less than or equal to 15, circle **A** is returned.
+2. If the number is bigger than 15 and less than or equal to 41 \(15 + 26\), **circle B** is returned. 
+3. If the number is bigger than 41, the **Default** circle is returned.
+
+If there isn't a configured circle or an active one, the available amount will be 100%, like the image below: 
+
+![](../.gitbook/assets/perc1.png)
+
+If you have, for example, three active circles by percentage and each one of them have a 30% value, the available amount for your new circle will be 10%, see below:  
+
+![](../.gitbook/assets/perc2.png)
+
+After the segmentation is created, the available percentage will be only altered if a new release is deployed for that circle, and then it will become active.
+
+![](../.gitbook/assets/perc3.png)
+
+If, for example, the **percentage hits the available 100%**, it is necessary to change or remove the configured active circles in order to make more space, after that you are able to create a new circle. 
+
+![](../.gitbook/assets/perc4.png)
+
+### How to get **my circle's identifier**? 
 
 Once your circle is created, even without the configuration, it already has a single identifier. 
 
@@ -118,7 +176,7 @@ The existence of releases defines if a circle is active or not, which are the im
 
 ## How to integrate circle with services?
 
-Once the **circle to which the user belongs** is detected, this information must be passed on to all next requests through the `x-circle-id` parameter on the header. Charles detects by the circle’s ID which application version a determined request must be forward. Let's see how it woks on the example below:
+Once the **circle to which the user belongs** is detected, this information must be passed on to all next requests through the `x-circle-id`parameter on the header. Charles detects by the circle’s ID which application version a determined request must be forward. Check out how it works below:
 
 ![](../.gitbook/assets/como_integrar_circulos_com_servicos_copy%20%282%29.png)
 
