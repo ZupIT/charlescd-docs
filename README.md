@@ -1,60 +1,61 @@
 ---
 description: >-
-  In this section, we will help you find all the basic information about
-  Charles.
+  Nesta seção, você encontra as informações iniciais sobre o Charles antes de se
+  aprofundar no produto.
 ---
 
 # Overview
 
-## What is Charles?
+## O que é o Charles?
 
-CharlesCD is an open source tool that makes deployments more agile, continuous and safe, which allows development teams to perform hypothesis validations with a specific group of users, simultaneously.
+O Charles é uma ferramenta open source que realiza deploys de forma ágil, contínua e segura, permitindo que as equipes de desenvolvimento realizem simultaneamente validações de hipóteses com grupos específicos de usuários. 
 
 {% hint style="warning" %}
-The product brings a new concept to the community: **the** **deployment in circles of users on Kubernetes clusters**.
+O produto traz um conceito pioneiro no mercado e na comunidade: **deploys em círculos de usuários em clusters de Kubernetes.** 
 {% endhint %}
 
-This kind of deploy makes it possible to create a segment with your clients' specific characteristics and, at the same time, submit several versions of the same application to test this circle of users.
+Neste modelo de deploy, é possível **segmentar seus clientes através de características específicas** e, ao mesmo tempo, submeter diversas versões de uma mesma aplicação para teste com os usuários dos círculos. 
 
-## How was the project created?
+## Como nasceu o produto?
 
-Charles was created to offer a more efficient solution for the community to create deployments and test hypothesis together, which allows the identification of errors and the execution of possible solution to solve bugs faster.
+O Charles surgiu da necessidade de oferecer para a comunidade uma solução mais eficaz no trabalho de fazer deploys e testar hipóteses simultaneamente, permitindo mais rapidez na identificação de erros e execução de possíveis soluções para resolver os bugs. 
 
-The concept behind the tool goes back to the theory proposed by the biologist Charles Darwin \(1809-1882\), in which evolution goes by the adaptation to a new environment. In the development's scenario, this evolution goes by constant improvements on the applications to build and test hypothesis in order to implement more reliable releases.
+O conceito por trás da ferramenta remete à teoria proposta pelo biólogo _Charles Darwin_ \(1809-1882\), ou seja, a de que a evolução se dá pela adaptação a um novo ambiente. No caso do desenvolvimento, essa evolução se dá através de constantes melhorias nas aplicações ao construir e testar hipóteses de maneira a implantar as releases mais precisas e eficazes. 
 
-For this reason, we believe CharlesCD is the darwinism's application inside the development and programming world.
+Por esse motivo, consideramos que o Charles é a aplicação do _darwinismo_ dentro do universo de desenvolvimento e programação.
 
-## What does Charles do?
+## O que o Charles faz?
 
-The methodology implemented by Charles brings a lot of advantages such as:
+A metodologia implementada pelo Charles traz várias vantagens, como:
 
-* Simple segmentation of users based on their profiles or demographic data; 
-* Easy and sophisticated creation of implementation strategies using circles;  
-* Easy version management, allowing multiple parallel releases of the same application in the production environment; 
-* Monitoring the impact of each version through predefined metrics during the implementation creation.
+* Simples segmentação de usuários com base em seu perfil ou até mesmo dados demográficos;
+* Criação de estratégias de implantação de maneira mais fácil e sofisticada utilizando os círculos;
+* Fácil gerenciamento de versões em caso de múltiplas releases em paralelo no ambiente produtivo;
+* Monitoramento dos impactos de cada versão através de métricas definidas durante a criação da implantação.
 
-  \*\*\*\*
+## Requisitos
 
-## Requirements
+Para utilizar o Charles, é preciso cumprir alguns pré-requisitos:
 
-In order to user Charles, it is necessary to fulfill some requirements: 
+1. **Instalação:** veja o que é necessário [**aqui**](primeiros-passos/instalando-charles/#pre-requisitos).
+2. Para o funcionamento completo da ferramenta é preciso:
 
-1. **Installation:** see what you need ****[**here**](get-started/installing-charles/#requirements).
-2. To make the tool work properly, you will need: ****
+* Possuir um [**Registry**](primeiros-passos/definindo-workspace/docker-registry.md) onde as imagens das suas aplicações são armazenadas.
+* Definir um **fluxo de CI**. É esperado que esse fluxo seja ativado por meio de algum gatilho, por exemplo, um nome de branch que tenha um prefixo definido. Além disso, o pipeline deve realizar a construção da imagem da aplicação e o envio da mesma para o registry citado anteriormente.
+* Elaborar o [**Helm template**](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md#o-que-e-o-helm) ****das suas aplicações. Isso é importante, porque o CD configurado por meio do Charles necessitará dessa informação para realizar o deploy da sua aplicação.
 
-* A [**Registry**](get-started/defining-a-workspace/docker-registry.md) where the images of your application are stored.
-* Define a **CI flow.** It is expected that this flow is active through a trigger, for example, a branch name that has a defined prefix. Besides that, the pipeline must build the application's image and upload it to the registry mentioned before. 
-* Prepare the [**Helm template**](get-started/creating-your-first-module/how-to-configure-chart-template.md#what-is-helm) ****of your applications. This is important, a configured CD through Charles will need this information to make the deployments of your application. 
+## Arquitetura do sistema
 
-## **System architecture**
+A plataforma foi construída utilizando a abordagem de microsserviços e possui os seguintes módulos:
 
-The platform was built using a microservice approach, and it has the following modules:
+![](.gitbook/assets/arquitetura-charles-0.7.0.jpg)
 
-![](.gitbook/assets/charlescd-arch-overview-1-.png)
+* `charlescd-ui:` responsável por prover uma interface de fácil usabilidade para todas as features fornecida pelo CharlesCD, no intuito de simplificar testes de hipóteses e _circle deployment_.
 
-* `charlescd-ui:`  mirrors on front-end the workspace configuration, users, modules, hypothesis and boards. It is the platform graphical interface.  
-* `charles-moove:` manages workspaces, users, modules, hypothesis and boards. It is the whole platform structure.   
-* `charles-butler:` orchestrates and manages releases and deploys. 
-* `charles-circle-matcher:`manages all created circles, and points out which circle each user belongs, based on their characteristics. 
-* `charlescd-compass`: data providers integration, make metrics analysis and execute configurable actions.
+* `charlescd-moove:` é um serviço backend que orquestra os testes de hipóteses de seus produtos e o pipeline de entrega até atingir seus círculos, facilitando a ponte entre **Butler**, **Villager** e **Circle Matcher**.  
+* `charlescd-butler:` responsável por orquestrar e gerenciar as releases e deploys realizados. 
+* `charlescd-circle-matcher:`gerencia todos os círculos criados, além de indicar a qual círculo um usuário pertence, com base em um conjunto de características. 
+* `charlescd-compass`: integração do provedor de dados, faz análise de métricas e executa ações configuráveis.   
+
+
 
