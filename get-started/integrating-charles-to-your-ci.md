@@ -8,32 +8,34 @@ description: >-
 
 ## Why integrate Charles into your Continuous Delivery pipeline?
 
-Integrations are ways to speed up the team. Continuous delivery \(CD\) allows you to take the code stored in the repository and deliver it continuously to production \(or any other environment\). Setting up a CD creates a quick and effective process for getting your product to market before the competition, as well as launching new features and bug fixes to keep your current customers happy.
+Integrations speed up your team and the Continuous Delivery \(CD\) allows you to take the code stored in the repository and deliver it continuously to production \(or any other environment\). 
+
+Setting up a CD creates a quick and effective process to put your product to market before the competition, and it allows your team to launch new features and bug fixes in order to make your client happy with the result. 
 
 ## Prerequisites
 
-To integrate Charles C.D. into your pipeline, you will need to know some information. Below we will quote what they are and how to get them:
+To integrate Charles C.D. into your pipeline, you will need to know some information. Check out below what they are and how to get them:
 
-* **`x-charles-token`**: is a hash created when a systemic token is generated. If it has lost its value, it is possible to regenerate this information. **See more details in the systemic token section.**
-* **`x-workspace-id`**: this id represents the workspace where your environment settings and circles are. [**Just copy the ID in the existing menu when viewing the workspace.**](creating-your-first-module/#how-to-obtain-the-component-identifier)\*\*\*\*
-* **`module.id`**: this id represents the project registered with Charles. [**Just copy the ID in the existing menu when viewing the module.**](creating-your-first-module/#how-do-i-get-my-module-identifier)\*\*\*\*
-* **`component.id`**: this identifier represents the component and [**can be found in the module details**](creating-your-first-module/#how-to-obtain-the-component-identifier).
-* **`component.version`**: in this field the name of the tag of the image of your component will be informed.
-* **`component.artifact`**:  this is the name of the artifact. For example: {YOUR-REGISTRY-URL}-{YOUR-IMAGE-NAME}:{YOUR-TAG-NAME}.
-* **`circle.id`**: this id represents the circle registered in Charles. [**Just copy the ID in the existing menu when viewing the circle.**](../reference/circles.md#how-to-get-my-circles-identifier)\*\*\*\*
-* **`build.id`**: this id represents the composition of the deploy created in the first request mentioned below. This information is returned as the value of the id key in the response in json format.
+* **`x-charles-token`**: It is a hash created when a systemic token is generated. If it has lost its value, it is possible to regenerate this information. **See more details in the systemic token section.**
+* **`x-workspace-id`**: This Id represents the workspace where your environment settings and circles are. [**Copy the ID in the existing menu when viewing the workspace.**](creating-your-first-module/#how-to-obtain-the-component-identifier)\*\*\*\*
+* **`module.id`**: This Id represents the project registered with Charles. [**Copy the ID in the existing menu when viewing the module.**](creating-your-first-module/#how-do-i-get-my-module-identifier)\*\*\*\*
+* **`component.id`**: This identifier represents the component and it [**can be found in the module details**](creating-your-first-module/#how-to-obtain-the-component-identifier).
+* **`component.version`**: It is where you inform the name of the tag of your component's image.
+* **`component.artifact`**:  This is the name of the artifact. For example:  {YOUR-REGISTRY-URL}-{YOUR-IMAGE-NAME}:{YOUR-TAG-NAME}.
+* **`circle.id`**: This Id represents the circle registered in Charles. [**Copy the ID in the existing menu when viewing the circle.**](../reference/circles.md#how-to-get-my-circles-identifier)\*\*\*\*
+* **`build.id`**: This Id represents the deployment's composition created in the first request mentioned below. This information is returned as the value of the ID key in the JSON format response.
 
 ## How to integrate?
 
-Currently, it is possible to do this integration using a systemic token and a sequence of HTTPS requests. Below are the two steps for this integration:
+You can do this integration using a **systemic token** and a sequence of HTTPS requests. See below the two steps:
 
 {% api-method method="post" host="https://charles.info.example" path="/moove/v2/builds/compose" %}
 {% api-method-summary %}
-Create deployment composition \(aka build\)
+Step 1: Create deployment composition \(aka build\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This request creates a composition that represents your release in a circle. You can mix two different versions with several components.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -58,7 +60,7 @@ List of modules.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="module" type="object" required=true %}
-Object that represents the modules.
+An object that represents the modules.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="module.id" type="string" required=true %}
@@ -82,7 +84,7 @@ Image tag name.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="component.artifact" type="string" required=true %}
-Artifact name. For example: {YOUR-REGISTRY-URL}-{YOUR-IMAGE-NAME}:{YOUR-TAG-NAME}
+Artifact name. For example {YOUR-REGISTRY-URL}-{YOUR-IMAGE-NAME}:{YOUR-TAG-NAME}
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -144,7 +146,7 @@ Artifact name. For example: {YOUR-REGISTRY-URL}-{YOUR-IMAGE-NAME}:{YOUR-TAG-NAME
 {% endapi-method-spec %}
 {% endapi-method %}
 
-An example of the request in CURL format:
+Check out an example of the request in **CURL** format:
 
 ```text
 curl 'https://charlescd.api.com/moove/v2/builds/compose' \
@@ -173,15 +175,15 @@ curl 'https://charlescd.api.com/moove/v2/builds/compose' \
 }'
 ```
 
-The next step is:
+
 
 {% api-method method="post" host="https://charles.info.example" path="/moove/v2/deployments" %}
 {% api-method-summary %}
-Deploy the release, created in the previous requisition, in a circle.
+Step 2: Deploy the release created in the previous request in a circle.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This request implements the composite release, created previously, and a circle.
+This request implements the composite release, previously created in a circle.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -280,7 +282,7 @@ Build identifier created in the previous request.Identificador do build criado n
 {% endapi-method-spec %}
 {% endapi-method %}
 
-An example of the request in CURL format:
+Check out a **CURL** format example:
 
 ```text
 curl 'https://charlescd.api.com/moove/v2/deployments' \
@@ -293,5 +295,5 @@ curl 'https://charlescd.api.com/moove/v2/deployments' \
 }'
 ```
 
-To follow the completion of deployments, you can use [**Webhooks**](defining-a-workspace/web.md).
+You can follow up on the deployments' completion using [**Webhooks**](defining-a-workspace/web.md).
 
