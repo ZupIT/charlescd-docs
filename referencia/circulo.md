@@ -173,7 +173,7 @@ Para obter essa informação, siga estes passos:
 2. Clique em "default" 
 3. E, no menu à esquerda, clique em **Copy ID**
 
-![](../.gitbook/assets/como-obter-o-identificador-do-meu-circulo.gif)
+![](../.gitbook/assets/circle_copyid%20%281%29.gif)
 
 ## Círculos ativos e inativos
 

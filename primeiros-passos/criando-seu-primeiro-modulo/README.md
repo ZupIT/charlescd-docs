@@ -40,9 +40,19 @@ Veja a imagem de como criar módulos:
 Para saber mais sobre a configuração do repositório do helm, [**acesse a seção Configurando o chart template**](configurando-o-chart-template.md)**.** 
 {% endhint %}
 
+### Como obter o identificador do meu módulo?
+
+Assim que seu módulo é criado, ele já possui um identificador único. Para obter essa informação, selecione o módulo desejado e, no menu à esquerda, clique em **Copy ID**:
+
+![](../../.gitbook/assets/module_copyid.gif)
+
 ## O que são componentes? 
 
-{% hint style="info" %}
 Componentes são abstrações das aplicações. Se dentro do seu repositório há múltiplas aplicações, cada componente corresponderá a uma delas.
-{% endhint %}
+
+### Como obter o identificador dos componentes?
+
+Após selecionar o módulo, copie o id do componente através da opção existente nos três pontos do cartão:
+
+![](../../.gitbook/assets/module_componente_copyid.gif)
 
