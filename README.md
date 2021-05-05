@@ -8,19 +8,19 @@ description: >-
 
 ## What is Charles?
 
-CharlesCD is an open source tool that makes deployments more agile, continuous and safe, which allows development teams to perform hypothesis validations with a specific group of users, simultaneously.
+CharlesCD is an open-source tool that makes deployments more agile, continuous, and safe, which allows development teams to perform hypothesis validations with a specific group of users, simultaneously.
 
 {% hint style="warning" %}
 The product brings a new concept to the community: **the** **deployment in circles of users on Kubernetes clusters**.
 {% endhint %}
 
-This kind of deploy makes it possible to create a segment with your clients' specific characteristics and, at the same time, submit several versions of the same application to test this circle of users.
+This kind of deployment makes it possible to create a segment with your clients' specific characteristics and, at the same time, submit several versions of the same application to test this circle of users.
 
 ## How was the project created?
 
-Charles was created to offer a more efficient solution for the community to create deployments and test hypothesis together, which allows the identification of errors and the execution of possible solution to solve bugs faster.
+Charles was created to offer a more efficient solution for the community to create deployments and test hypotheses together, which allows the identification of errors and the execution of possible solutions to solve bugs faster.
 
-The concept behind the tool goes back to the theory proposed by the biologist Charles Darwin \(1809-1882\), in which evolution goes by the adaptation to a new environment. In the development's scenario, this evolution goes by constant improvements on the applications to build and test hypothesis in order to implement more reliable releases.
+The concept behind the tool goes back to the theory proposed by the biologist Charles Darwin \(1809-1882\), in which evolution goes by the adaptation to a new environment. In the development scenario, this evolution goes by constant improvements on the applications to build and test hypothesis in order to implement more reliable releases.
 
 For this reason, we believe CharlesCD is the darwinism's application inside the development and programming world.
 
@@ -50,11 +50,14 @@ In order to user Charles, it is necessary to fulfill some requirements:
 
 The platform was built using a microservice approach, and it has the following modules:
 
-![](.gitbook/assets/charlescd-arch-overview-1-.png)
+![](.gitbook/assets/arquitetura-charles-0.7.0.jpg)
 
 * `charlescd-ui:`  mirrors on front-end the workspace configuration, users, modules, hypothesis and boards. It is the platform graphical interface.  
-* `charles-moove:` manages workspaces, users, modules, hypothesis and boards. It is the whole platform structure.   
+* `charles-moove:` manages workspaces, users, modules, hypothesis, and boards. It is the whole platform structure.   
 * `charles-butler:` orchestrates and manages releases and deploys. 
-* `charles-circle-matcher:`manages all created circles, and points out which circle each user belongs, based on their characteristics. 
-* `charlescd-compass`: data providers integration, make metrics analysis and execute configurable actions.
+* `charles-circle-matcher:`manages all created circles, and points out which circle each user belongs to, based on their characteristics. 
+* `charlescd-compass`: data providers integration, make metrics analysis, and execute configurable actions.
+* `charlescd-hermes`: notifies external services previously subscribed of deploy and undeploy events. 
+
+
 

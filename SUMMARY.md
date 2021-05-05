@@ -24,6 +24,7 @@
   * [Configuring your module to propagate the circle's Id](get-started/creating-your-first-module/configuring-your-module.md)
 * [First Deploy](get-started/first-deploy.md)
 * [Using Circles](get-started/using-circles.md)
+* [Integrating Charles to your CI](get-started/integrating-charles-to-your-ci.md)
 
 ## REFERENCE
 
