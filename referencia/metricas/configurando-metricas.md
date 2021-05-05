@@ -46,48 +46,86 @@ global:
       scrape_timeout:      10s
       evaluation_interval: 15s
     scrape_configs:
+      - job_name: charles-metrics
+        honor_timestamps: true
+        scrape_interval: 5s
+        scrape_timeout: 5s
+        metrics_path: /v1/metrics
+        scheme: http
+        kubernetes_sd_configs:
+        - role: endpoints
+          namespaces:
+          names:
+          - namespace1
+          - namespace2
+        relabel_configs:
+        - separator: ;
+          regex: _meta_kubernetes_pod_label(.+)
+          replacement: $1
+          action: labelmap
+        - source_labels: [__meta_kubernetes_pod_label_circleId]
+          separator: ;
+          regex: (.*)
+          target_label: circle_source
+          replacement: $1
+          action: replace
+        - source_labels: [__meta_kubernetes_pod_label_version]
+          separator: ;
+          regex: (.*)
+          target_label: version
+          replacement: $1
+          action: replace
+        - source_labels: [__meta_kubernetes_pod_name]
+          separator: ;
+          regex: (.*)
+          target_label: pod_name
+          replacement: $1
+          action: replace
       - job_name: kubernetes-pods
-      kubernetes_sd_configs:
-      - role: pod
-      relabel_configs:
-      - action: keep
-        regex: true
-        source_labels:
-        - __meta_kubernetes_pod_annotation_prometheus_io_scrape
-      - action: replace
-        regex: (.+)
-        source_labels:
-        - __meta_kubernetes_pod_annotation_prometheus_io_path
-        target_label: __metrics_path__
-      - action: replace
-        regex: ([^:]+)(?::\d+)?;(\d+)
-        replacement: $1:$2
-        source_labels:
-        - __address__
-        - __meta_kubernetes_pod_annotation_prometheus_io_port
-        target_label: __address__      
-      - action: replace
-        source_labels:
-        - __meta_kubernetes_namespace
-        target_label: kubernetes_namespace
-      - action: replace
-        source_labels:
-        - __meta_kubernetes_pod_label_circleId
-        target_label: circle_source
-      - action: replace
-        source_labels:
-        - __meta_kubernetes_pod_label_component
-        target_label: destination_component      
-      - action: replace
-        source_labels:
-        - __meta_kubernetes_pod_name
-        target_label: kubernetes_pod_name
-      - action: drop
-        regex: Pending|Succeeded|Failed
-        source_labels:
-        - __meta_kubernetes_pod_phase
-        
+        kubernetes_sd_configs:
+        - role: pod
+        relabel_configs:
+        - action: keep
+          regex: true
+          source_labels:
+          - __meta_kubernetes_pod_annotation_pryometheus_io_scrape
+        - action: replace
+          regex: (.+)
+          source_labels:
+          - __meta_kubernetes_pod_annotation_prometheus_io_path
+          target_label: __metrics_path__
+        - action: replace
+          regex: ([^:]+)(?::\d+)?;(\d+)
+          replacement: $1:$2
+          source_labels:
+          - __address__
+          - __meta_kubernetes_pod_annotation_prometheus_io_port
+          target_label: __address__      
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_namespace
+          target_label: kubernetes_namespace
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_pod_label_circleId
+          target_label: circle_source
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_pod_label_component
+          target_label: destination_component      
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_pod_name
+          target_label: kubernetes_pod_name
+        - action: drop
+          regex: Pending|Succeeded|Failed
+          source_labels:
+          - __meta_kubernetes_pod_phase
 ```
+
+{% hint style="info" %}
+Mude o nome do **namespace** para um onde sua aplicação está deployada. 
+{% endhint %}
 
 {% hint style="warning" %}
 Para saber mais sobre o serviço de discovery do Prometheus e Kubernetes, [**veja a documentação**](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config).
