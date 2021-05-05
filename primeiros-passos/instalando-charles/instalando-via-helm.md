@@ -34,6 +34,7 @@ As senhas utilizadas pelo Charles estão armazenadas no arquivo [**values.yaml**
 * compass.database.password
 * hermes.database.password
 * rabbitmq.auth.password
+* gate.database.password
 
 Para mais detalhes, acesse o link citado acima, que possui toda a documentação dos campos editáveis.
 {% endhint %}

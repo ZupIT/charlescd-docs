@@ -10,7 +10,12 @@ A instalação do CharlesCD consiste nos seguintes **componentes**:
 
 1. Módulos específicos da[ **arquitetura do Charles**](../../#arquitetura-do-sistema)**.**
 2. **Keycloak**, usado para autenticação e autorização no projeto.
-3. Um **banco PostgreSQL** que servirá os módulos de backend \(`moove`, `butler` ,`villager` e `charlescd-compass`\) e o Keycloak.
+3. Um **banco PostgreSQL** que servirá os módulos de backend \(`charlescd-moove`
+
+   , `charlescd-butler`, `charlescd-villager`, `charlescd-gate`
+
+    e `charlescd-compass`\) e o Keycloak.
+
 4. Um **Redis** para uso do `charlescd-circle-matcher`
 5. Um módulo chamado **`octopipe`** está na instalação padrão do Charles. É uma plataforma nativa criada pelo time para que a instalação seja mais fácil e sem configurações prévias. Entretanto, é opcional e você pode desabilitá-la.
 
