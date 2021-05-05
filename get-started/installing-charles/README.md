@@ -6,7 +6,7 @@ CharlesCD's installation considers these **components**:
 
 1. **Charles' architecture** specific modules; 
 2. **Keycloak**, used for authentication and authorization;
-3. A **PostgreSQL database** for backend modules \(`moove`, `circle-matcher`, `butler,` `villager` and `charlescd-compass`\) and Keycloak;
+3. A **PostgreSQL database** for backend modules \(`charlescd-moove`, `charlescd-butler` ,`charlescd-villager`, `charlescd-gate` e `charlescd-compass`\) and Keycloak;
 4. A **Redis**, to be used by `charlescd-circle-matcher`
 5. By default, a module called `octopipe` is added to the installation. This is a native platform created by our team to make installation easier, without previous configurations. However, you can disable it in the installation files.
 

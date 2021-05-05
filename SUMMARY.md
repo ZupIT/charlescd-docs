@@ -39,6 +39,7 @@
   * [ECR](reference/registry/ecr.md)
   * [GCR](reference/registry/gcr.md)
 * [Releases](reference/releases.md)
+* [System Token](reference/system-token.md)
 * [Metrics](reference/metrics/README.md)
   * [Setting up your metrics](reference/metrics/setting-up-your-metrics.md)
   * [Metrics group](reference/metrics/metrics-group.md)
