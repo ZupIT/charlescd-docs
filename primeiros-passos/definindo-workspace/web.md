@@ -25,12 +25,15 @@ Depois do cadastro, um card aparecerá com o status de sucesso ou erro da últim
 
 ![Exemplo de mensagem de erro para solicita&#xE7;&#xE3;o do webhooks](../../.gitbook/assets/image%20%286%29.png)
 
+As informações do evento são enviadas na propriedade **content**. O seu serviço exposto precisa aceitar essa propriedade no corpo da requisição.
+
 ### **Propriedade comum dos objetos do payload de webhook**
 
-Cada payload de um evento possui propriedades únicas. Você pode encontrá-las nas seções individuais de eventos. Abaixo estão as propriedades comuns:
+Cada payload de evento possui propriedades únicas. Você pode encontrá-las nas seções individuais de eventos. Abaixo estão as propriedades comuns:
 
 | Key | Tipo | Descrição |
 | :--- | :--- | :--- |
+| subscriptionId | String | O id da subscrição do Webhook. |
 | subscriptionId | String | O id da subscrição do Webhook. |
 | executionId | String | O id de execução do evento. Permite rastrear todo ciclo de vida da notificação. |
 | event | Object | Detalhes do evento. |
@@ -41,7 +44,7 @@ Os eventos observáveis são **início** e **finalização** de **deploy** e **u
 
 ### Deploy
 
-Quando você cadastra um webhook para receber informações sobre eventos de **deploy** de um determinado workspace, ou quando um deploy for iniciado e finalizado automaticamente, você irá receber uma notificação com detalhes do evento.
+Quando você cadastra um webhook para receber informações sobre eventos de **deploy** de um determinado workspace, ou quando um deploy for iniciado e finalizado automaticamente, você irá receber uma notificação com detalhes do evento.  
 
 Quando o evento é disparado, um payload HTTP POST é enviado a URL do webhook cadastrado.   
   
@@ -64,66 +67,64 @@ Veja abaixo:
 
 ```text
 {
-  "subscriptionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-  "executionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-  "event": {
-    "type": "FINISH_DEPLOY",
-    "status": "FAIL",
-    "error": "Failed to pull image nexus.mydomain.co.uk/nginx Error: image nginx:latest not found",
-    "date": "2020-01-10 22:00:00",
-    "workspaceId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-    "author": {
-      "email": "charlescd@zup.com.br",
-      "name": "CharlesCD"
-    },
-    "circle": {
-      "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-      "name": "circle-qas"
-    },
-    "release": {
-      "tag": "tag",
-      "modules": [
-        {
-          "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-          "name": "ZupIt/charlescd",
-          "componentes": [
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-              "name": "charlescd-moove"
-            },
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
-              "name": "charlescd-villager"
-            }
-          ]
-        },
-        {
-          "id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
-          "name": "ZupIt/horusec",
-          "componentes": [
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130005",
-              "name": "horusec-account"
-            },
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130006",
-              "name": "horusec-analytics"
-            }
-          ]
-        }
-      ],
-      "features": [
-        {
-          "name": "new-moove-feature",
-          "branchName": "feature/moove-feature"
-        },
-        {
-          "name": "new-horusec-feature",
-          "branchName": "feature/horusec-feature"
-        }
-      ]
-    }
-  }
+	"content": "{
+		"subscriptionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+		"executionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+		"event": {
+			"type": "FINISH_DEPLOY",
+			"status": "FAIL",
+			"error": "Failed to pull image nexus.mydomain.co.uk/nginx Error: image nginx:latest not found",
+			"date": "2020-01-10 22:00:00",
+			"workspaceId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+			"author": {
+				"email": "charlescd@zup.com.br",
+				"name": "CharlesCD"
+			},
+			"circle": {
+				"id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+				"name": "circle-qas"
+			},
+			"release": {
+				"tag": "tag",
+				"modules": [{
+						"id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+						"name": "ZupIt/charlescd",
+						"componentes": [{
+								"id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+								"name": "charlescd-moove"
+							},
+							{
+								"id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
+								"name": "charlescd-villager"
+							}
+						]
+					},
+					{
+						"id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
+						"name": "ZupIt/horusec",
+						"componentes": [{
+								"id": "5d4c95b4-6f83-11ea-bc55-0242ac130005",
+								"name": "horusec-account"
+							},
+							{
+								"id": "5d4c95b4-6f83-11ea-bc55-0242ac130006",
+								"name": "horusec-analytics"
+							}
+						]
+					}
+				],
+				"features": [{
+						"name": "new-moove-feature",
+						"branchName": "feature/moove-feature"
+					},
+					{
+						"name": "new-horusec-feature",
+						"branchName": "feature/horusec-feature"
+					}
+				]
+			}
+		}
+	}"
 }
 ```
 
@@ -148,66 +149,67 @@ Quando o evento é disparado, um payload HTTP POST é enviado a URL do webhook c
 ### Exemplo de payload do evento **de Undeploy**
 
 ```text
-{
-  "subscriptionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-  "executionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-  "event": {
-    "type": "START_UNDEPLOY",
-    "status": "SUCCESS",
-    "date": "2020-01-10 22:00:00",
-    "workspaceId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-    "author": {
-      "email": "charlescd@zup.com.br",
-      "name": "CharlesCd"
-    },
-    "circle": {
-      "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-      "name": "circle-qas"
-    },
-    "release": {
-      "tag": "tag",
-      "modules": [
-        {
-          "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-          "name": "ZupIt/charlescd",
-          "componentes": [
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
-              "name": "charlescd-moove"
-            },
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
-              "name": "charlescd-villager"
-            }
-          ]
-        },
-        {
-          "id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
-          "name": "ZupIt/horusec",
-          "componentes": [
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130005",
-              "name": "horusec-account"
-            },
-            {
-              "id": "5d4c95b4-6f83-11ea-bc55-0242ac130006",
-              "name": "horusec-analytics"
-            }
-          ]
-        }
-      ],
-      "features": [
-        {
-          "name": "new-moove-feature",
-          "branchName": "feature/moove-feature"
-        },
-        {
-          "name": "new-horusec-feature",
-          "branchName": "feature/horusec-feature"
-        }
-      ]
+"content": "{
+    "subscriptionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+    "executionId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+    "event": {
+      "type": "START_UNDEPLOY",
+      "status": "SUCCESS",
+      "date": "2020-01-10 22:00:00",
+      "workspaceId": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+      "author": {
+        "email": "charlescd@zup.com.br",
+        "name": "CharlesCd"
+      },
+      "circle": {
+        "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+        "name": "circle-qas"
+      },
+      "release": {
+        "tag": "tag",
+        "modules": [
+          {
+            "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+            "name": "ZupIt/charlescd",
+            "componentes": [
+              {
+                "id": "5d4c95b4-6f83-11ea-bc55-0242ac130003",
+                "name": "charlescd-moove"
+              },
+              {
+                "id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
+                "name": "charlescd-villager"
+              }
+            ]
+          },
+          {
+            "id": "5d4c95b4-6f83-11ea-bc55-0242ac130004",
+            "name": "ZupIt/horusec",
+            "componentes": [
+              {
+                "id": "5d4c95b4-6f83-11ea-bc55-0242ac130005",
+                "name": "horusec-account"
+              },
+              {
+                "id": "5d4c95b4-6f83-11ea-bc55-0242ac130006",
+                "name": "horusec-analytics"
+              }
+            ]
+          }
+        ],
+        "features": [
+          {
+            "name": "new-moove-feature",
+            "branchName": "feature/moove-feature"
+          },
+          {
+            "name": "new-horusec-feature",
+            "branchName": "feature/horusec-feature"
+          }
+        ]
+      }
     }
-  }
+  }"
 }
 ```
 
