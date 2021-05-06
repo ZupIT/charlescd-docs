@@ -18,12 +18,14 @@ It is necessary to subscribe to use webhooks on Charles. Follow the steps below 
 2. Fill the fields:
    * **Description:** add the webhook description; 
    * **Webhook URL:** put the service URL; 
-   * **Secret:** add the application key;
+   * **Secret \(Optional\):** add the application key;
 3. Choose the event:  **deploy**, **undeploy,** or **both**. 
 
 After that, a card will appear with the success or fail status of the last message sent, see the image below: 
 
 ![](../../.gitbook/assets/image%20%286%29.png)
+
+The event's information is sent in the **content** property. Your exposed service needs to accept this property in the request body. 
 
 ### **Webhook payload object common properties**
 
@@ -37,7 +39,7 @@ Each event payload contains unique properties. You can find them in the individu
 
 ## Events
 
-The observable events are the **beginning** and **ending** of **deploy** and **undeploy**. 
+The observable events are the **beginning** and **end** of **deploy** and **undeploy**. 
 
 ### Deploy
 
@@ -180,7 +182,7 @@ When the event is triggered, an HTTP POST payload is sent to the subscribed webh
 
 ### Undeploy 
 
-When you register a webhook to receive information about **undeploy** events of a specific workspace, when a undeploy automatically starts and ends, you will receive a notification with details of the event.
+When you register a webhook to receive information about **undeploy** events of a specific workspace or when an undeployment automatically starts and ends, you will receive a notification with details of the event.
 
 When the event is triggered, an HTTP POST payload is sent to the subscribed webhook URL, see below: 
 
