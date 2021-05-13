@@ -30,7 +30,7 @@
 
 * [Círculo](referencia/circulo.md)
 * [Circle Matcher](referencia/circle-matcher.md)
-* [Configuração de CD](referencia/configuracao-cd.md)
+* [Preparando o seu Deploy](referencia/preparando-seu-deploy.md)
 * [Grupo de Usuários](referencia/grupos-de-usuarios.md)
 * [Identity Manager](referencia/identity-manager.md)
 * [Registry](referencia/registry/README.md)
