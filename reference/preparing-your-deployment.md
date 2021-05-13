@@ -44,7 +44,7 @@ See the below an example of a repository containing the component's chart  **htt
 
 The templates don't need any special treatment. The only requirement is to generate valid manifests.   
   
-Butler internally stores the compiled charts in entities that represent each deployment request. Thereby, you can perform more efficient rollbacks. 
+Butler internally stores the compiled charts in entities that represent each deployment request. Thereby, Charles can perform more efficient rollbacks, in case of failure.  
 
 ### **Properties injections**
 
@@ -60,13 +60,16 @@ This update only happens in **Deployment’s** type resources.
 {% endhint %}
 
 * **namespace:** Your deployment's namespace. ****This namespace is described during the Workspace configuration and indicates which namespace the deployment will happen. If the charts insert this value in the manifests, Charles will overwrite them. ****
-* **labels:** Kubernetes’ resources labels. ****In order to make Butler’s reconciliation cycle and Istio’s routes created correctly work, some labels need to be available in all resources applied to the cluster. See them below: 
+* **labels:** Kubernetes’ resources labels.  
+  ****In order to make Butler’s reconciliation cycle and Istio’s routes created correctly work, some labels need to be available in all resources applied to the cluster. See them below:  
+
+
   * **deploymentId:** Unique identifier of the deployment's entity created by Butler; 
   * **circleId:** Unique circle's identifier where the deployment will be created. 
 
-After this configuration, you can use Charles to perform deployment in your application in segmented circles.   
   
-****See below an example of a generated manifest after the chart compilation:
+  
+  ****See below an example of a generated manifest after the chart compilation:
 
 ![](https://lh3.googleusercontent.com/IASfFV_yrgYkA2mqTDsmV8eDO9gLX2AhZQYRNO7_s_vE-uVAm8buuAtGMXKD3n2QCxlf8CIAYFflkd9dYQabUimnc0F01IE27hqltR5pPeOkGuHBOwuUnOeBQ5PAHXbi-ivrdTMy)
 
@@ -75,4 +78,6 @@ After this configuration, you can use Charles to perform deployment in your appl
 After the property injection, this same manifest will be:  
 
 ![](https://lh6.googleusercontent.com/CcDZyXf051HHlMSkMdT9SB6G5CNM8bhKwQx19nu9zam0uJCPs69flh5QIkKq3iri4bmO_QLvePJ0KVupU3N3THEOtpa7hWJU6nkaOaSuKKgpGchEcGausbtGH0YCGBR_zeu4x4Vk)
+
+After this configuration, you can use Charles to perform deployment in your application in segmented circles. 
 
