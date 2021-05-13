@@ -11,7 +11,7 @@ O módulo de deploy aplica e monitora os recursos no cluster. E para fazer isso,
 
 ## **Configuração de Deployment**
 
-O Charles possui uma arquitetura que se adapta às diferentes instalações do Kubernetes. ****Essa configuração de deployment indica qual é a URL e quais as credenciais do Git serão utilizadas para buscar os charts helm.  Assim, é necessário que seu módulo esteja instalado no cluster de destino com uma URL acessível, sem essa configuração o Charles não realiza os deploys.
+O Charles possui uma arquitetura adaptável a diferentes instalações Kubernetes. O único requisito é que seu módulo de deploy esteja instalado no cluster de destino com uma URL acessível. A configuração de deployment indica qual é essa URL e quais as credenciais do Git serão utilizadas para buscar os charts helm. Sem esta configuração o Charles não conseguirá realizar deploys.
 
 ### **Como cadastrar a configuração?**
 
@@ -30,7 +30,7 @@ Preencha os seguintes campos:
 
 ## **Configurando sua aplicação**
 
-Nessa configuração, o Butler utiliza charts helm para disponibilizar as suas aplicações no Cluster. E os charts devem estar disponíveis em um repositório Github ou Gitlab e você pode acessá-los por meio do token cadastrado na configuração de deployment. A URL deles é providenciada junto ao cadastro do módulo.
+O módulo de deploy Butler utiliza charts helm para disponibilizar as suas aplicações no Cluster. E os charts devem estar disponíveis em um repositório Github ou Gitlab e você pode acessá-los por meio do token cadastrado na configuração de deployment. A URL deles é providenciada junto ao cadastro do módulo.
 
 ### **Charts**
 
