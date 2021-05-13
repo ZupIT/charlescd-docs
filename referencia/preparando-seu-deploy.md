@@ -44,7 +44,7 @@ Veja abaixo o exemplo de um repositório contendo o chart da componente **http-h
 
 Os templates também não precisam de nenhum tratamento especial. O único requisito é que gerem manifestos válidos.  
 ****  
-O Butler armazena internamente os charts compilados em entidades que representam cada solicitação de deploy. Com isso, você pode realizar rollbacks mais eficientes. 
+O Butler armazena internamente os charts compilados em entidades que representam cada solicitação de deploy. Com isso, o Charles realiza rollbacks mais eficientes em caso de falha. 
 
 ### **Injeção de propriedades**
 
