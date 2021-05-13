@@ -11,7 +11,7 @@ O módulo de deploy aplica e monitora os recursos no cluster. E para fazer isso,
 
 ## **Configuração de Deployment**
 
-O Charles possui uma arquitetura adaptável a diferentes instalações Kubernetes. O único requisito é que seu módulo de deploy esteja instalado no cluster de destino com uma URL acessível. A configuração de deployment indica qual é essa URL e quais as credenciais do Git serão utilizadas para buscar os charts helm. Sem esta configuração o Charles não conseguirá realizar deploys.
+O Charles possui uma arquitetura adaptável a diferentes instalações Kubernetes. O único requisito é que seu módulo de deploy esteja instalado no cluster de destino com uma URL acessível. A configuração de deployment indica qual é essa URL e quais credenciais do Git serão utilizadas para buscar os charts helm. Sem esta configuração o Charles não conseguirá realizar deploys.
 
 ### **Como cadastrar a configuração?**
 
