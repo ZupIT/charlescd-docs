@@ -48,7 +48,7 @@ O Butler armazena internamente os charts compilados em entidades que representam
 
 ### **Injeção de propriedades**
 
-A injenção de propriedades nos manifestos realizada pelo Butler é importante e você deve lembrar de usá-la quando preparar a sua aplicação. Veja quais são elas: 
+Uma operação muito importante e que deve ser levada em consideração no momento de preparar suas aplicações é a injeção de propriedades nos manifestos realizada pelo Butler. São essas:
 
 * **name:**  Nome do recurso Kubernetes.  Alguns recursos manejados pelo Charles precisam ter os seus nomes alterados para que seja possível disponibilizar versões diferentes de uma mesma aplicação em círculos diferentes. A propriedade name terá o seguinte valor: **&lt;originalManifest.metadata.name&gt;-&lt;tag&gt;-&lt;deploymentId&gt;** 
 * **originalManifest.metadata.name:** Nome gerado pelo chart da aplicação;
