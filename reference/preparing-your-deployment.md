@@ -28,9 +28,9 @@ Fill in these fields:
 3. **Git provider:** defines the git provider you will use ****\(**GitHub or GitLab**\);
 4. **Git token:** Insert an authentication token that has access to the git repository where your [**helm templates**](../get-started/creating-your-first-module/) ****are stored \(they will be used during the deployment of your application\). If your Git Provider is **GitHub**, "_repo_" permission is required**.** Otherwise, configure the accesses in **GitLab:** "_API_" and "_read\_repository_".
 
-## **Configurando sua aplicação**
+## **Configuring your application**
 
-Nessa configuração, o Butler utiliza charts helm para disponibilizar as suas aplicações no Cluster. E os charts devem estar disponíveis em um repositório Github ou Gitlab e você pode acessá-los por meio do token cadastrado na configuração de deployment. A URL deles é providenciada junto ao cadastro do módulo.
+The deployment module Butler uses helm charts to make your application available in the cluster. The charts must be available in a Github or Gitlab repository and you can access them through a token, previously registered in the deployment configuration. The URL is provided along with the module registration. 
 
 ### **Charts**
 
