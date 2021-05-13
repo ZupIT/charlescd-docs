@@ -11,7 +11,7 @@ The deployment module monitors and applies the cluster resources. To do that, it
 
 ## **Deployment configuration**
 
-Charles has an architecture that adapts different Kubernetes installations. The only requirement is that your deployment module is installed on the cluster with an accessible URL. The deployment configuration indicates what URL is and which Git credentials will be used to search the helm charts. Without this configuration, Charles won't be able to perform deploys. 
+Charles has an architecture that adapts to different Kubernetes installations. The only requirement is that your deployment module is installed on the destination cluster with an accessible URL. The deployment configuration indicates what URL is and which Git credentials will be used to search the helm charts. Without this configuration, Charles won't be able to perform deploys. 
 
 ### **How can you register the configuration?**
 
