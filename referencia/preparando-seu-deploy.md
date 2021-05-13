@@ -64,8 +64,6 @@ Essa atualização ocorre apenas nos recursos do tipo **Deployment.**
   * **deploymentId:** Identificador único da entidade deployment criada pelo Butler;
   * **circleId:** Identificador único do círculo onde o deployment será criado.
 
-Depois dessa configuração você pode usar o Charles para realizar o deploy de suas aplicações em círculos segmentados.
-
 Veja um exemplo abaixo de um manifesto gerado após a compilação do chart:  
 ****
 
@@ -77,5 +75,5 @@ Veja um exemplo abaixo de um manifesto gerado após a compilação do chart:
 ![](https://lh6.googleusercontent.com/CcDZyXf051HHlMSkMdT9SB6G5CNM8bhKwQx19nu9zam0uJCPs69flh5QIkKq3iri4bmO_QLvePJ0KVupU3N3THEOtpa7hWJU6nkaOaSuKKgpGchEcGausbtGH0YCGBR_zeu4x4Vk)
 
   
-
+Depois dessa configuração você pode usar o Charles para realizar o deploy de suas aplicações em círculos segmentados.
 
