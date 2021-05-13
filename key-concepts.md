@@ -12,12 +12,6 @@ description: >-
 
 For example, it is possible to [**create a circle**](https://docs.charlescd.io/reference/circles#how-to-create-circles) of engineers from the north of Brazil, another one from the southeast, and the third one with all Brazilian engineers. Based on the client's segmentation, it is possible to make a variety of deployment logic.
 
-## **Hypothesis**
-
-These are [**registered alternatives**](https://docs.charlescd.io/reference/hyphotesis) on the platform to solve a problem or to validate changes on the application integrated on Charles.
-
-Hypothesis can have features that are directly related to modules and/or projects that were previously registered in the workspace.
-
 ## **Circle Matcher**
 
 It is an HTTP service that allows you to identify which segmentation the user belongs to, based on predefined logic rules. For that, Circle Matcher receives a JSON request with the user's attributes and also the circle identifier of which group user belongs.
