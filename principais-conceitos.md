@@ -21,12 +21,6 @@ Por exemplo, é possível [**criar um círculo**](referencia/circulo.md#como-cri
 
 Fazem parte dos [**módulos**](primeiros-passos/criando-seu-primeiro-modulo/) que são criados dentro do Charles. Os componentes funcionam como abstrações das aplicações, o que significa dizer que eles possuem suas próprias configurações e que cada parte deles corresponde a uma aplicação do módulo em que você estiver trabalhando. Caso você trabalhe com um monorepo, cada uma das suas aplicações serão cadastradas como componentes dentro de um único módulo.
 
-## **Hipóteses**
-
-Aplicando Desenvolvimento Orientado à Hipótese \(_Hypothesis-Driven Development_\) ou não, uma hipótese representará o desenvolvimento de uma nova ideia que será utilizada como experimento para alcançar um resultado esperado. Caso o resultado não seja atingido, novas hipóteses com outras abordagens podem ser criadas e mensuradas até que realmente se tenha o resultado desejado ou até mesmo se prove que a ideia não é viável.
-
-No Charles, as hipóteses podem conter uma ou mais features, que estão relacionadas diretamente aos módulos que foram cadastrados anteriormente ao seu [**workspace**.](primeiros-passos/definindo-workspace/)
-
 ## Mar Aberto \(Default\)
 
 O termo, cunhado com o Charles, se refere a uma segmentação genérica em que estão presentes todos os usuários inseridos na plataforma que não estão vinculados a um círculo.
