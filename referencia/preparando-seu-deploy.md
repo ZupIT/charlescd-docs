@@ -30,7 +30,7 @@ Preencha os seguintes campos:
 
 ## **Configurando sua aplicação**
 
-O módulo de deploy Butler utiliza charts helm para disponibilizar as suas aplicações no Cluster. E os charts devem estar disponíveis em um repositório Github ou Gitlab e você pode acessá-los por meio do token cadastrado na configuração de deployment. A URL deles é providenciada junto ao cadastro do módulo.
+O módulo de deploy Butler utiliza charts helm para disponibilizar as suas aplicações no Cluster. Esses charts devem estar disponíveis em um repositório Github ou Gitlab e acessíveis por meio do token cadastrado na configuração de deployment. A URL deles é providenciada junto ao cadastro do módulo.
 
 ### **Charts**
 
@@ -64,6 +64,18 @@ Essa atualização ocorre apenas nos recursos do tipo **Deployment.**
   * **deploymentId:** Identificador único da entidade deployment criada pelo Butler;
   * **circleId:** Identificador único do círculo onde o deployment será criado.
 
-Depois dessa configuração você pode usar o Charles para realizar o deploy de suas aplicações em círculos segmentados.  
+Depois dessa configuração você pode usar o Charles para realizar o deploy de suas aplicações em círculos segmentados.
+
+Veja um exemplo abaixo de um manifesto gerado após a compilação do chart:  
 ****
+
+![](https://lh3.googleusercontent.com/IASfFV_yrgYkA2mqTDsmV8eDO9gLX2AhZQYRNO7_s_vE-uVAm8buuAtGMXKD3n2QCxlf8CIAYFflkd9dYQabUimnc0F01IE27hqltR5pPeOkGuHBOwuUnOeBQ5PAHXbi-ivrdTMy)
+
+  
+****Após a injeção de propriedades este mesmo manifesto assumirá a seguinte forma:
+
+![](https://lh6.googleusercontent.com/CcDZyXf051HHlMSkMdT9SB6G5CNM8bhKwQx19nu9zam0uJCPs69flh5QIkKq3iri4bmO_QLvePJ0KVupU3N3THEOtpa7hWJU6nkaOaSuKKgpGchEcGausbtGH0YCGBR_zeu4x4Vk)
+
+  
+
 
