@@ -13,7 +13,7 @@ Um **módulo** é a sua aplicação que está armazenada em um repositório do *
 Para adicionar os módulos, acesse o menu **Modules** __no **workspace** desejado e __preencha os campos:
 
 1. **Nome**: o nome deverá ser a junção da organização e a do módulo, como está no git. Por exemplo: `ZupIt/charlescd`.
-2. **URL Git**: informe a URL do seu repositório. Por exemplo: [https://github.com](https://github.com/ZupIT/charlescd).
+2. **URL Git**: informe a URL do seu repositório. Por exemplo: [**https://github.com**](https://github.com/ZupIT/charlescd)**.**
 3. Se seu repositório tem várias aplicações, cadastre-as como **componentes** e informe: 
 
 * **Name of the component**: o nome da aplicação, conforme está no repositório.
@@ -26,7 +26,7 @@ Para adicionar os módulos, acesse o menu **Modules** __no **workspace** desejad
 
 4. **Add Helm Chart repository:** informe o repositório onde o está o template do helm da sua aplicação e veja o exemplo de como preencher os campos com essa URL:  ****[**https://gitlab.com/charlito/charlescd/moove?ref=master**](https://gitlab.com/charlito/charlescd/moove?ref=master`%20)
 
-* **Insert URL:** [http://gitlab.com](http://gitlab.com);
+* **Insert URL:** [**http://gitlab.com**](http://gitlab.com)**;**
 * **Insert Organization:** charlito; 
 * **Insert repository:** charlescd;
 * **Insert path:** moove**;** 

@@ -19,7 +19,7 @@ Para realizar o processo, é necessário ter instalado:
 
 ### Como instalar?
 
-Aqui o principal diferencial é a customização. Para isso, foi disponibilizado um **template helm** com todos os campos disponíveis para alteração, incluindo os de banco de dados e recursos consumidos. Você encontra [aqui toda a **documentação dos campos editáveis**.](https://github.com/ZupIT/charlescd/tree/master/install/helm-chart) 
+Aqui o principal diferencial é a customização. Para isso, foi disponibilizado um **template helm** com todos os campos disponíveis para alteração, incluindo os de banco de dados e recursos consumidos. **Veja a** [**documentação dos campos editáveis**](https://github.com/ZupIT/charlescd/tree/master/install/helm-chart)**.** 
 
 {% hint style="warning" %}
 As senhas utilizadas pelo Charles estão armazenadas no arquivo [**values.yaml**](https://github.com/ZupIT/charlescd/blob/master/install/helm-chart/values.yaml)**.** As principais senhas para personalizar estão em:

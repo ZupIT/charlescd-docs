@@ -44,6 +44,6 @@ Para usá-las, você precisa adicioná-las a sua aplicação:
 * \*\*\*\*[**Lib para .NET**](https://github.com/ZupIT/charlescd/tree/master/tracing/dotnet-core%20)\*\*\*\*
 
 {% hint style="info" %}
-Para o **Node.js** já existe uma lib, [**veja na página do npm**](https://www.npmjs.com/package/hpropagate). 
+O **Node.js** já possui uma lib, [**veja na página do npm**](https://www.npmjs.com/package/hpropagate). 
 {% endhint %}
 
