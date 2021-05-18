@@ -109,7 +109,6 @@ spec:
 ```
 
   
-  
 After the property injection, this same manifest will be:  
 
 ```text
