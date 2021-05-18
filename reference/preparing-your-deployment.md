@@ -42,9 +42,20 @@ See the below an example of a repository containing the component's chart  **htt
 
 ### **Templates**
 
-The templates don't need any special treatment. The only requirement is to generate valid manifests.   
-  
-Butler internally stores the compiled charts in entities that represent each deployment request. Thereby, Charles can perform more efficient rollbacks, in case of failure.  
+The only requirements for templates to work with Charles are **labels component** and **tag** to be present in the Deployment resource manifests. 
+
+{% hint style="info" %}
+It is not necessary to insert the values in the _**values**_ files of your chart, Charles will provide them. 
+{% endhint %}
+
+See the example below: 
+
+```text
+component: {{ .Values.component }}
+tag: {{ .Values.tag }}
+```
+
+Butler internally stores the compiled charts in entities that represent each deployment request. Thereby, Charles can perform more efficient rollbacks.
 
 ### **Properties injections**
 
@@ -71,13 +82,66 @@ This update only happens in **Deployment’s** type resources.
   
   ****See below an example of a generated manifest after the chart compilation:
 
-![](https://lh3.googleusercontent.com/IASfFV_yrgYkA2mqTDsmV8eDO9gLX2AhZQYRNO7_s_vE-uVAm8buuAtGMXKD3n2QCxlf8CIAYFflkd9dYQabUimnc0F01IE27hqltR5pPeOkGuHBOwuUnOeBQ5PAHXbi-ivrdTMy)
+```text
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-https-echo
+  labels:
+    component: http-https-echo
+    tag: v1
+spec:
+  template:
+    metadata:
+      name: http-https-echo
+      labels:
+        component: http-https-echo
+        tag: v1
+    spec:
+      containers:
+        - name: http-https-echo
+          image: mendhak/http-https-echo:latest
+  replicas: 1
+  selector:
+    matchLabels:
+      component: http-https-echo
+
+```
 
   
   
 After the property injection, this same manifest will be:  
 
-![](https://lh6.googleusercontent.com/CcDZyXf051HHlMSkMdT9SB6G5CNM8bhKwQx19nu9zam0uJCPs69flh5QIkKq3iri4bmO_QLvePJ0KVupU3N3THEOtpa7hWJU6nkaOaSuKKgpGchEcGausbtGH0YCGBR_zeu4x4Vk)
+```text
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-https-echo-v1-bc0e1df9-c008-4d86-b534-d782badf3741
+  namespace: example-namespace
+  labels:
+    component: http-https-echo
+    tag: v1
+    deploymentId: bc0e1df9-c008-4d86-b534-d782badf3741
+    circleId: b4b62bc2-4dfd-4673-bc67-cc2cbcf9bb2f
+spec:
+  template:
+    metadata:
+      name: http-https-echo
+      labels:
+        component: http-https-echo
+        tag: v1
+        deploymentId: bc0e1df9-c008-4d86-b534-d782badf3741
+        circleId: b4b62bc2-4dfd-4673-bc67-cc2cbcf9bb2f
+    spec:
+      containers:
+        - name: http-https-echo
+          image: mendhak/http-https-echo:latest
+  replicas: 1
+  selector:
+    matchLabels:
+      component: http-https-echo
+
+```
 
 After this configuration, you can use Charles to perform deployment in your application in segmented circles. 
 
