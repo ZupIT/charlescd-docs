@@ -18,7 +18,7 @@ To run the process, you must have the following programs:
 This installation is recommended if you want a specific customization. To make this happen, there is a helm template with all the available fields to be altered, including the database and consumed resources. You will find the documentation with the[ **editable fields here**](https://github.com/ZupIT/charlescd/tree/master/install/helm-chart).
 
 {% hint style="warning" %}
-The passwords used by Charles are stored in the [**values.yaml**](https://github.com/ZupIT/charlescd/blob/master/install/helm-chart/values.yaml) ****file.  The main passwords to customized are:
+The passwords used by Charles are stored in the [**values.yaml**](https://github.com/ZupIT/charlescd/blob/main/install/helm-chart/values.yaml) ****file.  The main passwords to customized are:
 
 * butler.database.password
 * moove, database.password
