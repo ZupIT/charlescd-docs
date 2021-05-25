@@ -61,4 +61,5 @@
 ---
 
 * [Release Notes](https://github.com/ZupIT/charlescd/releases)
+* [Migration from 0.7.1 version to 1.0.0](migration-from-0.7.1-version-to-1.0.0.md)
 
