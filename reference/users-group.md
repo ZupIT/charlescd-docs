@@ -29,7 +29,7 @@ The following profiles are available:
 
   and also create, edit and delete circles and modules.
 
-* **Analyst**: they have permission to edit and delete circles and modules. And also view the modules' configuration.
+* **Analyst**: is able to view modules. They have permission to edit and delete circles and modules. And also view the modules' configuration.
 * **Reader**: is able to view circles and modules.
 
 ![Permission options to associate users&apos; groups on a workspace.](../.gitbook/assets/chrome-capture-3-%20%282%29.gif)

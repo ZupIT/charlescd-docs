@@ -50,7 +50,7 @@ In order to user Charles, it is necessary to fulfill some requirements:
 
 The platform was built using a microservice approach, and it has the following modules:
 
-![](.gitbook/assets/arquitetura-charles-1.0.0.jpg)
+![](.gitbook/assets/arquitetura-charlesc.d.jpg)
 
 * `charlescd-ui:`  mirrors on the front-end the workspace configuration, users, modules, hypothesis, and boards. It is the platform graphical interface.  
 * `charles-moove:` manages workspaces, users, modules, hypothesis, and boards. It is the whole platform structure.   
