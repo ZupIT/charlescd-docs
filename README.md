@@ -46,7 +46,7 @@ Para utilizar o Charles, é preciso cumprir alguns pré-requisitos:
 
 ## Arquitetura do sistema
 
-![](.gitbook/assets/arquitetura-charles-1.0.0%20%281%29.jpg)
+![](.gitbook/assets/arquitetura-charlesc.d%20%281%29.jpg)
 
 A plataforma foi construída utilizando a abordagem de microsserviços e possui os seguintes módulos:
 

@@ -28,7 +28,7 @@ Os seguintes perfis são suportados:
 
 * **Mantenedor**: pode acessar e editar todas as configurações do workspace. Ele pode realizar implantações, e também tem a permissão para criar, editar e deletar círculos e módulos.
 * **Desenvolvedor**: possui acesso para realizar implantações e também pode criar, editar, deletar círculos e módulos. 
-* **Analista**: possui permissão para criar, editar e deletar círculos e módulos. E também pode visualizar as configurações dos módulos.
+* **Analista**: pode visualizar módulos. Possui permissão para criar, editar e deletar círculos.
 * **Leitor**: pode visualizar círculos e módulos.
 
 ![Escolha de permiss&#xE3;o ao associar um grupo de usu&#xE1;rios a um workspace.](../.gitbook/assets/chrome-capture-3-.gif)
@@ -52,7 +52,6 @@ Segue abaixo as permissões vinculadas a cada perfil:
 |   | Deletar |   |   |   |   |
 |   | Visualizar | ✔  | ✔  | ✔  | ✔  |
 | **Circle** | Criar/Editar/Deletar | ✔  | ✔  | ✔  |   |
-|   | Visualizar | ✔  | ✔  | ✔  | ✔  |
 |   | Visualizar | ✔  | ✔  | ✔  | ✔  |
 | **Modules**  | Criar/Editar/Deletar | ✔  | ✔  |   |   |
 |   | Visualizar  | ✔  | ✔  | ✔  | ✔  |
