@@ -1,7 +1,7 @@
 ---
 description: >-
-  Esta seção descreve através de um exemplo como realizar a implantação de uma
-  aplicação por meio do Charles.
+  Esta seção mostra com um exemplo, como realizar a implantação de uma aplicação
+  por meio do Charles.
 ---
 
 # Caso de Uso

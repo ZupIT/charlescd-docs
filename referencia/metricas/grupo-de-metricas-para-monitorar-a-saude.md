@@ -1,3 +1,9 @@
+---
+description: >-
+  Nesta seção, você encontra detalhes sobre o grupo de métricas para monitorar a
+  saúde do seu software.
+---
+
 # Grupo de métricas para monitorar a saúde
 
 ## O que é?

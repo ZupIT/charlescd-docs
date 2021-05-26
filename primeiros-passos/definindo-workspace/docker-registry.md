@@ -1,3 +1,7 @@
+---
+description: 'Nesta seção, você encontra tudo sobre o Docker Registry.'
+---
+
 # Docker Registry
 
 {% hint style="warning" %}
