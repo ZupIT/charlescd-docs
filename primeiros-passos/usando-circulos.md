@@ -1,3 +1,7 @@
+---
+description: 'Nesta seção, você encontra mais detalhes de como usar círculos.'
+---
+
 # Usando Círculos
 
 A partir do momento em que você começa a fazer seus deploys, o próximo passo é [**criar os primeiros círculos** ](../referencia/circulo.md#como-criar-circulos)para melhor segmentação das suas aplicações. 

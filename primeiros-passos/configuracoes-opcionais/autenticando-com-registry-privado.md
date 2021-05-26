@@ -1,6 +1,6 @@
 ---
 description: >-
-  Nessa seção você encontra como realizar a autenticação com seu registry
+  Nessa seção, você encontra como realizar a autenticação com seu registry
   privado.
 ---
 

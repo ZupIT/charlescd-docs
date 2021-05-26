@@ -1,3 +1,7 @@
+---
+description: 'Nesta seção, você encontra detalhes de como configurar o Registry.'
+---
+
 # Registry
 
 ## Por que configurar o Registry?  <a id="why-do-you-have-to-configure-a-registry"></a>

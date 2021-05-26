@@ -47,7 +47,7 @@ Os escopos definem quais as ações um token pode desempenhar.  Você pode criar
 * **Deploy:** acesso completo \(_leitura e escrita_\) à implantação de releases nos círculos.
 * **Manutenção:** acesso completo \(_leitura e escrita_\) as configurações dos workspaces.
 
-## Como copiar um token
+## Como copiar um token?
 
 Depois de finalizar o processo de personalização do seu token, **não se esqueça de copiá-lo**. Não é possível copiar esse token novamente. 
 
