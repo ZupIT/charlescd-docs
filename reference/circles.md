@@ -194,8 +194,8 @@ We will give an example of a specific scenario where your environment has two se
 
 So, the redirect logic using **`x-circle-id`** will be:
 
-1. The user sends to the header:  `x-circle-id="QA Circle"`. On this circle, the request will be redirected to a **X version** of the service on **Application A** and the **Y version** of the service on **Application B**. 
-2. The user sends to the header:  `x-circle-id=”Dev Circle”`. On this circle, the request will be redirected to the **Z version** of the service on **Application A** and **Z version** of the service on **Application B.** 
+1. The user sends to the header:  `x-circle-id="QA Circle"`. In this circle, the request will be redirected to an **X version** of the service on **Application A** and the **Y version** of the service on **Application B**. 
+2. The user sends to the header:  `x-circle-id=”Dev Circle”`. In this circle, the request will be redirected to the **Z version** of the service on **Application A** and **Z version** of the service on **Application B.** 
 
 ![Example of Application 1 and Application 2](../.gitbook/assets/versoes_diferentes_na_minha_release_ii_eng%20%281%29.png)
 
@@ -217,7 +217,7 @@ Let's supposed that, to make a request to identify a user, an ID 8756 is returne
 
 ![](https://gblobscdn.gitbook.com/assets%2F-LzaqMnnQTjZO7P6hApv%2F-M7yHDr-VbK_tS0wCwGh%2F-M7yIFBInQf9HruABKEt%2FScreen_Shot_2020-05-22_at_10.08.35.png?alt=media&token=7b73c615-db6c-438e-a142-e4c131b6d606)
 
-When performing a version implementation in a circle, Charles makes all the configurations so that the routing is correctly done. To understand better how this works, let's use a scenario where a request comes from a service outside the stack, see the image above.
+When performing a version implementation in a circle, Charles makes all the configurations so that the routing is correctly done. To understand better how this works, let's use a scenario where a request comes from the service outside the stack, see the image above.
 
 The request will be received by Ingress, which performs all the routing control to the service mesh.
 

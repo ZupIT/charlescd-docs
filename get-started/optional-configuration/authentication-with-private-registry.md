@@ -1,3 +1,9 @@
+---
+description: >-
+  In this section, you will find more information about authentication with a
+  private registry.
+---
+
 # Authentication with private registry
 
 ## Why do you need to authenticate?

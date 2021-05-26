@@ -1,7 +1,7 @@
 ---
 description: >-
-  In this section, you will find the main information about how to contribute
-  with our community.
+  In this section, you will find the main information about how to contribute to
+  our community.
 ---
 
 # Community

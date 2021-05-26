@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find information about the registry.'
+---
+
 # Registry
 
 ## Why do you have to configure a Registry? 

@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find how to define your workspace.'
+---
+
 # Defining a Workspace
 
 The workspace allows you to segment CharlesCD's use in your team, defining **personalized users' permissions** that will assure safety to your project.

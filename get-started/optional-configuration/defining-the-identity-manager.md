@@ -1,5 +1,5 @@
 ---
-description: You will find information about Identity Manager
+description: 'In this section, you will find information about Identity Manager.'
 ---
 
 # Defining the Identity Manager

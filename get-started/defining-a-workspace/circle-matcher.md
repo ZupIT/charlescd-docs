@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find information about the circle matcher.'
+---
+
 # Circle Matcher
 
 ## Why do you have to configure it?

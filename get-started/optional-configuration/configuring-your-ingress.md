@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find how to configure your ingress.'
+---
+
 # Configuring your ingress
 
 If you want to use your own ingress instead of the one provided with Charles' installation, follow the next step: 

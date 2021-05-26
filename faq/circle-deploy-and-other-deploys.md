@@ -34,7 +34,7 @@ However, this technique doesn't have any strategy for choosing the users during 
 
 With Charles, the circle deployment logic follows a pattern similar to parallel change. That means that, in the platform, you can also start opening the access to a release to a reduced number of users and go gradually expanding as soon as the system passes into tests.
 
-The main difference of Charles is that, if you find any error or you have a hypothesis already validated, the reverse is easily done: you can take users off the circle or make a deployment of another version with that group or even bring a version of your application to [**open sea**](../key-concepts.md#open-sea)**,** that is, to all the clients not in a Charle's circle.
+The main difference of Charles is that, if you find any error or you have a hypothesis already validated, the reverse is easily done: you can take users off the circle or make deployment of another version with that group or even bring a version of your application to [**open sea**](../key-concepts.md#open-sea)**,** that is, to all the clients not in a Charle's circle.
 
 ![Process of Canary Release](../.gitbook/assets/deploy_em_circulos_x_canary_releases%20%282%29.png)
 

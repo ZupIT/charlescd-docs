@@ -2,13 +2,13 @@
 
 ## What is Charles?
 
-CharlesCD is an open-source tool that makes more agile, safe and continuous deploy, which allows development teams to validate their hypothesis with specific groups of users, simultaneously.
+CharlesCD is an open-source tool that makes more agile, safe, and continuous deployment, which allows development teams to validate their hypothesis with specific groups of users, simultaneously.
 
 ## What is circle deploy?
 
 The circle deploy is the pioneering concept created by Charles. Thanks to it, it's possible to deploy the same application with different segmentations of users at the same time.
 
-## What is the main difference on Charles?
+## What is the main difference in Charles? 
 
 Unlike other ways of deployment, Charles allows developers to perform simultaneous segmentation and agroupment of users with circles.
 
