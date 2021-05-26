@@ -12,7 +12,7 @@ A system token is an opaque string of characters that identifies a user or an ap
 If you want to integrate Charles into your deployment pipeline, **you will need a permission system token** to execute actions. 
 {% endhint %}
 
-When you access Charles with root profile, the **"System Token"** item will show up on the menu. This is the token management area where you can create new tokens, view the existing ones, revoke and recreate. 
+When you access Charles with the root profile, the **"System Token"** item will show up on the menu. This is the token management area where you can create new tokens, view the existing ones, revoke and recreate. 
 
 ## How can you create?
 

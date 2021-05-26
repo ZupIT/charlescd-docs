@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find out more about your first Charles'' access.'
+---
+
 # Your first Charles' access
 
 {% hint style="info" %}

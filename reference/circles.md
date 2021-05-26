@@ -20,7 +20,7 @@ To create a circle, you just have to follow these steps:
 
 **1.** Click on Create Circle.  
 **2.** Give a name to your circle.  
-**3.** Define a segmentation.  
+**3.** Define segmentation.  
 **4.** \[Optional\] Implement a release.
 
 ## What is segmentation? 
@@ -41,7 +41,7 @@ Segmentations have the following fields that you have to fill:
 
 #### Key and value
 
-The **key** and **value** fields are established based on the information that will be sent in the request, that [**identifies the circles**](../get-started/defining-a-workspace/circle-matcher.md) where your user belongs to. For example, the payload below could represent the information you have about a client:
+The **key** and **value** fields are established based on the information that will be sent in the request, which [**identifies the circles**](../get-started/defining-a-workspace/circle-matcher.md) where your user belongs to. For example, the payload below could represent the information you have about a client:
 
 ```text
 {

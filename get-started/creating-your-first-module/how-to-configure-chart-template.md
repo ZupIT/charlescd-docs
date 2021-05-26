@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find how to configure chart template.'
+---
+
 # How to configure Chart template
 
 ## What is Helm? 

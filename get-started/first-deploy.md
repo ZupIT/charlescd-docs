@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find how to make your first deployment.'
+---
+
 # First Deploy
 
 {% hint style="info" %}

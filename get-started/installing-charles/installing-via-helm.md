@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find how to install Charles with Helm.'
+---
+
 # Installing via Helm
 
 {% hint style="info" %}

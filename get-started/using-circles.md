@@ -1,3 +1,7 @@
+---
+description: 'In this section, you will find more information on how to use circles.'
+---
+
 # Using Circles
 
 From the moment you start to create your deploys, the next step is to [**create your first circles**](../reference/circles.md#how-to-create-circles) to make your application segmentation better.
