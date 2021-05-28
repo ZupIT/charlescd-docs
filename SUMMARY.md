@@ -60,6 +60,6 @@
 ---
 
 * [Release Notes](https://github.com/ZupIT/charlescd/releases)
-* [Fórum](https://forum.zup.com.br/c/en/charles/13)
+* [Forum](https://forum.zup.com.br/c/en/charles/13)
 * [Migration from 0.7.1 version to 1.0.0](migration-from-0.7.1-version-to-1.0.0.md)
 
