@@ -44,7 +44,7 @@ Para saber mais sobre a configuração do repositório do helm, [**acesse a seç
 
 Assim que seu módulo é criado, ele já possui um identificador único. Para obter essa informação, selecione o módulo desejado e, no menu à esquerda, clique em **Copy ID**:
 
-![](../../.gitbook/assets/module_copyid.gif)
+![](../../.gitbook/assets/copy-module-id.gif)
 
 ## O que são componentes? 
 
@@ -54,5 +54,5 @@ Componentes são abstrações das aplicações. Se dentro do seu repositório h�
 
 Após selecionar o módulo, copie o id do componente através da opção existente nos três pontos do cartão:
 
-![](../../.gitbook/assets/module_componente_copyid.gif)
+![](../../.gitbook/assets/copy-component-id.gif)
 
