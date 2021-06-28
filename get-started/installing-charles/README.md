@@ -9,26 +9,21 @@ description: 'In this section, you will find how to install Charles.'
 CharlesCD's installation considers these **components**:
 
 1. **Charles' architecture** specific modules; 
-2. **Keycloak**, used for authentication and authorization;
+2. **Keycloak**, used for the project's authentication and authorization. However, if you already have an Identity Manager \(IDM\) and you want to use it, you have just to configure it during Charles' installation, [**check out how  to enable it in the** **IDM section**](../../reference/identity-manager.md);
 3. A **PostgreSQL database** for backend modules \(`charlescd-moove`, `charlescd-butler` ,`charlescd-villager`, `charlescd-gate` e `charlescd-compass`\) and Keycloak;
-4. A **Redis**, to be used by `charlescd-circle-matcher`
-5. By default, a module called `octopipe` is added to the installation. This is a native platform created by our team to make installation easier, without previous configurations. However, you can disable it in the installation files.
+4. A **Redis:**  To be used by `charlescd-circle-matcher`
+5. By default, a module called **`octopipe`** is already in Charles' installation. This is a native platform created by our team to make installation easier, without previous configurations. However, you can disable it in the installation files.
+6. A **RabbitMQ** for `charlescd-hermes`' use.
+7. **Ingress:** It is used to expose the HTTP and HTTPS routes outside the cluster to services inside the cluster. When you install Charles, it already has a default ingress, however, if you want to use your own, see how to enable it in the [**Installing via Helm section**](../optional-configuration/configuring-your-ingress.md). 
 
 ## Requirements
 
 To install Charles will be necessary an environment with the following requisites: 
 
 * [**Kubernetes**](https://kubernetes.io/docs/setup/).
+* \*\*\*\*[**Helm**](https://helm.sh/docs/intro/install/)\*\*\*\*
 * \*\*\*\*[**Istio**](https://istio.io/archive/) ****\(version&gt;= 1.7  and [**enabled sidecar injection**](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) ****on the deploy namespace of your application\).
 * \*\*\*\*[**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/)**,** in case you want to use ****[**metrics**](../../reference/metrics/)**.** 
-* \*\*\*\*[**Ingress**](https://github.com/kubernetes/ingress-nginx)\*\*\*\*
-* \*\*\*\*[**RabbitMQ**](https://www.rabbitmq.com/#getstarted), in case you want to use [**webhooks**](../defining-a-workspace/web.md). 
-
-{% hint style="warning" %}
-**What is Ingress?** It is an engine that exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. You can find out more about it [**here**](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress). 
-
-When you install Charles it comes with a default ingress, however, if you want to use your own, follow [**the steps to enable it**. ](./#ingress)
-{% endhint %}
 
 ## Resources 
 

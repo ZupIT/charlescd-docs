@@ -4,57 +4,48 @@ description: 'In this section, you will find how to install Charles with Helm.'
 
 # Installing via Helm
 
-{% hint style="info" %}
-Before proceeding, make sure that all the [**requirements**](./#requirements) are properly installed.
+{% hint style="warning" %}
+Before proceeding, make sure all the [**requirements**](./#requirements) are properly installed.
 {% endhint %}
 
-This installation is recommended for those who already have an infrastructure to deal with a more complex environment or who have some limitations of security/scalability, which demands **more complete install customization** of CharlesCD.  
+## How to install? 
 
-### Requisites 
+This installation stands out because of the customization. To do this, you have access to a helm template with all the available fields to change, including the database and the consumed resources.
 
-To run the process, you must have the following programs:
+Check out the [**documentation of the editable fields**](https://github.com/ZupIT/charlescd/tree/master/install/helm-chart)**.**
 
-* \*\*\*\*[**Kubectl**](https://kubernetes.io/docs/tasks/tools/install-kubectl/)\*\*\*\*
-* [**Helm** ](https://helm.sh/docs/intro/install/)\*\*\*\*
-
-### How does it work?
-
-This installation is recommended if you want specific customization. To make this happen, there is a helm template with all the available fields to be altered, including the database and consumed resources. You will find the documentation with the[ **editable fields here**](https://github.com/ZupIT/charlescd/tree/master/install/helm-chart).
-
-{% hint style="warning" %}
+{% hint style="info" %}
 The passwords used by Charles are stored in the [**values.yaml**](https://github.com/ZupIT/charlescd/blob/main/install/helm-chart/values.yaml) ****file.  The main passwords to customized are:
 
-* butler.database.password
-* moove, database.password
-* villager.database.password
-* circlematcher.redis.password
-* keycloak.keycloak.extraEnv.DB\_PASSWORD
-* postgresql.postgresqlPassword
-* redis.password
-* compass.database.password
-* hermes.database.password
-* rabbitmq.auth.password
-* gate.database.password
+* CharlesApplications.butler.database.password
+* CharlesApplications.moove.database.password
+* CharlesApplications.villager.database.password
+* CharlesApplications.circlematcher.redis.password
+* CharlesApplications.keycloak.keycloak.extraEnv.DB\_PASSWORD
+* CharlesApplications.postgresql.postgresqlPassword
+* CharlesApplications.redis.password
+* CharlesApplications.compass.database.password
+* CharlesApplications.hermes.database.password
+* CharlesApplications.rabbitmq.auth.password
+* CharlesApplications.gate.database.password
+* CharlesApplications.compass.moove.database.password
 
 For more details, access the link mentioned before about editable fields. 
 {% endhint %}
 
-To complete the installation with helm charts, just run the command below after you customized the fields: 
+To install with helm charts, run the command below inside the **/charlescd/install/helm-chart** folder after you have customized the fields: 
 
 ```text
-// customize everything you need in the file values.yaml before you execute the following command
-helm install charlescd <repo-folder> -n <namespace>
+heml install --create-namespace -n <namespace> charlescd . -f values.yaml
 ```
 
 {% hint style="warning" %}
-It's important to remember that, in case of no customization at all, the final result is the same as in case \#1 in which, for standard, we install the PostgreSQL, Redis, Keycloak, and CharlesCD. 
+It's important to remember that, in case of no customization at all, by default Charles installs PostgreSQL, Redis, Keycloak, and RabbitMQ. 
 
-So, you must not forget to customize the fields in case you want something manageable. 
+So, don't forget to customize the fields if you want something more manageable. 
 {% endhint %}
 
-
-
-### Change default passwords
+### Change the default passwords
 
 After installing CharlesCD, remember to change some **default passwords,** check out below:
 
