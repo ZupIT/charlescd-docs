@@ -55,7 +55,8 @@ A plataforma foi construída utilizando a abordagem de microsserviços e possui 
 * `charlescd-moove:` é um serviço backend que orquestra os testes de hipóteses de seus produtos e o pipeline de entrega até atingir seus círculos, facilitando a ponte entre **Butler**, **Villager** e **Circle Matcher**.  
 * `charlescd-butler:` responsável por orquestrar e gerenciar as releases e deploys realizados. 
 * `charlescd-circle-matcher:`gerencia todos os círculos criados, além de indicar a qual círculo um usuário pertence, com base em um conjunto de características. 
-* `charlescd-compass`: integração do provedor de dados, faz análise de métricas e executa ações configuráveis.   
+* `charlescd-compass`: integração do provedor de dados, faz análise de métricas e executa ações configuráveis. 
+* `charlescd-hermes`: responsável por gerenciar e notificar eventos de webhook. 
 * `charlescd-gate`: controla as permissões dos usuários em relação aos recursos existentes nas APIs do Charles.
 
   
