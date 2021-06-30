@@ -34,7 +34,7 @@ Para mais detalhes, acesse o link citado acima, que possui toda a documentação
 Para instalar com helm charts, execute o comando abaixo, dentro da pasta _**/charlescd/install/helm-chart,**_ após a customização dos campos: 
 
 ```text
-heml install --create-namespace -n <namespace> charlescd . -f values.yaml
+helm install --create-namespace -n <namespace> charlescd . -f values.yaml
 ```
 
 {% hint style="warning" %}
