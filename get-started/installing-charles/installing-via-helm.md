@@ -36,7 +36,7 @@ For more details, access the link mentioned before about editable fields.
 To install with helm charts, run the command below inside the **/charlescd/install/helm-chart** folder after you have customized the fields: 
 
 ```text
-heml install --create-namespace -n <namespace> charlescd . -f values.yaml
+helm install --create-namespace -n <namespace> charlescd . -f values.yaml
 ```
 
 {% hint style="warning" %}
