@@ -2,7 +2,7 @@
 description: 'Nesta seção, você encontra informações sobre as ações de métricas.'
 ---
 
-# Ações
+# Ações de métricas
 
 ## O que é? 
 
@@ -20,8 +20,10 @@ Em configurações do workspace, clique na seção **Add Metric Action** e siga 
 ![](../../.gitbook/assets/workspace_metricaction%20%282%29.gif)
 
 {% hint style="info" %}
-O único plugin disponível no momento é o **circle deployment**. Ele permite que o Charles faça o seu próprio plugin para atender às necessidades da sua aplicação como, por exemplo, uma action que envie e-mail para avisar o status do círculo.
+Os plugins disponíveis são **circle deployment** e **circle undeployment**. O Charles pode fazer o  próprio plugin para atender às necessidades da sua aplicação como, por exemplo, uma action que envie e-mail para avisar o status do círculo.
 {% endhint %}
+
+Dentro do seu círculo, você deve registrar seu ****[**grupo de métricas**](../../referencia/metricas/grupo-de-metricas.md) que é responsável por criar métricas que você  deseja acompanhar e você também pode adicionar ações nesse grupo. Quando chegar ao ponto limite \(threshold\), a ação será chamada e o que está descrito no seu plugin irá acontecer, como por exemplo, um deployment de um círculo dentro de outro círculo.
 
 Para mais informações sobre **Action**, veja a [**seção de Referência**](../../referencia/metricas/acoes.md). 
 

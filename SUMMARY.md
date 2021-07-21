@@ -17,7 +17,7 @@
   * [Ambiente de deploy](primeiros-passos/definindo-workspace/ambiente-de-deploy.md)
   * [Circle Matcher](primeiros-passos/definindo-workspace/circle-matcher.md)
   * [Adicionando o DataSource](primeiros-passos/definindo-workspace/adicionando-o-datasource.md)
-  * [Ações](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
+  * [Ações de métricas](primeiros-passos/definindo-workspace/acoes-de-metricas.md)
   * [Webhooks](primeiros-passos/definindo-workspace/web.md)
 * [Criando seu primeiro módulo](primeiros-passos/criando-seu-primeiro-modulo/README.md)
   * [Configurando o chart template](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md)
