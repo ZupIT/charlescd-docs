@@ -20,7 +20,7 @@ In workspace configuration, click on the section **Add Metric Action** and follo
 ![](../../.gitbook/assets/workspace_metricaction%20%281%29.gif)
 
 {% hint style="info" %}
-The only available plugin so far is **circle deployment**. Charles allows you to make your own plugin, the way you want and to fulfill your application's purpose, for example, an action that sends an email to warn your circle status.
+The available plugins are **circle deployment** and **circle undeployment**. Charles allows you to make your own plugin, the way you want and to fulfill your application's purpose, for example, an action that sends an email to warn your circle status.
 {% endhint %}
 
 Inside your circle, you register the [**metrics group**](../../reference/metrics/metrics-group.md), which is responsible to create metrics that you want to track and you can also add action to this group. When you get to the threshold, the action will be triggered and what is described in your plugin will happen, like for example, make deployment of one circle in another circle. 
