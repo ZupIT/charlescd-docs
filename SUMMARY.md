@@ -11,6 +11,7 @@
 * [Configurações opcionais](primeiros-passos/configuracoes-opcionais/README.md)
   * [Autenticando com registry privado](primeiros-passos/configuracoes-opcionais/autenticando-com-registry-privado.md)
   * [Configurando sua ingress](primeiros-passos/configuracoes-opcionais/configurando-sua-ingress.md)
+  * [Configurando MTLS](primeiros-passos/configuracoes-opcionais/configurando-mtls.md)
   * [Definindo o Identity Manager](primeiros-passos/configuracoes-opcionais/definindo-o-identity-manager.md)
 * [Definindo um Workspace](primeiros-passos/definindo-workspace/README.md)
   * [Docker Registry](primeiros-passos/definindo-workspace/docker-registry.md)

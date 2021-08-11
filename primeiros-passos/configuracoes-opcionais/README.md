@@ -12,7 +12,11 @@ As configurações a seguir são opcionais, você pode escolher se é necessári
 
 {% page-ref page="configurando-sua-ingress.md" %}
 
+{% page-ref page="configurando-mtls.md" %}
+
 {% page-ref page="definindo-o-identity-manager.md" %}
+
+
 
 
 
