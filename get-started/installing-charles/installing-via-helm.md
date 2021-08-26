@@ -10,9 +10,7 @@ Before proceeding, make sure all the [**requirements**](./#requirements) are pro
 
 ## How to install? 
 
-This installation stands out because of the customization. To do this, you have access to a helm template with all the available fields to change, including the database and the consumed resources.
-
-Check out the [**documentation of the editable fields**](https://github.com/ZupIT/charlescd/tree/master/install/helm-chart)**.**
+This installation is customizable, to install access a **helm template** with all the available fields to change, including the database and the consumed resources. Check out the [**documentation of editable fields**](https://github.com/ZupIT/charlescd/tree/main/install/helm-chart).
 
 {% hint style="info" %}
 The passwords used by Charles are stored in the [**values.yaml**](https://github.com/ZupIT/charlescd/blob/main/install/helm-chart/values.yaml) ****file.  The main passwords to customized are:
@@ -30,19 +28,23 @@ The passwords used by Charles are stored in the [**values.yaml**](https://github
 * CharlesApplications.gate.database.password
 * CharlesApplications.compass.moove.database.password
 
-For more details, access the link mentioned before about editable fields. 
+For more details, [**access editable fields documentation**](https://github.com/ZupIT/charlescd/tree/main/install/helm-chart).  
 {% endhint %}
 
-To install with helm charts, run the command below inside the **/charlescd/install/helm-chart** folder after you have customized the fields: 
+* To make sure the charts dependencies are present and updated with a compatible version, use in the **/charlescd/install/helm-chart** folder the command below: 
+
+```text
+helm install --create-namespace -n <namespace> charlescd . -f values.yaml
+```
+
+* To install with Helm Charts,  after you have customized the fields, run the command below inside the _**/charlescd/install/helm-chart**_ folder: 
 
 ```text
 helm install --create-namespace -n <namespace> charlescd . -f values.yaml
 ```
 
 {% hint style="warning" %}
-It's important to remember that, in case of no customization at all, by default Charles installs PostgreSQL, Redis, Keycloak, and RabbitMQ. 
-
-So, don't forget to customize the fields if you want something more manageable. 
+If you don't customize anything, Charles installs by default **PostgreSQL**, **Redis**, **Keycloak**, and **RabbitMQ.**  So, don't forget to customize the fields if you want something manageable. 
 {% endhint %}
 
 ### Change the default passwords
