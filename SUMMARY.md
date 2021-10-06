@@ -7,6 +7,7 @@
 
 * [Installing Charles](get-started/installing-charles/README.md)
   * [Installing via Helm](get-started/installing-charles/installing-via-helm.md)
+  * [Installing via Terraform local environment](get-started/installing-charles/installing-via-terraform-local-environment.md)
   * [Your first Charles' access](get-started/installing-charles/your-first-charles-access.md)
 * [Optional configuration](get-started/optional-configuration/README.md)
   * [Authentication with private registry](get-started/optional-configuration/authentication-with-private-registry.md)
