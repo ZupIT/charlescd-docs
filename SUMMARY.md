@@ -7,6 +7,7 @@
 
 * [Instalando o Charles](primeiros-passos/instalando-charles/README.md)
   * [Instalando via Helm](primeiros-passos/instalando-charles/instalando-via-helm.md)
+  * [Instalando via ambiente local Terraform](primeiros-passos/instalando-charles/instalando-via-ambiente-local-terraform.md)
   * [Seu primeiro acesso ao Charles](primeiros-passos/instalando-charles/acessando-o-charles.md)
 * [Configurações opcionais](primeiros-passos/configuracoes-opcionais/README.md)
   * [Autenticando com registry privado](primeiros-passos/configuracoes-opcionais/autenticando-com-registry-privado.md)
