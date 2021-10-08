@@ -16,7 +16,7 @@ Para mais informações, acesse o repositório [**charlescd-local-cluster**](htt
 
 ### Requisitos
 
-Veja o que você precisa ter instalado na sua máquina: 
+Veja o que você precisa instalar na sua máquina: 
 
 * \*\*\*\*[**Docker**](https://docs.docker.com/get-docker/)\*\*\*\*
 * \*\*\*\*[**Helm**](https://helm.sh/docs/intro/install/)\*\*\*\*
