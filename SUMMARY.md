@@ -24,6 +24,7 @@
 * [Criando seu primeiro módulo](primeiros-passos/criando-seu-primeiro-modulo/README.md)
   * [Configurando o chart template](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-chart-template.md)
   * [Configurando seus módulos para propagar o id do círculo](primeiros-passos/criando-seu-primeiro-modulo/configurando-o-seu-modulo.md)
+  * [Injeção de propriedades](primeiros-passos/criando-seu-primeiro-modulo/injecao-de-propriedades.md)
 * [Primeiro Deploy](primeiros-passos/primeiro-deploy.md)
 * [Usando Círculos](primeiros-passos/usando-circulos.md)
 * [Configurando o Charles no seu pipeline](primeiros-passos/configurando-o-charles-no-seu-pipeline.md)
@@ -32,7 +33,6 @@
 
 * [Círculo](referencia/circulo.md)
 * [Circle Matcher](referencia/circle-matcher.md)
-* [Preparando o seu Deploy](referencia/preparando-seu-deploy.md)
 * [Grupo de Usuários](referencia/grupos-de-usuarios.md)
 * [Identity Manager](referencia/identity-manager.md)
 * [Registry](referencia/registry/README.md)

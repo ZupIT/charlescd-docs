@@ -8,11 +8,38 @@ description: Esta seção descreve como configurar o chart template no ambiente 
 
 O Helm Charts é um gerenciador de pacotes que permite você definir, instalar e atualizar as aplicações no Kubernetes, independente do grau de complexidade.  
 
-No contexto do Charles, o [**Chart Template**](https://helm.sh/docs/chart_template_guide/getting_started/) ****é usado como uma coleção de arquivos relacionados a configurações do Kubernetes. 
+### Chart template no contexto do CharlesCD
+
+O [**Chart Template**](https://helm.sh/docs/chart_template_guide/getting_started/) ****é usado como uma coleção de arquivos relacionados a configurações do Kubernetes. 
+
+Os charts devem seguir o [**padrão do Helm**](https://helm.sh/docs/topics/charts/), e precisam ****estar contidos dentro de uma pasta com o nome da componente cadastrada no Charles. Você não precisa executar nenhum comando para empacotar o chart, o Charles faz o download dos arquivos e finaliza tudo automaticamente.  
+  
+Veja abaixo o exemplo de um repositório contendo o chart da componente **http-https-echo** no GitHub:
+
+![](https://lh5.googleusercontent.com/Rt7_Lw1DbK152QKt3brsCYyzF0DAQ4wuoWsdCVyUaZjf9Hlh64EaK7YnHjF16W_xo2BQzlUJyUeUsooPzqwmMIKF7ttUXRej3eM56uWu6WH4QNCiByixeV4zEdHLwEGRq7NCruhH)
+
+O módulo de deploy Butler utiliza charts helm para disponibilizar as suas aplicações no Cluster. Esses charts devem estar disponíveis em um repositório Github ou Gitlab e acessíveis por meio do token cadastrado na configuração de deployment. A URL deles é providenciada junto ao cadastro do módulo.
 
 {% hint style="info" %}
-Se você não tiver configurado o **seu módulo,** [**acesse aqui**](./). É importante lembrar que você deve cadastrar a URL no módulo.
+Se você não tiver configurado o **seu módulo,** [**acesse o tutorial de como criar**](./) **um.** E você também deve cadastrar a URL no módulo.
 {% endhint %}
+
+### **Templates**
+
+O único requisito para que os templates funcionem com o Charles é que as **labels component** e **tag** estejam presentes nos manifestos do recurso Deployment. 
+
+{% hint style="warning" %}
+Não é necessário inserir os valores no arquivo de _**values**_  ****do seu chart, o Charles irá provê-los automaticamente.
+{% endhint %}
+
+Veja o exemplo abaixo:
+
+```text
+component: {{ .Values.component }}
+tag: {{ .Values.tag }}
+```
+
+Internamente o Butler armazena os charts compilados em entidades que representam cada solicitação de deploy. Desta forma**,** o Charles realiza rollbacks mais eficientes.
 
 ## Como configurar o chart template? 
 
