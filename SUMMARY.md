@@ -24,6 +24,7 @@
 * [Creating your first module](get-started/creating-your-first-module/README.md)
   * [How to configure Chart template](get-started/creating-your-first-module/how-to-configure-chart-template.md)
   * [Configuring your module to propagate the circle's Id](get-started/creating-your-first-module/configuring-your-module.md)
+  * [Properties injections](get-started/creating-your-first-module/properties-injections.md)
 * [First Deploy](get-started/first-deploy.md)
 * [Using Circles](get-started/using-circles.md)
 * [Integrating Charles to your CI](get-started/integrating-charles-to-your-ci.md)
@@ -32,7 +33,6 @@
 
 * [Circles](reference/circles.md)
 * [Circle Matcher](reference/circle-matcher.md)
-* [Preparing your deployment](reference/preparing-your-deployment.md)
 * [Users Groups](reference/users-group.md)
 * [Identity Manager](reference/identity-manager.md)
 * [Registry](reference/registry/README.md)

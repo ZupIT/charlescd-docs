@@ -6,7 +6,7 @@ description: >-
 
 # Migration from 0.7.1 version to 1.0.0
 
-The new CharlesCD's 1.0.0 version brought more reliability in deployments with [**Operator**](reference/preparing-your-deployment.md), however, Helm finds some difficulties to add the necessary elements to Operator in an existing installation, like  **Custom Resources Definition** \(CRDs\). To change that, you need to follow some steps for a more functional update. See below: 
+The new CharlesCD's 1.0.0 version brought more reliability in deployments with [**Operator**](), however, Helm finds some difficulties to add the necessary elements to Operator in an existing installation, like  **Custom Resources Definition** \(CRDs\). To change that, you need to follow some steps for a more functional update. See below: 
 
 ### **Step 1: Uninstall CharlesCD \(installation with Helm\):**
 
@@ -38,7 +38,7 @@ helm install -n <NAMESPACE_CHARLESCD> <NOME_DA_INSTALAÇÃO> ./install/helm-char
 
 ### **Step 3: Update the deployment configuration for each Workspace:**
 
-After installing, you can access CharlesCD with your admin user. It is necessary to do a new deployment configuration for your workspaces. See how to this configuration in [**Deployment Configuration**](reference/preparing-your-deployment.md#deployment-configuration).  
+After installing, you can access CharlesCD with your admin user. It is necessary to do a new deployment configuration for your workspaces. See how to this configuration in [**Deployment Configuration**]().  
 
 ###  **Step 4: Override the release in each active circle:**
 
