@@ -1,5 +1,7 @@
+# This repository is deprecated and it will be shut down in the future. Access the new repository [**here**](https://github.com/ZupIT/docs-charles).
+
 ---
-description: >-
+description: 
   In this section, we will help you find all the basic information about
   Charles.
 ---
